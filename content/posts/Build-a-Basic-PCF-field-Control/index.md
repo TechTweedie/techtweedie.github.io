@@ -1,8 +1,6 @@
 ---
-title: Build a Basic PCF Field Control
-description: How to build a basic PCF control and deploy it to a Model Driven App
-slug: Build-a-Basic-PCF-field-Control
-image: hugo-logo-wide.svg
+title: "Build a Basic PCF Field Control"
+description: "Want to get started using the Power Apps Component Framework (PCF), would you like to start building controls. In this blog post we are going to step through the process to building your first component."
 tags: ["How to"]
 categories: ["Power Platform Developer"]
 date: 2024-06-16T19:32:41+01:00
@@ -11,9 +9,9 @@ author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
 - name: "featured-image"
-  src: "featureImage.png"
+  src: "featureImage.png"
 - name: "featured-image-preview"
-  src: "featureImage.png"
+  src: "featureImage.png"
 lightgallery: true
 draft: false
 ---
