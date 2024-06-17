@@ -1,0 +1,26 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Tech Tweedie</title>
+        <link>http://localhost:1313/posts/</link>
+        <description>All Posts | Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 16 Jun 2024 19:15:58 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>First_post</title>
+    <link>http://localhost:1313/posts/first_post/</link>
+    <pubDate>Sun, 16 Jun 2024 19:15:58 &#43;0100</pubDate><guid>http://localhost:1313/posts/first_post/</guid>
+    <description><![CDATA[ffgfgf]]></description>
+</item>
+<item>
+    <title>How to Install Hugo on Windows 11</title>
+    <link>http://localhost:1313/posts/how-to-install-hugo-on-windows-11/</link>
+    <pubDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</pubDate><guid>http://localhost:1313/posts/how-to-install-hugo-on-windows-11/</guid>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Hugo is a open-source static site generator, designed for speed and flexibility, making it an excellent choice when creating modern websites, blogs, and documentation. In this guide, we&rsquo;ll walk you through the steps to install Hugo on your Windows 11 machine.</p>]]></description>
+</item>
+<item>
+    <title>Basic Markdown Syntax</title>
+    <link>http://localhost:1313/posts/basic-markdown-syntax/</link>
+    <pubDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</pubDate><guid>http://localhost:1313/posts/basic-markdown-syntax/</guid>
+    <description><![CDATA[<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files.</p>]]></description>
+</item>
+</channel>
+</rss>

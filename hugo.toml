@@ -1,0 +1,156 @@
+baseURL = "http://example.org/"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+# language code
+languageCode = "en"
+title = "Tech Tweedie"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "FeelIt"
+
+[params]
+  # FeelIt theme version
+  version = "1.0.X"
+  # site description
+  description = "This is My New Hugo Site"
+  # site keywords
+  keywords = ["Theme", "Hugo"]
+  # site default theme ("light", "dark", "auto")
+  defaultTheme = "auto"
+  # date format
+  dateFormat = "2006-01-02"
+  # website images for Open Graph and Twitter Cards
+  images = ["/logo.png"]
+
+# App icon config
+[params.app]
+  # optional site title override for the app when added to an iOS home screen or Android launcher
+  title = "Tech Tweedie"
+  # whether to omit favicon resource links
+  noFavicon = false
+  # modern SVG favicon to use in place of older style .png and .ico files
+  svgFavicon = "/static/safari-pinned-tab.svg"
+  # Android browser theme color
+  themeColor = "#dddddd"
+  # Safari mask icon color
+  iconColor = "#dddddd"
+  # Windows v8-10 tile color
+  tileColor = "#dddddd" 
+
+# Header config
+[params.header]
+  # desktop header mode ("fixed", "normal", "auto")
+  desktopMode = "fixed"
+  # mobile header mode ("fixed", "normal", "auto")
+  mobileMode = "auto"
+
+ # Header title config
+[params.header.title]
+  # URL of the LOGO
+  logo = "/logo-01_150x150.png"
+  # title name
+  name = "Tech Tweedie"
+  # you can add extra information before the name (HTML format is supported), such as icons
+  pre = " "
+  # you can add extra information after the name (HTML format is supported), such as icons
+  post = ""
+  # whether to use typeit animation for title name
+  typeit = true
+  # whether to show RSS icon
+  rss = true
+
+  # Footer config
+[params.footer]
+  enable = true
+  # Custom content (HTML format is supported)
+  custom = 'Tech Tweedie Blog'
+  # whether to show Hugo and theme info
+  hugo = true
+  #  whether to show copyright info
+  copyright = true
+  #  whether to show the author
+  author = true
+  # Site creation time
+  since = 2019
+  # license info (HTML format is supported)
+  license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 3
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/khusika/FeelIt/issues/158)
+    noClasses = false
+
+# Home page config
+[params.home]
+  # amount of RSS pages
+  rss = 10
+  # Home page profile
+[params.home.profile]
+  enable = true
+  # Gravatar Email for preferred avatar in home page
+  # gravatarEmail = ""
+  # URL of avatar shown in home page
+  #avatarURL = "/logo-01_150x150_white.png"
+  # title shown in home page (HTML format is supported)
+  #title = "Tech Tweedie Title"
+  # subtitle shown in home page
+  subtitle = "A technology blog empowering your digital journey"
+  # whether to use typeit animation for subtitle
+  typeit = true
+  # whether to show social links
+  social = true
+  # disclaimer (HTML format is supported)
+  disclaimer = ""
+  
+# Home page posts
+[params.home.posts]
+  enable = true
+  # special amount of posts in each home posts page
+  paginate = 6
+  # display image-preview
+  imagePreview = true
+  # replaced with hiddenFromHomePage in params.page
+  # default behavior when you don't set "hiddenFromHomePage" in front matter
+  defaultHiddenFromHomePage = false
+
+[params.social]
+  GitHub = "itweedie"
+  inkedin = "iantweedie"
+  Twitter = "itweedie"
+  Medium = "itweedie"
+  Gitlab = ""
+  Youtubelegacy = ""
+  Youtubecustom = ""
+  Youtubechannel = "UCy1a2QSDVZNDwZf7KbNmoHQ"
