@@ -29,10 +29,12 @@ To build out our component, we will be using both **TypeScript** and **HTML**. D
 The tools we will be using today will be; 
 - Visual Studio Code
 - Power Platform Tools Extension
-![[vmconnect_WcfCh5QjzB.gif]]
+
+![Tools](vmconnect_WcfCh5QjzB.gif)
 
 - NodeJS LTS
-![[vmconnect_g0nvJmfRoh.gif]]
+
+![NodeJS](vmconnect_g0nvJmfRoh.gif)
 
 ### Why PCFs
 We use the PowerApps Component Framework to extend our apps, and to achieve function that is not available out of the box. Out low code canvas can't always achieve what our clients would like and this is when we look to towards this kind of functionality. 
@@ -50,21 +52,23 @@ We have two frameworks we can utilise, alongside two different templates.
 
 ### Step 1: Authenticate 
 We can authenticate against dataverse with the following command in PowerShell within Visual Studio Code. 
+
 ```PowerShell
 pac auth create -env yourenv.crm11.dynamics.com
 pac auth list
 ```
 
-![[vmconnect_qwUjw1DOQR.gif]]
+![Pac-Auth](vmconnect_qwUjw1DOQR.gif)
 
 ### Step 2: Create a working folder
 Lets make ourselves a working folder
+
 ```PowerShell
 mkdir control11
 cd control11
 ```
 
-![[vmconnect_MsoWnCAhOL.gif]]
+![Create Working Folder](vmconnect_MsoWnCAhOL.gif)
 
 
 ### Step 3: Initialise a blank component 
@@ -112,7 +116,7 @@ npm install
 
 You may get some warnings, don't worry too much about them.
 
-![[vmconnect_Ws3754bfWM.gif]]
+![npm-install](vmconnect_Ws3754bfWM.gif)
 
 ### Step 4: Lets go through the code
 
@@ -169,7 +173,7 @@ This contains things like its display name and description.
 ##### manifest/property element
 The other things it 
 
-![[vmconnect_dSuy1MWaZo.gif]]
+![mainifest] (vmconnect_dSuy1MWaZo.gif)
 
 ### Step 5: Lets run it
 We can run it to see what it looks like 
@@ -179,20 +183,22 @@ npm start watch
 
 As this runs it will tell us if there are any errors, this allows you to make changes on the vscode side
 
-![[vmconnect_fRtresEcup.gif]]
+![npm start watch](vmconnect_fRtresEcup.gif)
 
 ### Step 6: Lets add some console logs
 
 Inside out index.ts file lets add two `console.log("text");`
-![[vmconnect_gtibKrlUUv.gif]]
+![console logs in nodejs](vmconnect_gtibKrlUUv.gif)
 
 Lets see if we can access some data, lets console log out the context object.
 
-![[vmconnect_ygi592mE1t.gif]]
+![console log context](vmconnect_ygi592mE1t.gif)
 
 Exploring the object lets see if we can access the value. Exploring the object we can see we have parameters > sampleProperty >raw so lets give that a go.
+
 Lets change out console log to `console.log(context.parameters.sampleProperty.raw);`
-![[vmconnect_ZgykFSbDmX.gif]]
+
+![console log context.parameters.sampleProperty.raw](vmconnect_ZgykFSbDmX.gif)
 
 ### Step 7: Lets create our input
 
@@ -213,11 +219,11 @@ We are then going to update our init so that it works from this new property
         container.appendChild(this.inputElement);
 ```
 
-![[vmconnect_Ls5Ukcv8dS.gif]]
+![create input element](vmconnect_Ls5Ukcv8dS.gif)
 
 ### Step 6: Get our values to update
 This looks good, but now if the value of our sample property is updated, the value does not update. 
-![[vmconnect_Nv7Sv6iYoY.gif]]
+![Get our values to update](vmconnect_Nv7Sv6iYoY.gif)
 
 In order to sort this, we need update our input value when the `updateView` 
 runs. We need to enter this line under our `updateView`
@@ -226,7 +232,7 @@ runs. We need to enter this line under our `updateView`
 this.inputElement.setAttribute("value", context.parameters.sampleProperty.raw || "");
 ```
 
-![[vmconnect_8UReJ3uQPf.gif]]
+![Get our values to update](vmconnect_8UReJ3uQPf.gif)
 
 However does it update the other way? In order to make this work we need to modify our TypeScript. 
 
@@ -249,16 +255,16 @@ Then we go to the Get Outputs and update the return to be
     }
 ```
 
-![[vmconnect_NGWvaIppuB.gif]]
+![](vmconnect_NGWvaIppuB.gif)
 
 
 ###  Step 7: Lets get our control in to our model driven app
 With our control working let's control it to Dataverse, and place it on a form. 
 
-![[vmconnect_vxO3lDiCxK.gif]]
+![](vmconnect_vxO3lDiCxK.gif)
 
 Lets attach it to a control
-![[vmconnect_PsH16x7RUZ.gif]]
+![](vmconnect_PsH16x7RUZ.gif)
 
 
 ## Conclusion 
