@@ -13,4 +13,6 @@ A favicon is a small icon that represents your site in browser tabs, bookmarks, 
 #### RealFaviconGenerator: 
 This tool helps you create a multi-platform favicon for your website. It generates all the necessary files and HTML code, ensuring your favicon looks great on all devices and browsers.
 
-*Website: [RealFaviconGenerator](https://realfavicongenerator.net/)*
+*Website: [RealFaviconGenerator](https://realfavicongenerator.net/)*  
+
+
