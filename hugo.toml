@@ -36,7 +36,7 @@ theme = "FeelIt"
   iconColor = "#dddddd"
   # Windows v8-10 tile color
   tileColor = "#dddddd" 
-
+   
 # Header config
 [params.header]
   # desktop header mode ("fixed", "normal", "auto")
