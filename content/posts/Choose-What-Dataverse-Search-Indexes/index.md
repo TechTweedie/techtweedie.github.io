@@ -9,9 +9,9 @@ author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
 - name: "featuredImage"
-  src: "featuredImage.png"
+  src: "featureImage.png"
 - name: "featuredImage"
-  src: "featuredImage.png"
+  src: "featureImage.png"
 lightgallery: true
 draft: false
 original: "https://helpmewithmy.technology/how-to-choose-what-dataverse-search-indexes-a-guide/"

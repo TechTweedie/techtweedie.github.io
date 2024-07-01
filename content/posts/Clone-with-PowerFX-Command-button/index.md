@@ -12,9 +12,9 @@ author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
 - name: "featuredImage"
-  src: "featuredImage.png"
+  src: "featureImage.png"
 - name: "featuredImage"
-  src: "featuredImage.png"
+  src: "featureImage.png"
 lightgallery: true
 draft: false
 original: "https://helpmewithmy.technology/clone-multiple-records-with-custom-powerfx-button-in-model-driven-app/"
