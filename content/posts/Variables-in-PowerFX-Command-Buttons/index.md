@@ -8,12 +8,14 @@ categories:
 tags:
   - Environment Variable
   - PowerFX
-date: 2024-05-24
+date: 2024-05-
+author: "itweedie"
+authorLink: "https://iantweedie.biz"
 resources:
 - name: "featured-image"
-  src: "featureImage.png"
+  src: "featureImage.jpg"
 - name: "featured-image-preview"
-  src: "featureImage.png"
+  src: "featureImage.jpg"
 draft: true
 origional: "https://helpmewithmy.technology/using-environment-variables-in-powerfx-command-buttons-in-model-driven-app/"
 ---
