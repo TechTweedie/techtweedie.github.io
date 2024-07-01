@@ -4,9 +4,11 @@ description: Frequently moving between desktop builds, want to be able to get up
 slug: Power-Platform-Developer-Tools-Install-Script
 image: feature_original.jpg
 categories:
-  - Power Platform Developer
+  - Power Platform
 tags:
-  - Developer-Enviroument
+  - Developer Tools
+  - Install Script
+  - Automation
 date: 2024-05-24
 lastmod: 2024-07-01
 author: "itweedie"
@@ -18,7 +20,7 @@ resources:
   src: "featuredImage.png"
 lightgallery: true
 draft: false
-original: "https://helpmewithmy.technology/how-to-choose-what-dataverse-search-indexes-a-guide/"
+original: "https://helpmewithmy.technology/power-pages-developer-tools-install-script/"
 ---
 
 ## Introduction

@@ -1,15 +1,21 @@
 ---
-title: Environment Variables in PowerFX Command Buttons
-description: Frequently moving between desktop builds, want to be able to get up and running quickly,  I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It's essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.
-slug: Variables-in-Command-Buttons
+title: Variables in PowerFX Command Buttons
+description: "Have you ever wondered if you can use Environment Variables in a PowerFX button, how to create a custom email link button in the command bar of your Power Apps model-driven application using environment variables and Power FX? Luckily, Power Apps has recently made it possible to achieve this. With the help of Power FX, which is the same language used in canvas app development, anyone can efficiently customise their app’s command bar without needing prior knowledge of JavaScript or the Ribbon Workbench."
+slug: Variables-in-PowerFX-Command-Buttons
 image: feature_original.jpg
 categories:
-  - Power Platform Developer
+  - Power Platform
 tags:
-  - Dev
-  - Environment
+  - Environment Variable
+  - PowerFX
 date: 2024-05-24
+resources:
+- name: "featured-image"
+  src: "featureImage.png"
+- name: "featured-image-preview"
+  src: "featureImage.png"
 draft: true
+origional: "https://helpmewithmy.technology/using-environment-variables-in-powerfx-command-buttons-in-model-driven-app/"
 ---
 
 ## Introduction
@@ -29,15 +35,15 @@ In this blog post, we’ll guide you through the steps involved in customising t
 
 Navigate to your solution, select **All** and then from the menu at the top, select **New**, then choose **More > Environment variable**.
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-14.png]]
+![](img/image-14.png)
 
 Then, fill in the details of our new environment variable. We will use these values later.
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-15.png]]
+![](img/image-15.png)
 
 For my example, I created three environment variables, all relating to the email we will send.
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-16.png]]
+![](img/image-16.png)
 
 ## Command Bar Customisation
 
@@ -45,31 +51,31 @@ For my example, I created three environment variables, all relating to the email
 
 Within your solution, navigate to the model-driven app, and open it up in edit mode.
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-3.png]]
+![](img/image-3.png)
 
 ### Navigate to the command bar editor
 
 Find the **table** you which to add the custom command to, and then click on the ellipsis (three dots), then choose **Edit command bar.**
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-4.png]]
+![](img/image-4.png)
 
 You will then be asked which **command bar** you wish to edit, choose **Main grid**.
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-5.png]]
+![](img/image-5.png)
 
 ### Create your new button
 
 Choose **New**, and then select Command
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-6.png]]
+![](img/image-6.png)
 
 This will place an object called NewCommand on the command bar. You can drag this to any position you want.
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-7.png]]
+![](img/image-7.png)
 
 With the command selected choose, you will see on the **Right-Hand** side of the screen a number of options available for you to select.
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-8.png]]
+![](img/image-8.png)
 
 For this demonstration, I am using the following values
 
@@ -85,23 +91,23 @@ For this demonstration, I am using the following values
 
 Save and Publish your changes so far.
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-10.png]]
+![](img/image-10.png)
 
 Then we need to move to the component library.
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-17.png]]
+![](img/image-17.png)
 
 Then you will be presented with a screen vert similar to one used for canvas apps.
 
 From this screen you need to press on **Add data** and then add both **Environment Variable Definitions** and **Environment Variable Values** tables from Dataverse.
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-18.png]]
+![](img/image-18.png)
 
 ### Configure our new button
 
 In the top left-hand corner, you will see a drop-down box; this allows you to select either **Visible** or **OnSelect**.
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-9.png]]
+![](img/image-9.png)
 
 With **Visible** chosen, copy and paste the following code:
 
@@ -131,19 +137,19 @@ Save, Publish, and Test
 
 Now that we have finished our component, press on Save and Publish
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-10.png]]
+![](img/image-10.png)
 
 Then navigate back to your Model Driven App, and **Play** the app
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-11.png]]
+![](img/image-11.png)
 
 Once it opens, press **Ctrl + F5** to refresh your browser. Then you should see the Clone Record button in the **command bar** at the top of the screen.
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-12.png]]
+![](img/image-12.png)
 
 When we press on the button we get the following result.
 
-![[neptuneStarship/10 - Public/tweedtech/post/Variables-in-Command-Buttons/image-13.png]]
+![](img/image-13.png)
 
 ## Frequently Asked Questions
 
