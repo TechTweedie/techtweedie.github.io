@@ -1,8 +1,13 @@
 ---
 title: "Command Bar to Call Custom Page in Model Driven App"
 description: "Recently I was asked if it was possible to place a message at the top of every form, and every view across an entire Model Driven App. This message would then open up a Custom Page that would display more detail. In this Blog post I go into detail in to how this can be achieved."
-tags: ["How to"]
-categories: ["Model Driven Apps"]
+categories:
+  - Power Platform
+tags:
+  - Command Bar
+  - Custom Page
+  - Model Driven App
+  - JavaScript
 date: 2024-06-23T19:32:41+01:00
 lastmod: 2024-06-23T19:32:41+01:00
 author: "itweedie"
