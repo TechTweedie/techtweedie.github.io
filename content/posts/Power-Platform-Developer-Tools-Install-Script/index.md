@@ -8,7 +8,17 @@ categories:
 tags:
   - Developer-Enviroument
 date: 2024-05-24
+lastmod: 2024-07-01
+author: "itweedie"
+authorLink: "https://iantweedie.biz"
+resources:
+- name: "featuredImage"
+  src: "featuredImage.png"
+- name: "featuredImage"
+  src: "featuredImage.png"
+lightgallery: true
 draft: false
+original: "https://helpmewithmy.technology/how-to-choose-what-dataverse-search-indexes-a-guide/"
 ---
 
 ## Introduction
