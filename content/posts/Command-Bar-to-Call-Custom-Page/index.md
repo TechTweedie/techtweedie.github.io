@@ -25,23 +25,23 @@ For the purposes of this demo, we will call a custom help page from a command bu
 
 ### Step 1: Create a Solution
 Lets Create a new solution for this to sit within
-![](msedge_M2ahzB0oe3.gif)
+![](img/msedge_M2ahzB0oe3.gif)
 
 ### Step 2: Custom Page
 From here we now need to build a custom page
-![](msedge_N8UYXdlaYM.gif)
+![](img/msedge_N8UYXdlaYM.gif)
 
 ### Step 3: Our Model Driven App
 So we can demonstrate this, we need to create a Model Driven App. 
-![](msedge_Csm4Ze6FCg.gif)
+![](img/msedge_Csm4Ze6FCg.gif)
 
 ### Step 4: Custom commands
 Lets save and Publish this Model Driven App, and then we can view where we are going to place our custom commands, for this demo they will call a **Custom Help Page**
-![](msedge_IewomnpMi1.gif)
+![](img/msedge_IewomnpMi1.gif)
 
 ### Step 4: Custom page name
 Next we need to grab the name of our power page, not display name. In our demo this is `techtwed_mdacustomhelppage_93a75`.
-![](msedge_UYBwUVUPfF.gif)
+![](img/msedge_UYBwUVUPfF.gif)
 
 ### Step 5: JavaScript
 To create this we are going to use some JavaScript, where is some sample JavaScript we can adapt in order to create our button.
@@ -83,32 +83,32 @@ Lets create our JavaScript in VSCode called
         recordId: "00000000-0000-0000-0000-000000000000" // Optional, the ID of a specific record
 ```
 as we dont need it, and update `title` with something appropriate, and `name` with the value from step 4.
-![](Code_2t0ba7WkEu.gif)
+![](img/Code_2t0ba7WkEu.gif)
 
 Finally, we need to update the name of our function. 
-![](Code_0uYfV7rrJL.gif)
+![](img/Code_0uYfV7rrJL.gif)
 
 ### Step 6: Create a Custom Command
 Next, we need to create our Custom Command. For this example, we will do it in the **Accounts** table. Navigate to your solution **> Tables > Table Name > Commands**. 
 
 Then Select **Main grid** and add a new button.
-![](msedge_3eWzlTh93M.gif)
+![](img/msedge_3eWzlTh93M.gif)
 
 Then, we need to upload our JavaScript.
-![](msedge_D6rcRh4QMb.gif)
+![](img/msedge_D6rcRh4QMb.gif)
 
 Finally lets configure our button to call our JavaScript function `openCustomHelpPage`.
 
-![](msedge_6cq4cZJj5M.gif)
+![](img/msedge_6cq4cZJj5M.gif)
 
 Lets see if its worked
-![](msedge_4QHIt40hHR.gif)
+![](img/msedge_4QHIt40hHR.gif)
 
 Lets now add the same page to the form
-![](msedge_INXFyEnTxt.gif)
+![](img/msedge_INXFyEnTxt.gif)
 
 Lets test to see if that has worked
-![](msedge_DOeeDGlr0s.gif)
+![](img/msedge_DOeeDGlr0s.gif)
 
 ## Conclusion
 By following these steps, you can add a message at the top of every form and view across your Model Driven App that opens a custom page. This approach enhances user experience by providing detailed help or information seamlessly integrated within your app.
