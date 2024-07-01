@@ -1,7 +1,7 @@
 ---
 title: "Build a Basic PCF Field Control"
 description: "Want to get started using the Power Apps Component Framework (PCF), would you like to start building controls. In this blog post we are going to step through the process to building your first component."
-tags: ["How to"]
+tags: ["PCF"]
 categories: ["Power Platform Developer"]
 date: 2024-06-16T19:32:41+01:00
 lastmod: 2024-06-16T19:32:41+01:00
