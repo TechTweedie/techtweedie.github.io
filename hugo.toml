@@ -115,7 +115,7 @@ theme = "FeelIt"
 # Home page config
 [params.home]
   # amount of RSS pages
-  rss = 10
+  rss = 18
   # Home page profile
 [params.home.profile]
   enable = true
@@ -138,7 +138,7 @@ theme = "FeelIt"
 [params.home.posts]
   enable = true
   # special amount of posts in each home posts page
-  paginate = 6
+  paginate = 18
   # display image-preview
   imagePreview = true
   # replaced with hiddenFromHomePage in params.page
