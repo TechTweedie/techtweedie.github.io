@@ -1,14 +1,12 @@
 ---
-title: Power Platform Developer Tools Install Script
-description: Frequently moving between desktop builds, want to be able to get up and running quickly,  I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It's essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.
-slug: Power-Platform-Developer-Tools-Install-Script
-image: feature_original.jpg
-categories:
-  - Power Platform
+title: "Power Platform Developer Tools Install Script"
+description: "Frequently moving between desktop builds, want to be able to get up and running quickly,  I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It's essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform."
 tags:
   - Developer Tools
   - Install Script
   - Automation
+categories:
+  - Power Platform
 date: 2024-05-24
 lastmod: 2024-07-01
 author: "itweedie"
