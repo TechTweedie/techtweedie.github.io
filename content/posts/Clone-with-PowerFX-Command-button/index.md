@@ -1,5 +1,5 @@
 ---
-title: Clone-with-PowerFX-Command-button
+title: "Clone with PowerFX Command button"
 description: "Cloning multiple records within a data view in a Model-Driven App is a common request from end users. It helps them quickly fill out data fields in situations where only a few values differ between records."
 categories:
   - Power Platform
@@ -16,7 +16,7 @@ resources:
 - name: "featuredImage"
   src: "featureImage.png"
 lightgallery: true
-draft: false
+draft: true
 original: "https://helpmewithmy.technology/clone-multiple-records-with-custom-powerfx-button-in-model-driven-app/"
 ---
 ## Introduction
