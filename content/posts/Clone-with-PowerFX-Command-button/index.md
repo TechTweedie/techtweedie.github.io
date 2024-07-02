@@ -83,14 +83,16 @@ In the top left-hand corner, you will see a drop-down box; this allows you to se
 ![](https://helpmewithmy.technology/wp-content/uploads/2024/04/image-9.png)
 
 With **Visible** chosen, copy and paste the following code:
-
+```
 // This is going to show the button as soon as an item is selected.
 !IsEmpty(Self.Selected.AllItems)
+```
 
 This command is essentially verifying that there are items currently selected. If any items are selected, the result will be **true**, indicating that the list of selected items is not empty. Conversely, if no items are selected, the result will be **false**, signifying that the list is empty.
 
 With **OnSelect** chosen, copy and paste the following code:
 
+```
 // We are going to iterate over all items that have been selected in the Table.
 ForAll(
     Self.Selected.AllItems,
@@ -101,6 +103,7 @@ ForAll(
     )
 );
 Notify("The records selected have been cloned.")
+```
 
 Save, Publish, and Test
 
