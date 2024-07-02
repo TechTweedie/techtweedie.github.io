@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Command Bar on Tech Tweedie</title>
+    <link>http://localhost:1313/tags/command-bar/</link>
+    <description>Recent content in Command Bar on Tech Tweedie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jul 2024 19:45:40 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/command-bar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Command Bar to Call Custom Page in Model Driven App</title>
+      <link>http://localhost:1313/posts/command-bar-to-call-custom-page/</link>
+      <pubDate>Sun, 23 Jun 2024 19:32:41 +0100</pubDate>
+      <guid>http://localhost:1313/posts/command-bar-to-call-custom-page/</guid>
+      <description>Introduction Recently, I was asked if it was possible to place a message at the top of every form and view across an entire Model-Driven App. This message would then open a Custom Page that would display more detail. In this Blog post, I explain how this can be achieved and what steps need to be taken.&#xA;For the purposes of this demo, we will call a custom help page from a command button.</description>
+    </item>
+    <item>
+      <title>Clone-with-PowerFX-Command-button</title>
+      <link>http://localhost:1313/posts/clone-with-powerfx-command-button/</link>
+      <pubDate>Mon, 22 Apr 2024 19:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/clone-with-powerfx-command-button/</guid>
+      <description>Introduction Cloning multiple records within a data view in a Model-Driven App is a common request from end users. It helps them quickly fill out data fields in situations where only a few values differ between records.&#xA;In this blog post, we will explore how to add a custom button to the command bar in a Power Apps model-driven application to duplicate multiple records. Power Apps recently introduced this helpful feature, and the best part is that it can be achieved using Power FX, the same language used for developing canvas apps.</description>
+    </item>
+  </channel>
+</rss>
