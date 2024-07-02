@@ -8,9 +8,9 @@ lastmod: 2024-07-01T19:45:40+08:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
-- name: "featuredImage"
+- name: "featured-image"
   src: "featureImage.png"
-- name: "featuredImage"
+- name: "featured-image-preview"
   src: "featureImage.png"
 lightgallery: true
 draft: false
