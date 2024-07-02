@@ -16,7 +16,7 @@ resources:
 - name: "featuredImage"
   src: "featureImage.png"
 lightgallery: true
-draft: true
+draft: false
 original: "https://helpmewithmy.technology/clone-multiple-records-with-custom-powerfx-button-in-model-driven-app/"
 ---
 ## Introduction
