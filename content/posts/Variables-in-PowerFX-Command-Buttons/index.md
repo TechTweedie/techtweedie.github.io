@@ -16,7 +16,7 @@ resources:
   src: "featureImage.jpg"
 - name: "featured-image-preview"
   src: "featureImage.jpg"
-draft: true
+draft: false
 origional: "https://helpmewithmy.technology/using-environment-variables-in-powerfx-command-buttons-in-model-driven-app/"
 ---
 
