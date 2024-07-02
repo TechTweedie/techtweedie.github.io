@@ -30,7 +30,7 @@
       <description>Introduction Frequently moving between desktop builds, want to be able to get up and running quickly, I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&amp;rsquo;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.</description>
     </item>
     <item>
-      <title>Clone-with-PowerFX-Command-button</title>
+      <title>Clone with PowerFX Command button</title>
       <link>http://localhost:1313/posts/clone-with-powerfx-command-button/</link>
       <pubDate>Mon, 22 Apr 2024 19:00:00 +0100</pubDate>
       <guid>http://localhost:1313/posts/clone-with-powerfx-command-button/</guid>

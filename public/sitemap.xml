@@ -38,13 +38,13 @@
     <loc>http://localhost:1313/tags/pcf/</loc>
     <lastmod>2024-06-16T19:32:41+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/how-to/</loc>
-    <lastmod>2020-01-01T16:45:40+08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/how-to-install-hugo-on-windows-11/</loc>
     <lastmod>2020-01-01T16:45:40+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/hugo/</loc>
+    <lastmod>2020-01-01T16:45:40+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/share-knowledge/</loc>
     <lastmod>2020-01-01T16:45:40+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/automation/</loc>
