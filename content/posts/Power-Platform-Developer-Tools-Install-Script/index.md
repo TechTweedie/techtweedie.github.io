@@ -5,6 +5,7 @@ tags:
   - Developer Tools
   - Install Script
   - Automation
+  - PowerShell
 categories:
   - Power Platform
 date: 2024-06-04T17:32:41+01:00
@@ -93,8 +94,6 @@ Feel free to check out the [Power Platform Developer Tools Install Script](http
 
 Happy coding!
 
-## Where Else You Can Find This Post
-
-This post was originally posted on May 24, 2024 my blog https://helpmewithmy.technology, a platform I am currently migrating away from. 
-
-To reach and engage with a broader audience, I've also shared this blog post on several other platforms. You can find and interact with it on:
+## Revisions
+- 2024-07-03: Posted on https://techtweedie.github.io, my new self hosted blog
+- Originally posted on May 24, 2024 my blog https://helpmewithmy.technology, a platform I am currently migrating away from. 

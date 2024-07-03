@@ -6,6 +6,8 @@ categories:
 tags:
   - Command Bar
   - PowerFX
+  - Improve User Experience
+  - Model Driven Apps
 date: 2024-04-22T19:00:00+01:00
 lastmod: 2024-07-01T19:45:40+08:00
 author: "itweedie"

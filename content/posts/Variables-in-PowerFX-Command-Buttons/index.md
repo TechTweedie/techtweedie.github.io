@@ -8,6 +8,8 @@ categories:
 tags:
   - Environment Variable
   - PowerFX
+  - Improve User Experience
+  - Model Driven Apps
 date: 2024-05-
 author: "itweedie"
 authorLink: "https://iantweedie.biz"

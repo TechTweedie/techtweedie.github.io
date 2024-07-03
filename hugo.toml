@@ -12,9 +12,9 @@ theme = "FeelIt"
   # FeelIt theme version
   version = "1.0.X"
   # site description
-  description = "A technology blog exploreing Microsoft Power Platform and related technology"
+  description = "Tech Tweedie offers comprehensive guides and tutorials on Power Platform, Microsoft technologies, and Hugo. Learn how to build PCF controls, install Hugo on Windows 11, and more. Stay updated with our latest posts and in-depth content."
   # site keywords
-  keywords = ["Power Platform", "Microsoft"]
+  keywords = ["Power Platform", "Microsoft", "Hugo", "PCF controls", "Windows 11", "Tech tutorials", "Static site generator", "TypeScript", "HTML", "Web development", "Power Apps", "Power Automate", "Power BI", "Dataverse", "Canvas Apps", "Model-driven Apps", "Power Platform Administration", "Power Platform Integration", "Power Platform Security"]
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   # date format

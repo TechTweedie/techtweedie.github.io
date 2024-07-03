@@ -1,8 +1,12 @@
 ---
 title: "Choose What Dataverse Search Indexes"
 description: "Often I find on dataverse projects users just want to search across a number of tables to find exactly what they want. With the correct configurations, Dataverse search transforms this challenge into a walk in the park. In this blog post we’re are going to look at how you can tailor your Dataverse search indexes using the Quick Find View, ensuring that your searches are efficient but also relevant and quick."
-tags: ["Dataverse Search"]
-categories: ["Power Platform"]
+tags:
+  - Dataverse Search
+  - Model Driven Apps
+  - Improve User Experience
+categories:
+  - Power Platform
 date: 2024-03-26T19:00:00+01:00
 lastmod: 2024-07-01T19:45:40+08:00
 author: "itweedie"
