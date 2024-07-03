@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech Tweedie</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Tech Tweedie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jul 2024 19:45:40 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Command Bar to Call Custom Page in Model Driven App</title>
+      <link>http://localhost:1313/posts/command-bar-to-call-custom-page/</link>
+      <pubDate>Sun, 23 Jun 2024 19:32:41 +0100</pubDate>
+      <guid>http://localhost:1313/posts/command-bar-to-call-custom-page/</guid>
+      <description>Introduction Recently, I was asked if it was possible to place a message at the top of every form and view across an entire Model-Driven App. This message would then open a Custom Page that would display more detail. In this Blog post, I explain how this can be achieved and what steps need to be taken.&#xA;For the purposes of this demo, we will call a custom help page from a command button.</description>
+    </item>
+    <item>
+      <title>Build a Basic PCF Field Control</title>
+      <link>http://localhost:1313/posts/build-a-basic-pcf-field-control/</link>
+      <pubDate>Sun, 16 Jun 2024 19:32:41 +0100</pubDate>
+      <guid>http://localhost:1313/posts/build-a-basic-pcf-field-control/</guid>
+      <description>Introduction Want to get started using the Power Apps Component Framework (PCF), would you like to start building controls. In this blog post we are going to step through the process to building your first component.&#xA;You can watch the accompanying YouTube video here What languages To build out our component, we will be using both TypeScript and HTML. Don&amp;rsquo;t worry if you haven&amp;rsquo;t worked with these before.&#xA;Tools The tools we will be using today will be;</description>
+    </item>
+    <item>
+      <title>How to Install Hugo on Windows 11</title>
+      <link>http://localhost:1313/posts/how-to-install-hugo-on-windows-11/</link>
+      <pubDate>Tue, 04 Jun 2024 17:32:41 +0100</pubDate>
+      <guid>http://localhost:1313/posts/how-to-install-hugo-on-windows-11/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Hugo is a open-source static site generator, designed for speed and flexibility, making it an excellent choice when creating modern websites, blogs, and documentation. In this guide, we&amp;rsquo;ll walk you through the steps to install Hugo on your Windows 11 machine.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Power Platform Developer Tools Install Script</title>
+      <link>http://localhost:1313/posts/power-platform-developer-tools-install-script/</link>
+      <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/power-platform-developer-tools-install-script/</guid>
+      <description>Introduction Frequently moving between desktop builds, want to be able to get up and running quickly, I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&amp;rsquo;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.</description>
+    </item>
+    <item>
+      <title>Clone with PowerFX Command button</title>
+      <link>http://localhost:1313/posts/clone-with-powerfx-command-button/</link>
+      <pubDate>Mon, 22 Apr 2024 19:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/clone-with-powerfx-command-button/</guid>
+      <description>Introduction Cloning multiple records within a data view in a Model-Driven App is a common request from end users. It helps them quickly fill out data fields in situations where only a few values differ between records.&#xA;In this blog post, we will explore how to add a custom button to the command bar in a Power Apps model-driven application to duplicate multiple records. Power Apps recently introduced this helpful feature, and the best part is that it can be achieved using Power FX, the same language used for developing canvas apps.</description>
+    </item>
+    <item>
+      <title>Choose What Dataverse Search Indexes</title>
+      <link>http://localhost:1313/posts/choose-what-dataverse-search-indexes/</link>
+      <pubDate>Tue, 26 Mar 2024 19:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/choose-what-dataverse-search-indexes/</guid>
+      <description>Introduction Often I find on dataverse projects users just want to search across a number of tables to find exactly what they want.&#xA;With the correct configurations, Dataverse search transforms this challenge into a walk in the park. In this blog post we’re are going to look at how you can tailor your Dataverse search indexes using the Quick Find View, ensuring that your searches are efficient but also relevant and quick.</description>
+    </item>
+    <item>
+      <title>Streamlining Webhook Testing</title>
+      <link>http://localhost:1313/posts/steamlining-webhook-testing/</link>
+      <pubDate>Fri, 09 Feb 2024 19:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/steamlining-webhook-testing/</guid>
+      <description>Streamlining Webhook Testing with Webhook.site I often find myself undertaking some form of prototyping or investigation. For instance lets say I am publishing an end point for a client to connect to via a HTTP call, often also referred to as a web hook.&#xA;One such issue this can introjuce is being able to see what is the actual request been made.&#xA;I came across Webhook.site, which has proved particularly useful in testing and troubleshooting webhooks.</description>
+    </item>
+    <item>
+      <title>Variables in PowerFX Command Buttons</title>
+      <link>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</guid>
+      <description>Introduction Have you ever wondered if you can use Environment Variables in a PowerFX button, how to create a custom email link button in the command bar of your Power Apps model-driven application using environment variables and Power FX? Luckily, Power Apps has recently made it possible to achieve this. With the help of Power FX, which is the same language used in canvas app development, anyone can efficiently customise their app’s command bar without needing prior knowledge of JavaScript or the Ribbon Workbench.</description>
+    </item>
+  </channel>
+</rss>

@@ -7,8 +7,8 @@ tags:
   - Automation
 categories:
   - Power Platform
-date: 2024-05-24
-lastmod: 2024-07-01
+date: 2024-06-04T17:32:41+01:00
+lastmod: 2020-01-01T16:45:40+08:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:

@@ -38,7 +38,10 @@
     <loc>http://localhost:1313/tags/pcf/</loc>
     <lastmod>2024-06-16T19:32:41+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/how-to/</loc>
+    <loc>http://localhost:1313/tags/automation/</loc>
+    <lastmod>2020-01-01T16:45:40+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/developer-tools/</loc>
     <lastmod>2020-01-01T16:45:40+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/how-to-install-hugo-on-windows-11/</loc>
@@ -47,17 +50,14 @@
     <loc>http://localhost:1313/categories/hugo/</loc>
     <lastmod>2020-01-01T16:45:40+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/automation/</loc>
-    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/developer-tools/</loc>
-    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/install-script/</loc>
-    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-01T16:45:40+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/power-platform-developer-tools-install-script/</loc>
-    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-01T16:45:40+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/share-knowledge/</loc>
+    <lastmod>2020-01-01T16:45:40+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/clone-with-powerfx-command-button/</loc>
     <lastmod>2024-07-01T19:45:40+08:00</lastmod>
@@ -79,5 +79,9 @@
   </url><url>
     <loc>http://localhost:1313/tags/webhook-testing/</loc>
     <lastmod>2024-07-01T19:45:40+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/environment-variable/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</loc>
   </url>
 </urlset>
