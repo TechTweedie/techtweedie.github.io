@@ -12,9 +12,9 @@ lastmod: 2020-01-01T16:45:40+08:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
-- name: "featuredImage"
+- name: "featured-image"
   src: "featureImage.jpg"
-- name: "featuredImagePreview"
+- name: "featured-image-preview"
   src: "featureImage.jpg"
 lightgallery: true
 draft: false
