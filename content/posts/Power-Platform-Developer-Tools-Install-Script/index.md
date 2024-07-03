@@ -13,9 +13,9 @@ author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
 - name: "featuredImage"
-  src: "featureImage.png"
+  src: "featureImage.jpg"
 - name: "featuredImagePreview"
-  src: "featureImage.png"
+  src: "featureImage.jpg"
 lightgallery: true
 draft: false
 original: "https://helpmewithmy.technology/power-pages-developer-tools-install-script/"

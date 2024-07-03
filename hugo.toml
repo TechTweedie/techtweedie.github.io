@@ -12,9 +12,9 @@ theme = "FeelIt"
   # FeelIt theme version
   version = "1.0.X"
   # site description
-  description = "This is My New Hugo Site"
+  description = "A technology blog exploreing Microsoft Power Platform and related technology"
   # site keywords
-  keywords = ["Theme", "Hugo"]
+  keywords = ["Power Platform", "Microsoft"]
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   # date format
@@ -124,7 +124,7 @@ theme = "FeelIt"
   # URL of avatar shown in home page
   #avatarURL = "/logo-01_150x150_white.png"
   # title shown in home page (HTML format is supported)
-  #title = "Tech Tweedie Title"
+  title = "Tech Tweedie Blog"
   # subtitle shown in home page
   subtitle = "A technology blog empowering your digital journey"
   # whether to use typeit animation for subtitle
@@ -149,7 +149,7 @@ theme = "FeelIt"
   GitHub = "itweedie"
   inkedin = "iantweedie"
   Twitter = "itweedie"
-  Medium = "itweedie"
+  Medium = "@ian.tweedie"
   Gitlab = ""
   Youtubelegacy = ""
   Youtubecustom = ""
