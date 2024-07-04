@@ -1,5 +1,5 @@
 ---
-title: "oAuth on Postman"
+title: "Azure B2C oAuth on Postman"
 description: "I had a problem where I needed to get my JWT token from Azure B2C OAuth 2.0 in order to troubleshoot an issue I was having in getting OAuth 2.0 working."
 tags:
   - JWT Token
