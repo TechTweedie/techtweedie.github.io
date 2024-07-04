@@ -11,9 +11,9 @@ author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
 - name: "featured-image"
-  src: "hugo-logo-wide.png"
+  src: "featureImage.png"
 - name: "featured-image-preview"
-  src: "hugo-logo-wide.png"
+  src: "featureImage.png"
 lightgallery: true
 draft: false
 ---
