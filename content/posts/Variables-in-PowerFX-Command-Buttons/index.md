@@ -10,7 +10,7 @@ tags:
   - PowerFX
   - Improve User Experience
   - Model Driven Apps
-date: 2024-05-
+date: 2024-05-24
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
@@ -24,7 +24,7 @@ origional: "https://helpmewithmy.technology/using-environment-variables-in-power
 
 ## Introduction
 
-Have you ever wondered if you can use Environment Variables in a PowerFX button, how to create a custom email link button in the command bar of your Power Apps model-driven application using environment variables and Power FX? Luckily, Power Apps has recently made it possible to achieve this. With the help of Power FX, which is the same language used in canvas app development, anyone can efficiently customise their app’s command bar without needing prior knowledge of JavaScript or the Ribbon Workbench.
+Have you ever wondered if you can use Environment Variables in a PowerFX button, how to create a custom email link button in the command bar of your Power Apps model-driven application using environment variables and Power FX? Luckily, Power Apps has made it possible to achieve this. With the help of Power FX, which is the same language used in canvas app development, anyone can efficiently customise their app’s command bar without needing prior knowledge of JavaScript or the Ribbon Workbench.
 
 In this blog post, we’ll guide you through the steps involved in customising the command bar of your Power Apps model-driven app. You’ll learn how to use environment variables to create a button that dynamically generates email links. This capability provides users with greater control over their app interfaces and streamlines their interactions, making operations within the app more effective and tailored to specific needs.
 
@@ -179,7 +179,6 @@ Implementing a custom PowerFX button in model-driven apps can help you clone mul
 
 ## Where Else You Can Find This Post
 
-This post was originally posted on May 24, 2024 my blog https://helpmewithmy.technology, a platform I am currently migrating away from. 
+- This post was originally posted on May 24, 2024 my blog https://helpmewithmy.technology, a platform I am currently migrating away from. 
 
-To reach and engage with a broader audience, I've also shared this blog post on several other platforms. You can find and interact with it on:
 

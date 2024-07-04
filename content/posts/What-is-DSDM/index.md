@@ -2,9 +2,10 @@
 title: "What is DSDM"
 description: "Since the mid-1990s, the Dynamic Systems Development Method (DSDM) has been a cornerstone in agile project management, reshaping how businesses approach project delivery. Unlike traditional methods that stick rigidly to specifications and schedules, DSDM champions flexibility, efficiency, and active stakeholder involvement. This framework empowers organizations to adapt swiftly to changing requirements while keeping projects on time and within budget."
 categories:
-  - Agile
+  - Digital Transformation
 tags:
   - Work smarter
+  - Agile
 date: 2024-02-05T19:32:41+01:00
 lastmod: 2024-07-03T19:32:41+01:00
 author: "itweedie"
@@ -15,7 +16,7 @@ resources:
 - name: "featured-image-preview"
   src: "featureImage.png"
 lightgallery: true
-draft: false
+draft: true
 origional: https://helpmewithmy.technology/what-is-dsdm/
 ---
 
