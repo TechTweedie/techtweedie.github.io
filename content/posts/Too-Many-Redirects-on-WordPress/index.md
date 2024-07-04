@@ -1,5 +1,5 @@
 ---
-title: "Too-Many-Redirects-on-WordPress"
+title: "Too Many Redirects on WordPress"
 description: "I recently set up a new WordPress website for a friend. It was late one evening, and I was in a bit of a rush; as with many people online, I chose to use Cloudflare to protect the website."
 tags:
   - WordPress
@@ -34,7 +34,7 @@ So far so good.
 
 Then I continued to edit the site before handing it over to my friend; however, I noticed I was getting load errors.
 
-Checking some of the settings, I noticed that both the _WordPress Address (URL)_ and _Site Address (URL)_ were set to _http://a.wordpress-website.com_. I changed them to _https://a.wordpress-website.com._ To my annoyance, when I did, I was met with ERR_TOO_MANY_REDIRECTS.
+Checking some of the settings, I noticed that both the _WordPress Address (URL)_ and _Site Address (URL)_ were set to `http://a.wordpress-website.com`. I changed them to `https://a.wordpress-website.com`. To my annoyance, when I did, I was met with ERR_TOO_MANY_REDIRECTS.
 
 This error occurs when a webpage gets stuck in a loop of continuous redirects, making it impossible to access the desired content.
 
@@ -43,7 +43,7 @@ What had I done wrong?  In this post, I run through the steps I took to underst
 ## Some of the reasons why this problem can occur
 
 1. **Something local:** It could be because of some issue local to my device, something browser/client-based.
-2. **Redirect loops:** This is where _[https://a.wordpress-website.com](https://a.wordpress-website.com/)_ points to _[https://b.wordpress-website.com](https://b.wordpress-website.com/),_ which then, in turn points the user back to _[https://a. wordpress-website.com](https://a.%20wordpress-website.com/)_
+2. **Redirect loops:** This is where `https://a.wordpress-website.com` points to `https://b.wordpress-website.com`, which then, in turn points the user back to `https://a.wordpress-website.com`
 3. **A misconfiguration SSL/TLS Encryption mode:** Your domain’s SSL/TLS Encryption mode controls how Cloudflare connects to your origin server and how SSL certificates presented by your origin will be validated.
 4. **Various Edge Certificates settings:**  If you enable Always Use HTTPS for your domain, Cloudflare will automatically redirect all HTTP requests to HTTPS for every subdomain and host in your application.
 
