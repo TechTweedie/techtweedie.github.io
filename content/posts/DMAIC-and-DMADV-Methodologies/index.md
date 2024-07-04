@@ -16,7 +16,7 @@ resources:
 - name: "featured-image-preview"
   src: "featureImage.png"
 lightgallery: true
-draft: false
+draft: true
 origional: https://helpmewithmy.technology/mastering-six-sigma-a-deep-dive-into-dmaic-and-dmadv-methodologies/
 ---
 
