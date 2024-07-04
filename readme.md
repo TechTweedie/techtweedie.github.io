@@ -4,6 +4,8 @@ Welcome to the repository for TechTweedie Blog, a blog dedicated to sharing insi
 ## About the Blog
 TechTweedie Blog aims to provide valuable content for tech enthusiasts, developers, and anyone interested in staying updated with the ever-evolving world of technology. From detailed tutorials to thought-provoking articles, we cover a wide range of topics to help our readers stay ahead of the curve.
 
+This blog has been migrated from an earlier blog hosed on https://helpmewithmy.technology
+
 ## Useful tools for creating your blog
 Creating a polished and professional blog involves using various tools to enhance its functionality, design, and user experience. Here are some useful tools that can help you in creating and maintaining your blog:
 
