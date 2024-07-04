@@ -4,8 +4,7 @@ description: "In the realm of solution architecture, recognising potential risks
 categories:
   - Digital Transformation
 tags:
-  - Work smarter
-  - Six Sigma
+  - Technical Architecture
 date: 2022-10-09T19:32:41+01:00
 lastmod: 2024-07-03T19:32:41+01:00
 author: "itweedie"
