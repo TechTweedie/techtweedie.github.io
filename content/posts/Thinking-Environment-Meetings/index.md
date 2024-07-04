@@ -71,3 +71,7 @@ The adoption of this meeting structure led to significant improvements:
 ## Conclusion
 
 The integration of a Thinking Environment with the reflective practice of retrospectives offers a powerful framework for conducting team meetings. This approach not only ensures that team members feel valued and heard but also facilitates a deeper understanding of team dynamics and challenges. The real-life example provided demonstrates the potential for such meetings to enhance productivity, foster a positive team culture, and drive continuous improvement. By adopting this meeting structure, teams can create a more engaging, effective, and thoughtful working environment that propels them towards their goals.
+
+## Revisions and Publications 
+- First published on https://helpmewithmy.technology on 2022-12-18
+- Migrated to new blog https://techtweedie.github.io on 2024-01-03
