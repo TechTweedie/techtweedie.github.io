@@ -1,5 +1,5 @@
 ---
-title: "Azure B2C oAuth on Postman"
+title: "Postman to Azure Table Storage"
 description: "This post is an example of how I posted data to Azure Table storage from Postman."
 tags:
   - Postman
