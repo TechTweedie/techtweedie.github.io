@@ -1,6 +1,6 @@
 ---
 title: "Azure Function with Azure B2C"
-description: "This post is an example of how I posted data to Azure Table storage from Postman."
+description: "Azure functions are a very handy way of getting something small done very quickly. Often these have to be secured and sometimes with an identity provider that is not stright out of the box."
 tags:
   - Azure Function
   - Azure B2C
