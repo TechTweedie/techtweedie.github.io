@@ -1,14 +1,13 @@
 ---
-title: "Choose What Dataverse Search Indexes"
-description: "Often I find on dataverse projects users just want to search across a number of tables to find exactly what they want. With the correct configurations, Dataverse search transforms this challenge into a walk in the park. In this blog post we’re are going to look at how you can tailor your Dataverse search indexes using the Quick Find View, ensuring that your searches are efficient but also relevant and quick."
+title: "Create a Solution Configuration File"
+description: "Want to deploy your Power Apps Solution files quickly via Pipelines? Not sure how to set your environment variable or connection references.  This blog post will explain how we solved this problem using a Solution Configuration File. "
 tags:
-  - Dataverse Search
+  - Pipeline
   - Model Driven Apps
-  - Improve User Experience
 categories:
   - Power Platform
-date: 2024-03-26T19:00:00+01:00
-lastmod: 2024-07-01T19:45:40+08:00
+date: 2024-02-07T19:00:00+01:00
+lastmod: 2024-07-071T19:45:40+08:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
@@ -22,47 +21,85 @@ original: "https://helpmewithmy.technology/how-to-choose-what-dataverse-search-i
 ---
 ## Introduction
 
-Often I find on dataverse projects users just want to search across a number of tables to find exactly what they want.
+Want to deploy your Power Apps Solution files quickly via Pipelines? Not sure how to set your environment variable or connection references.  This blog post will explain how we solved this problem using a Solution Configuration File. 
 
-With the correct configurations, Dataverse search transforms this challenge into a walk in the park. In this blog post we’re are going to look at how you can tailor your Dataverse search indexes using the Quick Find View, ensuring that your searches are efficient but also relevant and quick.
+## Understanding the Need for a Solution Settings File
 
->Note; the configuration for Power Pages is slightly different.
+A solution settings file is crucial when your solution involves environment variables or connection references. Without it, you might end up with configurations that do not carry over the intended values, leading to solutions that don’t behave as expected in different environments.
 
-## The Essence of Quick Find View
+## Steps
 
-At the heart of configuring what Dataverse indexes in searches lies the Quick Find View. This allows you to define defining searchable fields in Dataverse, your changes here directly impact what becomes searchable.
+- **Download your solution**
+Download either a managed or unmanaged copy of your solution.
+- **Generate the Settings File**
+Use the Power Apps CLI (Command Line Interface) to create your settings file. Execute the following command, adjusting the file names as necessary:
 
-## Selecting Searchable Fields (Find Columns)
+```powershell
+pac solution create-settings --solution-zip .\\YourSolution_managed.zip --settings-file .\\YourSettings.json
+```
 
-To configure fields to become searchable, select them as Find Columns. To select them just go to the Quick Find view for the table, and then locate the Find by section in the lower right hand corner of the screen. You can Edit the find table columns there.
+- This command generates a YourSettings.json file, which might look something like this initially:
 
-![](https://helpmewithmy.technology/wp-content/uploads/2024/03/image.png)
+```json
+{
+  "EnvironmentVariables": [
+    {
+      "SchemaName": "your_schema_name",
+      "Value": ""
+    }
+  ],
+  "ConnectionReferences": [
+    {
+      "LogicalName": "your_logical_name",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/your_connector"
+    }
+  ]
+}
 
-However, it’s worth noting that not all fields are supported for Dataverse search. Currently only text fields, lookups, and option sets are in.
+```
 
-That being said; if you had the account table indexed and included the primary contact lookup. If the selected row in a look up was to change (e.g. the name of a primary contact in the contacts table) and the contact table itself was not in the index, the new value won't sync to the Dataverse search index.
+- **Populate Environment Variable Values**
+You can directly edit the `YourSettings.json` file to include the appropriate values. For environment variables, which are typically straightforward text values, it’s as simple as inserting the desired content:
 
-## Currency Fields and Facets
+```json
+"EnvironmentVariables": [
+  {
+    "SchemaName": "your_schema_name",
+    "Value": "Your Custom Message"
+  }
+]
 
-If you need to return search results with the currency symbol? Make sure to include currency fields in your Find Columns. And for those looking to refine search results further, leverage facets. Dataverse search allows up to four facetable fields (from your View columns) as facets, adding a layer of filtering to aid users in narrowing down their search results. By default, the first four facetable fields in the Quick Find View for the selected table are displayed as facets when users search by using Dataverse search. At any time, you can only have four fields selected as facets.
+```
 
-## Syncing and Maintenance
+- **Update Connection References**
+    
+    To fill in the connection references:
+    
+    - Navigate to [make.powerapps.com](https://helpmewithmy.technology/how-to-create-a-solution-settings-file-in-microsoft-power-platform/), select your target environment, and then go to Dataverse > Connections. Either create a new connection or use an existing one that matches your needs. Once your connection is set up, find its Connection ID in the URL and update your settings file accordingly. Make sure you share the connection with the service account that will be importing the connection.
+    
+    Your final `ConnectionReferences` section should resemble this:
+    
 
-Patience is key when it comes to updates. Changes to the Dataverse search configuration or searchable data might take a moment to reflect—up to 15 minutes for search services and potentially longer for a full sync, depending on your organization's size.
+```json
+"ConnectionReferences": [
+  {
+    "LogicalName": "your_logical_name",
+    "ConnectionId": "your_connection_id",
+    "ConnectorId": "/providers/Microsoft.PowerApps/apis/your_connector"
+  }
+]
 
-## Length and Indexed Attributes
+```
 
-Beware of the limits! The length of text in a table column set to Simple Search View must not exceed 1700 bytes. Exceed this, and you might face import errors. If you encounter this, consider reviewing and adjusting the length of your indexed attributes.
+- **Import the Updated Solution**
+With your settings file populated, import the solution back into Power Apps using the CLI or a Pipeline. This command updates your solution in the target environment with the specified environment variable and connection reference values.
 
-## Default Fields
+```powershell
+pac solution import --path .\YourSolution_managed.zip --settings-file .\YourSettings.json
 
-Some fields automatically become part of the Dataverse search index—like **ownerid** and **name**. These common fields, once added to any table, are searchable across all entities, streamlining the search process.
+```
 
-## Key Takeaways
+## Conclusion
 
-- **Flexibility**: The Quick Find View offers incredible flexibility in configuring your Dataverse search, allowing you to select precisely what gets indexed.
-- **Considerations**: While flexibility is great, it's essential to be mindful of the fields and data types included in your Quick Find View, focusing on those that support efficient searching.
-- **Patience for Updates**: Remember, changes to your configuration may take some time to reflect in the search results.
-- **Limits and Lengths**: Keep an eye on the limits, especially with indexed attributes to avoid errors.
-
-By carefully selecting what Dataverse indexes in its searches, you can significantly enhance the search experience within your organization. This doesn’t just make finding information easier but transforms the way you navigate and utilize your data in Dataverse. Happy indexing, and here’s to searches that bring exactly what you’re looking for, right to your fingertips!
+By following these steps, you’ve successfully created and configured a solution settings file, tailoring your Power Platform solution to meet the specific needs of its deployment environment. This process not only ensures that your solutions are portable but also maintains consistency across different environments, making your Power Platform development more efficient and reliable.
