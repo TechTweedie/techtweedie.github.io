@@ -36,7 +36,7 @@ Download either a managed or unmanaged copy of your solution.
 Use the Power Apps CLI (Command Line Interface) to create your settings file. Execute the following command, adjusting the file names as necessary:
 
 ```powershell
-pac solution create-settings --solution-zip .\\YourSolution_managed.zip --settings-file .\\YourSettings.json
+pac solution create-settings --solution-zip .\YourSolution_managed.zip --settings-file .\YourSettings.json
 ```
 
 - This command generates a YourSettings.json file, which might look something like this initially:
