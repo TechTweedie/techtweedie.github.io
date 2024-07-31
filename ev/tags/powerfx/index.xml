@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerFX on Tech Tweedie</title>
+    <link>http://localhost:1313/tags/powerfx/</link>
+    <description>Recent content in PowerFX on Tech Tweedie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jul 2024 19:45:40 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/powerfx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clone with PowerFX Command button</title>
+      <link>http://localhost:1313/posts/clone-with-powerfx-command-button/</link>
+      <pubDate>Mon, 22 Apr 2024 19:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/clone-with-powerfx-command-button/</guid>
+      <description>Introduction Cloning multiple records within a data view in a Model-Driven App is a common request from end users. It helps them quickly fill out data fields in situations where only a few values differ between records.&#xA;In this blog post, we will explore how to add a custom button to the command bar in a Power Apps model-driven application to duplicate multiple records. Power Apps recently introduced this helpful feature, and the best part is that it can be achieved using Power FX, the same language used for developing canvas apps.</description>
+    </item>
+    <item>
+      <title>Variables in PowerFX Command Buttons</title>
+      <link>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</guid>
+      <description>Introduction Have you ever wondered if you can use Environment Variables in a PowerFX button, how to create a custom email link button in the command bar of your Power Apps model-driven application using environment variables and Power FX? Luckily, Power Apps has recently made it possible to achieve this. With the help of Power FX, which is the same language used in canvas app development, anyone can efficiently customise their app’s command bar without needing prior knowledge of JavaScript or the Ribbon Workbench.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Tech Tweedie</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Tech Tweedie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jul 2024 19:45:40 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Command Bar</title>
+      <link>http://localhost:1313/tags/command-bar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/command-bar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Custom Page</title>
+      <link>http://localhost:1313/tags/custom-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/custom-page/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JavaScript</title>
+      <link>http://localhost:1313/tags/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Model Driven App</title>
+      <link>http://localhost:1313/tags/model-driven-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/model-driven-app/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PCF</title>
+      <link>http://localhost:1313/tags/pcf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/pcf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Share Knowledge</title>
+      <link>http://localhost:1313/tags/share-knowledge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/share-knowledge/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automation</title>
+      <link>http://localhost:1313/tags/automation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Developer Tools</title>
+      <link>http://localhost:1313/tags/developer-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/developer-tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Install Script</title>
+      <link>http://localhost:1313/tags/install-script/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/install-script/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PowerFX</title>
+      <link>http://localhost:1313/tags/powerfx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/powerfx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dataverse Search</title>
+      <link>http://localhost:1313/tags/dataverse-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/dataverse-search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Webhook Testing</title>
+      <link>http://localhost:1313/tags/webhook-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/webhook-testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Environment Variable</title>
+      <link>http://localhost:1313/tags/environment-variable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/environment-variable/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

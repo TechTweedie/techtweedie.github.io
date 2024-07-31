@@ -32,7 +32,7 @@
     <item>
       <title>Power Platform Developer Tools Install Script</title>
       <link>http://localhost:1313/posts/power-platform-developer-tools-install-script/</link>
-      <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 04 Jun 2024 17:32:41 +0100</pubDate>
       <guid>http://localhost:1313/posts/power-platform-developer-tools-install-script/</guid>
       <description>Introduction Frequently moving between desktop builds, want to be able to get up and running quickly, I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&amp;rsquo;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.</description>
     </item>
@@ -56,6 +56,13 @@
       <pubDate>Fri, 09 Feb 2024 19:00:00 +0100</pubDate>
       <guid>http://localhost:1313/posts/steamlining-webhook-testing/</guid>
       <description>Streamlining Webhook Testing with Webhook.site I often find myself undertaking some form of prototyping or investigation. For instance lets say I am publishing an end point for a client to connect to via a HTTP call, often also referred to as a web hook.&#xA;One such issue this can introjuce is being able to see what is the actual request been made.&#xA;I came across Webhook.site, which has proved particularly useful in testing and troubleshooting webhooks.</description>
+    </item>
+    <item>
+      <title>Variables in PowerFX Command Buttons</title>
+      <link>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</guid>
+      <description>Introduction Have you ever wondered if you can use Environment Variables in a PowerFX button, how to create a custom email link button in the command bar of your Power Apps model-driven application using environment variables and Power FX? Luckily, Power Apps has recently made it possible to achieve this. With the help of Power FX, which is the same language used in canvas app development, anyone can efficiently customise their app’s command bar without needing prior knowledge of JavaScript or the Ribbon Workbench.</description>
     </item>
   </channel>
 </rss>
