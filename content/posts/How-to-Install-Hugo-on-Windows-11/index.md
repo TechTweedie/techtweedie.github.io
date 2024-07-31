@@ -71,37 +71,41 @@ You should see a message displaying the version of Hugo that you installed.
 
 Now that Hugo is installed, you can create your first site.
 
-1. Open Command Prompt.
-2. Navigate to the directory where you want to create your new site.
-3. Run the following command to create a new site:
+### 1. Open Command Prompt.
+Open Command Prompt, navigate to the directory where you want to create your new site.
+
+### 2. Run the following command to create a new site:
 
 ```sh
 hugo new site mynewsite
 ```
 
-4. Navigate into your new site directory:
+### 3. Navigate into your new site directory:
 
 ```sh
 cd mynewsite
 ```
 
-5. Initialize a new Git repository (optional but recommended):
+### 4. Initialize a new Git repository (optional but recommended):
 
 ```sh
 git init
 ```
 
-6. Add a theme to your site. You can find many themes on the [Hugo Themes website](https://themes.gohugo.io/). For example, to add the PaperMod theme:
+### 5. Add a theme to your site. 
+You can find many themes on the [Hugo Themes website](https://themes.gohugo.io/). For example, to add the PaperMod theme:
 ```sh
 git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 ```
 
-7. Then edit your hugo.toml file to add in your theme information by adding the following line
+### 6. Then edit your config file
+Navigate to the hugo.toml file to add in your theme information by adding the following line
 ```toml
 theme = 'PaperMod'
 ```
 
-8. Finally create some new posts by running the following command 
+### 7. Add a post
+Finally create some new posts by running the following command 
 
 ```bash
 hugo new content/posts/post_one.md
