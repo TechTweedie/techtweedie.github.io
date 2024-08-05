@@ -122,7 +122,9 @@ Inside your content folder, locate your posts, update them and set draft status 
 
 ```
 # Welcome to Hugo!
-Hugo is a fast and flexible static site generator built with love by [bep](https://github.com/bep), [spf13](https://github.com/spf13), and [friends](https://github.com/gohugoio/hugo/graphs/contributors). Below is a demonstration of various features you can use in your Hugo site.
+Hugo is a fast and flexible static site generator built with love by [bep](https://github.com/bep),
+ [spf13](https://github.com/spf13), and [friends](https://github.com/gohugoio/hugo/graphs/contributors). 
+ Below is a demonstration of various features you can use in your Hugo site.
 
 ## Headings
 
