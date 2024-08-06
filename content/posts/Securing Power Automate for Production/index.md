@@ -7,7 +7,7 @@ tags:
 categories:
   - Power Platform
 date: 2024-08-05T19:00:00+01:00
-lastmod: 2024-08-05T19:00:00+01:00
+lastmod: 2024-08-06T06:00:00+01:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
@@ -71,7 +71,7 @@ We need to acknowledge the potential for a breach and prepare to minimise the da
 
 **Do** - have a balanced approach, split up the accounts that are interacting with the workload and the account that is used to manage 
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ## Final thoughts
 
@@ -83,6 +83,6 @@ When considering your approach think carefully about what the risk really is, wh
 
 **Easy to understand** - How can you make it as easy as possible to understand for the next person? What could you do to help them troubleshoot future problems?
 
-## Continual Improvement and Adaptation
+## Continual Improvement
 
 It's important to keep in mind that the digital landscape, along with digital tools and security threats, is constantly changing. It's crucial to stay updated on the latest best practices, updates, and potential vulnerabilities. Regularly review and improve your processes, involve your team in discussions as many brains are better than one. By fostering a culture of continuous improvement and adaptation, you can better safeguard your business applications and ensure that your Power Automate flows remain robust, secure, and efficient.
