@@ -154,3 +154,12 @@ theme = "FeelIt"
   Youtubelegacy = ""
   Youtubecustom = ""
   Youtubechannel = "UCy1a2QSDVZNDwZf7KbNmoHQ"
+
+
+# Analytics config
+[params.analytics]
+  enable = false
+  # GoatCounter Analytics
+  [params.analytics.goatcounter]
+    # GoatCounter code
+      code = "techtweedie"
