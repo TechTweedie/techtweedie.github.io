@@ -155,6 +155,8 @@ theme = "FeelIt"
   Youtubecustom = ""
   Youtubechannel = "UCy1a2QSDVZNDwZf7KbNmoHQ"
 
+[params.verification]
+  google = "RdrM_Wy7kjSKfZ60eioMesOe_pWuxmzRt_LS5jkcTH4"
 
 # Analytics config
 [params.analytics]
@@ -163,3 +165,34 @@ theme = "FeelIt"
   [params.analytics.goatcounter]
     # GoatCounter code
       code = "techtweedie"
+
+# Social share links in post page
+[params.page.share]
+    enable = true
+    Twitter = true
+    Facebook = true
+    Linkedin = true
+    Whatsapp = true
+    Pinterest = false
+    Tumblr = false
+    HackerNews = true
+    Reddit = false
+    VK = false
+    Buffer = false
+    Xing = false
+    Line = true
+    Instapaper = false
+    Pocket = false
+    Digg = false
+    Stumbleupon = false
+    Flipboard = false
+    Weibo = true
+    Renren = false
+    Myspace = false
+    Blogger = false
+    Baidu = false
+    Odnoklassniki = false
+    Evernote = false
+    Skype = false
+    Trello = false
+    Mix = false
