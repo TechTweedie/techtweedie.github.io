@@ -160,7 +160,7 @@ theme = "FeelIt"
 
 # Analytics config
 [params.analytics]
-  enable = false
+  enable = true
   # GoatCounter Analytics
   [params.analytics.goatcounter]
     # GoatCounter code
