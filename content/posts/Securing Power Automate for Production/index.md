@@ -55,7 +55,9 @@ When interacting with Dataverse from Power Automate Flow, utilise application re
 
 It can be really tough to figure out which automation caused a value to change, especially when all the Power Automate flows are running under the same user account. It's even harder if that user is one of your everyday users.
 
-Therefore, consider creating different application users for various types of activities. The usernames will then appear on the records within Dataverse under "created by" or "modified by.” 
+Therefore, consider creating different application users for various types of activities. 
+
+The usernames will then appear on the records within Dataverse under "created by", "modified by", or in the audit history if it's switched on. 
 
 ### Use App Registrations whenever possible
 
