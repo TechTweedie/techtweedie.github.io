@@ -12,7 +12,7 @@ theme = "FeelIt"
   # FeelIt theme version
   version = "1.0.X"
   # site description
-  description = "Tech Tweedie offers comprehensive guides and tutorials on Power Platform, Microsoft technologies, and Hugo. Learn how to build PCF controls, install Hugo on Windows 11, and more. Stay updated with our latest posts and in-depth content."
+  description = "Beyond the low code, Tech Tweedie offers comprehensive guides and tutorials on Power Platform, Microsoft technologies, and Hugo. Learn how to build PCF controls, install Hugo on Windows 11, and more. Stay updated with our latest posts and in-depth content."
   # site keywords
   keywords = ["Power Platform", "Microsoft", "Hugo", "PCF controls", "Windows 11", "Tech tutorials", "Static site generator", "TypeScript", "HTML", "Web development", "Power Apps", "Power Automate", "Power BI", "Dataverse", "Canvas Apps", "Model-driven Apps", "Power Platform Administration", "Power Platform Integration", "Power Platform Security"]
   # site default theme ("light", "dark", "auto")
@@ -73,7 +73,7 @@ theme = "FeelIt"
   # Site creation time
   since = 2019
   # license info (HTML format is supported)
-  license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+  license = ''
 
 
 [menu]
@@ -126,7 +126,7 @@ theme = "FeelIt"
   # title shown in home page (HTML format is supported)
   title = "Tech Tweedie Blog"
   # subtitle shown in home page
-  subtitle = "A technology blog empowering your digital journey"
+  subtitle = "Beyond the low code..."
   # whether to use typeit animation for subtitle
   typeit = true
   # whether to show social links
