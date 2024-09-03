@@ -27,6 +27,9 @@ These are all situations I have been in over the last few years, and having a Pi
 
 Today am going to take you through how to create a DevOps Pipeline to backup your environment.
 
+**You can watch the accompanying YouTube video here**
+{{< youtube 18tm0wQE1DY >}}
+
 ## Prerequisites for Setting Up a Pipeline in Azure DevOps to Export a Solution from Dataverse
 
 1. **Azure DevOps Organization**: 
