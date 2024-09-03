@@ -17,7 +17,6 @@ resources:
 - name: "featured-image-preview"
   src: "featureImage.png"
 lightgallery: true
-draft: true
 ---
 
 
@@ -27,6 +26,24 @@ Ever wondered what would happen if you lost your development environment? How do
 These are all situations I have been in over the last few years, and having a Pipeline in place to ensure backup of your hard work is extremely important. That historical record can save you many hours.
 
 Today am going to take you through how to create a DevOps Pipeline to backup your environment.
+
+## Prerequisites for Setting Up a Pipeline in Azure DevOps to Export a Solution from Dataverse
+
+1. **Azure DevOps Organization**: 
+   - Ensure you have an Azure DevOps organization. If not, you can create one for free here.
+
+2. **Azure Repos**: 
+   - A repository where your pipeline code will reside. 
+
+3. **Dataverse Environment**: 
+   - Ensure you have access to the Dataverse environment from which you want to export the solution.
+
+4. **Service Principal**: 
+   - Create a service principal in Azure Active Directory (AAD) with the necessary permissions to access Dataverse.
+
+5. **Power Platform Build Tools**: 
+   - Install the Power Platform Build Tools extension in Azure DevOps. This extension provides tasks to automate common build and deployment activities related to Power Platform.
+
 
 ## Create our backup pipeline
 ### Step 1: Navigate to the Pipelines Screen
