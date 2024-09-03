@@ -71,10 +71,12 @@ Trying again we can now see our pipeline ran successfully. We now have a working
 ![](vid6.gif)
 
 ### Step 7: Lets edit our pipeline
+We now need to edit our pipeline, and start adding the actions to export our components from dataverse.
 ![](vid7.gif)
 
 ### Step 8
-We are going to set the name and some variables 
+Next we are going to set the name and some variables to the below; 
+
 ```yaml
 name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
 
@@ -89,11 +91,36 @@ variables:
 
 ![](vid8.gif)
 
-### Step 9
+### Step 9: Set a sechedule for our pipeline
+Then we are going to set a schedule for our pipeline to trigger on. In this example it will trigger at midnight, 1pm, 6pm, Monday to Friday every week. 
+
+```yaml
+schedules:
+  - cron: 0 13,18 * * 1-5
+    displayName: Weekday Backup
+    branches:
+      include:
+        - main
+    always: true
+```
+
 ![](step9-set_schedule_dataverse_backup.gif)
 
-### Step 10
-Update our variables
+### Step 10: Update our variables
+Next we need to update our variables, with value to link the pipeline to our environment.
+
+In this example I am using the below values, make sure you change these for your pipeline.
+
+```yaml
+variables:
+  - name: varPowerPlatformSPN
+    value: Dataverse - Backup
+  - name: varSolutionName
+    value: ModelDrivenAppHelpPage
+  - name: varWebsiteId
+    value: 98a716a8-c592-476c-bc5d-aefde10a8b5d
+```
+
 ![](step10-update_c.gif)
 
 ### Step 11: Change VM pool
