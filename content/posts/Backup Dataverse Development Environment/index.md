@@ -193,7 +193,7 @@ Oh no let's see if we can fix it.
 Let's test it again.
 ![](step21c-testagain.gif)
 
-### Step 23: Take a look at the Repo
+### Step 22: Take a look at the Repo
 Looking at the repo
 ![](step23-look_at_repo.gif)
 
