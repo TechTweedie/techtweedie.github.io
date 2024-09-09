@@ -92,11 +92,13 @@ variables:
 ![](vid8.gif)
 
 ### Step 9: Set a sechedule for our pipeline
-Then we are going to set a schedule for our pipeline to trigger on. In this example it will trigger at midnight, 1pm, 6pm, Monday to Friday every week. 
+Then we are going to set a schedule for our pipeline to trigger on. In this example it will trigger on the hour, at midnight, 1pm, 6pm, Monday to Friday every week. 
 
 ```yaml
+trigger: none
+
 schedules:
-  - cron: 0 13,18 * * 1-5
+  - cron: 0 0,13,18 * * 1-5
     displayName: Weekday Backup
     branches:
       include:
@@ -191,13 +193,6 @@ Oh no let's see if we can fix it.
 Let's test it again.
 ![](step21c-testagain.gif)
 
-### Step 22: Check over our pipeline
-Lets check over our pipeline to understand if it is working correctly. It looks like it is triggering all the time, lets take a look at our pipeline code to see if we can understand where the problem is coming from. 
-
-As we can see, we have a trigger whenever a commit is made to the main branch, this means that because we are committing at the end of our pipeline its in an endless cycle. So lets remove the trigger on the main branch.
-
-![](step22-checkover.gif)
-
 ### Step 23: Take a look at the Repo
 Looking at the repo
 ![](step23-look_at_repo.gif)
@@ -216,9 +211,10 @@ variables:
   - name: varWebsiteId
     value: 98a716a8-c592-476c-bc5d-aefde10a8b5d
 
+trigger: none
 
 schedules:
-  - cron: 0 13,18 * * 1-5
+  - cron: 0 0,13,18 * * 1-5
     displayName: Weekday Backup
     branches:
       include:
