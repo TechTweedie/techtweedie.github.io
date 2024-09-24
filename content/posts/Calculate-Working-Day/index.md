@@ -22,7 +22,7 @@ Want to Calculate Working Day in Power Automate, having trubble with the number 
 ## About the connector 
 The Calcualte Working Day connector is **free** to use for everyone, has been through the **Certified Connector** process, and has being created as a contrubution to the Power Platform Community. 
 
-### You can find out more
+### Find out more
 - Microsoft Learn Docuemntation [here](https://learn.microsoft.com/en-us/connectors/calculateworkingday/)
 - You can access more detailed documentation on the connector [here](https://mightora.io/power-automate-connectors/calculate-working-day/). 
 
@@ -52,7 +52,7 @@ We are going to enter in the API key, currently you can just enter in `free` for
 Lets configure our first connector, **Basic Next Working Day**, this connector will tell you when the next working day is, assuming working days are Monday to Friday. 
 ![](Step%204%20-%20Configure%20Basic%20working%20Day.gif)
 
-## Step 5 - Test it
+### Step 5 - Test it
 Lets give that a test to see if it works.
 ![](Step%205%20-%20Test%20it.gif)
 
