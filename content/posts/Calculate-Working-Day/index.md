@@ -15,29 +15,33 @@ resources:
 - name: "featured-image-preview"
   src: "featureImage.png"
 lightgallery: true
-draft: true
+draft: false
 ---
-Want to calculate working day in Power Automate, having trubble with the number of variations. That’s why I’ve put together a nifty little tool to help out the community and make this process a whole lot easier. In this post, I'll guide you step-by-step through setting up and using this tool. Whether you’re trying to figure out the next working day, handle complex scheduling, or just want a smoother way to automate your date calculations, this is for you. Let’s dive in. 
+Want to Calculate Working Day in Power Automate, having trubble with the number of variations. That’s why I’ve put together a nifty little tool to help out the community and make this process a whole lot easier. In this post, I'll guide you step-by-step through setting up and using this tool. Whether you’re trying to figure out the next working day, handle complex scheduling, or just want a smoother way to automate your date calculations, this is for you. Let’s dive in. 
 
-## The conenctor
-T
+## About the connector 
+The Calcualte Working Day connector is **free** to use for everyone, has been through the **Certified Connector** process, and has being created as a contrubution to the Power Platform Community. 
 
+### You can find out more
+- Microsoft Learn Docuemntation [here](https://learn.microsoft.com/en-us/connectors/calculateworkingday/)
+- You can access more detailed documentation on the connector [here](https://mightora.io/power-automate-connectors/calculate-working-day/). 
 
-# Steps
+## Steps to use the connector
+Below are a number of steps and examples covering how to use the Calculate Working Day connector. 
 
-## Step 1 - Create a Power Automate Flow
+### Step 1 - Create a Power Automate Flow
 We are going to create a Power Automate Flow with a manual trigger. We are also going to add a date field to that trigger. 
 ![](Step%201%20-%20Create%20a%20Power%20Automate%20Flow.gif)
 
-## Step 2 - Lets add the connector
+### Step 2 - Lets add the connector
 Then we are going to search for the connector `Calculate Working Day` in the connector list. 
 ![](Step%202%20-%20Lets%20add%20the%20connector.gif)
 
-## Step 3 - Enter in the API key
+### Step 3 - Enter in the API key
 We are going to enter in the API key, currently you can just enter in `free` for the key. However we may need to change this in the future to put some throttling in place but we will always be **FREE**. 
 ![](Step%203%20-%20Enter%20in%20the%20API%20key.gif)
 
-## Step 4 - Configure Basic working Day
+### Step 4 - Configure Basic working Day
 Lets configure our first connector, **Basic Next Working Day**, this connector will tell you when the next working day is, assuming working days are Monday to Friday. 
 ![](Step%204%20-%20Configure%20Basic%20working%20Day.gif)
 
@@ -45,15 +49,15 @@ Lets configure our first connector, **Basic Next Working Day**, this connector w
 Lets give that a test to see if it works.
 ![](Step%205%20-%20Test%20it.gif)
 
-## Step 6 - Date In X Working Days
+### Step 6 - Date In X Working Days
 Lets complicate matters slightly, lets calculate the working day in **4** working days time, assuming that **Monday**, **Tuesday**, **Wednesday**, **Thursday**, **Friday** are all working days. This is symbolised by `1,2,3,4,5` in the **Working Days** input box. 
 ![](Step%206%20-%20Date%20In%20X%20Working%20Days.gif)
 
-## Step 7 - Test Date In X Working Days
+### Step 7 - Test Date In X Working Days
 Now lets give that a test, to see if it works. 
 ![](Step%207%20-%20Lets%20test%20Date%20In%20X%20Working%20Days.gif)
 
-## Step 8 - Lets complicate it a little
+### Step 8 - Lets complicate it a little
 Lets say we want to know the working day in **4** working days time, however only **Monday** and **Wednesday** are working days. 
 
 We configure this by entering `1,3` in to the **Working Days** input box.
@@ -61,7 +65,7 @@ We configure this by entering `1,3` in to the **Working Days** input box.
 As we can see it calculate the working day to be 7th October. 
 ![](Step%208%20-%20Lets%20complicate%20it%20a%20little.gif)
 
-## Step 9 - Lets use a Combination of all Calculated Working Day Endpoints
+### Step 9 - Lets use a Combination of all Calculated Working Day Endpoints
 Using the action **Combination of all Calculated Working Day Endpoints**, lets set it again, but this time using the **Trigger Date** field as the **Input Date** on the connector. 
 
 We also want to set it so that **Working Days** are only a **Monday** and **Wednesday**.
@@ -70,7 +74,7 @@ We also want to add in a filter for **Scottish bank holidays**.
 ![](Step%209%20-%20Combination%20of%20all.gif)
 
 
-## Step 9 - Lets test Combination action
+### Step 9 - Lets test Combination action
 Ok, lets give that a test, we can see it has returned some useful data for us. The connectors has told us based on what we input that;
 - The **Next working day** is `2024-12-30`
 - The **Working day in x days** is `2025-01-13`
@@ -81,7 +85,7 @@ Because this is a combination of all our end points it has given us some other i
 
 ![](Step%209%20-%20Lets%20test%20Combination%20action.gif)
 
-## Step 10 - Lets add in some non-working days
+### Step 10 - Lets add in some non-working days
 Lets take this one step further, lets add in some **Non working days** as `2024-12-23,2024-12-24,2024-12-27,2024-12-30,2024-12-31` as maybe your business is closed over this period. We are also going to change our **Input Date** to be `2024-12-20`.
 
 With this new information what has the connector told us;
@@ -97,7 +101,7 @@ However we can enter a blank custom value to not filter out any bank holidays.
 
 ![](Step%209%20-%20add%20non-working%20days.gif)
 
-## Step 10 - Combined with no bank holidays
+### Step 10 - Combined with no bank holidays
 Changing the settings of our connector to work with no bank holidays, lets use the same settings as above but this time changing the **Filter bank holidays for Country** to no value. 
 
 We are also going to keep our **Input Date** to be `2024-12-20`.
@@ -109,7 +113,7 @@ With this new information what has the connector told us;
 - First Working day of month `2024-12-02`
 - Last working day of month `2024-12-25`
 
-## Step 11 - Is today a working day
+### Step 11 - Is today a working day
 Lets take a look at another connector, **Is Today A Working Day**, this one tells you if today is a working day or not based on the **Working Days** entered. 
 
 Trying this connector out, we enter that our only working day is a **Friday** by using `5`. 
@@ -117,7 +121,7 @@ Trying this connector out, we enter that our only working day is a **Friday** by
 As you can see we are testing this on a Monday and therefore it tells us that today is not one of the working days. 
 ![](Step%2011%20-%20Is%20today%20a%20working%20day.gif)
 
-## Step 12 - First and Last working days of a month
+### Step 12 - First and Last working days of a month
 We also have an action called **First And Last Working Day Of Month**, this action will tell you the first and the last working days of the month. 
 
 In this example we have entered in;
