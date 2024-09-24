@@ -26,6 +26,13 @@ The Calcualte Working Day connector is **free** to use for everyone, has been th
 - Microsoft Learn Docuemntation [here](https://learn.microsoft.com/en-us/connectors/calculateworkingday/)
 - You can access more detailed documentation on the connector [here](https://mightora.io/power-automate-connectors/calculate-working-day/). 
 
+{{< admonition >}}
+**Quick Start:** 
+1. Add the step in to your Power Automate Flow
+2. If asked for API key please enter `free` and if asked for endpoint select `RapidAPI`.
+3. Pass in your date values.
+{{< /admonition >}}
+
 ## Steps to use the connector
 Below are a number of steps and examples covering how to use the Calculate Working Day connector. 
 
