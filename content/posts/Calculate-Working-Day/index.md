@@ -19,11 +19,14 @@ draft: false
 ---
 Want to Calculate Working Day in Power Automate, having trubble with the number of variations. That’s why I’ve put together a nifty little tool to help out the community and make this process a whole lot easier. In this post, I'll guide you step-by-step through setting up and using this tool. Whether you’re trying to figure out the next working day, handle complex scheduling, or just want a smoother way to automate your date calculations, this is for you. Let’s dive in. 
 
+**You can watch the accompanying YouTube video here**
+{{< youtube QVesCxG9-80 >}}
+
 ## About the connector 
 The Calcualte Working Day connector is **free** to use for everyone, has been through the **Certified Connector** process, and has being created as a contrubution to the Power Platform Community. 
 
 ### Find out more
-- Microsoft Learn Docuemntation [here](https://learn.microsoft.com/en-us/connectors/calculateworkingday/)
+- Microsoft Learn documentation [here](https://learn.microsoft.com/en-us/connectors/calculateworkingday/)
 - You can access more detailed documentation on the connector [here](https://mightora.io/power-automate-connectors/calculate-working-day/). 
 
 {{< admonition tip >}}
