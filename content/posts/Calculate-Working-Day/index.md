@@ -120,6 +120,8 @@ With this new information what has the connector told us;
 - First Working day of month `2024-12-02`
 - Last working day of month `2024-12-25`
 
+![](msedge_JUEtbZwLOg.gif)
+
 ### Step 11 - Is today a working day
 Lets take a look at another connector, **Is Today A Working Day**, this one tells you if today is a working day or not based on the **Working Days** entered. 
 
