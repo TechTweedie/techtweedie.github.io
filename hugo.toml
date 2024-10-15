@@ -104,6 +104,22 @@ theme = "FeelIt"
     url = "/categories/"
     title = ""
     weight = 3
+  [[menu.main]]
+    identifier = "YouTubeChannel"
+    pre = ""
+    post = ""
+    name = "YouTube Channel"
+    url = "https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ"
+    title = ""
+    weight = 4
+  [[menu.main]]
+    identifier = "FreePowerPlatformTools"
+    pre = ""
+    post = ""
+    name = "Free Power Platform Tools"
+    url = "https://mightora.io/"
+    title = ""
+    weight = 5
 
 # Markup related configuration in Hugo
 [markup]
