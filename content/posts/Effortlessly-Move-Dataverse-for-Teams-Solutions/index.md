@@ -47,7 +47,7 @@ When we use this template we are prompted for the location and name for your ver
 
 Once created your version of the repository from the template, copy a link to it using the button just above the file list. 
 
-![](vmconnect_wlnLwNJmoZ.gif)
+![](1.gif)
 
 However you could also import to an existing solution as a submodule using this command. 
 ```powershell
@@ -65,14 +65,14 @@ For our example we are going to clone the repository in to Visual Studio Code, u
 
 To do this at the top of your **Visual Studio Code** window enter `> Clone` and **Git: Clone** should appear. 
 
-![](vmconnect_tnGx5Z0f2n.gif)
+![](2.gif)
 
 ## Step 3 - Get setup 
 You will then be prompted to install the extensions that are useful when using this repository.   
 
 > **If you are not** then navigate to **File** >  **Preferences** > **Settings** and search for `Extension Ignore Recommendations`  or use this [link](vscode://settings/extensions.ignoreRecommendations) and make sure it is not ticked. 
 
-![](vmconnect_0w0ZNJe8ul.gif)
+![](3.gif)
 
 ## Step 4 - Get Environment ID for source
 
@@ -80,13 +80,13 @@ We are going to need our **Environment ID** to use this script, to get this, nav
 
 Go in to it and copy the **Environment ID**
 
-![](vmconnect_wmEVAXE8S3.gif)
+![](4.gif)
 
 ## Step 5 - Get Environment ID for source
 
 We now need to do the same for our **target Environment**.
 
-![](vmconnect_NlOKjpNlq3.gif)
+![](5.gif)
 
 ## Step 6 - Check the source in the maker portal
 
@@ -94,12 +94,12 @@ You can do this by `https://make.powerapps.com/environments/{ENVIRONMENT ID HERE
 
 For ease I am going to keep these in a file called note.md
 
-![](vmconnect_jc6Aofcva6.gif)
+![](6.gif)
 
 ## Step 7 - check the target in the maker portal
 
 You can do this by `https://make.powerapps.com/environments/{ENVIRONMENT ID HERE}/home`
-![](vmconnect_wwC5dSPbNy.gif)
+![](7.gif)
 
 ## Step 8 - Overview of what we are going to do
 
@@ -116,7 +116,7 @@ graph LR
      G --> H[End]
 ```
 
-![](vmconnect_j1SBE80ms2.gif)
+![](8.gif)
 
 ## Step 9 - Lets run the script
 
@@ -137,13 +137,13 @@ This script exports a solution from a source environment, generates a solution s
 
 Please remember to replace the variables with your own, for more information please consult 
 
-![](vmconnect_0yaaqi7RKy.gif)
+![](9.gif)
 
 ## Step 10 - Explore our unpacked solution
 
 We can now explore our unpacked solution. This is where using **GIT** becomes very useful as you can see from the commits what the changes were on the solution between runs.
 
-![](vmconnect_divOPE2jkP.gif)
+![](10.gif)
 
 ## Step 11 - Explore our unpacked solution
 
@@ -159,13 +159,13 @@ This script re-packs a previously unpacked solution and imports it into a target
 - `-exportDirectory`: Directory where the repacked solution will be exported.
 - `-Managed`:  Switch  **true** or **false** to indicate whether the solution should be managed.
 
-![](vmconnect_EbfBAo66X4.gif)
+![](11.gif)
 
 ## Step 12 - Lets see if it worked
 
 Lets explore using the maker portal to see if it has worked. 
 
-![](vmconnect_M8yKgHnocP.gif)
+![](12.gif)
 
 ## Step 13 - Lets push our code
 
@@ -179,7 +179,7 @@ You can set your user in **GIT** by running the below commands with your informa
   git config --global user.name "Your Name"
 ```
 
-![](vmconnect_SBCk2QS9Tv.gif)
+![](13.gif)
 
 # Concludion 
 
