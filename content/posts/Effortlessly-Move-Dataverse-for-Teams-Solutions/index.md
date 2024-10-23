@@ -61,7 +61,9 @@ After doing this you will need to initialize and update the submodule running th
 git submodule update --init --recursive
 ```
 
-> Please also note that you will have to update your script paths in the examples we give below.
+{{< admonition type=note title="Note" open=true >}}
+Please also note that you will have to update your script paths in the examples we give below.
+{{< /admonition >}}
 
 ### Step 2 - Clone the repository in to Visual Studio Code
 For our example we are going to clone the repository in to Visual Studio Code, using the link from Step 1. 
@@ -73,7 +75,9 @@ To do this at the top of your **Visual Studio Code** window enter `> Clone` and 
 ### Step 3 - Get setup 
 You will then be prompted to install the extensions that are useful when using this repository.   
 
-> **If you are not** then navigate to **File** >  **Preferences** > **Settings** and search for `Extension Ignore Recommendations`  or use this [link](vscode://settings/extensions.ignoreRecommendations) and make sure it is not ticked. 
+{{< admonition type=note title="If you are not" open=true >}}
+**If you are not** then navigate to **File** >  **Preferences** > **Settings** and search for `Extension Ignore Recommendations`  or use this [link](vscode://settings/extensions.ignoreRecommendations) and make sure it is not ticked. 
+{{< /admonition >}}
 
 ![](3.gif)
 
@@ -109,7 +113,7 @@ You can do this by `https://make.powerapps.com/environments/{ENVIRONMENT ID HERE
 A quick overview of what we are going to be doing.
 
 {{< mermaid >}}
-graph LR
+graph LR;
      A[Start] --> B[Export Solution]     
      B --> C[Unpack Solution]     
      C --> D[Review]     
