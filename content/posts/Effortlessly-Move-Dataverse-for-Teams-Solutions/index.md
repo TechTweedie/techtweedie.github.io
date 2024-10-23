@@ -34,7 +34,7 @@ Things you need to follow along with this demo, however as you will see you don'
 
 1. [Git](https://git-scm.com/downloads) - This is a small programme to help with source control.
 2. [GitHub Account](https://github.com/) - If you want to follow the steps exactly, however, you can also just download a copy of the repository. 
-3. [Visual Studio Code]([Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)) - A free tool, or you can use another IDE of your preference. 
+3. [Visual Studio Code](https://code.visualstudio.com/)) - A free tool, or you can use another IDE of your preference. 
 5. PowerShell and the ability to run `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser`
 
 Any other tools are covered in the tutorial. 
