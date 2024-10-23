@@ -23,10 +23,13 @@ Do you need to move a Solution in **Dataverse for Teams** form one environment t
 
 Today I will show you a tool that I have made to make this process easier by using a PowerShell Script to move Dataverse for Teams solutions between environments. 
 
-# What you don't need
+{{< youtube gUXnVNcEWR0 >}}
+
+
+## What you don't need
 1. Azure DevOps - however, if you have Azure DevOps I have a pipeline tool currently in **Preview** for you on the **Visual Studio Market Place**; you can find it [here!](https://marketplace.visualstudio.com/items?itemName=mightoraio.mightora-power-platform-devOps-extension)
 
-# What you need
+## What you need
 Things you need to follow along with this demo, however as you will see you don't need them all to use the tool. 
 
 1. [Git](https://git-scm.com/downloads) - This is a small programme to help with source control.
@@ -36,8 +39,8 @@ Things you need to follow along with this demo, however as you will see you don'
 
 Any other tools are covered in the tutorial. 
 
-# Steps to use the tool
-## Step 1 - Copy the script
+## Steps to use the tool
+### Step 1 - Copy the script
 
 In this example we are going to use this repo: [Power-Paltform-Dataverse4Teams-Tools](https://github.com/mightora/Power-Paltform-Dataverse4Teams-Tools) 
 as a template so we can get up and running quickly. 
@@ -60,21 +63,21 @@ git submodule update --init --recursive
 
 > Please also note that you will have to update your script paths in the examples we give below.
 
-## Step 2 - Clone the repository in to Visual Studio Code
+### Step 2 - Clone the repository in to Visual Studio Code
 For our example we are going to clone the repository in to Visual Studio Code, using the link from Step 1. 
 
 To do this at the top of your **Visual Studio Code** window enter `> Clone` and **Git: Clone** should appear. 
 
 ![](2.gif)
 
-## Step 3 - Get setup 
+### Step 3 - Get setup 
 You will then be prompted to install the extensions that are useful when using this repository.   
 
 > **If you are not** then navigate to **File** >  **Preferences** > **Settings** and search for `Extension Ignore Recommendations`  or use this [link](vscode://settings/extensions.ignoreRecommendations) and make sure it is not ticked. 
 
 ![](3.gif)
 
-## Step 4 - Get Environment ID for source
+### Step 4 - Get Environment ID for source
 
 We are going to need our **Environment ID** to use this script, to get this, navigate to [Environments | Power Platform admin center (microsoft.com)](https://admin.powerplatform.microsoft.com/environments) and locate your source environment. 
 
@@ -82,13 +85,13 @@ Go in to it and copy the **Environment ID**
 
 ![](4.gif)
 
-## Step 5 - Get Environment ID for source
+### Step 5 - Get Environment ID for target
 
 We now need to do the same for our **target Environment**.
 
 ![](5.gif)
 
-## Step 6 - Check the source in the maker portal
+### Step 6 - Check the source in the maker portal
 
 You can do this by `https://make.powerapps.com/environments/{ENVIRONMENT ID HERE}/home`
 
@@ -96,16 +99,16 @@ For ease I am going to keep these in a file called note.md
 
 ![](6.gif)
 
-## Step 7 - check the target in the maker portal
+### Step 7 - Check the target in the maker portal
 
 You can do this by `https://make.powerapps.com/environments/{ENVIRONMENT ID HERE}/home`
 ![](7.gif)
 
-## Step 8 - Overview of what we are going to do
+### Step 8 - Overview of what we are going to do
 
 A quick overview of what we are going to be doing.
 
-```mermaid
+{{< mermaid >}}
 graph LR
      A[Start] --> B[Export Solution]     
      B --> C[Unpack Solution]     
@@ -114,11 +117,11 @@ graph LR
      E --> F[Import Solution]     
      F --> G[Publish Customizations]     
      G --> H[End]
-```
+{{< /mermaid >}}
 
 ![](8.gif)
 
-## Step 9 - Lets run the script
+### Step 9 - Lets run the script
 
 This script exports a solution from a source environment, generates a solution settings template, and unpacks the solution, including any Canvas Apps it contains.
 
@@ -139,13 +142,13 @@ Please remember to replace the variables with your own, for more information ple
 
 ![](9.gif)
 
-## Step 10 - Explore our unpacked solution
+### Step 10 - Explore our unpacked solution
 
 We can now explore our unpacked solution. This is where using **GIT** becomes very useful as you can see from the commits what the changes were on the solution between runs.
 
 ![](10.gif)
 
-## Step 11 - Explore our unpacked solution
+### Step 11 - Explore our unpacked solution
 
 Lets push out solution to the target environment.
 
@@ -161,13 +164,13 @@ This script re-packs a previously unpacked solution and imports it into a target
 
 ![](11.gif)
 
-## Step 12 - Lets see if it worked
+### Step 12 - Lets see if it worked
 
 Lets explore using the maker portal to see if it has worked. 
 
 ![](12.gif)
 
-## Step 13 - Lets push our code
+### Step 13 - Lets push our code
 
 Finally lets push our code to our repository on **GitHub** so next time we run it we can see changes between runs. When you come to do this you may need to set your user in **GIT**.
 
@@ -181,7 +184,7 @@ You can set your user in **GIT** by running the below commands with your informa
 
 ![](13.gif)
 
-# Concludion 
+## Concludion 
 
 By following these steps, you can establish a straightforward and repeatable process for transferring Dataverse for Teams solutions between environments without relying on Azure DevOps. 
 The PowerShell scripts simplify the task, of exporting and reimporting Dataverse for Teams solutions. 
