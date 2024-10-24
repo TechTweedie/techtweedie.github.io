@@ -42,7 +42,7 @@ Any other tools are covered in the tutorial.
 ## Steps to use the tool
 ### Step 1 - Copy the script
 
-In this example we are going to use this repo: [Power-Paltform-Dataverse4Teams-Tools](https://github.com/mightora/Power-Paltform-Dataverse4Teams-Tools) 
+In this example we are going to use this repo: [Power-Platform-Dataverse4Teams-Tools](https://github.com/mightora/Power-Platform-Dataverse4Teams-Tools) 
 as a template so we can get up and running quickly. 
 
 When we use this template we are prompted for the location and name for your version of the repository, I have made mine public [here]([itweedie/Power-Platform-Dataverse4Teams-Demo (github.com)](https://github.com/itweedie/Power-Platform-Dataverse4Teams-Demo)), but you may wish to use private. 
