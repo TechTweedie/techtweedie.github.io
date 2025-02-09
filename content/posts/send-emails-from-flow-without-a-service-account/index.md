@@ -29,10 +29,34 @@ Well today I am going to show you how you can send am email from Microsoft Excha
 For this section you will need the following permissions
 - Exchange Administrator  
 
-### Step 1 - Create the app registration  
 
+### Step 1 - Log in to Entra 
+Go to https://entra.microsoft.com and log in with your user account
+
+### Step 2 - Create the app registration  
+- When you are on the Entra Overview page navigate to **Applications** in the left hand menu
+and then open up **App Regestrations**. 
+- From there select **New Regestration**.
+- A new screen will open, give your new app registration a name and then click next.
+
+![alt text](brave_T1ciTpvWmI.gif)
+
+### Add API permission
+We then need to give our App Registration an API Permission. 
+- In the left hand menu click on **API Permission**
+- Click on **Add permission**
+- A window will then open, select **Application Permission**
+- Then using the search box type in **mail.send** 
+- THe list will then filter, as it does open up the **Mail** option and select **mail.send**
+
+> **NOTE:** Yes this permission lets your send emails as anyone, however we will restrict this later. **DO NOT MISS USE IT IS POSSILE TO TRACK WHERE AN EMAIL CAME FROM**
+
+![alt text](brave_pyTrq7A2fH.gif)
 
 ### Grant Admin consent 
+You will notice that the Grant admin consent is grayed out
+
+This is becuse currently we have no administraton roles
 
 
 ## Steps - Limiting application permissions to specific Exchange Online mailboxes
