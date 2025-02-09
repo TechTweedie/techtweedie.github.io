@@ -81,23 +81,57 @@ however without further limitation that ill allow the application to send emails
 
 ### Step 1 - Set up a Mail Enabled Security Group
 
-- Set up a security group and add in who you will be able to send emails from
-- ![alt text](msedge_JAl1jlS395-B.gif.gif)
+When we tell exchange that we want to restrict access in some way for an application registration, we need to first create a **Mail-enabled Security group**.
 
-##
-- PowerShell Time
-- Unfortunalty the next bit is not avaialbe witin the onine platform
-b9701c1e-1364-464d-93e4-01ae925e8d6c
-New-ApplicationAccessPolicy -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c -PolicyScopeGroupId PowerAutomateTest@Tweed.technology -AccessRight RestrictAccess -Description "Restrict this app to members of PowerAutomateTest@Tweed.technology"
+There are a few ways to do this, however today we are going to do it from the Microsoft 365 Admin center.
 
-Lets break this down.....
+1. Go to [Microsoft 365 Admin center](https://admin.microsoft.com/)
+2. Then open up **Teams and Groups**.
+3. Choose Security from the menu.
+4. Click on **Add new security group**.
 
-Install-Module -Name ExchangeOnlineManagement -Force
+![alt text](msedge_JAl1jlS395-B.gif.gif)
 
-##
-Import-Module ExchangeOnlineManagement
-Connect-ExchangeOnline -Device
 
+### Step 2 - Access PowerShell
+
+For this next step we are going to use some **Powershell**. You can do this from a location of your choice however today we are going to demo it from **Cloud Shell**.
+
+1. Navigate to Exchange Online [https://admin.cloud.microsoft/exchange#/homepage](https://admin.cloud.microsoft/exchange#/homepage).
+2. Click on the **Cloud Shell** button in the top right hand corner. 
+
+![alt text](msedge_f9urvujFXS-B.gif.gif)
+
+
+### Step 3 - Create Application Access Policy
+
+Next we are going to create an application access policy using both the **Application ID** and the **Mail-enabled security group** we created in earlier steps. 
+
+1. Lets look at our command. `New-ApplicationAccessPolicy -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c -PolicyScopeGroupId PowerAutomateTest@Tweed.technology -AccessRight RestrictAccess -Description "Restrict this app to members of PowerAutomateTest@Tweed.technology"`
+2. Breaking this down we have
+   1. Command: `New-ApplicationAccessPolicy` - This cmdlet creates a new application access policy in Microsoft 365.
+   2. Parameter: `-AppId b9701c1e-1364-464d-93e4-01ae925e8d6c` - Specifies the unique identifier (AppId) of the application for which the policy is being created.
+   3. Parameter: `-PolicyScopeGroupId PowerAutomateTest@Tweed.technology` - Defines the scope of the policy by specifying the group ID (email address) that the policy will apply to.
+   4. Parameter: `-AccessRight RestrictAccess` - Sets the access right for the policy. In this case, it restricts access.
+   5. Parameter: `-Description "Restrict this app to members of PowerAutomateTest@Tweed.technology"` - Provides a description for the policy, explaining its purpose.
+3. Lets try running the command in **PowerShell** using the **CloudShell**. 
+4. Oh no, it doesn't work. You could be forgiven for thinking that given we have opened this up from the Exchange Admin center that we would indeed already have access to and be connected to exchange online within the **CloudShell** but unfortunately we are not. 
+5. Therefore before we go any further we need to install the Exchange Online Management Module. `Install-Module -Name ExchangeOnlineManagement -Force`.
+
+
+### Step 4 - Import and Connect
+
+Our next step, is really to go back a stage and import and connect to Exchange Online. 
+
+To do this we need to:
+
+1. First we need to import the module we have just installed, to do this we run this command `Import-Module ExchangeOnlineManagement`
+2. Next we need to connect to exchange, within the **CloudShell** the easiest way to to this is by using device login. Run this command `Connect-ExchangeOnline -Device`. 
+3. This will give us a URL and a device code in order to log in to Exchange Online.
+4. Next lets try re-running our command to create the new policy `New-ApplicationAccessPolicy -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c -PolicyScopeGroupId PowerAutomateTest@Tweed.technology -AccessRight RestrictAccess -Description "Restrict this app to members of PowerAutomateTest@Tweed.technology"`
+5. This time we get the response
+
+```PowerShell
 ScopeName        : Power Automate Test
 ScopeIdentity    : Power Automate Test20250209121934
 Identity         : 63759d9f-bfca-4f52-ae98-8f2f1d7bc173\b9701c1e-1364-464d-93e4-01ae925e8d6c:S-1-5-21-3787302941-3231517822-469913106-31437838;9
@@ -109,8 +143,12 @@ AccessRight      : RestrictAccess
 ShardType        : All
 IsValid          : True
 ObjectState      : Unchanged
+```
 
-## test it in PowerShell
+![alt text](msedge_f9urvujFXS-C.gif.gif) 
+
+
+### test it in PowerShell
 Test-ApplicationAccessPolicy -Identity testABC@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c
 
 PS /home/ian> Test-ApplicationAccessPolicy -Identity testABC@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c
