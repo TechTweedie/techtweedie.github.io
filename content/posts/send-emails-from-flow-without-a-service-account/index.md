@@ -31,3 +31,12 @@ For this section you will need the following permissions
 
 ### Step 1 - Create the app registration  
 
+
+### Grant Admin consent 
+
+
+## Steps - Limiting application permissions to specific Exchange Online mailboxes
+https://learn.microsoft.com/en-us/graph/auth-limit-mailbox-access
+
+
+## Steps - Download and testing the connector
