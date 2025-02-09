@@ -33,8 +33,9 @@ For this section you will need the following permissions
 ### Step 1 - Log in to Entra 
 Go to https://entra.microsoft.com and log in with your user account
 
-### Step 2 - Create the app registration  
-- When you are on the Entra Overview page navigate to **Applications** in the left hand menu
+### Step 2 - Create the app registration
+- When you are on the Entra Overview page, open up **Identity**
+- Then navigate to **Applications** in the left hand menu
 and then open up **App Regestrations**. 
 - From there select **New Regestration**.
 - A new screen will open, give your new app registration a name and then click next.
@@ -55,12 +56,17 @@ We then need to give our App Registration an API Permission.
 
 ### Grant Admin consent 
 You will notice that the Grant admin consent is grayed out
-
+![alt text](brave_w3uDbOYeBk.gif)
 This is becuse currently we have no administraton roles
+
+Ask a Global administrator to grant admin consent for you
+![alt text](msedge_b9Xouwxtt7.gif)
 
 
 ## Steps - Limiting application permissions to specific Exchange Online mailboxes
 https://learn.microsoft.com/en-us/graph/auth-limit-mailbox-access
 
+- Set up a security group 
+- ![alt text](msedge_JAl1jlS395-B.gif.gif)
 
 ## Steps - Download and testing the connector
