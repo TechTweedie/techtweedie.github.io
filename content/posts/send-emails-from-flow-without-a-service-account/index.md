@@ -1,12 +1,12 @@
 ---
 title: "Send Emails from Flow without a Service Account"
-description: ""
+description: "Learn how to send emails from Power Automate without a service account! 🚀 This step-by-step guide walks you through setting up an App Registration, securing permissions in Exchange Online, and using a custom connector—no password resets or login issues. Perfect for secure, scalable email automation in Microsoft 365! 🔗 #PowerAutomate #Microsoft365 #Automation"
 tags:
   - Power Automate
 categories:
   - Azure
-date: 2025-02-08T09:00:00+01:00
-lastmod: 2025-02-08T09:00:00+01:00
+date: 2025-02-10T09:00:00+01:00
+lastmod: 2025-02-10T09:00:00+01:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
@@ -15,15 +15,19 @@ resources:
 - name: "featured-image-preview"
   src: "featureImage.png"
 lightgallery: true
-draft: true
+draft: false
 ---
-Want to send emails from a **Power Automate Flow** but **Can't** or **Don't want to** use a Service Account. Don't wan't to worry about Conditional Access Policy's, Password changes, and having to re-log in every few months. No need to worry about re-confirming policy's or Security information every 180 days.
+Want to send emails from **Power Automate** but can't or don't want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?
 
-Well today I am going to show you how you can send am email from Microsoft Exchange from a Power automate Flow using just a App Registration. I am going to share a Custom Connector with you I have created to enable you do to this. Then share with you how to Create the App Registration, permission the app registration, and how you can limit which email accounts the app registration can send from within exchange. 
+Good news! In this guide, I'll show you how to send emails directly from Microsoft Exchange using only an App Registration. No service accounts, no password headaches. I'll also share a Custom Connector to make it even easier, plus step-by-step instructions to:
+
+Create and configure the App Registration
+Assign API permissions
+Restrict sending access to specific mailboxes
+Use Power Automate with the custom connector 
 
 
-## What you will need 
-
+## Lets get started
 
 ## Create the App Registration
 For this section you will need the help of a Global Administrator
@@ -39,8 +43,8 @@ and log in with your user account.
 Next we are going to create an application registration so our Power Automate flow can talk directly to Exchange Online.
 
 1. When you are on the Entra Overview page, open up **Identity**.
-2. Then navigate to **Applications** in the left hand menu and then open up **App Regestrations**. 
-3. From there select **New Regestration**.
+2. Then navigate to **Applications** in the left hand menu and then open up **App Registrations**. 
+3. From there select **New Registration**.
 4. A new screen will open, give your new app registration a name and then click next.
 
 ![alt text](brave_T1ciTpvWmI.gif)
@@ -48,7 +52,7 @@ Next we are going to create an application registration so our Power Automate fl
 
 ### Step 3 - Add API permission
 
-We then need to give our App Registration an API Permission, this wil be the permission it will use to talk to Exchange Online. 
+We then need to give our App Registration an API Permission, This will be the permission used to talk to Exchange Online. 
 
 1. In the left hand menu click on **API Permission**.
 2. Click on **Add permission**.
@@ -63,11 +67,12 @@ We then need to give our App Registration an API Permission, this wil be the per
 
 ### Step 4 - Grant Admin consent
 
-You will notice that the Grant admin consent is grayed out
+1. You will notice that the Grant admin consent is grayed out
 ![alt text](brave_w3uDbOYeBk.gif)
-This is becuse currently we have no administraton roles
 
-Ask a Global administrator to grant admin consent for you
+2. This is Because we currently lack administrative roles
+
+3. Ask a Global administrator to grant admin consent for you
 ![alt text](msedge_b9Xouwxtt7.gif)
 
 
@@ -87,7 +92,7 @@ There are a few ways to do this, however today we are going to do it from the Mi
 
 1. Go to [Microsoft 365 Admin center](https://admin.microsoft.com/)
 2. Then open up **Teams and Groups**.
-3. Choose Security from the menu.
+3. Select 'Security' from the menu.
 4. Click on **Add new security group**.
 
 ![alt text](msedge_JAl1jlS395-B.gif.gif)
@@ -179,3 +184,97 @@ To do this:
 ![alt text](msedge_4IBPmJ2a2n.gif)
 
 ## Download and testing the connector
+
+### Step 1 - Find custom connectors 
+First we need to find custom connectors in Power Automate. 
+
+To do this we need to:
+
+1. Navigate to `https://make.powerautomate.com/`
+2. Change our environment should you need to.
+3. Then in the left hand menu, navigate to **More** and then **Discover all**, and then locate **Custom connectors**. 
+
+![alt text](msedge_eb1IgNQwCG.gif)
+
+
+### Step 2 - Create a new connector
+
+1. Click on **New custom connector**.
+2. Then click on **Import an OpenAPI from URL**. 
+3. Then enter in the connector name `Send email using Graph`.
+4. Then enter in the URL `https://raw.githubusercontent.com/itweedie/PowerPlatform-Send-Emails-from-Power-Automate-without-a-Service-Account/refs/heads/main/connector/shared_mightora-5fsend-20mail-20with-20graph-5fe07b0f04a8b0d4c3/apiDefinition.swagger.json`
+
+![alt text](msedge_Q2g7mnzmR9.gif)
+
+
+### Step 3 - Configure your connector
+
+1. Click on to the Security tab.
+2. Click in to **Client ID**
+3. Navigate back to Entra and locate your App Registration. 
+4. Cope the Client ID and paste it in to the Client ID box on the Custom Connector. 
+5. Go back to the App Registration in Entra, and click on Certificates & secrets, then click on New client secret. Choose a sensible name and a reasonable date for expiry that fits within your organisations policy's. 
+6. Copy the secret value, NOT Secret ID, and paste it in to your connector. You will need your secret ID one more time so keep the Entra page open with it on.
+7. Click Create 
+
+![alt text](msedge_aKfrGH1oIO.gif)
+
+
+### Step 4 - Add your first connection
+
+1. Click on to Test.
+2. Then click on to **New connection**.
+3. You should then get a screen which lets your choose **Service Principle**, if you don't repeat step 3.
+4. Then click **Create Connection**.
+4. Enter in your **Secret** (we do this first as we already have the page open from Step 3).
+4. Then enter in your **Client ID** and **Tenant ID**. 
+5. Then click **Create Connection**.
+
+![alt text](msedge_2mOjLRkn39.gif)
+
+
+### Step 5 - Test
+
+1. On the Test screen scroll down to **Operations**.
+2. Enter in the following:
+  - user-email: An email address you placed in the mail enabled security group earlier
+  - message.subject: test message
+  - message.body.contentType: HTML
+  - message.body.content: test
+  - saveToSentItems: true
+  - emailAddress.address (note first one only): An email address you would like to send to
+3. Then press **Test operation**
+4. Scroll down to **Response** and you should get a 202.
+5. Test and make sure the email comes through.
+
+![alt text](msedge_jHKMp5JkcW.gif)
+
+### Step 6 - Lets try it in a Flow
+
+1. Click on **My flows**
+2. Create a new flow.
+3. Add a trigger.
+4. Add a new step. 
+5. From Connector type choose Custom.
+6. Then select **Send email using Graph** from the list.
+7. Fill out the details for the connector that you want to use.
+8. Test and make sure the email comes through.
+
+![alt text](msedge_7if2t23IPS.gif)
+
+
+## Conclusion: Secure, Scalable Email Sending from Power Automate
+
+By following this guide, you’ve successfully set up a **secure, scalable** way to send emails from **Power Automate**—without relying on service accounts, password resets, or Conditional Access headaches.  
+
+With your **App Registration configured**, **permissions locked down**, and **custom connector deployed**, you now have a **robust** method to send emails directly through **Exchange Online**—while ensuring access is tightly controlled.  
+
+### Key Takeaways:  
+✅ **No Service Account Required** – Uses an App Registration instead.  
+✅ **Secure and Controlled** – Email sending is restricted to specific mailboxes.  
+✅ **Fully Automated** – No need to log in or manage passwords.  
+✅ **Scalable and Future-Proof** – Works seamlessly across flows, reducing admin overhead.  
+
+Now that your setup is complete, you can start integrating **email automation into your Power Automate workflows** with confidence. Give it a try, experiment with different use cases, and let me know how it works for you!  
+
+🚀 **Happy automating!** 🚀
