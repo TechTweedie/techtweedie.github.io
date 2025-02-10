@@ -148,31 +148,34 @@ ObjectState      : Unchanged
 ![alt text](msedge_f9urvujFXS-C.gif.gif) 
 
 
-### test it in PowerShell
-Test-ApplicationAccessPolicy -Identity testABC@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c
+### Step 5 - Let's test it in PowerShell
+We can now test using PowerShell, to see if it's applied correctly. 
 
-PS /home/ian> Test-ApplicationAccessPolicy -Identity testABC@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c
+To do this:
 
-AppId             : b9701c1e-1364-464d-93e4-01ae925e8d6c
-Mailbox           : testABC
-MailboxId         : 75283b3b-609a-4c1c-b8b8-baa1342fdfa6
-MailboxSid        : S-1-5-21-3787302941-3231517822-469913106-31499791
-AccessCheckResult : Granted
+1. We are going to run the following command `Test-ApplicationAccessPolicy -Identity testABC@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c`
+2. If we break down this command:
+   1. Command: `Test-ApplicationAccessPolicy` - This cmdlet tests an application access policy in Microsoft 365 to verify if a user has access.
+   2. Parameter: `-Identity testABC@Tweed.technology` - Specifies the identity (email address) of the user to test against the application access policy.
+   3. Parameter: `-AppId b9701c1e-1364-464d-93e4-01ae925e8d6c` - Specifies the unique identifier (AppId) of the application for which the policy is being tested.
+3. Running the command we get the following response:
+      ```PowerShell
+      AppId             : b9701c1e-1364-464d-93e4-01ae925e8d6c
+      Mailbox           : testABC
+      MailboxId         : 75283b3b-609a-4c1c-b8b8-baa1342fdfa6
+      MailboxSid        : S-1-5-21-3787302941-3231517822-469913106-31499791
+      AccessCheckResult : Granted
+      ```
+4. Let's test this against a different email address that is not within the **Mail-enabled security group** by running `Test-ApplicationAccessPolicy -Identity demo@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c`.
+      ```PowerShell  
+      AppId             : b9701c1e-1364-464d-93e4-01ae925e8d6c
+      Mailbox           : demo
+      MailboxId         : d2ca4050-f8a9-4986-b998-387603b466b6
+      MailboxSid        : S-1-5-21-3787302941-3231517822-469913106-19344836
+      AccessCheckResult : Denied
+      ```
+5. We can see it has being **Denied** which is the response we expected. 
 
-PS /home/ian> Test-ApplicationAccessPolicy -Identity demo@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c   
+![alt text](msedge_4IBPmJ2a2n.gif)
 
-AppId             : b9701c1e-1364-464d-93e4-01ae925e8d6c
-Mailbox           : demo
-MailboxId         : d2ca4050-f8a9-4986-b998-387603b466b6
-MailboxSid        : S-1-5-21-3787302941-3231517822-469913106-19344836
-AccessCheckResult : Denied
-
-PS /home/ian> Test-ApplicationAccessPolicy -Identity ian@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c 
-
-AppId             : b9701c1e-1364-464d-93e4-01ae925e8d6c
-Mailbox           : ian.tweedie
-MailboxId         : 0b5613ad-71fe-4b4c-9da3-b830f6df0607
-MailboxSid        : S-1-5-21-3787302941-3231517822-469913106-5455427
-AccessCheckResult : Denied
-
-## Steps - Download and testing the connector
+## Download and testing the connector
