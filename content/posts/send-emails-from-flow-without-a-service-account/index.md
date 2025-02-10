@@ -5,6 +5,8 @@ tags:
   - Power Automate
 categories:
   - Azure
+  - Power Platform
+  - Power Automate
 date: 2025-02-10T09:00:00+01:00
 lastmod: 2025-02-10T09:00:00+01:00
 author: "itweedie"
