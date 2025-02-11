@@ -29,8 +29,6 @@ Restrict sending access to specific mailboxes
 Use Power Automate with the custom connector 
 
 
-## Lets get started
-
 ## Create the App Registration
 For this section you will need the help of a Global Administrator
 
