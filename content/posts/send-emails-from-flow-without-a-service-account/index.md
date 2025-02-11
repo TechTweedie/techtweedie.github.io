@@ -350,6 +350,7 @@ public class Script : ScriptBase
 
 ![alt text](msedge_jHKMp5JkcW.gif)
 
+
 ### Step 7 - Lets try it in a Flow
 
 1. Click on **My flows**
@@ -363,7 +364,8 @@ public class Script : ScriptBase
 
 ![alt text](msedge_7if2t23IPS.gif)
 
-
+## Sending attachments 
+If you are planing to use this connector to send attachments, if the file is binary you will need to convert it to base64. 
 
 ## Conclusion: Secure, Scalable Email Sending from Power Automate
 
