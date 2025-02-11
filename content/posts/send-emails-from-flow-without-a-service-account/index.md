@@ -23,10 +23,10 @@ Want to send emails from **Power Automate** but can't or don't want to use a ser
 
 Good news! In this guide, I'll show you how to send emails directly from Microsoft Exchange using only an App Registration. No service accounts, no password headaches. I'll also share a Custom Connector to make it even easier, plus step-by-step instructions to:
 
-Create and configure the App Registration
-Assign API permissions
-Restrict sending access to specific mailboxes
-Use Power Automate with the custom connector 
+- Create and configure the App Registration
+- Assign API permissions
+- Restrict sending access to specific mailboxes
+- Use Power Automate with the custom connector 
 
 
 ## Create the App Registration
@@ -70,7 +70,7 @@ We then need to give our App Registration an API Permission, This will be the pe
 1. You will notice that the Grant admin consent is grayed out
 ![alt text](brave_w3uDbOYeBk.gif)
 
-2. This is Because we currently lack administrative roles
+2. This is Because we currently lack administrative roles for our account. For this next step you will need a Global Admin. 
 
 3. Ask a Global administrator to grant admin consent for you
 ![alt text](msedge_b9Xouwxtt7.gif)
@@ -80,6 +80,8 @@ We then need to give our App Registration an API Permission, This will be the pe
 
 Our next step is to limit what permissions our application will have within exchange, we have already said it will have `mail.send`
 however without further limitation that ill allow the application to send emails from any users email account. 
+
+This Stage will need to be done by an Exchange Online Administrator. 
 
 > **Further reading:** Further information of these next steps can be found [here](https://learn.microsoft.com/en-us/graph/auth-limit-mailbox-access).
 
