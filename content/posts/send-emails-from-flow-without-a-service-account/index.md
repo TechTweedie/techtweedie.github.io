@@ -210,30 +210,129 @@ To do this we need to:
 ### Step 3 - Configure your connector
 
 1. Click on to the Security tab.
-2. Click in to **Client ID**
-3. Navigate back to Entra and locate your App Registration. 
-4. Cope the Client ID and paste it in to the Client ID box on the Custom Connector. 
-5. Go back to the App Registration in Entra, and click on Certificates & secrets, then click on New client secret. Choose a sensible name and a reasonable date for expiry that fits within your organisations policy's. 
-6. Copy the secret value, NOT Secret ID, and paste it in to your connector. You will need your secret ID one more time so keep the Entra page open with it on.
-7. Click Create 
+2. Make sure we are using **OAuth 2.0**
+3. Make sure the Identity Provider is set to **Azure Active Directory** and that **Enable Service Principle support** is ticked.
+4. Click in to **Client ID**
+5. Navigate back to Entra and locate your App Registration. 
+6. Copy the **Client ID** and paste it in to the **Client ID** box on the Custom Connector. 
+7. Go back to the App Registration in Entra, and click on **Certificates & secrets**, then click on **New client secret**. Choose a name and a reasonable date for expiry that fits within your organisations policy's. 
+8. Copy the **Secret value**, NOT Secret ID, and paste it in to your connector. You will need your secret ID one more time so keep the Entra page open with it on.
+9. Click Create 
 
 ![alt text](msedge_aKfrGH1oIO.gif)
 
+### Step 4 - Add C# to process the attachment
+In order to be able to send attachments we need to add some C# to our connector. If you are not going to be sending attachments you can skip this step. 
 
-### Step 4 - Add your first connection
+To do this you need to:
+1. Click on to **Code**
+2. Click to enable code.
+3. Copy and pase the below code in to the code box.
+
+```CSharp
+public class Script : ScriptBase
+{
+    public override async Task<HttpResponseMessage> ExecuteAsync()
+    {
+        // Read the request content as a string
+        var requestContentAsString = await this.Context.Request.Content.ReadAsStringAsync().ConfigureAwait(false);
+        
+        // Parse the request content string into a JSON object
+        var requestContentAsJson = JObject.Parse(requestContentAsString);
+
+        // Modify the attachments array if it exists
+        List<string> attachmentFileTypes = new List<string>();
+
+        if (requestContentAsJson["message"]?["attachments"] is JArray attachments)
+        {
+            foreach (var attachment in attachments)
+            {
+
+                // Add the @odata.type element
+                attachment["@odata.type"] = "#microsoft.graph.fileAttachment";
+
+            }
+        }
+        
+        // Set the modified JSON back to the request content
+        this.Context.Request.Content = CreateJsonContent(requestContentAsJson.ToString());
+
+        // Send the API request and get the response
+        var response = await this.Context.SendAsync(this.Context.Request, this.CancellationToken).ConfigureAwait(continueOnCapturedContext: false);
+
+        // Read the response content as a string
+        var responseContentAsString = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+
+        // Check if the response content is empty or null
+        if (string.IsNullOrEmpty(responseContentAsString))
+        {
+            // Set a default message if there is no response from the endpoint
+            responseContentAsString = "{\"message\": \"No response from the endpoint\"}";
+        }
+        else
+        {
+            try
+            {
+                // Try to parse the response content string into a JSON object
+                var responseContentAsJson = JObject.Parse(responseContentAsString);
+                
+                // Convert the JSON object back to a string
+                responseContentAsString = responseContentAsJson.ToString();
+            }
+            catch (JsonReaderException)
+            {
+                // If parsing fails, set an error message with the invalid JSON response
+                responseContentAsString = $"{{\"message\": \"Invalid JSON response\", \"response\": \"{responseContentAsString}\"}}";
+            }
+        }
+
+        // Create a JSON object to include the original request and the response content
+        var finalResponseContent = new JObject
+        {
+
+            ["version"] = "1.2.0", // Add version number here
+            ["responseContent"] = JObject.Parse(responseContentAsString),
+ 
+        };
+
+        // Set the response content back to the JSON string
+        response.Content = CreateJsonContent(finalResponseContent.ToString());
+
+        // Return the response
+        return response;
+    }
+
+    private bool IsBinary(string content)
+    {
+        // Check if the content contains non-printable characters
+        foreach (char c in content)
+        {
+            if (char.IsControl(c) && c != '\r' && c != '\n' && c != '\t')
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```
+
+![alt text](msedge_ETA3maJOWu.gif)
+
+### Step 5 - Add your first connection
 
 1. Click on to Test.
 2. Then click on to **New connection**.
 3. You should then get a screen which lets your choose **Service Principle**, if you don't repeat step 3.
 4. Then click **Create Connection**.
-4. Enter in your **Secret** (we do this first as we already have the page open from Step 3).
-4. Then enter in your **Client ID** and **Tenant ID**. 
-5. Then click **Create Connection**.
+5. Enter in your **Secret** (we do this first as we already have the page open from Step 3).
+6. Then enter in your **Client ID** and **Tenant ID**. 
+7. Then click **Create Connection**.
 
 ![alt text](msedge_2mOjLRkn39.gif)
 
 
-### Step 5 - Test
+### Step 6 - Test
 
 1. On the Test screen scroll down to **Operations**.
 2. Enter in the following:
@@ -249,7 +348,7 @@ To do this we need to:
 
 ![alt text](msedge_jHKMp5JkcW.gif)
 
-### Step 6 - Lets try it in a Flow
+### Step 7 - Lets try it in a Flow
 
 1. Click on **My flows**
 2. Create a new flow.
@@ -261,6 +360,7 @@ To do this we need to:
 8. Test and make sure the email comes through.
 
 ![alt text](msedge_7if2t23IPS.gif)
+
 
 
 ## Conclusion: Secure, Scalable Email Sending from Power Automate
