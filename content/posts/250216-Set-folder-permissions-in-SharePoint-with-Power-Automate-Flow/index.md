@@ -218,10 +218,10 @@ To do this we need to:
 1. Navigate to `https://make.powerautomate.com/`
 2. Change our environment should you need to.
 3. Then in the left hand menu, navigate to **More** and then **Discover all**, and then locate **Custom connectors**.
- 
 
- 
- 
+![alt text](../send-emails-from-flow-without-a-service-account/msedge_eb1IgNQwCG.gif)
+
+******************************************
 ### Step 2 - Create a new connector
  
 1. Click on **New custom connector**.
