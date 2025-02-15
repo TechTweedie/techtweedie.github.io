@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Backup - Tag - Tech Tweedie</title>
+        <link>http://localhost:1313/tags/backup/</link>
+        <description>Backup - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 03 Sep 2024 07:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/backup/" rel="self" type="application/rss+xml" /><item>
+    <title>Backup Dataverse Development Environment</title>
+    <link>http://localhost:1313/posts/backup-dataverse-development-environment/</link>
+    <pubDate>Tue, 03 Sep 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/backup-dataverse-development-environment/</guid>
+    <description><![CDATA[Introduction Ever wondered what would happen if you lost your development environment? How do you feel about having to do all of that work again? What about if you spot a problem days later? Can you remember the value you changed three days ago in that flow? Have you ever seen someone delete the website record by mistake.
+These are all situations I have been in over the last few years, and having a Pipeline in place to ensure backup of your hard work is extremely important.]]></description>
+</item>
+</channel>
+</rss>

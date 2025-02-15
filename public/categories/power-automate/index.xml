@@ -1,0 +1,35 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Power Automate - Category - Tech Tweedie</title>
+        <link>http://localhost:1313/categories/power-automate/</link>
+        <description>Power Automate - Category - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/power-automate/" rel="self" type="application/rss+xml" /><item>
+    <title>Send Emails from Flow without a Service Account</title>
+    <link>http://localhost:1313/posts/250216-/</link>
+    <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250216-/</guid>
+    <description><![CDATA[Want to send emails from Power Automate but can&rsquo;t or don&rsquo;t want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?
+Good news! In this guide, I&rsquo;ll show you how to send emails directly from Microsoft Exchange using only an App Registration. No service accounts, no password headaches.]]></description>
+</item>
+<item>
+    <title>Send Emails from Flow without a Service Account</title>
+    <link>http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/</link>
+    <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/</guid>
+    <description><![CDATA[Want to send emails from Power Automate but can&rsquo;t or don&rsquo;t want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?
+Good news! In this guide, I&rsquo;ll show you how to send emails directly from Microsoft Exchange using only an App Registration. No service accounts, no password headaches.]]></description>
+</item>
+<item>
+    <title>Query Parameters on HTTP Trigger</title>
+    <link>http://localhost:1313/posts/custom-mailto-from-command-button/</link>
+    <pubDate>Sun, 03 Apr 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/custom-mailto-from-command-button/</guid>
+    <description><![CDATA[Hello there! Today, let’s unwrap a neat trick for those using Model-Driven Apps within the Dynamics 365 or Power Platform universe. The goal? To effortlessly send email notifications from a record, using a clever bit of JavaScript magic. This could be a game-changer for keeping your team in sync with account updates, without the fuss of manual updates.
+Why It Matters In the whirlwind of managing customer accounts, staying ahead with real-time updates is key.]]></description>
+</item>
+<item>
+    <title>Query Parameters on HTTP Trigger</title>
+    <link>http://localhost:1313/posts/query-parameters-on-http-trigger/</link>
+    <pubDate>Sun, 03 Apr 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/query-parameters-on-http-trigger/</guid>
+    <description><![CDATA[Introduction Working with Power Automate, especially with HTTP triggers, can unlock a lot of potential in automating tasks and workflows. A common requirement is to use query parameters from the trigger URL within your flow. I’ve found a straightforward method to do this and thought it might be helpful to share.
+When your flow is triggered via an HTTP request, it might need to behave differently based on the values passed through query parameters.]]></description>
+</item>
+</channel>
+</rss>

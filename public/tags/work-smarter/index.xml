@@ -1,0 +1,20 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Work Smarter - Tag - Tech Tweedie</title>
+        <link>http://localhost:1313/tags/work-smarter/</link>
+        <description>Work Smarter - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 18 Dec 2022 19:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/work-smarter/" rel="self" type="application/rss+xml" /><item>
+    <title>Thinking Environment Meetings</title>
+    <link>http://localhost:1313/posts/thinking-environment-meetings/</link>
+    <pubDate>Sun, 18 Dec 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/thinking-environment-meetings/</guid>
+    <description><![CDATA[In today’s remote work environment, the significance of effective team meetings cannot be overstated. These gatherings are pivotal for aligning goals, addressing challenges, and fostering team cohesion.
+However, not all meetings are created equal. The introduction of a Thinking Environment, as outlined by Nancy Kline in her book “Time to Think,” offers a transformative approach to traditional meetings. When combined with the structured reflection of retrospectives, this approach can elevate the effectiveness of team meetings.]]></description>
+</item>
+<item>
+    <title>DMAIC and DMADV Methodologies</title>
+    <link>http://localhost:1313/posts/dmaic-and-dmadv-methodologies/</link>
+    <pubDate>Sun, 09 Oct 2022 19:32:41 &#43;0100</pubDate><guid>http://localhost:1313/posts/dmaic-and-dmadv-methodologies/</guid>
+    <description><![CDATA[Introduction In the quest for excellence, businesses continuously seek ways to improve processes, enhance quality, and increase customer satisfaction. Six Sigma stands out as a beacon of efficiency, a methodology that has revolutionized industries by drastically reducing errors and increasing profitability. At the heart of Six Sigma are two powerful methodologies: DMAIC and DMADV. Each plays a critical role in a company&rsquo;s quest for perfection, but understanding when and how to use them is key to achieving transformative results.]]></description>
+</item>
+</channel>
+</rss>

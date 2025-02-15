@@ -1,0 +1,34 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Power Automate - Tag - Tech Tweedie</title>
+        <link>http://localhost:1313/tags/power-automate/</link>
+        <description>Power Automate - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/power-automate/" rel="self" type="application/rss+xml" /><item>
+    <title>Send Emails from Flow without a Service Account</title>
+    <link>http://localhost:1313/posts/250216-/</link>
+    <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250216-/</guid>
+    <description><![CDATA[Want to send emails from Power Automate but can&rsquo;t or don&rsquo;t want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?
+Good news! In this guide, I&rsquo;ll show you how to send emails directly from Microsoft Exchange using only an App Registration. No service accounts, no password headaches.]]></description>
+</item>
+<item>
+    <title>Send Emails from Flow without a Service Account</title>
+    <link>http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/</link>
+    <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/</guid>
+    <description><![CDATA[Want to send emails from Power Automate but can&rsquo;t or don&rsquo;t want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?
+Good news! In this guide, I&rsquo;ll show you how to send emails directly from Microsoft Exchange using only an App Registration. No service accounts, no password headaches.]]></description>
+</item>
+<item>
+    <title>Calculate Working Day</title>
+    <link>http://localhost:1313/posts/calculate-working-day/</link>
+    <pubDate>Tue, 24 Sep 2024 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/calculate-working-day/</guid>
+    <description><![CDATA[Want to Calculate Working Day in Power Automate, having trubble with the number of variations. That’s why I’ve put together a nifty little tool to help out the community and make this process a whole lot easier. In this post, I&rsquo;ll guide you step-by-step through setting up and using this tool. Whether you’re trying to figure out the next working day, handle complex scheduling, or just want a smoother way to automate your date calculations, this is for you.]]></description>
+</item>
+<item>
+    <title>Securing Power Automate for Production</title>
+    <link>http://localhost:1313/posts/securing-power-automate-for-production/</link>
+    <pubDate>Mon, 05 Aug 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/securing-power-automate-for-production/</guid>
+    <description><![CDATA[Introduction Power Automate is a wonderful tool, but there is a world of difference between building something for personal productivity and utilising this amazing low-code tool for production, where an important business application will rely on it.
+When considering a workload like this, we need to make it easier to manage and troubleshoot, ensure reliability, and prioritise security. Finally, if the worst were to happen, such as some credentials becoming leaked or an endpoint being compromised, how can we configure this so that damage is limited?]]></description>
+</item>
+</channel>
+</rss>

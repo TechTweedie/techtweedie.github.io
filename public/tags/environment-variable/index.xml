@@ -1,18 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Environment Variable on Tech Tweedie</title>
-    <link>http://localhost:1313/tags/environment-variable/</link>
-    <description>Recent content in Environment Variable on Tech Tweedie</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="http://localhost:1313/tags/environment-variable/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Variables in PowerFX Command Buttons</title>
-      <link>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</guid>
-      <description>Introduction Have you ever wondered if you can use Environment Variables in a PowerFX button, how to create a custom email link button in the command bar of your Power Apps model-driven application using environment variables and Power FX? Luckily, Power Apps has recently made it possible to achieve this. With the help of Power FX, which is the same language used in canvas app development, anyone can efficiently customise their app’s command bar without needing prior knowledge of JavaScript or the Ribbon Workbench.</description>
-    </item>
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Environment Variable - Tag - Tech Tweedie</title>
+        <link>http://localhost:1313/tags/environment-variable/</link>
+        <description>Environment Variable - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 24 May 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/environment-variable/" rel="self" type="application/rss+xml" /><item>
+    <title>Variables in PowerFX Command Buttons</title>
+    <link>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</link>
+    <pubDate>Fri, 24 May 2024 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</guid>
+    <description><![CDATA[Introduction Have you ever wondered if you can use Environment Variables in a PowerFX button, how to create a custom email link button in the command bar of your Power Apps model-driven application using environment variables and Power FX? Luckily, Power Apps has made it possible to achieve this. With the help of Power FX, which is the same language used in canvas app development, anyone can efficiently customise their app’s command bar without needing prior knowledge of JavaScript or the Ribbon Workbench.]]></description>
+</item>
+</channel>
 </rss>

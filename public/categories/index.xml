@@ -1,33 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Categories on Tech Tweedie</title>
-    <link>http://localhost:1313/categories/</link>
-    <description>Recent content in Categories on Tech Tweedie</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 01 Jul 2024 19:45:40 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Power Platform</title>
-      <link>http://localhost:1313/categories/power-platform/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/power-platform/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hugo</title>
-      <link>http://localhost:1313/categories/hugo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/hugo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Troubleshooting</title>
-      <link>http://localhost:1313/categories/troubleshooting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/troubleshooting/</guid>
-      <description></description>
-    </item>
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Categories - Category - Tech Tweedie</title>
+        <link>http://localhost:1313/categories/</link>
+        <description>Categories - Category - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure</title>
+    <link>http://localhost:1313/categories/azure/</link>
+    <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/azure/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Power Automate</title>
+    <link>http://localhost:1313/categories/power-automate/</link>
+    <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/power-automate/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Power Platform</title>
+    <link>http://localhost:1313/categories/power-platform/</link>
+    <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/power-platform/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Hugo</title>
+    <link>http://localhost:1313/categories/hugo/</link>
+    <pubDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</pubDate><guid>http://localhost:1313/categories/hugo/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Troubleshooting</title>
+    <link>http://localhost:1313/categories/troubleshooting/</link>
+    <pubDate>Fri, 09 Feb 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/troubleshooting/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Digital Transformation</title>
+    <link>http://localhost:1313/categories/digital-transformation/</link>
+    <pubDate>Sat, 03 Feb 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/digital-transformation/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Trubbleshooting</title>
+    <link>http://localhost:1313/categories/trubbleshooting/</link>
+    <pubDate>Sun, 17 Sep 2023 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/trubbleshooting/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

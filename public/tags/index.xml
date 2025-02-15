@@ -1,103 +1,67 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on Tech Tweedie</title>
-    <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Tech Tweedie</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 01 Jul 2024 19:45:40 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Command Bar</title>
-      <link>http://localhost:1313/tags/command-bar/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/command-bar/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Custom Page</title>
-      <link>http://localhost:1313/tags/custom-page/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/custom-page/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>JavaScript</title>
-      <link>http://localhost:1313/tags/javascript/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Model Driven App</title>
-      <link>http://localhost:1313/tags/model-driven-app/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/model-driven-app/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PCF</title>
-      <link>http://localhost:1313/tags/pcf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pcf/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Share Knowledge</title>
-      <link>http://localhost:1313/tags/share-knowledge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/share-knowledge/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Automation</title>
-      <link>http://localhost:1313/tags/automation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/automation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Developer Tools</title>
-      <link>http://localhost:1313/tags/developer-tools/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/developer-tools/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Install Script</title>
-      <link>http://localhost:1313/tags/install-script/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/install-script/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PowerFX</title>
-      <link>http://localhost:1313/tags/powerfx/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/powerfx/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dataverse Search</title>
-      <link>http://localhost:1313/tags/dataverse-search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/dataverse-search/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Webhook Testing</title>
-      <link>http://localhost:1313/tags/webhook-testing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/webhook-testing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Environment Variable</title>
-      <link>http://localhost:1313/tags/environment-variable/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/environment-variable/</guid>
-      <description></description>
-    </item>
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - Tag - Tech Tweedie</title>
+        <link>http://localhost:1313/tags/</link>
+        <description>Tags - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Power Automate</title>
+    <link>http://localhost:1313/tags/power-automate/</link>
+    <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-automate/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Pipeline</title>
+    <link>http://localhost:1313/tags/pipeline/</link>
+    <pubDate>Tue, 22 Oct 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/pipeline/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>PowerShell</title>
+    <link>http://localhost:1313/tags/powershell/</link>
+    <pubDate>Tue, 22 Oct 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/powershell/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Backup</title>
+    <link>http://localhost:1313/tags/backup/</link>
+    <pubDate>Tue, 03 Sep 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/backup/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>DevOps</title>
+    <link>http://localhost:1313/tags/devops/</link>
+    <pubDate>Tue, 03 Sep 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/devops/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Power Platform DevOps</title>
+    <link>http://localhost:1313/tags/power-platform-devops/</link>
+    <pubDate>Tue, 03 Sep 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-platform-devops/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Power Platform Security</title>
+    <link>http://localhost:1313/tags/power-platform-security/</link>
+    <pubDate>Mon, 05 Aug 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-platform-security/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Command Bar</title>
+    <link>http://localhost:1313/tags/command-bar/</link>
+    <pubDate>Sun, 23 Jun 2024 19:32:41 &#43;0100</pubDate><guid>http://localhost:1313/tags/command-bar/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Custom Page</title>
+    <link>http://localhost:1313/tags/custom-page/</link>
+    <pubDate>Sun, 23 Jun 2024 19:32:41 &#43;0100</pubDate><guid>http://localhost:1313/tags/custom-page/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>JavaScript</title>
+    <link>http://localhost:1313/tags/javascript/</link>
+    <pubDate>Sun, 23 Jun 2024 19:32:41 &#43;0100</pubDate><guid>http://localhost:1313/tags/javascript/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

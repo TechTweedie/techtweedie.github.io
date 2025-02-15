@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Too Many Redirects on WordPress - Tech Tweedie</title><meta name="description" content="I recently set up a new WordPress website for a friend. It was late one evening, and I was in a bit of a rush; as with many people online, I chose to use Cloudflare to protect the website."><meta property="og:url" content="http://localhost:1313/posts/too-many-redirects-on-wordpress/">
+  <meta property="og:site_name" content="Tech Tweedie">
+  <meta property="og:title" content="Too Many Redirects on WordPress">
+  <meta property="og:description" content="I recently set up a new WordPress website for a friend. It was late one evening, and I was in a bit of a rush; as with many people online, I chose to use Cloudflare to protect the website.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-09-17T19:00:00+01:00">
+    <meta property="article:modified_time" content="2024-07-01T19:45:40+08:00">
+    <meta property="article:tag" content="WordPress">
+    <meta property="article:tag" content="Cloudflare">
+    <meta property="article:tag" content="Reverse Proxy">
+    <meta property="og:image" content="http://localhost:1313/posts/too-many-redirects-on-wordpress/featureImage_2.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/posts/too-many-redirects-on-wordpress/featureImage_2.webp">
+  <meta name="twitter:title" content="Too Many Redirects on WordPress">
+  <meta name="twitter:description" content="I recently set up a new WordPress website for a friend. It was late one evening, and I was in a bit of a rush; as with many people online, I chose to use Cloudflare to protect the website.">
+      <meta name="twitter:site" content="@itweedie">
+<meta name="application-name" content="Tech Tweedie">
+<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/too-many-redirects-on-wordpress/" /><link rel="prev" href="http://localhost:1313/posts/thinking-environment-meetings/" /><link rel="next" href="http://localhost:1313/posts/bias-of-maslows-hammer/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Too Many Redirects on WordPress",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/posts\/too-many-redirects-on-wordpress\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/localhost:1313\/posts\/too-many-redirects-on-wordpress\/featureImage.png",
+                            "width":  1792 ,
+                            "height":  300 
+                        }],"genre": "posts","keywords": "WordPress, Cloudflare, Reverse Proxy","wordcount":  774 ,
+        "url": "http:\/\/localhost:1313\/posts\/too-many-redirects-on-wordpress\/","datePublished": "2023-09-17T19:00:00+01:00","dateModified": "2024-07-01T19:45:40+08:00","publisher": {
+            "@type": "Organization",
+            "name": "itweedie"},"author": {
+                "@type": "Person",
+                "name": "itweedie"
+            },"description": "I recently set up a new WordPress website for a friend. It was late one evening, and I was in a bit of a rush; as with many people online, I chose to use Cloudflare to protect the website."
+    }
+    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" rel="noopener noreffer" target="_blank"> YouTube Channel </a><a class="menu-item" href="https://mightora.io/" rel="noopener noreffer" target="_blank"> Free Power Platform Tools </a><span class="menu-item delimiter"></span><a class="menu-item" href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" title="" rel="noopener noreffer" target="_blank">YouTube Channel</a><a class="menu-item" href="https://mightora.io/" title="" rel="noopener noreffer" target="_blank">Free Power Platform Tools</a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="disable"><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/too-many-redirects-on-wordpress/featureImage.png"
+        data-srcset="/posts/too-many-redirects-on-wordpress/featureImage.png, /posts/too-many-redirects-on-wordpress/featureImage.png 1.5x, /posts/too-many-redirects-on-wordpress/featureImage.png 2x"
+        data-sizes="auto"
+        alt="/posts/too-many-redirects-on-wordpress/featureImage.png"
+        title="I recently set up a new WordPress website for a friend. It was late one evening, and I was in a bit of a rush; as with many people online, I chose to use Cloudflare to protect the website." /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Too Many Redirects on WordPress</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="https://iantweedie.biz" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>itweedie</a></span>&nbsp;<span class="post-category">published in <a href="/categories/trubbleshooting/"><i class="fa-regular fa-folder fa-fw"></i>Trubbleshooting</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-09-17">2023-09-17</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;774 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;4 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#some-of-the-reasons-why-this-problem-can-occur">Some of the reasons why this problem can occur</a></li>
+    <li><a href="#so-how-did-i-approach-the-problem">So, how did I approach the problem?</a>
+      <ul>
+        <li><a href="#something-local">Something Local</a></li>
+        <li><a href="#redirect-loops">Redirect loops</a></li>
+        <li><a href="#diving-into-the-problem">Diving into the problem</a></li>
+        <li><a href="#the-solution">The solution</a></li>
+        <li><a href="#tips-and-best-practices">Tips and Best Practices</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><h2 id="introduction">Introduction</h2>
+<p>I recently set up a new WordPress website for a friend. It was late one evening, and I was in a bit of a rush; as with many people online, I chose to use Cloudflare to protect the website.</p>
+<p>However, problems arose after setting up the WordPress website when I configured the SSL/TLS side of things.</p>
+<p>I switched on Cloudflare’s proxy as normal.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="img/image1.webp"
+        data-srcset="/posts/too-many-redirects-on-wordpress/img/image1.webp, img/image1.webp 1.5x, /posts/too-many-redirects-on-wordpress/img/image1.webp 2x"
+        data-sizes="auto"
+        alt="/posts/too-many-redirects-on-wordpress/img/image1.webp"
+        title="/posts/too-many-redirects-on-wordpress/img/image1.webp" /></p>
+<p>So far so good.</p>
+<p>Then I continued to edit the site before handing it over to my friend; however, I noticed I was getting load errors.</p>
+<p>Checking some of the settings, I noticed that both the <em>WordPress Address (URL)</em> and <em>Site Address (URL)</em> were set to <code>http://a.wordpress-website.com</code>. I changed them to <code>https://a.wordpress-website.com</code>. To my annoyance, when I did, I was met with ERR_TOO_MANY_REDIRECTS.</p>
+<p>This error occurs when a webpage gets stuck in a loop of continuous redirects, making it impossible to access the desired content.</p>
+<p>What had I done wrong?  In this post, I run through the steps I took to understand what happened and how I fixed it.</p>
+<h2 id="some-of-the-reasons-why-this-problem-can-occur">Some of the reasons why this problem can occur</h2>
+<ol>
+<li><strong>Something local:</strong> It could be because of some issue local to my device, something browser/client-based.</li>
+<li><strong>Redirect loops:</strong> This is where <code>https://a.wordpress-website.com</code> points to <code>https://b.wordpress-website.com</code>, which then, in turn points the user back to <code>https://a.wordpress-website.com</code></li>
+<li><strong>A misconfiguration SSL/TLS Encryption mode:</strong> Your domain’s SSL/TLS Encryption mode controls how Cloudflare connects to your origin server and how SSL certificates presented by your origin will be validated.</li>
+<li><strong>Various Edge Certificates settings:</strong>  If you enable Always Use HTTPS for your domain, Cloudflare will automatically redirect all HTTP requests to HTTPS for every subdomain and host in your application.</li>
+</ol>
+<p>However, first, let’s take a step back so we can all understand what communication is going on here.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="img/image2.webp"
+        data-srcset="/posts/too-many-redirects-on-wordpress/img/image2.webp, img/image2.webp 1.5x, /posts/too-many-redirects-on-wordpress/img/image2.webp 2x"
+        data-sizes="auto"
+        alt="/posts/too-many-redirects-on-wordpress/img/image2.webp"
+        title="/posts/too-many-redirects-on-wordpress/img/image2.webp" /></p>
+<p>In our scenario, the browser is going to Cloudflare, and Cloudflare is then going to the Origin Server which is where the WordPress Website is.</p>
+<h2 id="so-how-did-i-approach-the-problem">So, how did I approach the problem?</h2>
+<h3 id="something-local">Something Local</h3>
+<p>Before diving too far into solutions, it’s essential to understand if we have a real problem or if this results from some cache, DNS, or other browser thing. This can happen when bringing any site online.</p>
+<p>So, I cleared all my cache, flushed my DNS, restarted, and nothing changed.</p>
+<p>Next on my list was, is it just me, how about if I use a different device, there might be something specific just to this client? So, I fired up Windows Sandbox (see my post on how to set this up here), but no luck; pick up my iPhone, still no luck, same problem.</p>
+<p>So, it’s not just me.</p>
+<h3 id="redirect-loops">Redirect loops</h3>
+<p>Next, I checked the WordPress settings to see if any redirect loops or plugins were causing the issue. After disabling everything, testing, and seeing if the problem was still there, I was convinced that I checked through the WordPress settings.</p>
+<p>Everything looked correct, so I thought, what if I change the setting back for both the <em>WordPress Address (URL)</em> and <em>Site Address (URL)</em>. Sure, enough of the problem was resolved. However, my page load errors returned.</p>
+<p>I thought I would try switching off the Cloudflare proxy for this hostname and setting the site URL back to https. No error. Switched Cloudflare back on. The redirect loop came back.</p>
+<p>I had established that I could not have Cloudflare proxy on and have the site URLs set to HTTPS. This didn’t seem right; I had done it this way before, but what was different now?</p>
+<h3 id="diving-into-the-problem">Diving into the problem</h3>
+<p>I knew where the problem was.</p>
+<ol>
+<li>One of the settings in Cloudflare was causing Cloudflare to make an HTTP request to the origin server.</li>
+<li>The origin server was redirecting this request to HTTPS.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="img/image3.webp"
+        data-srcset="/posts/too-many-redirects-on-wordpress/img/image3.webp, img/image3.webp 1.5x, /posts/too-many-redirects-on-wordpress/img/image3.webp 2x"
+        data-sizes="auto"
+        alt="/posts/too-many-redirects-on-wordpress/img/image3.webp"
+        title="/posts/too-many-redirects-on-wordpress/img/image3.webp" /></p>
+<p>As you can see step 2 does not make a HTTPS request to the origin.</p>
+<p>I needed to find the setting Cloudflare that handles the connection between Cloudflare and the Origin server.</p>
+<h3 id="the-solution">The solution</h3>
+<p>Settings to control how Cloudflare connects to the origin server are stored under the dashboard for your domain, under SSL/TLS. See this useful <a href="https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/" target="_blank" rel="noopener noreffer">article</a>. </p>
+<p>Reading through the options, I see that for one of the options;</p>
+<blockquote>
+<p><a href="https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/flexible/" target="_blank" rel="noopener noreffer">Flexible</a>: Setting your encryption mode to <strong>Flexible</strong> makes your site partially secure. Cloudflare allows HTTPS connections between your visitor and Cloudflare, but all connections between Cloudflare and your origin are made through HTTP. As a result, an SSL certificate is not required on your origin.</p>
+<p>From: <a href="https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/" target="_blank" rel="noopener noreffer">https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/</a></p>
+</blockquote>
+<p>My site was configured in flexible mode, an easy fix, but an option I had clearly missed.</p>
+<h3 id="tips-and-best-practices">Tips and Best Practices</h3>
+<p>Thinking about what I could do to avoid this problem in the future, a few thoughts come to mind.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/wordpress/">WordPress</a>
+                </span><span><a href="/tags/cloudflare/">Cloudflare</a>
+                </span><span><a href="/tags/reverse-proxy/">Reverse Proxy</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2024-07-01</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/posts/too-many-redirects-on-wordpress/" data-title="Too Many Redirects on WordPress" data-via="itweedie" data-hashtags="WordPress,Cloudflare,Reverse Proxy"><i class="fa-brands fa-square-x-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/too-many-redirects-on-wordpress/" data-hashtag="WordPress"><i class="fa-brands fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="http://localhost:1313/posts/too-many-redirects-on-wordpress/"><i class="fa-brands fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://localhost:1313/posts/too-many-redirects-on-wordpress/" data-title="Too Many Redirects on WordPress" data-web><i class="fa-brands fa-whatsapp fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/posts/thinking-environment-meetings/" class="prev" rel="prev" title="Thinking Environment Meetings"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/bias-of-maslows-hammer/" class="next" rel="next" title="Bias of Maslow’s Hammer">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
+</div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.3">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt 1.0.2"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/"></a></span></div>
+</div>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"Tech Tweedie","id-2":"Tech Tweedie"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>
