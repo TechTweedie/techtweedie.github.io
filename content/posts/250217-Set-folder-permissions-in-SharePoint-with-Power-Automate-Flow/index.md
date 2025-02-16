@@ -10,7 +10,7 @@ categories:
   - EntraID
   - Power Platform
 date: 2025-02-17T11:06:00+01:00
-publishDate: 2025-02-16T06:00:00+01:00
+publishDate: 2025-02-17T06:00:00+01:00
 lastmod: 2025-02-17T06:00:00+01:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
