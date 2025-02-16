@@ -5,13 +5,6 @@
         <description>HTTP Trigger - Tag - Tech Tweedie</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 03 Apr 2022 19:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/http-trigger/" rel="self" type="application/rss+xml" /><item>
     <title>Query Parameters on HTTP Trigger</title>
-    <link>http://localhost:1313/posts/custom-mailto-from-command-button/</link>
-    <pubDate>Sun, 03 Apr 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/custom-mailto-from-command-button/</guid>
-    <description><![CDATA[Hello there! Today, let’s unwrap a neat trick for those using Model-Driven Apps within the Dynamics 365 or Power Platform universe. The goal? To effortlessly send email notifications from a record, using a clever bit of JavaScript magic. This could be a game-changer for keeping your team in sync with account updates, without the fuss of manual updates.
-Why It Matters In the whirlwind of managing customer accounts, staying ahead with real-time updates is key.]]></description>
-</item>
-<item>
-    <title>Query Parameters on HTTP Trigger</title>
     <link>http://localhost:1313/posts/query-parameters-on-http-trigger/</link>
     <pubDate>Sun, 03 Apr 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/query-parameters-on-http-trigger/</guid>
     <description><![CDATA[Introduction Working with Power Automate, especially with HTTP triggers, can unlock a lot of potential in automating tasks and workflows. A common requirement is to use query parameters from the trigger URL within your flow. I’ve found a straightforward method to do this and thought it might be helpful to share.

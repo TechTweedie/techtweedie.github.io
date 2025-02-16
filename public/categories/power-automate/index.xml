@@ -3,12 +3,13 @@
         <title>Power Automate - Category - Tech Tweedie</title>
         <link>http://localhost:1313/categories/power-automate/</link>
         <description>Power Automate - Category - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/power-automate/" rel="self" type="application/rss+xml" /><item>
-    <title>Send Emails from Flow without a Service Account</title>
-    <link>http://localhost:1313/posts/250216-/</link>
-    <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250216-/</guid>
-    <description><![CDATA[Want to send emails from Power Automate but can&rsquo;t or don&rsquo;t want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?
-Good news! In this guide, I&rsquo;ll show you how to send emails directly from Microsoft Exchange using only an App Registration. No service accounts, no password headaches.]]></description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/power-automate/" rel="self" type="application/rss+xml" /><item>
+    <title>Set folder permissions in SharePoint with Power Automate Flow</title>
+    <link>http://localhost:1313/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/</link>
+    <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/</guid>
+    <description><![CDATA[Want to set item or folder permissions in SharePoint using Power Automate but can&rsquo;t out how to do it? Not able to do it with the out of the box SharePoint Connector?
+Good news! In this guide, I&rsquo;ll show you how to set these using an App Registration. No service accounts, no password headaches. I&rsquo;ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:
+Create and configure the App Registration Assign API permissions Setting permissions using sites.]]></description>
 </item>
 <item>
     <title>Send Emails from Flow without a Service Account</title>
@@ -16,13 +17,6 @@ Good news! In this guide, I&rsquo;ll show you how to send emails directly from M
     <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/</guid>
     <description><![CDATA[Want to send emails from Power Automate but can&rsquo;t or don&rsquo;t want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?
 Good news! In this guide, I&rsquo;ll show you how to send emails directly from Microsoft Exchange using only an App Registration. No service accounts, no password headaches.]]></description>
-</item>
-<item>
-    <title>Query Parameters on HTTP Trigger</title>
-    <link>http://localhost:1313/posts/custom-mailto-from-command-button/</link>
-    <pubDate>Sun, 03 Apr 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/custom-mailto-from-command-button/</guid>
-    <description><![CDATA[Hello there! Today, let’s unwrap a neat trick for those using Model-Driven Apps within the Dynamics 365 or Power Platform universe. The goal? To effortlessly send email notifications from a record, using a clever bit of JavaScript magic. This could be a game-changer for keeping your team in sync with account updates, without the fuss of manual updates.
-Why It Matters In the whirlwind of managing customer accounts, staying ahead with real-time updates is key.]]></description>
 </item>
 <item>
     <title>Query Parameters on HTTP Trigger</title>

@@ -1,6 +1,6 @@
 ---
 title: "Set folder permissions in SharePoint with Power Automate Flow"
-description: ""
+description: "Discover how to set item or folder permissions in SharePoint using Power Automate Flow with a custom connector and service principal in this comprehensive step-by-step guide."
 tags:
   - Power Automate
   - EntraID

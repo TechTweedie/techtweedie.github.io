@@ -4,17 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Set folder permissions in SharePoint with Power Automate Flow - Tech Tweedie</title><meta name="description" content="Beyond the low code, Tech Tweedie offers comprehensive guides and tutorials on Power Platform, Microsoft technologies, and Hugo. Learn how to build PCF controls, install Hugo on Windows 11, and more. Stay updated with our latest posts and in-depth content."><meta property="og:url" content="http://localhost:1313/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/">
+        <title>Set folder permissions in SharePoint with Power Automate Flow - Tech Tweedie</title><meta name="description" content="Discover how to set item or folder permissions in SharePoint using Power Automate Flow with a custom connector and service principal in this comprehensive step-by-step guide."><meta property="og:url" content="http://localhost:1313/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/">
   <meta property="og:site_name" content="Tech Tweedie">
   <meta property="og:title" content="Set folder permissions in SharePoint with Power Automate Flow">
-  <meta property="og:description" content="Want to set item or folder permissions in SharePoint using Power Automate but can’t out how to do it? Not able to do it with the out of the box SharePoint Connector?
-Good news! In this guide, I’ll show you how to set these using an App Registration. No service accounts, no password headaches. I’ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:
-Create and configure the App Registration Assign API permissions Setting permissions using sites.">
+  <meta property="og:description" content="Discover how to set item or folder permissions in SharePoint using Power Automate Flow with a custom connector and service principal in this comprehensive step-by-step guide.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-02-10T11:00:00+01:00">
-    <meta property="article:modified_time" content="2025-02-10T11:00:00+01:00">
+    <meta property="article:published_time" content="2025-02-17T11:06:00+01:00">
+    <meta property="article:modified_time" content="2025-02-17T06:00:00+01:00">
     <meta property="article:tag" content="Power Automate">
     <meta property="article:tag" content="EntraID">
     <meta property="article:tag" content="Power Platform">
@@ -23,9 +21,7 @@ Create and configure the App Registration Assign API permissions Setting permiss
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/featureImage.png">
   <meta name="twitter:title" content="Set folder permissions in SharePoint with Power Automate Flow">
-  <meta name="twitter:description" content="Want to set item or folder permissions in SharePoint using Power Automate but can’t out how to do it? Not able to do it with the out of the box SharePoint Connector?
-Good news! In this guide, I’ll show you how to set these using an App Registration. No service accounts, no password headaches. I’ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:
-Create and configure the App Registration Assign API permissions Setting permissions using sites.">
+  <meta name="twitter:description" content="Discover how to set item or folder permissions in SharePoint using Power Automate Flow with a custom connector and service principal in this comprehensive step-by-step guide.">
       <meta name="twitter:site" content="@itweedie">
 <meta name="application-name" content="Tech Tweedie">
 <meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/" /><link rel="prev" href="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
@@ -42,13 +38,13 @@ Create and configure the App Registration Assign API permissions Setting permiss
                             "url": "http:\/\/localhost:1313\/posts\/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow\/featureImage.png",
                             "width":  1792 ,
                             "height":  300 
-                        }],"genre": "posts","keywords": "Power Automate, EntraID, Power Platform","wordcount":  1767 ,
-        "url": "http:\/\/localhost:1313\/posts\/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow\/","datePublished": "2025-02-10T11:00:00+01:00","dateModified": "2025-02-10T11:00:00+01:00","publisher": {
+                        }],"genre": "posts","keywords": "Power Automate, EntraID, Power Platform","wordcount":  2172 ,
+        "url": "http:\/\/localhost:1313\/posts\/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow\/","datePublished": "2025-02-17T11:06:00+01:00","dateModified": "2025-02-17T06:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "itweedie"},"author": {
                 "@type": "Person",
                 "name": "itweedie"
-            },"description": ""
+            },"description": "Discover how to set item or folder permissions in SharePoint using Power Automate Flow with a custom connector and service principal in this comprehensive step-by-step guide."
     }
     </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
@@ -105,10 +101,10 @@ Create and configure the App Registration Assign API permissions Setting permiss
         data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/featureImage.png, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/featureImage.png 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/featureImage.png 2x"
         data-sizes="auto"
         alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/featureImage.png"
-        title="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/featureImage.png" /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Set folder permissions in SharePoint with Power Automate Flow</h2><div class="post-meta">
+        title="Discover how to set item or folder permissions in SharePoint using Power Automate Flow with a custom connector and service principal in this comprehensive step-by-step guide." /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Set folder permissions in SharePoint with Power Automate Flow</h2><div class="post-meta">
                 <div class="post-meta-line"><span class="post-author"><a href="https://iantweedie.biz" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>itweedie</a></span>&nbsp;<span class="post-category">published in <a href="/categories/power-automate/"><i class="fa-regular fa-folder fa-fw"></i>Power Automate</a>&nbsp;<a href="/categories/entraid/"><i class="fa-regular fa-folder fa-fw"></i>EntraID</a>&nbsp;<a href="/categories/power-platform/"><i class="fa-regular fa-folder fa-fw"></i>Power Platform</a></span></div>
-                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-02-10">2025-02-10</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;1767 words</span>&nbsp;
-                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;9 minutes</span>&nbsp;</div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-02-17">2025-02-17</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;2172 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;11 minutes</span>&nbsp;</div>
             </div>
             
             <hr><div class="details toc" id="toc-static"  data-kept="">
@@ -133,9 +129,6 @@ Create and configure the App Registration Assign API permissions Setting permiss
         <li><a href="#step-2---give-permission-to-our-app-regestration-for-this-site">Step 2 - Give Permission to our App Regestration for this site</a></li>
         <li><a href="#step-1---access-ms-graph-explorer">Step 1 - Access MS Graph Explorer</a></li>
         <li><a href="#step-2---set-permissions">Step 2 - Set permissions</a></li>
-        <li><a href="#step-3---create-application-access-policy">Step 3 - Create Application Access Policy</a></li>
-        <li><a href="#step-4---import-and-connect">Step 4 - Import and Connect</a></li>
-        <li><a href="#step-5---lets-test-it-in-powershell">Step 5 - Let&rsquo;s test it in PowerShell</a></li>
       </ul>
     </li>
     <li><a href="#download-and-testing-the-connector">Download and testing the connector</a>
@@ -144,11 +137,26 @@ Create and configure the App Registration Assign API permissions Setting permiss
         <li><a href="#step-2---create-a-new-connector">Step 2 - Create a new connector</a></li>
         <li><a href="#step-3---configure-your-connector">Step 3 - Configure your connector</a></li>
         <li><a href="#step-5---add-your-first-connection">Step 5 - Add your first connection</a></li>
-        <li><a href="#step-6---test">Step 6 - Test</a></li>
-        <li><a href="#step-7---lets-try-it-in-a-flow">Step 7 - Lets try it in a Flow</a></li>
+        <li><a href="#step-6---test-get-site-information">Step 6 - Test get site information</a></li>
       </ul>
     </li>
-    <li><a href="#conclusion-secure-scalable-email-sending-from-power-automate">Conclusion: Secure, Scalable Email Sending from Power Automate</a></li>
+    <li><a href="#testing-adding-a-permission">Testing adding a permission</a>
+      <ul>
+        <li><a href="#step-1---test-2-to-list-drives">Step 1 - Test 2 to list drives</a></li>
+        <li><a href="#step-2---lets-test-adding-a-folder">Step 2 - Let&rsquo;s test adding a folder</a></li>
+        <li><a href="#step-3---lets-add-the-permission">Step 3 - Let&rsquo;s add the permission</a></li>
+        <li><a href="#step-4---lets-try-it-in-a-flow">Step 4 - Lets try it in a Flow</a></li>
+      </ul>
+    </li>
+    <li><a href="#lets-demo-in-a-power-automate-flow">Lets Demo in a Power Automate Flow</a>
+      <ul>
+        <li><a href="#step-1---start-with-a-flow-to-list-the-drives">Step 1 - Start with a flow to list the drives</a></li>
+        <li><a href="#step-2---filter-the-drives-we-got-back">Step 2 - Filter the drives we got back</a></li>
+        <li><a href="#step-3---lets-test-adding-a-folder">Step 3 - Let&rsquo;s test adding a folder</a></li>
+        <li><a href="#step-4---lets-add-the-permission">Step 4 - Let&rsquo;s add the permission</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
                 </div><div class="content" id="content"><p>Want to set item or folder permissions in SharePoint using <strong>Power Automate</strong> but can&rsquo;t out how to do it? Not able to do it with the out of the box SharePoint Connector?</p>
@@ -276,122 +284,86 @@ This Stage will need to be done by someone who is an Owner of the SharePoint sit
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="msedge_QUHtmixvFm-B.gif"
-        data-srcset="msedge_QUHtmixvFm-B.gif, msedge_QUHtmixvFm-B.gif 1.5x, msedge_QUHtmixvFm-B.gif 2x"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_QUHtmixvFm-B.gif, msedge_QUHtmixvFm-B.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_QUHtmixvFm-B.gif 2x"
         data-sizes="auto"
-        alt="msedge_QUHtmixvFm-B.gif"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_QUHtmixvFm-B.gif"
         title="alt text" /></p>
 <h3 id="step-2---set-permissions">Step 2 - Set permissions</h3>
 <p>The next stage is to run the <strong>Create permission</strong> command for the app registration to give tit the necessary permissions to be able to set permissions for files and folders.</p>
 <p>To do this we need to;</p>
 <ol>
-<li>Change the method to <code>POST</code>.</li>
-<li>Enter in the following address <code>https://graph.microsoft.com/v1.0/sites/{sitesId}/permissions</code>, replacing the <code>{siteID}</code> with your <strong>siteID</strong>. e.g. <code>https://graph.microsoft.com/v1.0/sites/9ce4e8e2-fa87-474b-bd2f-d858d828f8a1/permissions</code>.</li>
-<li>Then in <strong>Request body</strong> enter in the below json replacing <code>{clientID}</code> and <code>{displayName}</code> with your applications details.</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="err">POST</span> <span class="err">https:</span><span class="c1">//graph.microsoft.com/v1.0/sites/{sitesId}/permissions
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">Content-Type:</span> <span class="err">application/json</span><span class="p">{</span> 
-</span></span><span class="line"><span class="cl"> <span class="nt">&#34;roles&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;write&#34;</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl"> <span class="nt">&#34;grantedToIdentities&#34;</span><span class="p">:</span> <span class="p">[{</span>
+<li>
+<p>Change the method to <code>POST</code>.</p>
+</li>
+<li>
+<p>Enter in the following address <code>https://graph.microsoft.com/v1.0/sites/{sitesId}/permissions</code>, replacing the <code>{siteID}</code> with your <strong>siteID</strong>. e.g. <code>https://graph.microsoft.com/v1.0/sites/9ce4e8e2-fa87-474b-bd2f-d858d828f8a1/permissions</code>.</p>
+</li>
+<li>
+<p>Click on <strong>Modify permissions</strong> and open the <strong>permissions panel</strong>.</p>
+</li>
+<li>
+<p>Search for site, and then open up <strong>Sites</strong>.</p>
+</li>
+<li>
+<p>Click on <strong>Consent</strong> for <code>Sites.FullControl.All</code>. This will open up a consent screen.</p>
+</li>
+<li>
+<p>Then in <strong>Request body</strong> enter in the below json replacing <code>{clientID}</code> and <code>{displayName}</code> with your applications details.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span> 
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;roles&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;write&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;grantedToIdentities&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;application&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;89ea5c94-7736-4e25-95ad-3fa95f62b66e&#34;</span><span class="p">,</span>  <span class="c1">//Application Client Id
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="nt">&#34;displayName&#34;</span><span class="p">:</span> <span class="s2">&#34;Contoso Time Manager App&#34;</span>       <span class="c1">//Application Display name
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}]</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;{clientID}&#34;</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;displayName&#34;</span><span class="p">:</span> <span class="s2">&#34;{displayName}&#34;</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>For this next step we are going to use some <strong>Powershell</strong>. You can do this from a location of your choice however today we are going to demo it from <strong>Cloud Shell</strong>.</p>
-<ol>
-<li>Navigate to Exchange Online <a href="https://admin.cloud.microsoft/exchange#/homepage" target="_blank" rel="noopener noreffer">https://admin.cloud.microsoft/exchange#/homepage</a>.</li>
-<li>Click on the <strong>Cloud Shell</strong> button in the top right hand corner.</li>
+</span></span></code></pre></div><p>e.g.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span> 
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;roles&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;write&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;grantedToIdentities&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;application&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;229df885-246d-4b6f-8280-267e51f9dc65&#34;</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;displayName&#34;</span><span class="p">:</span> <span class="s2">&#34;SharePoint - Demo1 - PowerAutomate&#34;</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>You will then get the response like the below</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;@odata.context&#34;</span><span class="p">:</span> <span class="s2">&#34;https://graph.microsoft.com/v1.0/$metadata#sites(&#39;9ce4e8e2-fa87-474b-bd2f-d858d828f8a1&#39;)/permissions/$entity&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;aTowaS50fG1zLnNwLmV4dHwyMjlkZjg4NS0yNDZkLTRiNmYtODI4MC0yNjdlNTFmOWRjNjVANjM3NTlkOWYtYmZjYS00ZjUyLWFlOTgtOGYyZjFkN2JjMTcz&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;grantedToIdentitiesV2&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;application&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;displayName&#34;</span><span class="p">:</span> <span class="s2">&#34;SharePoint - Demo1 - PowerAutomate&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;229df885-246d-4b6f-8280-267e51f9dc65&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;grantedToIdentities&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;application&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;displayName&#34;</span><span class="p">:</span> <span class="s2">&#34;SharePoint - Demo1 - PowerAutomate&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;229df885-246d-4b6f-8280-267e51f9dc65&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
 </ol>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="msedge_f9urvujFXS-B.gif.gif"
-        data-srcset="msedge_f9urvujFXS-B.gif.gif, msedge_f9urvujFXS-B.gif.gif 1.5x, msedge_f9urvujFXS-B.gif.gif 2x"
+        data-src="msedge_eb1IgNQwCG-B.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_eb1IgNQwCG-B.gif, msedge_eb1IgNQwCG-B.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_eb1IgNQwCG-B.gif 2x"
         data-sizes="auto"
-        alt="msedge_f9urvujFXS-B.gif.gif"
-        title="alt text" /></p>
-<h3 id="step-3---create-application-access-policy">Step 3 - Create Application Access Policy</h3>
-<p>Next we are going to create an application access policy using both the <strong>Application ID</strong> and the <strong>Mail-enabled security group</strong> we created in earlier steps.</p>
-<ol>
-<li>Lets look at our command. <code>New-ApplicationAccessPolicy -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c -PolicyScopeGroupId PowerAutomateTest@Tweed.technology -AccessRight RestrictAccess -Description &quot;Restrict this app to members of PowerAutomateTest@Tweed.technology&quot;</code></li>
-<li>Breaking this down we have
-<ol>
-<li>Command: <code>New-ApplicationAccessPolicy</code> - This cmdlet creates a new application access policy in Microsoft 365.</li>
-<li>Parameter: <code>-AppId b9701c1e-1364-464d-93e4-01ae925e8d6c</code> - Specifies the unique identifier (AppId) of the application for which the policy is being created.</li>
-<li>Parameter: <code>-PolicyScopeGroupId PowerAutomateTest@Tweed.technology</code> - Defines the scope of the policy by specifying the group ID (email address) that the policy will apply to.</li>
-<li>Parameter: <code>-AccessRight RestrictAccess</code> - Sets the access right for the policy. In this case, it restricts access.</li>
-<li>Parameter: <code>-Description &quot;Restrict this app to members of PowerAutomateTest@Tweed.technology&quot;</code> - Provides a description for the policy, explaining its purpose.</li>
-</ol>
-</li>
-<li>Lets try running the command in <strong>PowerShell</strong> using the <strong>CloudShell</strong>.</li>
-<li>Oh no, it doesn&rsquo;t work. You could be forgiven for thinking that given we have opened this up from the Exchange Admin center that we would indeed already have access to and be connected to exchange online within the <strong>CloudShell</strong> but unfortunately we are not.</li>
-<li>Therefore before we go any further we need to install the Exchange Online Management Module. <code>Install-Module -Name ExchangeOnlineManagement -Force</code>.</li>
-</ol>
-<h3 id="step-4---import-and-connect">Step 4 - Import and Connect</h3>
-<p>Our next step, is really to go back a stage and import and connect to Exchange Online.</p>
-<p>To do this we need to:</p>
-<ol>
-<li>First we need to import the module we have just installed, to do this we run this command <code>Import-Module ExchangeOnlineManagement</code></li>
-<li>Next we need to connect to exchange, within the <strong>CloudShell</strong> the easiest way to to this is by using device login. Run this command <code>Connect-ExchangeOnline -Device</code>.</li>
-<li>This will give us a URL and a device code in order to log in to Exchange Online.</li>
-<li>Next lets try re-running our command to create the new policy <code>New-ApplicationAccessPolicy -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c -PolicyScopeGroupId PowerAutomateTest@Tweed.technology -AccessRight RestrictAccess -Description &quot;Restrict this app to members of PowerAutomateTest@Tweed.technology&quot;</code></li>
-<li>This time we get the response</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">ScopeName</span>        <span class="err">:</span> <span class="n">Power</span> <span class="n">Automate</span> <span class="n">Test</span>
-</span></span><span class="line"><span class="cl"><span class="n">ScopeIdentity</span>    <span class="err">:</span> <span class="n">Power</span> <span class="n">Automate</span> <span class="n">Test20250209121934</span>
-</span></span><span class="line"><span class="cl"><span class="n">Identity</span>         <span class="err">:</span> <span class="n">63759d9f-bfca</span><span class="p">-</span><span class="n">4f52-ae98</span><span class="p">-</span><span class="n">8f2f1d7bc173</span><span class="p">\</span><span class="n">b9701c1e</span><span class="p">-</span><span class="mf">1364</span><span class="p">-</span><span class="mf">464d</span><span class="p">-</span><span class="mf">93e4</span><span class="p">-</span><span class="n">01ae925e8d6c</span><span class="err">:</span><span class="n">S</span><span class="p">-</span><span class="mf">1</span><span class="p">-</span><span class="mf">5</span><span class="p">-</span><span class="mf">21</span><span class="p">-</span><span class="mf">3787302941</span><span class="p">-</span><span class="mf">3231517822</span><span class="p">-</span><span class="mf">469913106</span><span class="p">-</span><span class="mf">31437838</span><span class="p">;</span><span class="mf">9</span>
-</span></span><span class="line"><span class="cl">                   <span class="n">98e9d79</span><span class="p">-</span><span class="mf">817d</span><span class="p">-</span><span class="n">41c9</span><span class="p">-</span><span class="n">87d8-d9c07f27f4b2</span>
-</span></span><span class="line"><span class="cl"><span class="n">AppId</span>            <span class="err">:</span> <span class="n">b9701c1e</span><span class="p">-</span><span class="mf">1364</span><span class="p">-</span><span class="mf">464d</span><span class="p">-</span><span class="mf">93e4</span><span class="p">-</span><span class="n">01ae925e8d6c</span>
-</span></span><span class="line"><span class="cl"><span class="n">ScopeIdentityRaw</span> <span class="err">:</span> <span class="n">S</span><span class="p">-</span><span class="mf">1</span><span class="p">-</span><span class="mf">5</span><span class="p">-</span><span class="mf">21</span><span class="p">-</span><span class="mf">3787302941</span><span class="p">-</span><span class="mf">3231517822</span><span class="p">-</span><span class="mf">469913106</span><span class="p">-</span><span class="mf">31437838</span><span class="p">;</span><span class="n">998e9d79</span><span class="p">-</span><span class="mf">817d</span><span class="p">-</span><span class="n">41c9</span><span class="p">-</span><span class="n">87d8-d9c07f27f4b2</span>
-</span></span><span class="line"><span class="cl"><span class="n">Description</span>      <span class="err">:</span> <span class="n">Restrict</span> <span class="n">this</span> <span class="n">app</span> <span class="n">to</span> <span class="n">members</span> <span class="n">of</span> <span class="n">PowerAutomateTest</span><span class="nv">@Tweed</span><span class="p">.</span><span class="py">technology</span>
-</span></span><span class="line"><span class="cl"><span class="n">AccessRight</span>      <span class="err">:</span> <span class="n">RestrictAccess</span>
-</span></span><span class="line"><span class="cl"><span class="n">ShardType</span>        <span class="err">:</span> <span class="n">All</span>
-</span></span><span class="line"><span class="cl"><span class="n">IsValid</span>          <span class="err">:</span> <span class="n">True</span>
-</span></span><span class="line"><span class="cl"><span class="n">ObjectState</span>      <span class="err">:</span> <span class="n">Unchanged</span>
-</span></span></code></pre></div><p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="msedge_f9urvujFXS-C.gif.gif"
-        data-srcset="msedge_f9urvujFXS-C.gif.gif, msedge_f9urvujFXS-C.gif.gif 1.5x, msedge_f9urvujFXS-C.gif.gif 2x"
-        data-sizes="auto"
-        alt="msedge_f9urvujFXS-C.gif.gif"
-        title="alt text" /></p>
-<h3 id="step-5---lets-test-it-in-powershell">Step 5 - Let&rsquo;s test it in PowerShell</h3>
-<p>We can now test using PowerShell, to see if it&rsquo;s applied correctly.</p>
-<p>To do this:</p>
-<ol>
-<li>We are going to run the following command <code>Test-ApplicationAccessPolicy -Identity testABC@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c</code></li>
-<li>If we break down this command:
-<ol>
-<li>Command: <code>Test-ApplicationAccessPolicy</code> - This cmdlet tests an application access policy in Microsoft 365 to verify if a user has access.</li>
-<li>Parameter: <code>-Identity testABC@Tweed.technology</code> - Specifies the identity (email address) of the user to test against the application access policy.</li>
-<li>Parameter: <code>-AppId b9701c1e-1364-464d-93e4-01ae925e8d6c</code> - Specifies the unique identifier (AppId) of the application for which the policy is being tested.</li>
-</ol>
-</li>
-<li>Running the command we get the following response:
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">AppId</span>             <span class="err">:</span> <span class="n">b9701c1e</span><span class="p">-</span><span class="mf">1364</span><span class="p">-</span><span class="mf">464d</span><span class="p">-</span><span class="mf">93e4</span><span class="p">-</span><span class="n">01ae925e8d6c</span>
-</span></span><span class="line"><span class="cl"><span class="n">Mailbox</span>           <span class="err">:</span> <span class="n">testABC</span>
-</span></span><span class="line"><span class="cl"><span class="n">MailboxId</span>         <span class="err">:</span> <span class="n">75283b3b</span><span class="p">-</span><span class="n">609a</span><span class="p">-</span><span class="n">4c1c-b8b8-baa1342fdfa6</span>
-</span></span><span class="line"><span class="cl"><span class="n">MailboxSid</span>        <span class="err">:</span> <span class="n">S</span><span class="p">-</span><span class="mf">1</span><span class="p">-</span><span class="mf">5</span><span class="p">-</span><span class="mf">21</span><span class="p">-</span><span class="mf">3787302941</span><span class="p">-</span><span class="mf">3231517822</span><span class="p">-</span><span class="mf">469913106</span><span class="p">-</span><span class="mf">31499791</span>
-</span></span><span class="line"><span class="cl"><span class="n">AccessCheckResult</span> <span class="err">:</span> <span class="n">Granted</span>
-</span></span></code></pre></div></li>
-<li>Let&rsquo;s test this against a different email address that is not within the <strong>Mail-enabled security group</strong> by running <code>Test-ApplicationAccessPolicy -Identity demo@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c</code>.
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">AppId</span>             <span class="err">:</span> <span class="n">b9701c1e</span><span class="p">-</span><span class="mf">1364</span><span class="p">-</span><span class="mf">464d</span><span class="p">-</span><span class="mf">93e4</span><span class="p">-</span><span class="n">01ae925e8d6c</span>
-</span></span><span class="line"><span class="cl"><span class="n">Mailbox</span>           <span class="err">:</span> <span class="n">demo</span>
-</span></span><span class="line"><span class="cl"><span class="n">MailboxId</span>         <span class="err">:</span> <span class="nb">d2ca4050-f8a9</span><span class="p">-</span><span class="mf">4986</span><span class="n">-b998</span><span class="p">-</span><span class="n">387603b466b6</span>
-</span></span><span class="line"><span class="cl"><span class="n">MailboxSid</span>        <span class="err">:</span> <span class="n">S</span><span class="p">-</span><span class="mf">1</span><span class="p">-</span><span class="mf">5</span><span class="p">-</span><span class="mf">21</span><span class="p">-</span><span class="mf">3787302941</span><span class="p">-</span><span class="mf">3231517822</span><span class="p">-</span><span class="mf">469913106</span><span class="p">-</span><span class="mf">19344836</span>
-</span></span><span class="line"><span class="cl"><span class="n">AccessCheckResult</span> <span class="err">:</span> <span class="n">Denied</span>
-</span></span></code></pre></div></li>
-<li>We can see it has being <strong>Denied</strong> which is the response we expected.</li>
-</ol>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="msedge_4IBPmJ2a2n.gif"
-        data-srcset="msedge_4IBPmJ2a2n.gif, msedge_4IBPmJ2a2n.gif 1.5x, msedge_4IBPmJ2a2n.gif 2x"
-        data-sizes="auto"
-        alt="msedge_4IBPmJ2a2n.gif"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_eb1IgNQwCG-B.gif"
         title="alt text" /></p>
 <h2 id="download-and-testing-the-connector">Download and testing the connector</h2>
 <h3 id="step-1---find-custom-connectors">Step 1 - Find custom connectors</h3>
@@ -405,25 +377,25 @@ This Stage will need to be done by someone who is an Owner of the SharePoint sit
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="msedge_eb1IgNQwCG.gif"
-        data-srcset="msedge_eb1IgNQwCG.gif, msedge_eb1IgNQwCG.gif 1.5x, msedge_eb1IgNQwCG.gif 2x"
+        data-src="../send-emails-from-flow-without-a-service-account/msedge_eb1IgNQwCG.gif"
+        data-srcset="../send-emails-from-flow-without-a-service-account/msedge_eb1IgNQwCG.gif, ../send-emails-from-flow-without-a-service-account/msedge_eb1IgNQwCG.gif 1.5x, ../send-emails-from-flow-without-a-service-account/msedge_eb1IgNQwCG.gif 2x"
         data-sizes="auto"
-        alt="msedge_eb1IgNQwCG.gif"
+        alt="../send-emails-from-flow-without-a-service-account/msedge_eb1IgNQwCG.gif"
         title="alt text" /></p>
 <h3 id="step-2---create-a-new-connector">Step 2 - Create a new connector</h3>
 <ol>
 <li>Click on <strong>New custom connector</strong>.</li>
 <li>Then click on <strong>Import an OpenAPI from URL</strong>.</li>
-<li>Then enter in the connector name <code>Send email using Graph</code>.</li>
-<li>Then enter in the URL <code>https://raw.githubusercontent.com/itweedie/PowerPlatform-Send-Emails-from-Power-Automate-without-a-Service-Account/refs/heads/main/connector/shared_mightora-5fsend-20mail-20with-20graph-5fe07b0f04a8b0d4c3/apiDefinition.swagger.json</code></li>
+<li>Then enter in the connector name <code>SharePoint with Graph</code>.</li>
+<li>Then enter in the URL <code>https://raw.githubusercontent.com/itweedie/PowerPlatform-PowerAutomate-SharePoint-with-Graph-Connector/refs/heads/main/connector/shared_sharepoint-20with-20graph-5fe07b0f04a8b0d4c3-5f8d99aea54e2a1a34/apiDefinition.swagger.json</code></li>
 </ol>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="msedge_Q2g7mnzmR9.gif"
-        data-srcset="msedge_Q2g7mnzmR9.gif, msedge_Q2g7mnzmR9.gif 1.5x, msedge_Q2g7mnzmR9.gif 2x"
+        data-src="msedge_DKVu1bRAbA.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_DKVu1bRAbA.gif, msedge_DKVu1bRAbA.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_DKVu1bRAbA.gif 2x"
         data-sizes="auto"
-        alt="msedge_Q2g7mnzmR9.gif"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_DKVu1bRAbA.gif"
         title="alt text" /></p>
 <h3 id="step-3---configure-your-connector">Step 3 - Configure your connector</h3>
 <ol>
@@ -435,15 +407,16 @@ This Stage will need to be done by someone who is an Owner of the SharePoint sit
 <li>Copy the <strong>Client ID</strong> and paste it in to the <strong>Client ID</strong> box on the Custom Connector.</li>
 <li>Go back to the App Registration in Entra, and click on <strong>Certificates &amp; secrets</strong>, then click on <strong>New client secret</strong>. Choose a name and a reasonable date for expiry that fits within your organisations policy&rsquo;s.</li>
 <li>Copy the <strong>Secret value</strong>, NOT Secret ID, and paste it in to your connector. You will need your secret ID one more time so keep the Entra page open with it on.</li>
+<li>Enter in <strong>Resource URL</strong> as <code>https://graph.microsoft.com</code>.</li>
 <li>Click Create</li>
 </ol>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="msedge_aKfrGH1oIO.gif"
-        data-srcset="msedge_aKfrGH1oIO.gif, msedge_aKfrGH1oIO.gif 1.5x, msedge_aKfrGH1oIO.gif 2x"
+        data-src="msedge_dG8NYitBjs.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_dG8NYitBjs.gif, msedge_dG8NYitBjs.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_dG8NYitBjs.gif 2x"
         data-sizes="auto"
-        alt="msedge_aKfrGH1oIO.gif"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_dG8NYitBjs.gif"
         title="alt text" /></p>
 <h3 id="step-5---add-your-first-connection">Step 5 - Add your first connection</h3>
 <ol>
@@ -458,45 +431,231 @@ This Stage will need to be done by someone who is an Owner of the SharePoint sit
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="msedge_2mOjLRkn39.gif"
-        data-srcset="msedge_2mOjLRkn39.gif, msedge_2mOjLRkn39.gif 1.5x, msedge_2mOjLRkn39.gif 2x"
+        data-src="msedge_DfsnensC8A.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_DfsnensC8A.gif, msedge_DfsnensC8A.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_DfsnensC8A.gif 2x"
         data-sizes="auto"
-        alt="msedge_2mOjLRkn39.gif"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_DfsnensC8A.gif"
         title="alt text" /></p>
-<h3 id="step-6---test">Step 6 - Test</h3>
-<h3 id="step-7---lets-try-it-in-a-flow">Step 7 - Lets try it in a Flow</h3>
+<h3 id="step-6---test-get-site-information">Step 6 - Test get site information</h3>
+<p>Lets see if we can connect to our SharePoint Site using out app registration.</p>
+<ol>
+<li>On the <strong>Test</strong> tab click on <strong>SiteInfomation</strong>.</li>
+<li>Enter in the details from your site URL. For our demo we are using <code>https://tweedtech.sharepoint.com/sites/TechTweedieDemoSite1/</code>.
+<ol>
+<li>We will enter in the <strong>tenantPrefix</strong>, for us this is <code>tweedtech</code>.</li>
+<li>For site name we will enter in <code>TechTweedieDemoSite1</code> from the url of our site.</li>
+<li>For site path we can see from the URL this is <code>sites</code>.</li>
+</ol>
+</li>
+<li>Click on <strong>Test operation</strong> to see if it works.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_CAWOIgbnG0.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_CAWOIgbnG0.gif, msedge_CAWOIgbnG0.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_CAWOIgbnG0.gif 2x"
+        data-sizes="auto"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_CAWOIgbnG0.gif"
+        title="alt text" /></p>
+<h2 id="testing-adding-a-permission">Testing adding a permission</h2>
+<p>You can skip this part if you would like, and go to the next section.</p>
+<h3 id="step-1---test-2-to-list-drives">Step 1 - Test 2 to list drives</h3>
+<p>We are going to test the ability to list site drives. The site drives are the document libraries contained within a SharePoint Site, and we will need the drive ID to set permissions later.</p>
+<p>Enter in your site id, for us this is <code>9ce4e8e2-fa87-474b-bd2f-d858d828f8a1</code> and we will get our Drive ID back which for us is <code>b!4ujknIf6S0e9L9hY2Cj4oSy8fRwGRJ9Ghv-lEfn4u6ovHPyydePwRosMG0M4nhQc</code>.</p>
+<p>We can do this in Power Automate Flow later or save it as an environment variable, or hard code it depending on how we want to use it.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_GEOo9Hue9I.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_GEOo9Hue9I.gif, msedge_GEOo9Hue9I.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_GEOo9Hue9I.gif 2x"
+        data-sizes="auto"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_GEOo9Hue9I.gif"
+        title="alt text" /></p>
+<h3 id="step-2---lets-test-adding-a-folder">Step 2 - Let&rsquo;s test adding a folder</h3>
+<p>So we have something to give permission for.</p>
+<p>To do this lets;</p>
+<ol>
+<li>Click on the AddFolder action.</li>
+<li>Enter in <strong>siteID</strong>, for us this is <code>9ce4e8e2-fa87-474b-bd2f-d858d828f8a1</code>.</li>
+<li>Let&rsquo;s enter in our <strong>driveID</strong> which is <code>b!4ujknIf6S0e9L9hY2Cj4oSy8fRwGRJ9Ghv-lEfn4u6ovHPyydePwRosMG0M4nhQc</code>.</li>
+<li>Then lets give our folder a name, we have to enter this twice.</li>
+<li>We have got the response back and as part of the response we have an item ID <code>01LDPBINVTIMOY4Y3TGRDIDMVHU4F3HIZM</code>.</li>
+<li>We will need the <strong>item ID</strong> to set the permissions against.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_EatvSjsgJL.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_EatvSjsgJL.gif, msedge_EatvSjsgJL.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_EatvSjsgJL.gif 2x"
+        data-sizes="auto"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_EatvSjsgJL.gif"
+        title="alt text" /></p>
+<h3 id="step-3---lets-add-the-permission">Step 3 - Let&rsquo;s add the permission</h3>
+<p>We are now able to test adding the permission.</p>
+<ol>
+<li>Click on to <strong>AddItemPermission</strong>.</li>
+<li>Enter in <strong>siteID</strong>, for us this is <code>9ce4e8e2-fa87-474b-bd2f-d858d828f8a1</code>.</li>
+<li>Let&rsquo;s enter in our <strong>driveID</strong> which is <code>b!4ujknIf6S0e9L9hY2Cj4oSy8fRwGRJ9Ghv-lEfn4u6ovHPyydePwRosMG0M4nhQc</code>.</li>
+<li>Then our <strong>itemID</strong> which we have as <code>01LDPBINVTIMOY4Y3TGRDIDMVHU4F3HIZM</code>.</li>
+<li>Then we need add in a <strong>message</strong>. We are going to put in <code>Test Message</code>.</li>
+<li>We are going to set <strong>RequireSignIn</strong> to <code>true</code>.</li>
+<li>We are going to set <strong>sendInvitation</strong> to <code>true</code>.</li>
+<li>The email of the user we are going to invite is <code>demo@tweed.technology</code>.</li>
+<li>Add the permission we are going to give them is <code>read</code>.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_60GqVOBkhm.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_60GqVOBkhm.gif, msedge_60GqVOBkhm.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_60GqVOBkhm.gif 2x"
+        data-sizes="auto"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_60GqVOBkhm.gif"
+        title="alt text" /></p>
+<p>We can also see we got this through as an email message to.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_Obo6v9AKO2.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_Obo6v9AKO2.gif, msedge_Obo6v9AKO2.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_Obo6v9AKO2.gif 2x"
+        data-sizes="auto"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_Obo6v9AKO2.gif"
+        title="alt text" /></p>
+<h3 id="step-4---lets-try-it-in-a-flow">Step 4 - Lets try it in a Flow</h3>
 <ol>
 <li>Click on <strong>My flows</strong></li>
 <li>Create a new flow.</li>
 <li>Add a trigger.</li>
 <li>Add a new step.</li>
 <li>From Connector type choose Custom.</li>
-<li>Then select <strong>Send email using Graph</strong> from the list.</li>
-<li>Fill out the details for the connector that you want to use.</li>
+<li>Then select <strong>SharePoint with Graph</strong> from the list.</li>
+<li>Enter in <strong>siteID</strong>, for us this is <code>9ce4e8e2-fa87-474b-bd2f-d858d828f8a1</code>.</li>
+<li>Let&rsquo;s enter in our <strong>driveID</strong> which is <code>b!4ujknIf6S0e9L9hY2Cj4oSy8fRwGRJ9Ghv-lEfn4u6ovHPyydePwRosMG0M4nhQc</code>.</li>
+<li>Then our <strong>itemID</strong> which we have as <code>01LDPBINVTIMOY4Y3TGRDIDMVHU4F3HIZM</code>.</li>
+<li>Then we need add in a <strong>message</strong>. We are going to put in <code>Test Message</code>.</li>
+<li>We are going to set <strong>RequireSignIn</strong> to <code>true</code>.</li>
+<li>We are going to set <strong>sendInvitation</strong> to <code>true</code>.</li>
+<li>The email of the user we are going to invite is <code>demo@tweed.technology</code>.</li>
+<li>Add the permission we are going to give them is <code>write</code>.</li>
 <li>Test and make sure the email comes through.</li>
 </ol>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="msedge_7if2t23IPS.gif"
-        data-srcset="msedge_7if2t23IPS.gif, msedge_7if2t23IPS.gif 1.5x, msedge_7if2t23IPS.gif 2x"
+        data-src="msedge_wc9jAaR4Kl.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_wc9jAaR4Kl.gif, msedge_wc9jAaR4Kl.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_wc9jAaR4Kl.gif 2x"
         data-sizes="auto"
-        alt="msedge_7if2t23IPS.gif"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_wc9jAaR4Kl.gif"
         title="alt text" /></p>
-<h2 id="conclusion-secure-scalable-email-sending-from-power-automate">Conclusion: Secure, Scalable Email Sending from Power Automate</h2>
+<p>We can we have got an email through so our user is aware they have been given access to this folder.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_64t2sZ5acO.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_64t2sZ5acO.gif, msedge_64t2sZ5acO.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_64t2sZ5acO.gif 2x"
+        data-sizes="auto"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_64t2sZ5acO.gif"
+        title="alt text" /></p>
+<h2 id="lets-demo-in-a-power-automate-flow">Lets Demo in a Power Automate Flow</h2>
+<p>Let&rsquo;s demo is in Power Automate flow, so we can set the permissions for a folder we will create.</p>
+<h3 id="step-1---start-with-a-flow-to-list-the-drives">Step 1 - Start with a flow to list the drives</h3>
+<p>First we need to List the Drives in our site so we can find the right one.</p>
+<ol>
+<li>Add a new step.</li>
+<li>From Connector type choose Custom.</li>
+<li>Then select <strong>SharePoint with Graph</strong> from the list.</li>
+<li>Enter in <strong>siteID</strong>, for us this is <code>9ce4e8e2-fa87-474b-bd2f-d858d828f8a1</code>.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_lt6JMFEcdS.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_lt6JMFEcdS.gif, msedge_lt6JMFEcdS.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_lt6JMFEcdS.gif 2x"
+        data-sizes="auto"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_lt6JMFEcdS.gif"
+        title="alt text" /></p>
+<h3 id="step-2---filter-the-drives-we-got-back">Step 2 - Filter the drives we got back</h3>
+<p>Our next step is to filter the array of drive&rsquo;s we got back.</p>
+<ol>
+<li>Add a new step</li>
+<li>Search for <code>filter</code>.</li>
+<li>Click on the data operation filter action.</li>
+<li>Then add the following details;
+<ol>
+<li>In from select <code>value</code> from the <strong>Site Drves</strong> step.</li>
+<li>In the <strong>Choose value box</strong> select <code>name</code> from the <strong>Site Drves</strong> step.</li>
+<li>Enter the name of your document library in our example this is a library called <code>test</code>.</li>
+</ol>
+</li>
+<li>Let&rsquo;s test it.</li>
+<li>What we get back in outputs are the details for the document library which we will use in our next step.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_zbj491YsXs.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_zbj491YsXs.gif, msedge_zbj491YsXs.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_zbj491YsXs.gif 2x"
+        data-sizes="auto"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_zbj491YsXs.gif"
+        title="alt text" /></p>
+<h3 id="step-3---lets-test-adding-a-folder">Step 3 - Let&rsquo;s test adding a folder</h3>
+<p>So we have something to give permission for.</p>
+<p>To do this lets;</p>
+<ol>
+<li>Add a new step.</li>
+<li>From Connector type choose Custom.</li>
+<li>Then select <strong>SharePoint with Graph</strong> from the list.</li>
+<li>Click on the <strong>Add Folder</strong> action.</li>
+<li>Enter in <strong>siteID</strong>, for us this is <code>9ce4e8e2-fa87-474b-bd2f-d858d828f8a1</code>.</li>
+<li>In the <strong>Drive ID</strong> add in the <code>id</code> from the filter action.</li>
+<li>Then lets give our folder a name, we have to enter this twice.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_hSDlZxe458.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_hSDlZxe458.gif, msedge_hSDlZxe458.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_hSDlZxe458.gif 2x"
+        data-sizes="auto"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_hSDlZxe458.gif"
+        title="alt text" /></p>
+<h3 id="step-4---lets-add-the-permission">Step 4 - Let&rsquo;s add the permission</h3>
+<p>We are now able to test adding the permission.</p>
+<ol>
+<li>Add a new step.</li>
+<li>From Connector type choose Custom.</li>
+<li>Then select <strong>SharePoint with Graph</strong> from the list.</li>
+<li>Click on to <strong>Add Item Permission</strong>.</li>
+<li>Enter in <strong>siteID</strong>, for us this is <code>9ce4e8e2-fa87-474b-bd2f-d858d828f8a1</code>.</li>
+<li>Let&rsquo;s select our <strong>drive ID</strong> add in the <code>id</code> from the filter action.</li>
+<li>Let&rsquo;s select our <strong>item ID</strong> add in the <code>id</code> from the <strong>Add Folder</strong> action.</li>
+<li>Then we need add in a <strong>message</strong>. We are going to put in <code>Test Message</code>.</li>
+<li>We are going to set <strong>Require Sign In</strong> to <code>Yes</code>.</li>
+<li>We are going to set <strong>Send Invitation</strong> to <code>Yes</code>.</li>
+<li>The email of the user we are going to invite is <code>demo@tweed.technology</code>.</li>
+<li>Add the permission we are going to give them is <code>write</code>.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_c16ZsTtjEA.gif"
+        data-srcset="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_c16ZsTtjEA.gif, msedge_c16ZsTtjEA.gif 1.5x, /posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_c16ZsTtjEA.gif 2x"
+        data-sizes="auto"
+        alt="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/msedge_c16ZsTtjEA.gif"
+        title="alt text" /></p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Congratulations! You have successfully set folder permissions in SharePoint using Power Automate Flow. By following these steps, you can streamline your workflow and ensure that the right people have the appropriate access to your SharePoint folders. This process not only saves time but also enhances the security and management of your documents. Keep exploring the capabilities of Power Automate to further optimize your SharePoint experience. Happy automating!</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info"><div class="post-info-tag"><span><a href="/tags/power-automate/">Power Automate</a>
                 </span><span><a href="/tags/entraid/">EntraID</a>
                 </span><span><a href="/tags/power-platform/">Power Platform</a>
                 </span></div><div class="post-info-line"><div class="post-info-mod">
-                <span>Updated on 2025-02-10</span>
+                <span>Updated on 2025-02-17</span>
             </div><div class="post-info-mod"></div>
         </div><div class="post-info-share">
             <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/" data-title="Set folder permissions in SharePoint with Power Automate Flow" data-via="itweedie" data-hashtags="Power Automate,EntraID,Power Platform"><i class="fa-brands fa-square-x-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/" data-hashtag="Power Automate"><i class="fa-brands fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="http://localhost:1313/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/"><i class="fa-brands fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://localhost:1313/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/" data-title="Set folder permissions in SharePoint with Power Automate Flow" data-web><i class="fa-brands fa-whatsapp fa-fw"></i></a></span>
         </div></div><div class="post-nav"><a href="/posts/send-emails-from-flow-without-a-service-account/" class="prev" rel="prev" title="Send Emails from Flow without a Service Account"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a></div></div>
 </div></article></div>
             </main>
-            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.3">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt 1.0.2"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.1">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt 1.0.2"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
         </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/"></a></span></div>
 </div>
 </footer>
