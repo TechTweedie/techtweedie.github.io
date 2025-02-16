@@ -219,7 +219,8 @@ To do this we need to:
 6. Copy the **Client ID** and paste it in to the **Client ID** box on the Custom Connector. 
 7. Go back to the App Registration in Entra, and click on **Certificates & secrets**, then click on **New client secret**. Choose a name and a reasonable date for expiry that fits within your organisations policy's. 
 8. Copy the **Secret value**, NOT Secret ID, and paste it in to your connector. You will need your secret ID one more time so keep the Entra page open with it on.
-9. Click Create 
+9. Enter in **Resource URL** as `https://graph.microsoft.com`.
+10. Click Create 
 
 ![alt text](msedge_aKfrGH1oIO.gif)
 

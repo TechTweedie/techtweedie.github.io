@@ -152,7 +152,7 @@ To do this we need to;
 
     ```json
     { 
-    "roles": ["owner"],
+    "roles": ["write"],
     "grantedToIdentities": [
       {
         "application": {
@@ -167,7 +167,7 @@ To do this we need to;
 
     ```json
     { 
-    "roles": ["owner"],
+    "roles": ["write"],
     "grantedToIdentities": [
       {
         "application": {
@@ -221,19 +221,17 @@ To do this we need to:
 
 ![alt text](../send-emails-from-flow-without-a-service-account/msedge_eb1IgNQwCG.gif)
 
-******************************************
 ### Step 2 - Create a new connector
- 
+
 1. Click on **New custom connector**.
 2. Then click on **Import an OpenAPI from URL**.
-3. Then enter in the connector name `Send email using Graph`.
-4. Then enter in the URL `https://raw.githubusercontent.com/itweedie/PowerPlatform-Send-Emails-from-Power-Automate-without-a-Service-Account/refs/heads/main/connector/shared_mightora-5fsend-20mail-20with-20graph-5fe07b0f04a8b0d4c3/apiDefinition.swagger.json`
- 
-![alt text](msedge_Q2g7mnzmR9.gif)
- 
- 
+3. Then enter in the connector name `SharePoint with Graph`.
+4. Then enter in the URL `https://raw.githubusercontent.com/itweedie/PowerPlatform-PowerAutomate-SharePoint-with-Graph-Connector/refs/heads/main/connector/shared_sharepoint-20with-20graph-5fe07b0f04a8b0d4c3-5f8d99aea54e2a1a34/apiDefinition.swagger.json`
+
+![alt text](msedge_DKVu1bRAbA.gif)
+
 ### Step 3 - Configure your connector
- 
+
 1. Click on to the Security tab.
 2. Make sure we are using **OAuth 2.0**
 3. Make sure the Identity Provider is set to **Azure Active Directory** and that **Enable Service Principle support** is ticked.
@@ -242,10 +240,11 @@ To do this we need to:
 6. Copy the **Client ID** and paste it in to the **Client ID** box on the Custom Connector.
 7. Go back to the App Registration in Entra, and click on **Certificates & secrets**, then click on **New client secret**. Choose a name and a reasonable date for expiry that fits within your organisations policy's.
 8. Copy the **Secret value**, NOT Secret ID, and paste it in to your connector. You will need your secret ID one more time so keep the Entra page open with it on.
-9. Click Create
- 
-![alt text](msedge_aKfrGH1oIO.gif)
- 
+9. Enter in **Resource URL** as `https://graph.microsoft.com`.
+10. Click Create
+
+![alt text](msedge_dG8NYitBjs.gif)
+
 ### Step 5 - Add your first connection
  
 1. Click on to Test.
@@ -255,12 +254,43 @@ To do this we need to:
 5. Enter in your **Secret** (we do this first as we already have the page open from Step 3).
 6. Then enter in your **Client ID** and **Tenant ID**.
 7. Then click **Create Connection**.
- 
-![alt text](msedge_2mOjLRkn39.gif)
- 
- 
+
+![alt text](msedge_DfsnensC8A.gif)
+
 ### Step 6 - Test
- 
+
+Lets test some of the actions;
+
+https://tweedtech.sharepoint.com/sites/TechTweedieDemoSite1/test/Forms/AllItems.aspx
+
+![alt text](msedge_CAWOIgbnG0.gif)
+
+### Step 7 - Test 2 to lsit drives
+
+9ce4e8e2-fa87-474b-bd2f-d858d828f8a1
+b!4ujknIf6S0e9L9hY2Cj4oSy8fRwGRJ9Ghv-lEfn4u6ovHPyydePwRosMG0M4nhQc
+
+![alt text](msedge_GEOo9Hue9I.gif)
+
+### Step 8 - add a folder
+
+01LDPBINVTIMOY4Y3TGRDIDMVHU4F3HIZM
+9ce4e8e2-fa87-474b-bd2f-d858d828f8a1
+b!4ujknIf6S0e9L9hY2Cj4oSy8fRwGRJ9Ghv-lEfn4u6ovHPyydePwRosMG0M4nhQc
+![alt text](msedge_EatvSjsgJL.gif)
+
+### Step 9 - add permission 
+
+Test Message 
+true
+true
+demo@tweed.technology
+read
+![alt text](msedge_60GqVOBkhm.gif)
+
+we got an email through
+![alt text](msedge_Obo6v9AKO2.gif)
+
 ### Step 7 - Lets try it in a Flow
  
 1. Click on **My flows**
@@ -268,11 +298,15 @@ To do this we need to:
 3. Add a trigger.
 4. Add a new step.
 5. From Connector type choose Custom.
-6. Then select **Send email using Graph** from the list.
+6. Then select **SharePoint with Graph** from the list.
 7. Fill out the details for the connector that you want to use.
 8. Test and make sure the email comes through.
  
-![alt text](msedge_7if2t23IPS.gif)
- 
+write
+
+![alt text](msedge_wc9jAaR4Kl.gif)
+
+we also got an emai lthrough again
+![alt text](msedge_64t2sZ5acO.gif)
  
 ## Conclusion: Secure, Scalable Email Sending from Power Automate
