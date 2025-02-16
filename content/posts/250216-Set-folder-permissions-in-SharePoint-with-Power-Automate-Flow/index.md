@@ -9,8 +9,8 @@ categories:
   - Power Automate
   - EntraID
   - Power Platform
-date: 2025-02-10T11:00:00+01:00
-lastmod: 2025-02-10T11:00:00+01:00
+date: 2025-02-17T11:06:00+01:00
+lastmod: 2025-02-17T06:00:00+01:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
@@ -19,7 +19,7 @@ resources:
 - name: "featured-image-preview"
   src: "featureImage.png"
 lightgallery: true
-draft: true
+draft: false
 ---
 Want to set item or folder permissions in SharePoint using **Power Automate** but can't out how to do it? Not able to do it with the out of the box SharePoint Connector?
 
@@ -257,41 +257,69 @@ To do this we need to:
 
 ![alt text](msedge_DfsnensC8A.gif)
 
-### Step 6 - Test
+### Step 6 - Test get site information
 
-Lets test some of the actions;
+Lets see if we can connect to our SharePoint Site using out app registration. 
 
-https://tweedtech.sharepoint.com/sites/TechTweedieDemoSite1/test/Forms/AllItems.aspx
+1. On the **Test** tab click on **SiteInfomation**.
+2. Enter in the details from your site URL. For our demo we are using `https://tweedtech.sharepoint.com/sites/TechTweedieDemoSite1/`.
+   1. We will enter in the **tenantPrefix**, for us this is `tweedtech`.
+   2. For site name we will enter in `TechTweedieDemoSite1` from the url of our site. 
+   3. For site path we can see from the URL this is `sites`.
+3. Click on **Test operation** to see if it works.
 
 ![alt text](msedge_CAWOIgbnG0.gif)
 
-### Step 7 - Test 2 to lsit drives
+## Testing adding a permission
 
-9ce4e8e2-fa87-474b-bd2f-d858d828f8a1
-b!4ujknIf6S0e9L9hY2Cj4oSy8fRwGRJ9Ghv-lEfn4u6ovHPyydePwRosMG0M4nhQc
+You can skip this part if you would like, and go to the next section.
+
+### Step 1 - Test 2 to list drives
+
+We are going to test the ability to list site drives. The site drives are the document libraries contained within a SharePoint Site, and we will need the drive ID to set permissions later.
+
+Enter in your site id, for us this is `9ce4e8e2-fa87-474b-bd2f-d858d828f8a1` and we will get our Drive ID back which for us is `b!4ujknIf6S0e9L9hY2Cj4oSy8fRwGRJ9Ghv-lEfn4u6ovHPyydePwRosMG0M4nhQc`. 
+
+We can do this in Power Automate Flow later or save it as an environment variable, or hard code it depending on how we want to use it. 
 
 ![alt text](msedge_GEOo9Hue9I.gif)
 
-### Step 8 - add a folder
+### Step 2 - Let's test adding a folder
 
-01LDPBINVTIMOY4Y3TGRDIDMVHU4F3HIZM
-9ce4e8e2-fa87-474b-bd2f-d858d828f8a1
-b!4ujknIf6S0e9L9hY2Cj4oSy8fRwGRJ9Ghv-lEfn4u6ovHPyydePwRosMG0M4nhQc
+So we have something to give permission for. 
+
+To do this lets;
+
+1. Click on the AddFolder action.
+2. Enter in **siteID**, for us this is `9ce4e8e2-fa87-474b-bd2f-d858d828f8a1`.
+3. Let's enter in our **driveID** which is `b!4ujknIf6S0e9L9hY2Cj4oSy8fRwGRJ9Ghv-lEfn4u6ovHPyydePwRosMG0M4nhQc`.
+4. Then lets give our folder a name, we have to enter this twice. 
+5. We have got the response back and as part of the response we have an item ID `01LDPBINVTIMOY4Y3TGRDIDMVHU4F3HIZM`. 
+6. We will need the **item ID** to set the permissions against. 
+
 ![alt text](msedge_EatvSjsgJL.gif)
 
-### Step 9 - add permission 
+### Step 3 - Let's add the permission
 
-Test Message 
-true
-true
-demo@tweed.technology
-read
+We are now able to test adding the permission. 
+
+1. Click on to **AddItemPermission**.
+2. Enter in **siteID**, for us this is `9ce4e8e2-fa87-474b-bd2f-d858d828f8a1`.
+3. Let's enter in our **driveID** which is `b!4ujknIf6S0e9L9hY2Cj4oSy8fRwGRJ9Ghv-lEfn4u6ovHPyydePwRosMG0M4nhQc`.
+4. Then our **itemID** which we have as `01LDPBINVTIMOY4Y3TGRDIDMVHU4F3HIZM`.
+5. Then we need add in a **message**. We are going to put in `Test Message`.
+6. We are going to set **RequireSignIn** to `true`.
+7. We are going to set **sendInvitation** to `true`.
+8. The email of the user we are going to invite is `demo@tweed.technology`.
+9. Add the permission we are going to give them is `read`.
+
 ![alt text](msedge_60GqVOBkhm.gif)
 
-we got an email through
+We can also see we got this through as an email message to.
+
 ![alt text](msedge_Obo6v9AKO2.gif)
 
-### Step 7 - Lets try it in a Flow
+### Step 4 - Lets try it in a Flow
  
 1. Click on **My flows**
 2. Create a new flow.
@@ -299,14 +327,88 @@ we got an email through
 4. Add a new step.
 5. From Connector type choose Custom.
 6. Then select **SharePoint with Graph** from the list.
-7. Fill out the details for the connector that you want to use.
-8. Test and make sure the email comes through.
- 
-write
+7. Enter in **siteID**, for us this is `9ce4e8e2-fa87-474b-bd2f-d858d828f8a1`.
+8. Let's enter in our **driveID** which is `b!4ujknIf6S0e9L9hY2Cj4oSy8fRwGRJ9Ghv-lEfn4u6ovHPyydePwRosMG0M4nhQc`.
+9. Then our **itemID** which we have as `01LDPBINVTIMOY4Y3TGRDIDMVHU4F3HIZM`.
+10. Then we need add in a **message**. We are going to put in `Test Message`.
+11. We are going to set **RequireSignIn** to `true`.
+12. We are going to set **sendInvitation** to `true`.
+13. The email of the user we are going to invite is `demo@tweed.technology`.
+15. Add the permission we are going to give them is `write`.
+16. Test and make sure the email comes through.
 
 ![alt text](msedge_wc9jAaR4Kl.gif)
 
-we also got an emai lthrough again
+We can we have got an email through so our user is aware they have been given access to this folder.
 ![alt text](msedge_64t2sZ5acO.gif)
- 
-## Conclusion: Secure, Scalable Email Sending from Power Automate
+
+## Lets Demo in a Power Automate Flow
+
+Let's demo is in Power Automate flow, so we can set the permissions for a folder we will create.
+
+### Step 1 - Start with a flow to list the drives
+
+First we need to List the Drives in our site so we can find the right one.
+
+1. Add a new step.
+2. From Connector type choose Custom.
+3. Then select **SharePoint with Graph** from the list.
+4. Enter in **siteID**, for us this is `9ce4e8e2-fa87-474b-bd2f-d858d828f8a1`.
+
+![alt text](msedge_lt6JMFEcdS.gif)
+
+### Step 2 - Filter the drives we got back
+
+Our next step is to filter the array of drive's we got back.
+
+1. Add a new step
+2. Search for `filter`.
+3. Click on the data operation filter action.
+4. Then add the following details;
+   1. In from select `value` from the **Site Drves** step.
+   2. In the **Choose value box** select `name` from the **Site Drves** step.
+   3. Enter the name of your document library in our example this is a library called `test`.
+5. Let's test it.
+6. What we get back in outputs are the details for the document library which we will use in our next step.
+
+![alt text](msedge_zbj491YsXs.gif)
+
+### Step 3 - Let's test adding a folder
+
+So we have something to give permission for. 
+
+To do this lets;
+
+1. Add a new step.
+2. From Connector type choose Custom.
+3. Then select **SharePoint with Graph** from the list.
+4. Click on the **Add Folder** action.
+5. Enter in **siteID**, for us this is `9ce4e8e2-fa87-474b-bd2f-d858d828f8a1`.
+6. In the **Drive ID** add in the `id` from the filter action.
+7. Then lets give our folder a name, we have to enter this twice. 
+
+![alt text](msedge_hSDlZxe458.gif)
+
+### Step 4 - Let's add the permission
+
+We are now able to test adding the permission. 
+
+1. Add a new step.
+2. From Connector type choose Custom.
+3. Then select **SharePoint with Graph** from the list.
+4. Click on to **Add Item Permission**.
+5. Enter in **siteID**, for us this is `9ce4e8e2-fa87-474b-bd2f-d858d828f8a1`.
+6. Let's select our **drive ID** add in the `id` from the filter action.
+7. Let's select our **item ID** add in the `id` from the **Add Folder** action.
+8. Then we need add in a **message**. We are going to put in `Test Message`.
+9. We are going to set **Require Sign In** to `Yes`.
+10. We are going to set **Send Invitation** to `Yes`.
+11. The email of the user we are going to invite is `demo@tweed.technology`.
+12. Add the permission we are going to give them is `write`.
+
+![alt text](msedge_c16ZsTtjEA.gif)
+
+
+### Conclusion
+
+Congratulations! You have successfully set folder permissions in SharePoint using Power Automate Flow. By following these steps, you can streamline your workflow and ensure that the right people have the appropriate access to your SharePoint folders. This process not only saves time but also enhances the security and management of your documents. Keep exploring the capabilities of Power Automate to further optimize your SharePoint experience. Happy automating!
