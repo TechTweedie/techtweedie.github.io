@@ -22,7 +22,7 @@ resources:
 lightgallery: true
 draft: false
 ---
-Want to set item or folder permissions in SharePoint using **Power Automate** but can't out how to do it? Not able to do it with the out of the box SharePoint Connector?
+Want to grand and remove item or folder permissions in SharePoint using **Power Automate** with a Service Principle but can't do it? Not able to do it with the out of the box SharePoint Connector?
 
 Good news! In this guide, I'll show you how to set these using an App Registration. No service accounts, no password headaches. I'll also share a Custom Connector to make it even easier, plus step-by-step instructions to:
 
