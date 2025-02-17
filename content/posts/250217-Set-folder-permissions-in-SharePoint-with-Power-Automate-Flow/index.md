@@ -24,6 +24,8 @@ draft: false
 ---
 Want to grand and remove item or folder permissions in SharePoint using **Power Automate** with a Service Principle but can't do it? Not able to do it with the out of the box SharePoint Connector?
 
+Tired of dealing with Conditional Access Policies, password expirations, and frequent logins?
+
 Good news! In this guide, I'll show you how to set these using an App Registration. No service accounts, no password headaches. I'll also share a Custom Connector to make it even easier, plus step-by-step instructions to:
 
 - Create and configure the App Registration
