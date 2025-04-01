@@ -22,7 +22,7 @@
   <meta name="twitter:description" content="Learn how to send emails from Power Automate without a service account! 🚀 This step-by-step guide walks you through setting up an App Registration, securing permissions in Exchange Online, and using a custom connector—no password resets or login issues. Perfect for secure, scalable email automation in Microsoft 365! 🔗 #PowerAutomate #Microsoft365 #Automation">
       <meta name="twitter:site" content="@itweedie">
 <meta name="application-name" content="Tech Tweedie">
-<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" /><link rel="prev" href="http://localhost:1313/posts/effortlessly-move-dataverse-for-teams-solutions/" /><link rel="next" href="http://localhost:1313/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" /><link rel="prev" href="http://localhost:1313/posts/effortlessly-move-dataverse-for-teams-solutions/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -36,7 +36,7 @@
                             "url": "http:\/\/localhost:1313\/posts\/send-emails-from-flow-without-a-service-account\/featureImage.png",
                             "width":  1792 ,
                             "height":  300 
-                        }],"genre": "posts","keywords": "Power Automate","wordcount":  2125 ,
+                        }],"genre": "posts","keywords": "Power Automate","wordcount":  2131 ,
         "url": "http:\/\/localhost:1313\/posts\/send-emails-from-flow-without-a-service-account\/","datePublished": "2025-02-10T09:00:00+01:00","dateModified": "2025-02-10T09:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "itweedie"},"author": {
@@ -101,8 +101,8 @@
         alt="/posts/send-emails-from-flow-without-a-service-account/featureImage.png"
         title="Learn how to send emails from Power Automate without a service account! 🚀 This step-by-step guide walks you through setting up an App Registration, securing permissions in Exchange Online, and using a custom connector—no password resets or login issues. Perfect for secure, scalable email automation in Microsoft 365! 🔗 #PowerAutomate #Microsoft365 #Automation" /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Send Emails from Flow without a Service Account</h2><div class="post-meta">
                 <div class="post-meta-line"><span class="post-author"><a href="https://iantweedie.biz" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>itweedie</a></span>&nbsp;<span class="post-category">published in <a href="/categories/azure/"><i class="fa-regular fa-folder fa-fw"></i>Azure</a>&nbsp;<a href="/categories/power-platform/"><i class="fa-regular fa-folder fa-fw"></i>Power Platform</a>&nbsp;<a href="/categories/power-automate/"><i class="fa-regular fa-folder fa-fw"></i>Power Automate</a></span></div>
-                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-02-10">2025-02-10</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;2125 words</span>&nbsp;
-                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;10 minutes</span>&nbsp;</div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-02-10">2025-02-10</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;2131 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;11 minutes</span>&nbsp;</div>
             </div>
             
             <hr><div class="details toc" id="toc-static"  data-kept="">
@@ -387,6 +387,7 @@ however without further limitation that ill allow the application to send emails
 <li>Copy the <strong>Client ID</strong> and paste it in to the <strong>Client ID</strong> box on the Custom Connector.</li>
 <li>Go back to the App Registration in Entra, and click on <strong>Certificates &amp; secrets</strong>, then click on <strong>New client secret</strong>. Choose a name and a reasonable date for expiry that fits within your organisations policy&rsquo;s.</li>
 <li>Copy the <strong>Secret value</strong>, NOT Secret ID, and paste it in to your connector. You will need your secret ID one more time so keep the Entra page open with it on.</li>
+<li>Enter in <strong>Resource URL</strong> as <code>https://graph.microsoft.com</code>.</li>
 <li>Click Create</li>
 </ol>
 <p><img
@@ -580,11 +581,10 @@ however without further limitation that ill allow the application to send emails
             </div><div class="post-info-mod"></div>
         </div><div class="post-info-share">
             <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" data-title="Send Emails from Flow without a Service Account" data-via="itweedie" data-hashtags="Power Automate"><i class="fa-brands fa-square-x-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" data-hashtag="Power Automate"><i class="fa-brands fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/"><i class="fa-brands fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" data-title="Send Emails from Flow without a Service Account" data-web><i class="fa-brands fa-whatsapp fa-fw"></i></a></span>
-        </div></div><div class="post-nav"><a href="/posts/effortlessly-move-dataverse-for-teams-solutions/" class="prev" rel="prev" title="Effortlessly Move Dataverse for Teams Solutions"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
-            <a href="/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/" class="next" rel="next" title="Set folder permissions in SharePoint with Power Automate Flow">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
+        </div></div><div class="post-nav"><a href="/posts/effortlessly-move-dataverse-for-teams-solutions/" class="prev" rel="prev" title="Effortlessly Move Dataverse for Teams Solutions"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a></div></div>
 </div></article></div>
             </main>
-            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.3">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt 1.0.2"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.1">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt 1.0.2"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
         </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/"></a></span></div>
 </div>
 </footer>

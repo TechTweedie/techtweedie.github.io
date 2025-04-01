@@ -5,13 +5,6 @@
         <description>Azure - Category - Tech Tweedie</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/azure/" rel="self" type="application/rss+xml" /><item>
     <title>Send Emails from Flow without a Service Account</title>
-    <link>http://localhost:1313/posts/250216-/</link>
-    <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250216-/</guid>
-    <description><![CDATA[Want to send emails from Power Automate but can&rsquo;t or don&rsquo;t want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?
-Good news! In this guide, I&rsquo;ll show you how to send emails directly from Microsoft Exchange using only an App Registration. No service accounts, no password headaches.]]></description>
-</item>
-<item>
-    <title>Send Emails from Flow without a Service Account</title>
     <link>http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/</link>
     <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/</guid>
     <description><![CDATA[Want to send emails from Power Automate but can&rsquo;t or don&rsquo;t want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?
