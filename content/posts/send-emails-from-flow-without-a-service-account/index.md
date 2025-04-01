@@ -8,7 +8,7 @@ categories:
   - Power Platform
   - Power Automate
 date: 2025-02-10T09:00:00+01:00
-lastmod: 2025-02-10T09:00:00+01:00
+lastmod: 2025-04-01T13:30:00+01:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
@@ -19,6 +19,7 @@ resources:
 lightgallery: true
 draft: false
 ---
+
 Want to send emails from **Power Automate** but can't or don't want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?
 
 Good news! In this guide, I'll show you how to send emails directly from Microsoft Exchange using only an App Registration. No service accounts, no password headaches. I'll also share a Custom Connector to make it even easier, plus step-by-step instructions to:
@@ -26,11 +27,14 @@ Good news! In this guide, I'll show you how to send emails directly from Microso
 - Create and configure the App Registration
 - Assign API permissions
 - Restrict sending access to specific mailboxes
-- Use Power Automate with the custom connector 
-
+- Use Power Automate with the custom connector
+- Send emails using app registration
 
 ## Create the App Registration
+
 For this section you will need the help of a Global Administrator
+
+{{< youtube EOqEpC40mBU >}}
 
 ### Step 1 - Log in to Entra
 
@@ -125,10 +129,9 @@ Next we are going to create an application access policy using both the **Applic
 4. Oh no, it doesn't work. You could be forgiven for thinking that given we have opened this up from the Exchange Admin center that we would indeed already have access to and be connected to exchange online within the **CloudShell** but unfortunately we are not. 
 5. Therefore before we go any further we need to install the Exchange Online Management Module. `Install-Module -Name ExchangeOnlineManagement -Force`.
 
-
 ### Step 4 - Import and Connect
 
-Our next step, is really to go back a stage and import and connect to Exchange Online. 
+Our next step, is really to go back a stage and import and connect to Exchange Online.
 
 To do this we need to:
 
@@ -154,9 +157,9 @@ ObjectState      : Unchanged
 
 ![alt text](msedge_f9urvujFXS-C.gif.gif) 
 
-
 ### Step 5 - Let's test it in PowerShell
-We can now test using PowerShell, to see if it's applied correctly. 
+
+We can now test using PowerShell, to see if it's applied correctly.
 
 To do this:
 
@@ -181,14 +184,16 @@ To do this:
       MailboxSid        : S-1-5-21-3787302941-3231517822-469913106-19344836
       AccessCheckResult : Denied
       ```
+
 5. We can see it has being **Denied** which is the response we expected. 
 
 ![alt text](msedge_4IBPmJ2a2n.gif)
 
 ## Download and testing the connector
 
-### Step 1 - Find custom connectors 
-First we need to find custom connectors in Power Automate. 
+### Step 1 - Find custom connectors
+
+First we need to find custom connectors in Power Automate.
 
 To do this we need to:
 
@@ -198,7 +203,6 @@ To do this we need to:
 
 ![alt text](msedge_eb1IgNQwCG.gif)
 
-
 ### Step 2 - Create a new connector
 
 1. Click on **New custom connector**.
@@ -207,7 +211,6 @@ To do this we need to:
 4. Then enter in the URL `https://raw.githubusercontent.com/itweedie/PowerPlatform-Send-Emails-from-Power-Automate-without-a-Service-Account/refs/heads/main/connector/shared_mightora-5fsend-20mail-20with-20graph-5fe07b0f04a8b0d4c3/apiDefinition.swagger.json`
 
 ![alt text](msedge_Q2g7mnzmR9.gif)
-
 
 ### Step 3 - Configure your connector
 
@@ -220,14 +223,16 @@ To do this we need to:
 7. Go back to the App Registration in Entra, and click on **Certificates & secrets**, then click on **New client secret**. Choose a name and a reasonable date for expiry that fits within your organisations policy's. 
 8. Copy the **Secret value**, NOT Secret ID, and paste it in to your connector. You will need your secret ID one more time so keep the Entra page open with it on.
 9. Enter in **Resource URL** as `https://graph.microsoft.com`.
-10. Click Create 
+10. Click Create
 
 ![alt text](msedge_aKfrGH1oIO.gif)
 
 ### Step 4 - Add C# to process the attachment
+
 In order to be able to send attachments we need to add some C# to our connector. If you are not going to be sending attachments you can skip this step. 
 
 To do this you need to:
+
 1. Click on to **Code**
 2. Click to enable code.
 3. Copy and pase the below code in to the code box.
@@ -250,10 +255,8 @@ public class Script : ScriptBase
         {
             foreach (var attachment in attachments)
             {
-
                 // Add the @odata.type element
                 attachment["@odata.type"] = "#microsoft.graph.fileAttachment";
-
             }
         }
         
@@ -289,13 +292,34 @@ public class Script : ScriptBase
             }
         }
 
-        // Create a JSON object to include the original request and the response content
+        // Make a custom HTTP GET call to the developer messaging API
+        string developerMessage = "Failed to get updated developer message";
+        try
+        {
+            var request = (HttpWebRequest)WebRequest.Create("https://developer-message.mightora.io/api/HttpTrigger?appname=send-email-with-graph");
+            request.Method = "GET";
+
+            using (var developerResponse = (HttpWebResponse)request.GetResponse())
+            {
+                using (var streamReader = new StreamReader(developerResponse.GetResponseStream()))
+                {
+                    var developerResponseContent = streamReader.ReadToEnd();
+                    var developerResponseJson = JObject.Parse(developerResponseContent);
+                    developerMessage = developerResponseJson["message"]?.ToString() ?? developerMessage;
+                }
+            }
+        }
+        catch
+        {
+            // If the GET request fails, developerMessage remains as the default failure message
+        }
+
+        // Create a JSON object to include the original request, the response content, and the developer message
         var finalResponseContent = new JObject
         {
-
             ["version"] = "1.2.0", // Add version number here
             ["responseContent"] = JObject.Parse(responseContentAsString),
- 
+            ["developerMessage"] = developerMessage
         };
 
         // Set the response content back to the JSON string
@@ -334,7 +358,6 @@ public class Script : ScriptBase
 
 ![alt text](msedge_2mOjLRkn39.gif)
 
-
 ### Step 6 - Test
 
 1. On the Test screen scroll down to **Operations**.
@@ -351,7 +374,6 @@ public class Script : ScriptBase
 
 ![alt text](msedge_jHKMp5JkcW.gif)
 
-
 ### Step 7 - Lets try it in a Flow
 
 1. Click on **My flows**
@@ -365,7 +387,8 @@ public class Script : ScriptBase
 
 ![alt text](msedge_7if2t23IPS.gif)
 
-## Sending attachments 
+## Sending attachments
+
 If you are planing to use this connector to send attachments, if the file is binary you will need to convert it to base64. 
 
 ## Conclusion: Secure, Scalable Email Sending from Power Automate
@@ -374,7 +397,8 @@ By following this guide, you’ve successfully set up a **secure, scalable** way
 
 With your **App Registration configured**, **permissions locked down**, and **custom connector deployed**, you now have a **robust** method to send emails directly through **Exchange Online**—while ensuring access is tightly controlled.  
 
-### Key Takeaways:  
+### Key Takeaways:
+
 ✅ **No Service Account Required** – Uses an App Registration instead.  
 ✅ **Secure and Controlled** – Email sending is restricted to specific mailboxes.  
 ✅ **Fully Automated** – No need to log in or manage passwords.  
