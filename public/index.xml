@@ -3,15 +3,23 @@
         <title>Tech Tweedie</title>
         <link>http://localhost:1313/</link>
         <description>Beyond the low code, Tech Tweedie offers comprehensive guides and tutorials on Power Platform, Microsoft technologies, and Hugo. Learn how to build PCF controls, install Hugo on Windows 11, and more. Stay updated with our latest posts and in-depth content.</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Show and Hide Tabs Based on Status Reason in Model Driven Apps</title>
+    <link>http://localhost:1313/posts/250412-show-hide-status-reason/</link>
+    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/250412-show-hide-status-reason/</guid>
+    <description><![CDATA[Introduction Ever wanted to show or hide a tab in a Model-Driven App based on the Status Reason of a record? Maybe you’ve got a section of a form that’s only relevant when a record hits a specific state — like “Approved” or “Rejected”?
+This post walks you through a reusable JavaScript snippet I’ve shared on GitHub that dynamically toggles tab visibility based on the statuscode field.
+Why This Is Useful Sometimes users don’t need to see everything all the time.]]></description>
+</item>
+<item>
     <title>Set folder permissions in SharePoint with Power Automate Flow</title>
     <link>http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</link>
     <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</guid>
-    <description><![CDATA[Want to set item or folder permissions in SharePoint using Power Automate but can&rsquo;t out how to do it? Not able to do it with the out of the box SharePoint Connector?
-Good news! In this guide, I&rsquo;ll show you how to set these using an App Registration. No service accounts, no password headaches. I&rsquo;ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:
-Create and configure the App Registration Assign API permissions Setting permissions using sites.]]></description>
+    <description><![CDATA[Want to grand and remove item or folder permissions in SharePoint using Power Automate with a Service Principle but can&rsquo;t do it? Not able to do it with the out of the box SharePoint Connector?
+Tired of dealing with Conditional Access Policies, password expirations, and frequent logins?
+Good news! In this guide, I&rsquo;ll show you how to set these using an App Registration. No service accounts, no password headaches. I&rsquo;ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:]]></description>
 </item>
 <item>
     <title>Send Emails from Flow without a Service Account</title>
@@ -125,14 +133,6 @@ Then I continued to edit the site before handing it over to my friend; however, 
     <pubDate>Sun, 18 Dec 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/thinking-environment-meetings/</guid>
     <description><![CDATA[In today’s remote work environment, the significance of effective team meetings cannot be overstated. These gatherings are pivotal for aligning goals, addressing challenges, and fostering team cohesion.
 However, not all meetings are created equal. The introduction of a Thinking Environment, as outlined by Nancy Kline in her book “Time to Think,” offers a transformative approach to traditional meetings. When combined with the structured reflection of retrospectives, this approach can elevate the effectiveness of team meetings.]]></description>
-</item>
-<item>
-    <title>Azure Function with Azure B2C</title>
-    <link>http://localhost:1313/posts/azure-function-with-azure-b2c/</link>
-    <pubDate>Wed, 14 Dec 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/azure-function-with-azure-b2c/</guid>
-    <description><![CDATA[Azure functions are a very handy way of getting something small done very quickly. Often these have to be secured and sometimes with an identity provider that is not stright out of the box.
-Today I am going to take you through the steps I took to secure an azure function using Azure B2C.
-Step 1 – Create app in Azure B2C PREREQUISITE Azure Function The Azure Function URL Azure B2C Tenant configured with user flows STEP 1 To start with register an application in Azure B2C.]]></description>
 </item>
 </channel>
 </rss>

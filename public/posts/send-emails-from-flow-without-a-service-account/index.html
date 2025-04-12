@@ -12,7 +12,7 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-02-10T09:00:00+01:00">
-    <meta property="article:modified_time" content="2025-02-10T09:00:00+01:00">
+    <meta property="article:modified_time" content="2025-04-01T13:30:00+01:00">
     <meta property="article:tag" content="Power Automate">
     <meta property="og:image" content="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/featureImage.png">
 
@@ -22,7 +22,7 @@
   <meta name="twitter:description" content="Learn how to send emails from Power Automate without a service account! 🚀 This step-by-step guide walks you through setting up an App Registration, securing permissions in Exchange Online, and using a custom connector—no password resets or login issues. Perfect for secure, scalable email automation in Microsoft 365! 🔗 #PowerAutomate #Microsoft365 #Automation">
       <meta name="twitter:site" content="@itweedie">
 <meta name="application-name" content="Tech Tweedie">
-<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" /><link rel="prev" href="http://localhost:1313/posts/effortlessly-move-dataverse-for-teams-solutions/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" /><link rel="prev" href="http://localhost:1313/posts/effortlessly-move-dataverse-for-teams-solutions/" /><link rel="next" href="http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -36,8 +36,8 @@
                             "url": "http:\/\/localhost:1313\/posts\/send-emails-from-flow-without-a-service-account\/featureImage.png",
                             "width":  1792 ,
                             "height":  300 
-                        }],"genre": "posts","keywords": "Power Automate","wordcount":  2131 ,
-        "url": "http:\/\/localhost:1313\/posts\/send-emails-from-flow-without-a-service-account\/","datePublished": "2025-02-10T09:00:00+01:00","dateModified": "2025-02-10T09:00:00+01:00","publisher": {
+                        }],"genre": "posts","keywords": "Power Automate","wordcount":  2217 ,
+        "url": "http:\/\/localhost:1313\/posts\/send-emails-from-flow-without-a-service-account\/","datePublished": "2025-02-10T09:00:00+01:00","dateModified": "2025-04-01T13:30:00+01:00","publisher": {
             "@type": "Organization",
             "name": "itweedie"},"author": {
                 "@type": "Person",
@@ -101,7 +101,7 @@
         alt="/posts/send-emails-from-flow-without-a-service-account/featureImage.png"
         title="Learn how to send emails from Power Automate without a service account! 🚀 This step-by-step guide walks you through setting up an App Registration, securing permissions in Exchange Online, and using a custom connector—no password resets or login issues. Perfect for secure, scalable email automation in Microsoft 365! 🔗 #PowerAutomate #Microsoft365 #Automation" /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Send Emails from Flow without a Service Account</h2><div class="post-meta">
                 <div class="post-meta-line"><span class="post-author"><a href="https://iantweedie.biz" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>itweedie</a></span>&nbsp;<span class="post-category">published in <a href="/categories/azure/"><i class="fa-regular fa-folder fa-fw"></i>Azure</a>&nbsp;<a href="/categories/power-platform/"><i class="fa-regular fa-folder fa-fw"></i>Power Platform</a>&nbsp;<a href="/categories/power-automate/"><i class="fa-regular fa-folder fa-fw"></i>Power Automate</a></span></div>
-                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-02-10">2025-02-10</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;2131 words</span>&nbsp;
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-02-10">2025-02-10</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;2217 words</span>&nbsp;
                     <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;11 minutes</span>&nbsp;</div>
             </div>
             
@@ -155,9 +155,18 @@
 <li>Assign API permissions</li>
 <li>Restrict sending access to specific mailboxes</li>
 <li>Use Power Automate with the custom connector</li>
+<li>Send emails using app registration</li>
 </ul>
 <h2 id="create-the-app-registration">Create the App Registration</h2>
 <p>For this section you will need the help of a Global Administrator</p>
+
+
+    
+    <div class="video">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow="fullscreen"="allow="fullscreen"" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/EOqEpC40mBU?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" title="YouTube video"
+      ></iframe>
+    </div>
+
 <h3 id="step-1---log-in-to-entra">Step 1 - Log in to Entra</h3>
 <p>By default most users will have the ability to go to <a href="https://entra.microsoft.com" target="_blank" rel="noopener noreffer">https://entra.microsoft.com</a>
 and log in with your user account.</p>
@@ -313,29 +322,36 @@ however without further limitation that ill allow the application to send emails
 <p>We can now test using PowerShell, to see if it&rsquo;s applied correctly.</p>
 <p>To do this:</p>
 <ol>
-<li>We are going to run the following command <code>Test-ApplicationAccessPolicy -Identity testABC@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c</code></li>
-<li>If we break down this command:
+<li>
+<p>We are going to run the following command <code>Test-ApplicationAccessPolicy -Identity testABC@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c</code></p>
+</li>
+<li>
+<p>If we break down this command:</p>
 <ol>
 <li>Command: <code>Test-ApplicationAccessPolicy</code> - This cmdlet tests an application access policy in Microsoft 365 to verify if a user has access.</li>
 <li>Parameter: <code>-Identity testABC@Tweed.technology</code> - Specifies the identity (email address) of the user to test against the application access policy.</li>
 <li>Parameter: <code>-AppId b9701c1e-1364-464d-93e4-01ae925e8d6c</code> - Specifies the unique identifier (AppId) of the application for which the policy is being tested.</li>
 </ol>
 </li>
-<li>Running the command we get the following response:
+<li>
+<p>Running the command we get the following response:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">AppId</span>             <span class="err">:</span> <span class="n">b9701c1e</span><span class="p">-</span><span class="mf">1364</span><span class="p">-</span><span class="mf">464d</span><span class="p">-</span><span class="mf">93e4</span><span class="p">-</span><span class="n">01ae925e8d6c</span>
 </span></span><span class="line"><span class="cl"><span class="n">Mailbox</span>           <span class="err">:</span> <span class="n">testABC</span>
 </span></span><span class="line"><span class="cl"><span class="n">MailboxId</span>         <span class="err">:</span> <span class="n">75283b3b</span><span class="p">-</span><span class="n">609a</span><span class="p">-</span><span class="n">4c1c-b8b8-baa1342fdfa6</span>
 </span></span><span class="line"><span class="cl"><span class="n">MailboxSid</span>        <span class="err">:</span> <span class="n">S</span><span class="p">-</span><span class="mf">1</span><span class="p">-</span><span class="mf">5</span><span class="p">-</span><span class="mf">21</span><span class="p">-</span><span class="mf">3787302941</span><span class="p">-</span><span class="mf">3231517822</span><span class="p">-</span><span class="mf">469913106</span><span class="p">-</span><span class="mf">31499791</span>
 </span></span><span class="line"><span class="cl"><span class="n">AccessCheckResult</span> <span class="err">:</span> <span class="n">Granted</span>
 </span></span></code></pre></div></li>
-<li>Let&rsquo;s test this against a different email address that is not within the <strong>Mail-enabled security group</strong> by running <code>Test-ApplicationAccessPolicy -Identity demo@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c</code>.
+<li>
+<p>Let&rsquo;s test this against a different email address that is not within the <strong>Mail-enabled security group</strong> by running <code>Test-ApplicationAccessPolicy -Identity demo@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">AppId</span>             <span class="err">:</span> <span class="n">b9701c1e</span><span class="p">-</span><span class="mf">1364</span><span class="p">-</span><span class="mf">464d</span><span class="p">-</span><span class="mf">93e4</span><span class="p">-</span><span class="n">01ae925e8d6c</span>
 </span></span><span class="line"><span class="cl"><span class="n">Mailbox</span>           <span class="err">:</span> <span class="n">demo</span>
 </span></span><span class="line"><span class="cl"><span class="n">MailboxId</span>         <span class="err">:</span> <span class="nb">d2ca4050-f8a9</span><span class="p">-</span><span class="mf">4986</span><span class="n">-b998</span><span class="p">-</span><span class="n">387603b466b6</span>
 </span></span><span class="line"><span class="cl"><span class="n">MailboxSid</span>        <span class="err">:</span> <span class="n">S</span><span class="p">-</span><span class="mf">1</span><span class="p">-</span><span class="mf">5</span><span class="p">-</span><span class="mf">21</span><span class="p">-</span><span class="mf">3787302941</span><span class="p">-</span><span class="mf">3231517822</span><span class="p">-</span><span class="mf">469913106</span><span class="p">-</span><span class="mf">19344836</span>
 </span></span><span class="line"><span class="cl"><span class="n">AccessCheckResult</span> <span class="err">:</span> <span class="n">Denied</span>
 </span></span></code></pre></div></li>
-<li>We can see it has being <strong>Denied</strong> which is the response we expected.</li>
+<li>
+<p>We can see it has being <strong>Denied</strong> which is the response we expected.</p>
+</li>
 </ol>
 <p><img
         class="lazyload"
@@ -423,10 +439,8 @@ however without further limitation that ill allow the application to send emails
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">attachment</span> <span class="k">in</span> <span class="n">attachments</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">            <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">                <span class="c1">// Add the @odata.type element</span>
 </span></span><span class="line"><span class="cl">                <span class="n">attachment</span><span class="p">[</span><span class="s">&#34;@odata.type&#34;</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;#microsoft.graph.fileAttachment&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">            <span class="p">}</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">        
@@ -462,13 +476,34 @@ however without further limitation that ill allow the application to send emails
 </span></span><span class="line"><span class="cl">            <span class="p">}</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="c1">// Create a JSON object to include the original request and the response content</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Make a custom HTTP GET call to the developer messaging API</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">string</span> <span class="n">developerMessage</span> <span class="p">=</span> <span class="s">&#34;Failed to get updated developer message&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">try</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">var</span> <span class="n">request</span> <span class="p">=</span> <span class="p">(</span><span class="n">HttpWebRequest</span><span class="p">)</span><span class="n">WebRequest</span><span class="p">.</span><span class="n">Create</span><span class="p">(</span><span class="s">&#34;https://developer-message.mightora.io/api/HttpTrigger?appname=send-email-with-graph&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">request</span><span class="p">.</span><span class="n">Method</span> <span class="p">=</span> <span class="s">&#34;GET&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">developerResponse</span> <span class="p">=</span> <span class="p">(</span><span class="n">HttpWebResponse</span><span class="p">)</span><span class="n">request</span><span class="p">.</span><span class="n">GetResponse</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">streamReader</span> <span class="p">=</span> <span class="k">new</span> <span class="n">StreamReader</span><span class="p">(</span><span class="n">developerResponse</span><span class="p">.</span><span class="n">GetResponseStream</span><span class="p">()))</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="kt">var</span> <span class="n">developerResponseContent</span> <span class="p">=</span> <span class="n">streamReader</span><span class="p">.</span><span class="n">ReadToEnd</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">                    <span class="kt">var</span> <span class="n">developerResponseJson</span> <span class="p">=</span> <span class="n">JObject</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">developerResponseContent</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">developerMessage</span> <span class="p">=</span> <span class="n">developerResponseJson</span><span class="p">[</span><span class="s">&#34;message&#34;</span><span class="p">]?.</span><span class="n">ToString</span><span class="p">()</span> <span class="p">??</span> <span class="n">developerMessage</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">catch</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// If the GET request fails, developerMessage remains as the default failure message</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Create a JSON object to include the original request, the response content, and the developer message</span>
 </span></span><span class="line"><span class="cl">        <span class="kt">var</span> <span class="n">finalResponseContent</span> <span class="p">=</span> <span class="k">new</span> <span class="n">JObject</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="na">
-</span></span></span><span class="line"><span class="cl"><span class="na">            [&#34;version&#34;]</span> <span class="p">=</span> <span class="s">&#34;1.2.0&#34;</span><span class="p">,</span> <span class="c1">// Add version number here</span>
+</span></span><span class="line"><span class="cl"><span class="na">            [&#34;version&#34;]</span> <span class="p">=</span> <span class="s">&#34;1.2.0&#34;</span><span class="p">,</span> <span class="c1">// Add version number here</span>
 </span></span><span class="line"><span class="cl"><span class="na">            [&#34;responseContent&#34;]</span> <span class="p">=</span> <span class="n">JObject</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">responseContentAsString</span><span class="p">),</span>
-</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="na">            [&#34;developerMessage&#34;]</span> <span class="p">=</span> <span class="n">developerMessage</span>
 </span></span><span class="line"><span class="cl">        <span class="p">};</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">        <span class="c1">// Set the response content back to the JSON string</span>
@@ -577,14 +612,15 @@ however without further limitation that ill allow the application to send emails
 </div><div class="post-footer" id="post-footer">
     <div class="post-info"><div class="post-info-tag"><span><a href="/tags/power-automate/">Power Automate</a>
                 </span></div><div class="post-info-line"><div class="post-info-mod">
-                <span>Updated on 2025-02-10</span>
+                <span>Updated on 2025-04-01</span>
             </div><div class="post-info-mod"></div>
         </div><div class="post-info-share">
             <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" data-title="Send Emails from Flow without a Service Account" data-via="itweedie" data-hashtags="Power Automate"><i class="fa-brands fa-square-x-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" data-hashtag="Power Automate"><i class="fa-brands fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/"><i class="fa-brands fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" data-title="Send Emails from Flow without a Service Account" data-web><i class="fa-brands fa-whatsapp fa-fw"></i></a></span>
-        </div></div><div class="post-nav"><a href="/posts/effortlessly-move-dataverse-for-teams-solutions/" class="prev" rel="prev" title="Effortlessly Move Dataverse for Teams Solutions"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a></div></div>
+        </div></div><div class="post-nav"><a href="/posts/effortlessly-move-dataverse-for-teams-solutions/" class="prev" rel="prev" title="Effortlessly Move Dataverse for Teams Solutions"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/" class="next" rel="next" title="Set folder permissions in SharePoint with Power Automate Flow">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
 </div></article></div>
             </main>
-            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.1">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt 1.0.2"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.3">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt 1.0.2"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
         </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/"></a></span></div>
 </div>
 </footer>

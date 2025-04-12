@@ -3,13 +3,21 @@
         <title>All Posts - Tech Tweedie</title>
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Show and Hide Tabs Based on Status Reason in Model Driven Apps</title>
+    <link>http://localhost:1313/posts/250412-show-hide-status-reason/</link>
+    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/250412-show-hide-status-reason/</guid>
+    <description><![CDATA[Introduction Ever wanted to show or hide a tab in a Model-Driven App based on the Status Reason of a record? Maybe you’ve got a section of a form that’s only relevant when a record hits a specific state — like “Approved” or “Rejected”?
+This post walks you through a reusable JavaScript snippet I’ve shared on GitHub that dynamically toggles tab visibility based on the statuscode field.
+Why This Is Useful Sometimes users don’t need to see everything all the time.]]></description>
+</item>
+<item>
     <title>Set folder permissions in SharePoint with Power Automate Flow</title>
     <link>http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</link>
     <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</guid>
-    <description><![CDATA[Want to set item or folder permissions in SharePoint using Power Automate but can&rsquo;t out how to do it? Not able to do it with the out of the box SharePoint Connector?
-Good news! In this guide, I&rsquo;ll show you how to set these using an App Registration. No service accounts, no password headaches. I&rsquo;ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:
-Create and configure the App Registration Assign API permissions Setting permissions using sites.]]></description>
+    <description><![CDATA[Want to grand and remove item or folder permissions in SharePoint using Power Automate with a Service Principle but can&rsquo;t do it? Not able to do it with the out of the box SharePoint Connector?
+Tired of dealing with Conditional Access Policies, password expirations, and frequent logins?
+Good news! In this guide, I&rsquo;ll show you how to set these using an App Registration. No service accounts, no password headaches. I&rsquo;ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:]]></description>
 </item>
 <item>
     <title>Send Emails from Flow without a Service Account</title>
@@ -66,12 +74,6 @@ Tools The tools we will be using today will be;]]></description>
     <pubDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</pubDate><guid>http://localhost:1313/posts/how-to-install-hugo-on-windows-11/</guid>
     <description><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>Hugo is a open-source static site generator, designed for speed and flexibility, making it an excellent choice when creating modern websites, blogs, and documentation. In this guide, we&rsquo;ll walk you through the steps to install Hugo on your Windows 11 machine.</p>]]></description>
-</item>
-<item>
-    <title>Power Platform Developer Tools Install Script</title>
-    <link>http://localhost:1313/posts/power-platform-developer-tools-install-script/</link>
-    <pubDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</pubDate><guid>http://localhost:1313/posts/power-platform-developer-tools-install-script/</guid>
-    <description><![CDATA[Introduction Frequently moving between desktop builds, want to be able to get up and running quickly, I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&rsquo;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.]]></description>
 </item>
 </channel>
 </rss>

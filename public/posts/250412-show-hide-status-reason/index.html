@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Show and Hide Tabs Based on Status Reason in Model Driven Apps - Tech Tweedie</title><meta name="description" content="In this post, I share a simple JavaScript snippet you can use in Model-Driven Apps to show or hide tabs based on the Status Reason of a record. It’s clean, easy to implement, and great for improving the user experience."><meta property="og:url" content="http://localhost:1313/posts/250412-show-hide-status-reason/">
+  <meta property="og:site_name" content="Tech Tweedie">
+  <meta property="og:title" content="Show and Hide Tabs Based on Status Reason in Model Driven Apps">
+  <meta property="og:description" content="In this post, I share a simple JavaScript snippet you can use in Model-Driven Apps to show or hide tabs based on the Status Reason of a record. It’s clean, easy to implement, and great for improving the user experience.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-12T00:00:00+00:00">
+    <meta property="article:tag" content="JavaScript">
+    <meta property="article:tag" content="Model Driven App">
+    <meta property="article:tag" content="Status Reason">
+    <meta property="article:tag" content="UX">
+    <meta property="og:image" content="http://localhost:1313/posts/250412-show-hide-status-reason/thin.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/posts/250412-show-hide-status-reason/thin.png">
+  <meta name="twitter:title" content="Show and Hide Tabs Based on Status Reason in Model Driven Apps">
+  <meta name="twitter:description" content="In this post, I share a simple JavaScript snippet you can use in Model-Driven Apps to show or hide tabs based on the Status Reason of a record. It’s clean, easy to implement, and great for improving the user experience.">
+      <meta name="twitter:site" content="@itweedie">
+<meta name="application-name" content="Tech Tweedie">
+<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/250412-show-hide-status-reason/" /><link rel="prev" href="http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Show and Hide Tabs Based on Status Reason in Model Driven Apps",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/posts\/250412-show-hide-status-reason\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/localhost:1313\/posts\/250412-show-hide-status-reason\/thin.png",
+                            "width":  1536 ,
+                            "height":  300 
+                        }],"genre": "posts","keywords": "JavaScript, Model Driven App, Status Reason, UX","wordcount":  730 ,
+        "url": "http:\/\/localhost:1313\/posts\/250412-show-hide-status-reason\/","datePublished": "2025-04-12T00:00:00+00:00","dateModified": "2025-04-12T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "itweedie"},"author": {
+                "@type": "Person",
+                "name": "itweedie"
+            },"description": "In this post, I share a simple JavaScript snippet you can use in Model-Driven Apps to show or hide tabs based on the Status Reason of a record. It’s clean, easy to implement, and great for improving the user experience."
+    }
+    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" rel="noopener noreffer" target="_blank"> YouTube Channel </a><a class="menu-item" href="https://mightora.io/" rel="noopener noreffer" target="_blank"> Free Power Platform Tools </a><span class="menu-item delimiter"></span><a class="menu-item" href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" title="" rel="noopener noreffer" target="_blank">YouTube Channel</a><a class="menu-item" href="https://mightora.io/" title="" rel="noopener noreffer" target="_blank">Free Power Platform Tools</a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="disable"><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/250412-show-hide-status-reason/thin.png"
+        data-srcset="/posts/250412-show-hide-status-reason/thin.png, /posts/250412-show-hide-status-reason/thin.png 1.5x, /posts/250412-show-hide-status-reason/thin.png 2x"
+        data-sizes="auto"
+        alt="/posts/250412-show-hide-status-reason/thin.png"
+        title="In this post, I share a simple JavaScript snippet you can use in Model-Driven Apps to show or hide tabs based on the Status Reason of a record. It’s clean, easy to implement, and great for improving the user experience." /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Show and Hide Tabs Based on Status Reason in Model Driven Apps</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="https://iantweedie.biz" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>itweedie</a></span>&nbsp;<span class="post-category">published in <a href="/categories/power-platform/"><i class="fa-regular fa-folder fa-fw"></i>Power Platform</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-04-12">2025-04-12</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;730 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;4 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#why-this-is-useful">Why This Is Useful</a></li>
+    <li><a href="#what-it-does">What It Does</a></li>
+    <li><a href="#how-to-use-it">How to Use It</a>
+      <ul>
+        <li><a href="#1-download-or-copy-the-snippet">1. Download or copy the snippet</a></li>
+        <li><a href="#2-update-the-script">2. Update the script</a></li>
+        <li><a href="#3-add-it-to-your-solution">3. Add it to your solution</a></li>
+        <li><a href="#4-hook-it-up-in-the-form-editor">4. Hook it up in the Form Editor</a></li>
+        <li><a href="#5-test-it-out">5. Test It Out</a></li>
+      </ul>
+    </li>
+    <li><a href="#notes">Notes</a></li>
+    <li><a href="#final-thoughts">Final Thoughts</a></li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><h2 id="introduction">Introduction</h2>
+<p>Ever wanted to show or hide a tab in a <strong>Model-Driven App</strong> based on the <strong>Status Reason</strong> of a record? Maybe you’ve got a section of a form that’s only relevant when a record hits a specific state — like “Approved” or “Rejected”?</p>
+<p>This post walks you through a reusable JavaScript snippet I’ve shared on GitHub that <strong>dynamically toggles tab visibility</strong> based on the <strong>statuscode</strong> field.</p>
+<h2 id="why-this-is-useful">Why This Is Useful</h2>
+<p>Sometimes users don’t need to see everything all the time. Maybe you’ve got a whole section for post-approval actions — or maybe you want to hide advanced options until a record is in a specific state.</p>
+<p>Rather than relying on Business Rules (which can’t target tabs), or overcomplicating things with multiple forms, a bit of client-side JavaScript is just the trick.</p>
+<h2 id="what-it-does">What It Does</h2>
+<p>This script listens for changes to the <strong>Status Reason</strong> field and shows/hides a tab (<code>tab3</code> in this case) depending on the value:</p>
+<ul>
+<li>If <strong>Status Reason = 1</strong> → hide the tab</li>
+<li>If <strong>Status Reason = 304880001</strong> → show the tab</li>
+<li>For all other statuses → hide the tab by default</li>
+</ul>
+<p>You can easily customise the status values and tab name to suit your scenario.</p>
+<h2 id="how-to-use-it">How to Use It</h2>
+<h3 id="1-download-or-copy-the-snippet">1. Download or copy the snippet</h3>
+<p>You can grab the full snippet from GitHub here:<br>
+👉 <a href="https://github.com/itweedie/PowerPlatform-JavaScript-Snippets/blob/main/Model-Driven-App/show-hide-based-on-StatusReason.js" target="_blank" rel="noopener noreffer">View on GitHub</a></p>
+<p>Or copy it below:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">toggleByStatusReason</span><span class="p">(</span><span class="nx">executionContext</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;==== START show/hide Status Reason ====&#34;</span><span class="p">);</span> <span class="c1">// Start log
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Get the form context from the execution context
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">formContext</span> <span class="o">=</span> <span class="nx">executionContext</span><span class="p">.</span><span class="nx">getFormContext</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Retrieved form context.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Get the Status Reason value (statuscode column)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">status</span> <span class="o">=</span> <span class="nx">formContext</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s2">&#34;statuscode&#34;</span><span class="p">).</span><span class="nx">getValue</span><span class="p">();</span> <span class="c1">// Status Reason
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Status Reason value retrieved: </span><span class="si">${</span><span class="nx">status</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Get the tab to show/hide (tab3)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">tab</span> <span class="o">=</span> <span class="nx">formContext</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">tabs</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&#34;tab3&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">tab</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Tab &#39;tab3&#39; found.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Decision-making based on the Status Reason value
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="p">(</span><span class="nx">status</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Status Reason is &#39;Status One&#39; (value: 1). Hiding tab3.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">tab</span><span class="p">.</span><span class="nx">setVisible</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span> <span class="c1">// Hide tab3
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">status</span> <span class="o">===</span> <span class="mi">304880001</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Status Reason is &#39;Status Two&#39; (value: 304880001). Showing tab3.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">tab</span><span class="p">.</span><span class="nx">setVisible</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span> <span class="c1">// Show tab3
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Status Reason is an unhandled value (</span><span class="si">${</span><span class="nx">status</span><span class="si">}</span><span class="sb">). Defaulting to hiding tab3.`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">tab</span><span class="p">.</span><span class="nx">setVisible</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span> <span class="c1">// Default to hiding tab3 for other values
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Tab &#39;tab3&#39; not found. No action taken.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;==== END show/hide Status Reason ====&#34;</span><span class="p">);</span> <span class="c1">// End log
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">registerOnChangeEvent</span><span class="p">(</span><span class="nx">executionContext</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Registering OnChange event for Status Reason...&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Get the form context from the execution context
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">formContext</span> <span class="o">=</span> <span class="nx">executionContext</span><span class="p">.</span><span class="nx">getFormContext</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Retrieved form context.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Get the Status Reason attribute (statuscode column)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">statusAttribute</span> <span class="o">=</span> <span class="nx">formContext</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s2">&#34;statuscode&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">statusAttribute</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Status Reason attribute found. Registering OnChange event handler.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Register the toggleByStatusReason function for the OnChange event
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">statusAttribute</span><span class="p">.</span><span class="nx">addOnChange</span><span class="p">(</span><span class="nx">toggleByStatusReason</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Call the function initially to set the correct visibility on form load
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Calling toggleByStatusReason initially to set visibility on form load.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">toggleByStatusReason</span><span class="p">(</span><span class="nx">executionContext</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Status Reason attribute not found. OnChange event handler not registered.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="2-update-the-script">2. Update the script</h3>
+<ol>
+<li>Update the tab name in your version of the javascript script to match the tab name in your model driven app form.</li>
+</ol>
+<h3 id="3-add-it-to-your-solution">3. Add it to your solution</h3>
+<ol>
+<li>In your solution, navigate to <strong>Web Resources</strong>.</li>
+<li>Upload a new JavaScript file (e.g. <code>statusReasonToggle.js</code>).</li>
+<li>Paste in the code.</li>
+<li>Publish.</li>
+</ol>
+<h3 id="4-hook-it-up-in-the-form-editor">4. Hook it up in the Form Editor</h3>
+<ol>
+<li>Open the form you want to target.</li>
+<li>Go to <strong>Form Properties</strong>.</li>
+<li>Add your new JavaScript Web Resource.</li>
+<li>Under <strong>Events</strong>, for the <strong>Form OnLoad</strong>, call <code>registerOnChangeEvent</code>.</li>
+<li>Pass in the form context</li>
+<li>Save and publish the form.</li>
+</ol>
+<h3 id="5-test-it-out">5. Test It Out</h3>
+<p>Now when you load a record, or change the <strong>Status Reason</strong>, the tab will show or hide automatically based on the logic you’ve defined. Nice and clean.</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>This script uses <strong>console.log</strong> statements throughout — which makes it really easy to troubleshoot using browser dev tools.</li>
+<li>You’ll need to replace <code>tab3</code> with the name of the tab on your own form.</li>
+<li>Adjust the numeric values (<code>1</code>, <code>304880001</code>) to match your own <strong>Status Reason options</strong>.</li>
+</ul>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>This is one of those tiny bits of polish that makes a big difference for your users. A cleaner interface, less noise, and a better user experience — with just a few lines of JavaScript.</p>
+<p>If you find this useful, feel free to ⭐ the GitHub repo or fork it for your own snippets!</p>
+<p>If you’ve got a similar problem or want to do something more complex — drop me a message. Always happy to help.</p>
+<p>Happy building!</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/javascript/">JavaScript</a>
+                </span><span><a href="/tags/model-driven-app/">Model Driven App</a>
+                </span><span><a href="/tags/status-reason/">Status Reason</a>
+                </span><span><a href="/tags/ux/">UX</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2025-04-12</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/posts/250412-show-hide-status-reason/" data-title="Show and Hide Tabs Based on Status Reason in Model Driven Apps" data-via="itweedie" data-hashtags="JavaScript,Model Driven App,Status Reason,UX"><i class="fa-brands fa-square-x-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/250412-show-hide-status-reason/" data-hashtag="JavaScript"><i class="fa-brands fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="http://localhost:1313/posts/250412-show-hide-status-reason/"><i class="fa-brands fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://localhost:1313/posts/250412-show-hide-status-reason/" data-title="Show and Hide Tabs Based on Status Reason in Model Driven Apps" data-web><i class="fa-brands fa-whatsapp fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/" class="prev" rel="prev" title="Set folder permissions in SharePoint with Power Automate Flow"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a></div></div>
+</div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.3">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt 1.0.2"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/"></a></span></div>
+</div>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"Tech Tweedie","id-2":"Tech Tweedie"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>

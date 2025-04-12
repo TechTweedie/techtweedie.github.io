@@ -110,22 +110,27 @@ function registerOnChangeEvent(executionContext) {
 }
 ```
 
-### 2. Add it to your solution
+### 2. Update the script
+
+1. Update the tab name in your version of the javascript script to match the tab name in your model driven app form.
+
+### 3. Add it to your solution
 
 1. In your solution, navigate to **Web Resources**.
 2. Upload a new JavaScript file (e.g. `statusReasonToggle.js`).
 3. Paste in the code.
 4. Publish.
 
-### 3. Hook it up in the Form Editor
+### 4. Hook it up in the Form Editor
 
 1. Open the form you want to target.
 2. Go to **Form Properties**.
 3. Add your new JavaScript Web Resource.
 4. Under **Events**, for the **Form OnLoad**, call `registerOnChangeEvent`.
-5. Save and publish the form.
+5. Pass in the form context
+6. Save and publish the form.
 
-### 4. Test It Out
+### 5. Test It Out
 
 Now when you load a record, or change the **Status Reason**, the tab will show or hide automatically based on the logic you’ve defined. Nice and clean.
 

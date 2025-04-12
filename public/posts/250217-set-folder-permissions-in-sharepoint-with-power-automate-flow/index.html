@@ -24,7 +24,7 @@
   <meta name="twitter:description" content="Discover how to set item or folder permissions in SharePoint using Power Automate Flow with a custom connector and service principal in this comprehensive step-by-step guide.">
       <meta name="twitter:site" content="@itweedie">
 <meta name="application-name" content="Tech Tweedie">
-<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/" /><link rel="prev" href="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/" /><link rel="prev" href="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" /><link rel="next" href="http://localhost:1313/posts/250412-show-hide-status-reason/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -38,7 +38,7 @@
                             "url": "http:\/\/localhost:1313\/posts\/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow\/featureImage.png",
                             "width":  1792 ,
                             "height":  300 
-                        }],"genre": "posts","keywords": "Power Automate, EntraID, Power Platform","wordcount":  2172 ,
+                        }],"genre": "posts","keywords": "Power Automate, EntraID, Power Platform","wordcount":  2187 ,
         "url": "http:\/\/localhost:1313\/posts\/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow\/","datePublished": "2025-02-17T06:00:00+01:00","dateModified": "2025-02-17T06:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "itweedie"},"author": {
@@ -103,7 +103,7 @@
         alt="/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/featureImage.png"
         title="Discover how to set item or folder permissions in SharePoint using Power Automate Flow with a custom connector and service principal in this comprehensive step-by-step guide." /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Set folder permissions in SharePoint with Power Automate Flow</h2><div class="post-meta">
                 <div class="post-meta-line"><span class="post-author"><a href="https://iantweedie.biz" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>itweedie</a></span>&nbsp;<span class="post-category">published in <a href="/categories/power-automate/"><i class="fa-regular fa-folder fa-fw"></i>Power Automate</a>&nbsp;<a href="/categories/entraid/"><i class="fa-regular fa-folder fa-fw"></i>EntraID</a>&nbsp;<a href="/categories/power-platform/"><i class="fa-regular fa-folder fa-fw"></i>Power Platform</a></span></div>
-                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-02-17">2025-02-17</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;2172 words</span>&nbsp;
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-02-17">2025-02-17</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;2187 words</span>&nbsp;
                     <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;11 minutes</span>&nbsp;</div>
             </div>
             
@@ -126,7 +126,7 @@
     <li><a href="#setting-your-application-permissions-in-sharepoint-online">Setting your application permissions in SharePoint Online</a>
       <ul>
         <li><a href="#step-1---get-sharepoint-site-id">Step 1 - Get SharePoint Site ID</a></li>
-        <li><a href="#step-2---give-permission-to-our-app-regestration-for-this-site">Step 2 - Give Permission to our App Regestration for this site</a></li>
+        <li><a href="#step-2---give-permission-to-our-app-registration-for-this-site">Step 2 - Give Permission to our App Registration for this site</a></li>
         <li><a href="#step-1---access-ms-graph-explorer">Step 1 - Access MS Graph Explorer</a></li>
         <li><a href="#step-2---set-permissions">Step 2 - Set permissions</a></li>
       </ul>
@@ -159,7 +159,8 @@
     </li>
   </ul>
 </nav></div>
-                </div><div class="content" id="content"><p>Want to set item or folder permissions in SharePoint using <strong>Power Automate</strong> but can&rsquo;t out how to do it? Not able to do it with the out of the box SharePoint Connector?</p>
+                </div><div class="content" id="content"><p>Want to grand and remove item or folder permissions in SharePoint using <strong>Power Automate</strong> with a Service Principle but can&rsquo;t do it? Not able to do it with the out of the box SharePoint Connector?</p>
+<p>Tired of dealing with Conditional Access Policies, password expirations, and frequent logins?</p>
 <p>Good news! In this guide, I&rsquo;ll show you how to set these using an App Registration. No service accounts, no password headaches. I&rsquo;ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:</p>
 <ul>
 <li>Create and configure the App Registration</li>
@@ -271,7 +272,15 @@ This Stage will need to be done by someone who is an Owner of the SharePoint sit
 </span></span></code></pre></div><p>Locate the ID value, it will look something like this from within the xml</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;d:Id</span> <span class="na">m:type=</span><span class="s">&#34;Edm.Guid&#34;</span><span class="nt">&gt;</span>9ce4e8e2-fa87-474b-bd2f-d858d828f8a1<span class="nt">&lt;/d:Id&gt;</span>
 </span></span></code></pre></div><p>We need the Site ID value which in this example is <code>9ce4e8e2-fa87-474b-bd2f-d858d828f8a1</code></p>
-<h3 id="step-2---give-permission-to-our-app-regestration-for-this-site">Step 2 - Give Permission to our App Regestration for this site</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="brave_vD8h1UHpbG.gif"
+        data-srcset="/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/brave_vD8h1UHpbG.gif, brave_vD8h1UHpbG.gif 1.5x, /posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/brave_vD8h1UHpbG.gif 2x"
+        data-sizes="auto"
+        alt="/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/brave_vD8h1UHpbG.gif"
+        title="alt text" /></p>
+<h3 id="step-2---give-permission-to-our-app-registration-for-this-site">Step 2 - Give Permission to our App Registration for this site</h3>
 <p>The first stage is to give the permission to our app permissions on the SharePoint site, to do this we need to use Graph Explorer. You will also need to be an Owner of the SharePoint Site you are giving permissions to.</p>
 <h3 id="step-1---access-ms-graph-explorer">Step 1 - Access MS Graph Explorer</h3>
 <ol>
@@ -652,10 +661,11 @@ This Stage will need to be done by someone who is an Owner of the SharePoint sit
             </div><div class="post-info-mod"></div>
         </div><div class="post-info-share">
             <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/" data-title="Set folder permissions in SharePoint with Power Automate Flow" data-via="itweedie" data-hashtags="Power Automate,EntraID,Power Platform"><i class="fa-brands fa-square-x-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/" data-hashtag="Power Automate"><i class="fa-brands fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/"><i class="fa-brands fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/" data-title="Set folder permissions in SharePoint with Power Automate Flow" data-web><i class="fa-brands fa-whatsapp fa-fw"></i></a></span>
-        </div></div><div class="post-nav"><a href="/posts/send-emails-from-flow-without-a-service-account/" class="prev" rel="prev" title="Send Emails from Flow without a Service Account"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a></div></div>
+        </div></div><div class="post-nav"><a href="/posts/send-emails-from-flow-without-a-service-account/" class="prev" rel="prev" title="Send Emails from Flow without a Service Account"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/250412-show-hide-status-reason/" class="next" rel="next" title="Show and Hide Tabs Based on Status Reason in Model Driven Apps">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
 </div></article></div>
             </main>
-            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.1">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt 1.0.2"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.3">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt 1.0.2"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
         </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/"></a></span></div>
 </div>
 </footer>

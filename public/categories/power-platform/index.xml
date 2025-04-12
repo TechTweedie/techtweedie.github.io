@@ -3,13 +3,21 @@
         <title>Power Platform - Category - Tech Tweedie</title>
         <link>http://localhost:1313/categories/power-platform/</link>
         <description>Power Platform - Category - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/power-platform/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/power-platform/" rel="self" type="application/rss+xml" /><item>
+    <title>Show and Hide Tabs Based on Status Reason in Model Driven Apps</title>
+    <link>http://localhost:1313/posts/250412-show-hide-status-reason/</link>
+    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/250412-show-hide-status-reason/</guid>
+    <description><![CDATA[Introduction Ever wanted to show or hide a tab in a Model-Driven App based on the Status Reason of a record? Maybe you’ve got a section of a form that’s only relevant when a record hits a specific state — like “Approved” or “Rejected”?
+This post walks you through a reusable JavaScript snippet I’ve shared on GitHub that dynamically toggles tab visibility based on the statuscode field.
+Why This Is Useful Sometimes users don’t need to see everything all the time.]]></description>
+</item>
+<item>
     <title>Set folder permissions in SharePoint with Power Automate Flow</title>
-    <link>http://localhost:1313/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/</link>
-    <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250216-set-folder-permissions-in-sharepoint-with-power-automate-flow/</guid>
-    <description><![CDATA[Want to set item or folder permissions in SharePoint using Power Automate but can&rsquo;t out how to do it? Not able to do it with the out of the box SharePoint Connector?
-Good news! In this guide, I&rsquo;ll show you how to set these using an App Registration. No service accounts, no password headaches. I&rsquo;ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:
-Create and configure the App Registration Assign API permissions Setting permissions using sites.]]></description>
+    <link>http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</link>
+    <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</guid>
+    <description><![CDATA[Want to grand and remove item or folder permissions in SharePoint using Power Automate with a Service Principle but can&rsquo;t do it? Not able to do it with the out of the box SharePoint Connector?
+Tired of dealing with Conditional Access Policies, password expirations, and frequent logins?
+Good news! In this guide, I&rsquo;ll show you how to set these using an App Registration. No service accounts, no password headaches. I&rsquo;ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:]]></description>
 </item>
 <item>
     <title>Send Emails from Flow without a Service Account</title>
@@ -65,13 +73,6 @@ Tools The tools we will be using today will be;]]></description>
     <link>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</link>
     <pubDate>Fri, 24 May 2024 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</guid>
     <description><![CDATA[Introduction Have you ever wondered if you can use Environment Variables in a PowerFX button, how to create a custom email link button in the command bar of your Power Apps model-driven application using environment variables and Power FX? Luckily, Power Apps has made it possible to achieve this. With the help of Power FX, which is the same language used in canvas app development, anyone can efficiently customise their app’s command bar without needing prior knowledge of JavaScript or the Ribbon Workbench.]]></description>
-</item>
-<item>
-    <title>Clone with PowerFX Command button</title>
-    <link>http://localhost:1313/posts/clone-with-powerfx-command-button/</link>
-    <pubDate>Mon, 22 Apr 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/clone-with-powerfx-command-button/</guid>
-    <description><![CDATA[Introduction Cloning multiple records within a data view in a Model-Driven App is a common request from end users. It helps them quickly fill out data fields in situations where only a few values differ between records.
-In this blog post, we will explore how to add a custom button to the command bar in a Power Apps model-driven application to duplicate multiple records. Power Apps recently introduced this helpful feature, and the best part is that it can be achieved using Power FX, the same language used for developing canvas apps.]]></description>
 </item>
 </channel>
 </rss>
