@@ -127,7 +127,9 @@ Locate the ID value, it will look something like this from within the xml
 
 We need the Site ID value which in this example is `9ce4e8e2-fa87-474b-bd2f-d858d828f8a1`
 
-### Step 2 - Give Permission to our App Regestration for this site
+![alt text](brave_vD8h1UHpbG.gif)
+
+### Step 2 - Give Permission to our App Registration for this site
 
 The first stage is to give the permission to our app permissions on the SharePoint site, to do this we need to use Graph Explorer. You will also need to be an Owner of the SharePoint Site you are giving permissions to.
 
