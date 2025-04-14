@@ -8,6 +8,11 @@ tags:
 categories:
   - Power Platform
   - Community
+resources:
+- name: "featured-image"
+  src: "thin.png"
+- name: "featured-image-preview"
+  src: "large.png"
 date: 2025-04-14T011:00:00+01:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
