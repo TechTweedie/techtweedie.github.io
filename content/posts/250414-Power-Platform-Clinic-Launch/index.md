@@ -1,6 +1,6 @@
 ---
 title: "Announcing: Power Platform Clinic"
-description: "I'm excited to announce Power Platform Clinic — a new initiative created with Duncan Boyne to support makers, developers, and admins across the Power Platform. Submit your challenge and join us as we explore real-world problems live on YouTube."
+description: "I'm excited to announce Power Platform Clinic — a new initiative created with Duncan Boyne to support makers, developers, and admins across the Power Platform. Submit your challenge and join us as we explore real-world problems on YouTube."
 tags:
   - Power Platform
   - Community
@@ -27,7 +27,7 @@ This is a joint project between myself and [Duncan Boyne](https://www.linkedin.c
 
 ## What is Power Platform Clinic?
 
-The **Clinic** is a series of short, focused sessions where we walk through real questions from the community. You submit your question in advance, and we’ll select a handful to explore live in a recorded or 1:1 format depending on the complexity and interest.
+The **Clinic** is a series of short, focused sessions where we walk through real questions from the community. You submit your question in advance, and we’ll select a handful to explore in a 1:1 format depending on the complexity and interest.
 
 We’ll cover everything from:
 
