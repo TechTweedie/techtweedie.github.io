@@ -21,7 +21,7 @@ If you've ever hit a blocker in Power Platform and thought, *"I wish I could jus
 
 I’m launching **Power Platform Clinic**, a community-led initiative to help makers, developers, and admins get unstuck, validate their designs, or just explore options with someone who’s been there before.
 
-This is a joint project between myself and [Duncan Boyne](https://www.linkedin.com/in/duncanboyne/) — aka **The Power BI Kinda Guy** — and it’s designed to be informal, practical, and focused on real-world outcomes.
+This is a joint project between myself and [Duncan Boyne](https://www.linkedin.com/in/duncanboyne/) — aka **The Power BI Kinda Guy** — and it’s designed to be informal, practical, and focused on real-world outcomes. 
 
 {{< youtube xWqKIG3GvN8 >}}
 
