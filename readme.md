@@ -18,3 +18,8 @@ This tool helps you create a multi-platform favicon for your website. It generat
 *Website: [RealFaviconGenerator](https://realfavicongenerator.net/)*  
 
 
+{  
+	"prompt": 
+			"A vibrant, modern drawing. Showing a SSL secure website",  
+	"size": "1792x1024"
+}
