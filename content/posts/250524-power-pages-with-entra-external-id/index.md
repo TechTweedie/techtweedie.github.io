@@ -32,7 +32,7 @@ In this walkthrough video, I demonstrate how to integrate Entra External ID with
 - Connecting the authentication flow with your Power Pages site
 - Testing the login experience from an external user’s perspective
 
-{{< youtube YOUR_VIDEO_ID_HERE >}}
+{{< youtube elb5kPG3FnU >}}
 
 ## Why Use Entra External ID with Power Pages?
 
