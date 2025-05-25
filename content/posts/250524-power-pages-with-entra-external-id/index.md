@@ -14,9 +14,9 @@ author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
 - name: "featured-image"
-  src: "featureImage.png"
+  src: "thin.png"
 - name: "featured-image-preview"
-  src: "featureImage.png"
+  src: "large.png"
 lightgallery: true
 draft: false
 ---
