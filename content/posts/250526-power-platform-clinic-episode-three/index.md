@@ -10,9 +10,9 @@ tags:
   - Power Platform
 categories:
   - Power Platform Clinic
-date: 2025-05-26T06:00:00+01:00
-publishDate: 2025-05-26T06:00:00+01:00
-lastmod: 2025-05-26T06:00:00+01:00
+date: 2025-05-26T00:00:00+01:00
+publishDate: 2025-05-26T00:00:00+01:00
+lastmod: 2025-05-26T00:00:00+01:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
