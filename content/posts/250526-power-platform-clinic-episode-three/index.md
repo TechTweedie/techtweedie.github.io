@@ -24,8 +24,6 @@ lightgallery: true
 draft: false
 ---
 
-# Calling a Dad Joke API and Custom Visuals in Power BI: This Week’s Power Platform Clinic 🩺
-
 Welcome back to the **Power Platform Clinic**, your weekly check-in for diagnosing everyday Power Platform challenges — and fixing them without the consulting invoice.
 
 Whether you're a maker, a consultant, or someone who just typed "Power Automate funny API" into Google — you’re in the right place.
