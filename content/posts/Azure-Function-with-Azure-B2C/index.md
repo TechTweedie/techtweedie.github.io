@@ -4,8 +4,10 @@ description: "Azure functions are a very handy way of getting something small do
 tags:
   - Azure Function
   - Azure B2C
-categories:
   - Azure
+categories:
+  - How to
+  - Walk through
 date: 2022-12-14T19:00:00+01:00
 lastmod: 2024-07-05T19:45:40+08:00
 author: "itweedie"

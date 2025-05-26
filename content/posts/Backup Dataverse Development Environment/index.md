@@ -5,8 +5,10 @@ tags:
   - Power Platform DevOps
   - DevOps
   - Backup
-categories:
   - Power Platform
+categories:
+  - Walk through
+  - How to
 date: 2024-09-03T07:00:00+01:00
 lastmod: 2024-09-03T07:00:00+01:00
 author: "itweedie"
