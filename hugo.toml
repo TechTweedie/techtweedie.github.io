@@ -182,6 +182,16 @@ theme = "FeelIt"
     # GoatCounter code
       code = "techtweedie"
 
+
+ [params.cookieconsent]
+  enable = false
+  # text strings used for Cookie consent banner
+  # 用于 Cookie 许可横幅的文本字符串
+    [params.cookieconsent.content]
+      message = ""
+      dismiss = ""
+      link = ""
+
 # Social share links in post page
 [params.page.share]
     enable = true
