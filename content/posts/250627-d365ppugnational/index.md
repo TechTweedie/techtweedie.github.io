@@ -16,9 +16,9 @@ author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
 - name: "featured-image"
-  src: "devops-pipeline.png"
+  src: "thin.png"
 - name: "featured-image-preview"
-  src: "devops-pipeline-preview.png"
+  src: "large.png"
 lightgallery: true
 draft: false
 ---
