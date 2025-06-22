@@ -22,7 +22,7 @@ resources:
 - name: "featured-image-preview"
   src: "large.png"
 lightgallery: true
-draft: true
+draft: false
 ---
 
 # D365 & Power Platform UG North East – June 2025 Meetup
@@ -80,11 +80,9 @@ Perfect for makers and developers looking to upskill and streamline app creation
 - 🧠 Learn something new — whether technical, strategic, or architectural  
 - 🍕 Free food and drinks — and great company
 
-
 ## 👉 Reserve Your Spot
 
 🎟️ [Click here to register for the event](https://mars.mightora.io/yourls/d365ppugne2506)  
 Spaces are limited — grab your seat early!
-
 
 *For post-event updates, reflections, and session write-ups — check back here or follow along on [LinkedIn](https://linkedin.com/in/ian-tweedie).*  
