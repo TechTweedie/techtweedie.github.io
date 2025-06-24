@@ -1,66 +1,78 @@
 ---
-title: "Walk through Power Pages with Entra External ID"
-description: "In this walkthrough, we explore how to configure and integrate Entra External ID with Power Pages to streamline authentication for external users. Whether you’re working with partners, customers, or a public-facing site, this guide shows you how to enable secure, Entra ID-based access with minimal fuss."
+title: "Walkthrough Customising Entra External ID for Power Pages"
+description: "In this blog post, we walk through the process of customising the login experience for Power Pages using Entra External ID. We’ll show how to apply branding to the sign-in screen to make it look and feel like your organisation, creating a seamless experience for external users."
 tags:
-  - Power Automate
+  - Power Pages
   - EntraID
-  - Power Platform
+  - External ID
+  - Branding
+  - Authentication
 categories:
-  - Walk Through
-  - How to
-date: 2025-05-25T06:00:00+01:00
-publishDate: 2025-05-25T06:00:00+01:00
-lastmod: 2025-05-25T06:00:00+01:00
+  - Power Platform
+  - EntraID
+date: 2025-06-24T09:00:00+01:00
+publishDate: 2025-06-24T09:00:00+01:00
+lastmod: 2025-06-24T09:00:00+01:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
-- name: "featured-image"
-  src: "thumbnail-1.png"
-- name: "featured-image-preview"
-  src: "thumbnail-1.png"
+  - name: "featured-image"
+    src: "thumbnail-1.png"
+  - name: "featured-image-preview"
+    src: "thumbnail-1.png"
 lightgallery: true
 draft: false
 ---
 
+# Walkthrough Customising Entra External ID for Power Pages
+
+{{< youtube s99cqsJ-kDE >}}
+
 ## Introduction
 
-Need to enable Entra External ID sign-in for your Power Pages site? Whether you're looking to support customer access or enable collaboration with external users, the combination of Power Pages and Entra ID is a powerful way to ensure secure, identity-driven access to your platform.
+Are you using **Entra External ID** with **Power Pages** and want to customise the login experience? This guide walks through exactly that — applying your own branding, images, colours, and layout to the Entra login screen for external users.
 
-In this walkthrough video, I demonstrate how to integrate Entra External ID with a Power Pages site, covering:
+This is especially useful for creating a polished, consistent experience when your users are accessing Power Pages from outside your organisation.
 
-- Setting up Entra External ID
-- Configuring identity providers
-- Connecting the authentication flow with your Power Pages site
-- Testing the login experience from an external user’s perspective
+> If you’re new to setting up Entra External ID for Power Pages, I’ve also got a full video walkthrough on how to configure that — I’ll link it below.
 
-{{< youtube elb5kPG3FnU >}}
+## What You'll Learn
 
-## Why Use Entra External ID with Power Pages?
+In this video and post, we explore:
 
-Power Pages is ideal for creating public- or partner-facing web portals, but managing access securely is always a challenge. Entra External ID lets you:
+- How to verify you're in the correct **Entra tenant** for external ID customisation
+- Where to find **Company Branding** settings in Microsoft Entra
+- How to add:
+  - Favicon
+  - Background image
+  - Custom page colours
+  - Header and footer logos
+  - Links for privacy and terms
+- Common pitfalls (like image size limits)
+- How to test your branding changes in a live Power Pages scenario
 
-- Allow users to sign in with their own credentials (e.g., Microsoft, Google, etc.)
-- Manage users in a scalable and secure way
-- Reduce the need for custom authentication solutions
+## Why This Matters
 
-Combining the two ensures a secure, scalable solution for engaging with users outside your organisation.
+The default login experience in Entra External ID works — but let’s face it — it’s pretty bland. For public-facing websites or citizen-facing portals, you want something that reinforces trust and shows attention to detail. Custom branding allows you to:
 
-## What You'll Learn in the Video
+- Match your corporate style
+- Reduce user confusion
+- Deliver a consistent login experience from start to finish
 
-In the video, I take you through the following steps:
+## Tips to Remember
 
-1. **Registering your Power Pages app with Entra External ID**
-2. **Connecting your Power Pages authentication settings to Entra**
-3. **Testing login flow as an external user**
-
-By the end of the walkthrough, you’ll have a working Power Pages site that accepts sign-in via Entra ID for external identities—ready for use in customer or partner scenarios.
+- Images like background and logo must be under 300KB.
+- You’ll need the **Organizational Branding Administrator** role (or higher).
+- Don’t forget to test in the correct tenant — you’ll usually have a separate **External** tenant in Entra for this.
+- Email templates are not controlled here — we’ll look at that in another post.
 
 ## Final Thoughts
 
-Integrating Entra External ID with Power Pages is a vital step if you’re building a secure, user-friendly portal for external users. Whether you’re building customer-facing systems, partner portals, or community sites, this walkthrough gives you the building blocks you need.
+This small step makes a huge difference in how professional your solution feels to users. Whether it’s a public sector form, citizen portal, or partner landing page, getting your login screen branded properly is worth the effort.
 
-As always, if you have questions or want to explore more advanced scenarios—like custom branding or consent policies—feel free to reach out.
+Let me know if you have any questions or want a hand setting up your Entra branding!
 
 ---
+🔗 **Watch on YouTube:** [Walk through Power Pages with Entra External ID](https://www.youtube.com/watch?v=elb5kPG3FnU)  
+🔧 **Need help?** Contact me via [iantweedie.biz](https://iantweedie.biz)
 
-*Originally posted on [TechTweedie](https://techtweedie.github.io), going beyond the low code, my home for all things Power Platform and low-code DevOps.*
