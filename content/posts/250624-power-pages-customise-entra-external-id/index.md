@@ -9,10 +9,12 @@ tags:
   - Authentication
 categories:
   - Power Platform
-  - EntraID
-date: 2025-06-24T09:00:00+01:00
-publishDate: 2025-06-24T09:00:00+01:00
-lastmod: 2025-06-24T09:00:00+01:00
+categories:
+  - Walk Through
+  - How to
+date: 2025-06-24T06:00:00+01:00
+publishDate: 2025-06-24T06:00:00+01:00
+lastmod: 2025-06-24T06:00:00+01:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
@@ -76,3 +78,5 @@ Let me know if you have any questions or want a hand setting up your Entra brand
 🔗 **Watch on YouTube:** [Walk through Power Pages with Entra External ID](https://www.youtube.com/watch?v=elb5kPG3FnU)  
 🔧 **Need help?** Contact me via [iantweedie.biz](https://iantweedie.biz)
 
+
+*Originally posted on [TechTweedie](https://techtweedie.github.io), going beyond the low code, my home for all things Power Platform and low-code DevOps.*
