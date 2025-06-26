@@ -63,3 +63,139 @@ Whether you’re a low-code maker or a seasoned dev dipping your toes into DevOp
 - 📂 Take away templates and guidance to start automating your solution lifecycle  
 
 Don’t miss this opportunity to level up your Power Platform projects with DevOps!
+
+## Slides
+
+[Access the slides here](https://itweedie.github.io/devopspipelines/250627-build-your-first-devops-pipeline/#/)
+
+## Pipelines
+
+### Recommended Folder Structure
+
+```
+MyPowerPlatformProject/
+├── solutions/
+│   ├── src/
+│   │   └── MySolution/
+│   └── MySolution.zip
+├── pipelines/
+│   ├── export-solution.yml
+│   ├── build-and-deploy-solution.yml
+├── documentation/
+└── README.md
+```
+
+### export-solution.yml
+
+```yaml
+name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+
+variables:
+  - name: varPowerPlatformSPN
+   # value: YOUR-OWN-VALUE-HERE 
+    value: Dataverse - Backup
+  - name: varSolutionName
+   # value: YOUR-OWN-VALUE-HERE
+    value: ProjectExpenseLogger
+
+trigger: none
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- checkout: self
+  persistCredentials: true
+  clean: true
+- task: PowerPlatformToolInstaller@2
+  inputs:
+    DefaultVersion: true
+    AddToolsToPath: true
+- task: PowerPlatformSetSolutionVersion@2
+  inputs:
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: '$(varPowerPlatformSPN)'
+    SolutionName: '$(varSolutionName)'
+    SolutionVersionNumber: '1.0.0.$(Build.BuildID)'
+- task: PowerPlatformExportSolution@2
+  inputs:
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: '$(varPowerPlatformSPN)'
+    SolutionName: '$(varSolutionName)'
+    SolutionOutputFile: '$(Build.SourcesDirectory)\solutions\$(varSolutionName)_1.0.0.$(Build.BuildID)_managed.zip'
+    Managed: true
+    AsyncOperation: true
+    MaxAsyncWaitTime: '60'
+- task: PowerPlatformExportSolution@2
+  inputs:
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: '$(varPowerPlatformSPN)'
+    SolutionName: '$(varSolutionName)'
+    SolutionOutputFile: '$(Build.SourcesDirectory)\solutions\$(varSolutionName)_1.0.0.$(Build.BuildID).zip'
+    Managed: false
+    AsyncOperation: true
+    MaxAsyncWaitTime: '60'
+- task: PowerPlatformUnpackSolution@2
+  inputs:
+    SolutionInputFile: '$(Build.SourcesDirectory)\solutions\$(varSolutionName)_1.0.0.$(Build.BuildID).zip'
+    SolutionTargetFolder: '$(Build.SourcesDirectory)\solutions\src\$(varSolutionName)'
+    SolutionType: 'Both'
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: 'pac solution create-settings --solution-zip $(Build.SourcesDirectory)\solutions\$(varSolutionName)_1.0.0.$(Build.BuildID).zip --settings-file $(Build.SourcesDirectory)\solutions\$(varSolutionName)-settings.json'
+
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo commit all changes
+      git config user.email "$(Build.RequestedForEmail)"
+      git config user.name "$(Build.RequestedFor)"
+      git checkout -b main
+      git add --all
+      git commit -m "Latest solution changes."
+      echo push code to new repo
+      git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin main
+```
+
+### build-and-deploy-solution.yml
+
+```yaml
+name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+
+variables:
+  - name: varSolutionName
+   # value: YOUR-OWN-VALUE-HERE
+    value: FirstPipeline
+  - name: varPowerPlatformSPN
+   # value: YOUR-OWN-VALUE-HERE 
+    value: Dataverse - mightora
+
+trigger: none
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- checkout: self
+  persistCredentials: true
+  clean: true
+- task: PowerPlatformToolInstaller@2
+  inputs:
+    DefaultVersion: true
+    AddToolsToPath: true
+
+- task: PowerPlatformPackSolution@2
+  inputs:
+    SolutionSourceFolder: '$(Build.SourcesDirectory)\solutions\src\$(varSolutionName)'
+    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\solutions\build\$(varSolutionName).zip'
+- task: PowerPlatformImportSolution@2
+  inputs:
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: 'Dataverse - Backup'
+    Environment: 'https://mightora.crm11.dynamics.com/'
+    SolutionInputFile: '$(Build.ArtifactStagingDirectory)\solutions\build\$(varSolutionName).zip'
+    AsyncOperation: true
+    MaxAsyncWaitTime: '60'
+
+```
