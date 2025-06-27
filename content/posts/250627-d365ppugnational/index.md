@@ -200,3 +200,33 @@ steps:
     MaxAsyncWaitTime: '60'
 
 ```
+
+### Schedule / Backup
+
+```yaml
+
+schedules:
+  - cron: 0 18 * * 1-5
+    displayName: Weekday Backup
+    branches:
+      include:
+        - main
+    always: true
+
+```
+
+### Documentation 
+
+Download from here:
+https://marketplace.visualstudio.com/items?itemName=mightoraio.mightora-power-platform-devOps-extension
+
+```yaml
+
+steps:
+- task: mightoraio.mightora-power-platform-devOps-extension.mightora-documentTableRelationships-task.documentTableRelationships@1
+  displayName: 'Mightora Power Platform Table Relationship Documentation Generator'
+  inputs:
+    locationOfUnpackedSolution: $(Build.SourcesDirectory)\solutions\src\$(varSolutionName)
+    wikiLocation: documentation
+
+```
