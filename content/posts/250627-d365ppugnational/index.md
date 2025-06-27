@@ -68,6 +68,8 @@ Don’t miss this opportunity to level up your Power Platform projects with DevO
 
 [Access the slides here](https://itweedie.github.io/devopspipelines/250627-build-your-first-devops-pipeline/#/)
 
+{{< if ge now (time "2025-06-27T14:00:00+01:00") >}}
+
 ## Pipelines
 
 ### Recommended Folder Structure
@@ -199,3 +201,5 @@ steps:
     MaxAsyncWaitTime: '60'
 
 ```
+
+{{< /if >}}
