@@ -89,7 +89,7 @@ MyPowerPlatformProject/
 ### export-solution.yml
 
 ```yaml
-name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+name: $(TeamProject)_ExportSolution_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
 
 variables:
   - name: varPowerPlatformSPN
@@ -162,7 +162,7 @@ steps:
 ### build-and-deploy-solution.yml
 
 ```yaml
-name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+name: $(TeamProject)_Build-Deploy_$(varSolutionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
 
 variables:
   - name: varSolutionName
@@ -171,6 +171,9 @@ variables:
   - name: varPowerPlatformSPN
    # value: YOUR-OWN-VALUE-HERE 
     value: Dataverse - mightora
+  - name: varTargetEnvironment
+   # value: YOUR-OWN-VALUE-HERE
+    value: https://mightora.crm11.dynamics.com/
 
 trigger: none
 
@@ -193,8 +196,8 @@ steps:
 - task: PowerPlatformImportSolution@2
   inputs:
     authenticationType: 'PowerPlatformSPN'
-    PowerPlatformSPN: 'Dataverse - Backup'
-    Environment: 'https://mightora.crm11.dynamics.com/'
+    PowerPlatformSPN: '$(varPowerPlatformSPN)'
+    Environment: '$(varTargetEnvironment)'
     SolutionInputFile: '$(Build.ArtifactStagingDirectory)\solutions\build\$(varSolutionName).zip'
     AsyncOperation: true
     MaxAsyncWaitTime: '60'
