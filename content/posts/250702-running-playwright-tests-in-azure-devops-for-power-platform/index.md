@@ -20,7 +20,7 @@ resources:
   src: "thumbnail.png"
 lightgallery: true
 draft: false
----
+--- 
 
 ## Introduction
 
