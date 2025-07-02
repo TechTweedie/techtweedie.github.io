@@ -24,7 +24,7 @@ draft: false
 
 ## Introduction
 
-Are you looking to easily run Playwright tests for your Power Platform apps within an Azure DevOps pipeline? In this tutorial, I show you how to use my **Playwright for Power Platform DevOps extension** to run tests against your model-driven app, capture reports, and publish results.
+Are you looking to easily run Playwright tests for your Power Platform apps within an Azure DevOps pipeline? In this tutorial, I show you how to use my **[Playwright for Power Platform DevOps extension](https://marketplace.visualstudio.com/items?itemName=mightoraio.mightora-playwright-for-power-platform)** to run tests against your model-driven app, capture reports, and publish results.
 
 Below is the embedded video:
 
@@ -37,6 +37,8 @@ Below is the embedded video:
 - How to install the Playwright for Power Platform DevOps extension
 - How to write a Playwright test that creates a Contact record using fake data
 - How to set up your Azure DevOps pipeline to run these tests, archive reports, and publish results
+
+
 
 ---
 
