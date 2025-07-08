@@ -40,7 +40,7 @@ theme = "FeelIt"
 # Header config
 [params.header]
   # desktop header mode ("fixed", "normal", "auto")
-  desktopMode = "fixed"
+  desktopMode = "auto"
   # mobile header mode ("fixed", "normal", "auto")
   mobileMode = "auto"
 
@@ -53,7 +53,7 @@ theme = "FeelIt"
   # you can add extra information before the name (HTML format is supported), such as icons
   pre = " "
   # you can add extra information after the name (HTML format is supported), such as icons
-  post = ""
+  post = "beyond the low code"
   # whether to use typeit animation for title name
   typeit = true
   # whether to show RSS icon
