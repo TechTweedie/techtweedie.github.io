@@ -1,5 +1,5 @@
 ---
-title: "Calling a Dad Joke API and Custom Visuals in Power BI Clinic"
+title: "Power Platform Clinic – Episode 3: Calling a Dad Joke API and Custom Visuals in Power BI Clinic"
 description: "In this Power Platform Clinic session, we showed how to call an external API from Power Automate using icanhazdadjoke.com, and Duncan demonstrated how to connect and configure Power BI custom visuals with your data."
 tags:
   - Power Automate
