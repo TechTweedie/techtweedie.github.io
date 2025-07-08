@@ -53,7 +53,7 @@ theme = "FeelIt"
   # you can add extra information before the name (HTML format is supported), such as icons
   pre = " "
   # you can add extra information after the name (HTML format is supported), such as icons
-  post = "beyond the low code"
+  post = ""
   # whether to use typeit animation for title name
   typeit = true
   # whether to show RSS icon
@@ -78,15 +78,15 @@ theme = "FeelIt"
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
+    identifier = "how-to"
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    name = "Posts"
-    url = "/posts/"
+    name = "How to"
+    url = "/categories/how-to/"
     # title will be shown when you hover on this menu link
-    title = ""
+    title = "How to"
     weight = 1
   [[menu.main]]
     identifier = "tags"
@@ -108,7 +108,7 @@ theme = "FeelIt"
     identifier = "YouTubeChannel"
     pre = ""
     post = ""
-    name = "YouTube Channel"
+    name = "YouTube"
     url = "https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ"
     title = ""
     weight = 4
@@ -116,7 +116,7 @@ theme = "FeelIt"
     identifier = "FreePowerPlatformTools"
     pre = ""
     post = ""
-    name = "Free Power Platform Tools"
+    name = "Free Tools"
     url = "https://mightora.io/"
     title = ""
     weight = 5
@@ -136,7 +136,7 @@ theme = "FeelIt"
 [params.home.profile]
   enable = true
   # Gravatar Email for preferred avatar in home page
-  # gravatarEmail = ""
+  # gravatarEmail = "ian.tweedie@hotmail.com"
   # URL of avatar shown in home page
   #avatarURL = "/logo-01_150x150_white.png"
   # title shown in home page (HTML format is supported)
@@ -166,7 +166,7 @@ theme = "FeelIt"
   inkedin = "iantweedie"
   Twitter = "itweedie"
   Medium = "@ian.tweedie"
-  Gitlab = ""
+  Gitlab = "itweedie"
   Youtubelegacy = ""
   Youtubecustom = ""
   Youtubechannel = "UCy1a2QSDVZNDwZf7KbNmoHQ"

@@ -7,7 +7,7 @@ tags:
   - Azure Functions
   - Community Event
 categories:
-  - Event
+  - Community
 date: 2025-05-12T06:00:00+01:00
 publishDate: 2025-05-12T06:00:00+01:00
 lastmod: 2025-05-12T06:00:00+01:00

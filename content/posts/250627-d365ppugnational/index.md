@@ -8,7 +8,7 @@ tags:
   - Community Event
   - Solution Lifecycle
 categories:
-  - Presenting
+  - Community
 date: 2025-06-22T06:00:00+01:00
 publishDate: 2025-06-22T06:00:00+01:00
 lastmod: 2025-06-22T06:00:00+01:00

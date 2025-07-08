@@ -7,7 +7,7 @@ tags:
   - Backup
   - Azure DevOps
 categories:
-  - Presenting at Community Session
+  - Community
 date: 2024-12-14T06:00:00+01:00
 publishDate: 2024-12-14T06:00:00+01:00
 lastmod: 2024-12-14T06:00:00+01:00

@@ -6,9 +6,7 @@ tags:
   - EntraID
   - Power Platform
 categories:
-  - Power Automate
-  - EntraID
-  - Power Platform
+  - How to
 date: 2025-02-17T11:06:00+01:00
 publishDate: 2025-02-17T06:00:00+01:00
 lastmod: 2025-02-17T06:00:00+01:00

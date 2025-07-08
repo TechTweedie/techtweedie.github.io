@@ -2,9 +2,9 @@
 title: "How to Install Hugo on Windows 11"
 description: "In this tutorial, we’ll dive into the world of Hugo, a powerful and lightning-fast static site generator. Whether you’re a developer, blogger, or content creator, Hugo can simplify your workflow and help you build efficient, static websites. By the end of this tutorial, you’ll be equipped to create stunning static websites using Hugo. Let’s get started!"
 tags:
-  - Share Knowledge
-categories:
   - Hugo
+categories:
+  - Walkthrough
 date: 2024-06-04T17:32:41+01:00
 lastmod: 2020-01-01T16:45:40+08:00
 author: "itweedie"

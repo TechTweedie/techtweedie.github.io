@@ -7,10 +7,8 @@ tags:
   - External ID
   - Branding
   - Authentication
-categories:
   - Power Platform
 categories:
-  - Walk Through
   - How to
 date: 2025-06-24T06:00:00+01:00
 publishDate: 2025-06-24T06:00:00+01:00
