@@ -147,7 +147,7 @@ theme = "FeelIt"
 [params.home.profile]
   enable = true
   # Gravatar Email for preferred avatar in home page
-  gravatarEmail = "ian.tweedie@hotmail.com"
+  # gravatarEmail = "ian.tweedie@hotmail.com"
   # URL of avatar shown in home page
   #avatarURL = "/logo-01_150x150_white.png"
   # title shown in home page (HTML format is supported)
