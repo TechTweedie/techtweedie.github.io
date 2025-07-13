@@ -69,6 +69,12 @@ We talk about architectural thinking, knowing how to speak the language of the b
 
 ---
 
+## 🎥 Watch the Episode
+
+You can watch the full episode on YouTube here: [Power Platform Clinic Episode 6](https://mars.mightora.io/yourls/ppc6)
+
+---
+
 ## 🧩 Wrapping Up
 
 Whether you’re new to the Power Platform, thinking about your next career step, or trying to level up in consultancy, this episode has something for you.
