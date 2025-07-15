@@ -229,7 +229,7 @@ To do this we need to:
 1. Click on **New custom connector**.
 2. Then click on **Import an OpenAPI from URL**.
 3. Then enter in the connector name `SharePoint with Graph`.
-4. Then enter in the URL `https://raw.githubusercontent.com/itweedie/PowerPlatform-PowerAutomate-SharePoint-with-Graph-Connector/refs/heads/main/connector/shared_sharepoint-20with-20graph-5fe07b0f04a8b0d4c3-5f8d99aea54e2a1a34/apiDefinition.swagger.json`
+4. Then enter in the URL `https://raw.githubusercontent.com/itweedie/PowerPlatform-PowerAutomate-SharePoint-with-Graph-Connector/refs/heads/main/connector/shared_sharepoint-20with-20graph-5fbb1338f75d4745cb-5f8d99aea54e2a1a34/apiDefinition.swagger.json`
 
 ![alt text](msedge_DKVu1bRAbA.gif)
 
