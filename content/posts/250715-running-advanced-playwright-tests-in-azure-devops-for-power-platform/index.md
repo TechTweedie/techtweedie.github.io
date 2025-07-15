@@ -27,6 +27,8 @@ draft: false
 
 Just dropped a new video where I walk through the latest update to my **Playwright for Power Platform DevOps Extension**. This time, we’re not just running tests — we’re dynamically assigning roles, business units, and teams to a test user before your Playwright test runs, and then removing them right after. Clean, controlled, reusable testing every time ✅
 
+{{< youtube lFHQ8HUsnMI >}}
+
 ## 🎯 What's new in this release?
 - Assign security roles dynamically in a DevOps pipeline
 - Switch business units and teams for your test user
