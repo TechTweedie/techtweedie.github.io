@@ -9,9 +9,9 @@ tags:
   - Consultancy
   - Career Development
   - DevOps
-date: 2025-05-13T09:00:00+01:00
-publishDate: 2025-05-13T09:00:00+01:00
-lastmod: 2025-05-13T09:00:00+01:00
+date: 2025-07-13T09:00:00+01:00
+publishDate: 2025-07-13T09:00:00+01:00
+lastmod: 2025-07-13T09:00:00+01:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
