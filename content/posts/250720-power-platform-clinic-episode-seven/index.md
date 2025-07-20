@@ -23,108 +23,48 @@ lightgallery: true
 draft: false
 ---
 
-# Automatically Tag DevOps Work Items by Email
+# Auto-Tag DevOps Tickets via Email using Power Automate
 
-This episode of the Power Platform Clinic was all about solving a common pain point: updating DevOps boards when conversations are happening outside the tool—like over email.
-
-If you’ve ever had to manually keep your boards in sync after emailing a supplier, then this episode’s solution is for you. We show how to use **Power Automate** and **plus addressing** to send email content straight into Azure DevOps work items.
+In this episode of the Power Platform Clinic, we explore how to keep Azure DevOps tickets updated when discussions happen over email.
 
 {{< youtube FgAxJkx6Zyk >}}
 
 ---
 
-## Why This Is Useful
+## Why It’s Handy
 
-Sometimes you just need to chase something or someone by email—and you want that trail to be reflected in DevOps for visibility.
-
-Instead of copying and pasting manually or creating duplicate entries, this approach uses **plus addressing** to route emails directly to the relevant DevOps ticket via a shared inbox and Power Automate.
+You often need to chase suppliers or clients via email. This approach helps thread those email updates directly into DevOps using **plus addressing** and **Power Automate**.
 
 ---
 
-## What is Plus Addressing?
+## What You’ll Need
 
-If your environment supports it (and most do), you can use email aliases like:
-
-```
-ian+123@yourdomain.com
-```
-
-That `123` can represent your DevOps work item ID. Any email sent to this alias will still land in your regular inbox (or a shared one) and lets you extract the ID using Power Automate.
+- A shared mailbox that supports plus addressing  
+- Power Automate  
+- Azure DevOps API
 
 ---
 
-## The Flow Setup
+## Flow Overview
 
-Here’s a breakdown of the Power Automate Flow:
+1. **Trigger** when a new email is received  
+2. **Extract** the work item ID from the email address (e.g. `support+123@domain.com`)  
+3. **Clean** the email content  
+4. **Post** it as a comment to the corresponding DevOps work item
 
-### ✅ Trigger: When a new email arrives
-We use Office 365 Outlook to trigger the flow.
-
-```text
-Trigger: When a new email arrives (V3)
-```
-
-### 🛠️ Scope A: Prepare the Work Item ID
-- Compose: Extract the ID using Copilot or a custom expression
-- Convert HTML email body to plain text
-
-```PowerAutomate
-// Insert compose expressions here
+```powerautomate
+// Placeholders for your expressions and HTTP request
 ```
 
 ---
 
-### 📡 Scope B: Send to Azure DevOps
+## Wrap-Up
 
-This is where we take the clean email body and make an HTTP call to Azure DevOps, adding the email as a comment to the work item.
+It’s a simple, powerful way to ensure nothing gets missed—especially when your team lives in Outlook more than DevOps.
 
-```http
-// Insert HTTP request code here
-```
+Want the full expressions and examples? Stay tuned for the downloadable version, or get in touch.
 
 ---
 
-## 🧠 Debugging and Filtering
-
-We ran into a great debugging scenario live on the call, and walked through using:
-
-- `toUpper()` to normalize email addresses
-- `split()` to handle multiple addresses
-- `filter()` to isolate the plus-addressed item
-
-We then adjusted the expressions to work even if multiple recipients are listed.
-
-```PowerAutomate
-// Insert the refined expressions here
-```
-
----
-
-## 🎯 Final Result
-
-Once set up, this flow will let you:
-
-- Email a shared inbox using a plus-addressed alias
-- Automatically extract the work item ID
-- Strip out the email body
-- Add it as a comment to the right DevOps ticket
-
-And yes—it even works with multiple email recipients (after a little tweak).
-
----
-
-## Summary
-
-A great practical automation to keep your boards up to date, especially when working across boundaries.
-
-If you'd like to grab the full expressions or flow code, check back here shortly for the download link.
-
-Let me know if you’d like to add this to your DevOps extensions on [Mightora.io](https://mightora.io) 👇
-
----
-
-🎥 Watch the full episode here:  
-[https://youtube.com/watch?v=FgAxJkx6Zyk](https://youtube.com/watch?v=FgAxJkx6Zyk)
-
-🧠 Got a question for a future Clinic?  
-Submit here: [https://powerplatformclinic.github.io](https://powerplatformclinic.github.io)
+🎥 Watch the video: [https://youtube.com/watch?v=FgAxJkx6Zyk](https://youtube.com/watch?v=FgAxJkx6Zyk)  
+❓ Got a question? Submit it here: [https://powerplatformclinic.github.io](https://powerplatformclinic.github.io)
