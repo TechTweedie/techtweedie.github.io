@@ -45,16 +45,69 @@ You often need to chase suppliers or clients via email. This approach helps thre
 
 ---
 
-## Flow Overview
+## 🗺️ Flow Overview
 
-1. **Trigger** when a new email is received  
-2. **Extract** the work item ID from the email address (e.g. `support+123@domain.com`)  
-3. **Clean** the email content  
-4. **Post** it as a comment to the corresponding DevOps work item
+```mermaid
+graph TD
+    subgraph A0 [Scope Try_A0 - Extract Email]
+        A1[Compose - toUpper] --> A2[Compose - split]
+        A2 --> A3[Filter array - Contains +Address]
+        A3 --> A4[Compose - First Match]
+    end
+
+    subgraph A [Scope Try_A - Extract Work Item ID & Convert HTML]
+        A5[Compose - Extract ID using substring] --> A6[Convert HTML to Text]
+    end
+
+    subgraph B [Scope Try_B - Post to DevOps]
+        B1[HTTP POST to Work Item Comment]
+    end
+
+    A0 --> A
+    A --> B
+```
+
+---
+
+## 🔧 Key Expressions
+
+### Extract Recipient Email (Uppercase & Split)
+```powerautomate
+@toUpper(triggerOutputs()?['body/toRecipients'])
+```
 
 ```powerautomate
-// Placeholders for your expressions and HTTP request
+@split(outputs('GET_ID0'),';')
 ```
+
+### Filter to Find +Address
+```powerautomate
+@contains(item(),'DUNCAN.BOYNE')
+```
+
+### Extract Work Item ID
+```powerautomate
+@substring(outputs('EMAIL'), add(indexOf(outputs('EMAIL'), '+'), 1), sub(indexOf(outputs('EMAIL'), '@'), add(indexOf(outputs('EMAIL'), '+'), 1)))
+```
+
+### HTTP POST to Azure DevOps
+```json
+{
+  "workItemId": "@{outputs('GET_ID')}",
+  "text": "@{body('Html_to_text')}"
+}
+```
+
+---
+
+## ✅ Result
+
+This setup lets you:
+
+- Email using plus addressing like `support+123@domain.com`
+- Extract the DevOps ticket number
+- Convert email body to plain text
+- Post the content as a comment to the DevOps item
 
 ---
 
