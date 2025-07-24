@@ -87,7 +87,20 @@ graph TD
 
 ### Extract Work Item ID
 ```powerautomate
-@substring(outputs('EMAIL'), add(indexOf(outputs('EMAIL'), '+'), 1), sub(indexOf(outputs('EMAIL'), '@'), add(indexOf(outputs('EMAIL'), '+'), 1)))
+@substring(
+  outputs('EMAIL'),
+  add(
+    indexOf(outputs('EMAIL'), '+'),
+    1
+  ),
+  sub(
+    indexOf(outputs('EMAIL'), '@'),
+    add(
+      indexOf(outputs('EMAIL'), '+'),
+      1
+    )
+  )
+)
 ```
 
 ### HTTP POST to Azure DevOps
