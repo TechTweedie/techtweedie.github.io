@@ -117,7 +117,17 @@ It’s a simple, powerful way to ensure nothing gets missed—especially when yo
 
 Want the full expressions and examples? Stay tuned for the downloadable version, or get in touch.
 
+## Download the Solution & Flow
+
+You can download the ready-to-import Power Platform solution and the Leglsey Power Automate flow from the public GitHub repository:
+
+[https://mars.mightora.io/yourls/250720github](https://mars.mightora.io/yourls/250720github)
+
+- The `/solutions/` folder contains the solution ZIP files (managed and unmanaged).
+- The `/flows/` folder contains the Leglsey Power Automate flow ZIP file.
+- See the repository README for import instructions.
+
 ---
 
-🎥 Watch the video: [https://youtube.com/watch?v=FgAxJkx6Zyk](https://youtube.com/watch?v=FgAxJkx6Zyk)  
+🎥 Watch the video: [https://mars.mightora.io/yourls/250720yt](https://mars.mightora.io/yourls/250720yt)  
 ❓ Got a question? Submit it here: [https://powerplatformclinic.github.io](https://powerplatformclinic.github.io)
