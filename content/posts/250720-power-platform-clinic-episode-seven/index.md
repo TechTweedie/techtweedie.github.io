@@ -47,7 +47,9 @@ You often need to chase suppliers or clients via email. This approach helps thre
 
 ## 🗺️ Flow Overview
 
-```mermaid
+
+{{< mermaid >}}
+
 graph TD
     subgraph A0 [Scope Try_A0 - Extract Email]
         A1[Compose - toUpper] --> A2[Compose - split]
@@ -65,7 +67,9 @@ graph TD
 
     A0 --> A
     A --> B
-```
+
+{{< /mermaid >}}
+
 
 ---
 
