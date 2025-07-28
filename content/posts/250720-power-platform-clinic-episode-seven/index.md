@@ -48,28 +48,7 @@ You often need to chase suppliers or clients via email. This approach helps thre
 ## 🗺️ Flow Overview
 
 
-{{< mermaid >}}
-
-graph TD
-    subgraph A0 [Scope Try_A0 - Extract Email]
-        A1[Compose - toUpper] --> A2[Compose - split]
-        A2 --> A3[Filter array - Contains +Address]
-        A3 --> A4[Compose - First Match]
-    end
-
-    subgraph A [Scope Try_A - Extract Work Item ID & Convert HTML]
-        A5[Compose - Extract ID using substring] --> A6[Convert HTML to Text]
-    end
-
-    subgraph B [Scope Try_B - Post to DevOps]
-        B1[HTTP POST to Work Item Comment]
-    end
-
-    A0 --> A
-    A --> B
-
-{{< /mermaid >}}
-
+[![](https://mermaid.ink/img/pako:eNp9Ul1r4zAQ_CtCD_dSJ_hDThM_HDhJSwtXGqiPg9qlqPE2MWdLRlqX5EL-e9dx2hPluNWLVpqZnbF84GtdAk_4xsh2y7JloRiV7V6Gg9RneWb2zykbsasdGrlGdtXIqn4agH2lQb7QTastEAj1z7YF88RGo-8sDZ0b29YVurRwwET5dVUjGCaNkXsCLrRCWSnLLtKyNGCtS4oGknCErytjkd1JXG_PSFBlob4mGYLMnSC_tPnNbhEadrtk3_q5b2CQ3WR3P9yRsTPrg0qEzlZq0-tbNLQ7J57krgx9DpbBDv_jaz74WpD4SlMOYizh7b51U8-D_CbLVmx1_5D1gL_GyVkD6h_69HAnP-fu1My5xxsw9Hwlvfihvyo4bqGBgie0LeFVdjUWvFBHgsoO9cNerXmCpgOPG91ttjx5lbWlrmtLibCsJMVoPk9bqR61bj4o1PLkwHc8CYUYCzGZCeGLWRBPw9Dje55MZuOpH0WxH0QipnV59Pifk4A_nl7GvlOBRz9p7_zshsKCWehOIckEx3dv4tb_?type=png)](https://mermaid.live/edit#pako:eNp9Ul1r4zAQ_CtCD_dSJ_hDThM_HDhJSwtXGqiPg9qlqPE2MWdLRlqX5EL-e9dx2hPluNWLVpqZnbF84GtdAk_4xsh2y7JloRiV7V6Gg9RneWb2zykbsasdGrlGdtXIqn4agH2lQb7QTastEAj1z7YF88RGo-8sDZ0b29YVurRwwET5dVUjGCaNkXsCLrRCWSnLLtKyNGCtS4oGknCErytjkd1JXG_PSFBlob4mGYLMnSC_tPnNbhEadrtk3_q5b2CQ3WR3P9yRsTPrg0qEzlZq0-tbNLQ7J57krgx9DpbBDv_jaz74WpD4SlMOYizh7b51U8-D_CbLVmx1_5D1gL_GyVkD6h_69HAnP-fu1My5xxsw9Hwlvfihvyo4bqGBgie0LeFVdjUWvFBHgsoO9cNerXmCpgOPG91ttjx5lbWlrmtLibCsJMVoPk9bqR61bj4o1PLkwHc8CYUYCzGZCeGLWRBPw9Dje55MZuOpH0WxH0QipnV59Pifk4A_nl7GvlOBRz9p7_zshsKCWehOIckEx3dv4tb_)
 
 ---
 
