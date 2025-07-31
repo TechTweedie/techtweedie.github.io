@@ -7,8 +7,9 @@
     <title>Backup Dataverse Development Environment</title>
     <link>http://localhost:1313/posts/backup-dataverse-development-environment/</link>
     <pubDate>Tue, 03 Sep 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/backup-dataverse-development-environment/</guid>
-    <description><![CDATA[Introduction Ever wondered what would happen if you lost your development environment? How do you feel about having to do all of that work again? What about if you spot a problem days later? Can you remember the value you changed three days ago in that flow? Have you ever seen someone delete the website record by mistake.
-These are all situations I have been in over the last few years, and having a Pipeline in place to ensure backup of your hard work is extremely important.]]></description>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Ever wondered what would happen if you lost your development environment? How do you feel about having to do all of that work again? What about if you spot a problem days later? Can you remember the value you changed three days ago in that flow? Have you ever seen someone delete the website record by mistake.</p>
+<p>These are all situations I have been in over the last few years, and having a Pipeline in place to ensure backup of your hard work is extremely important. That historical record can save you many hours.</p>]]></description>
 </item>
 </channel>
 </rss>

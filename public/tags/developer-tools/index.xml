@@ -7,7 +7,8 @@
     <title>Power Platform Developer Tools Install Script</title>
     <link>http://localhost:1313/posts/power-platform-developer-tools-install-script/</link>
     <pubDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</pubDate><guid>http://localhost:1313/posts/power-platform-developer-tools-install-script/</guid>
-    <description><![CDATA[Introduction Frequently moving between desktop builds, want to be able to get up and running quickly, I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&rsquo;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.]]></description>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Frequently moving between desktop builds, want to be able to get up and running quickly,  I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&rsquo;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.</p>]]></description>
 </item>
 </channel>
 </rss>

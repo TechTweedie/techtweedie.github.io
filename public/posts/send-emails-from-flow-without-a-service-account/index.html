@@ -22,7 +22,7 @@
   <meta name="twitter:description" content="Learn how to send emails from Power Automate without a service account! 🚀 This step-by-step guide walks you through setting up an App Registration, securing permissions in Exchange Online, and using a custom connector—no password resets or login issues. Perfect for secure, scalable email automation in Microsoft 365! 🔗 #PowerAutomate #Microsoft365 #Automation">
       <meta name="twitter:site" content="@itweedie">
 <meta name="application-name" content="Tech Tweedie">
-<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" /><link rel="prev" href="http://localhost:1313/posts/effortlessly-move-dataverse-for-teams-solutions/" /><link rel="next" href="http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" /><link rel="prev" href="http://localhost:1313/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/" /><link rel="next" href="http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -44,7 +44,22 @@
                 "name": "itweedie"
             },"description": "Learn how to send emails from Power Automate without a service account! 🚀 This step-by-step guide walks you through setting up an App Registration, securing permissions in Exchange Online, and using a custom connector—no password resets or login issues. Perfect for secure, scalable email automation in Microsoft 365! 🔗 #PowerAutomate #Microsoft365 #Automation"
     }
-    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    </script>
+        <script>
+          var _paq = window._paq = window._paq || [];
+           
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//mars.mightora.io/matomo/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '3']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        
+    </head><body data-header-desktop="auto" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
@@ -59,7 +74,7 @@
         title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-1" class="typeit"></span></a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" rel="noopener noreffer" target="_blank"> YouTube Channel </a><a class="menu-item" href="https://mightora.io/" rel="noopener noreffer" target="_blank"> Free Power Platform Tools </a><span class="menu-item delimiter"></span><a class="menu-item" href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/categories/community/" title="Supporting the Power Platform Community"> Community </a><a class="menu-item" href="/categories/how-to/" title="How to"> How to </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" rel="noopener noreffer" target="_blank"> YouTube </a><a class="menu-item" href="https://mightora.io/" rel="noopener noreffer" target="_blank"> Free Tools </a><span class="menu-item delimiter"></span><a class="menu-item" href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fa-solid fa-adjust fa-fw"></i>
                 </a>
             </div>
@@ -82,7 +97,7 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" title="" rel="noopener noreffer" target="_blank">YouTube Channel</a><a class="menu-item" href="https://mightora.io/" title="" rel="noopener noreffer" target="_blank">Free Power Platform Tools</a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/categories/community/" title="Supporting the Power Platform Community">Community</a><a class="menu-item" href="/categories/how-to/" title="How to">How to</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" title="" rel="noopener noreffer" target="_blank">YouTube</a><a class="menu-item" href="https://mightora.io/" title="" rel="noopener noreffer" target="_blank">Free Tools</a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a>
                 <span>&nbsp;|&nbsp;</span><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
                     <i class="fa-solid fa-adjust fa-fw"></i>
                 </a>
@@ -616,11 +631,11 @@ however without further limitation that ill allow the application to send emails
             </div><div class="post-info-mod"></div>
         </div><div class="post-info-share">
             <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" data-title="Send Emails from Flow without a Service Account" data-via="itweedie" data-hashtags="Power Automate"><i class="fa-brands fa-square-x-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" data-hashtag="Power Automate"><i class="fa-brands fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/"><i class="fa-brands fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" data-title="Send Emails from Flow without a Service Account" data-web><i class="fa-brands fa-whatsapp fa-fw"></i></a></span>
-        </div></div><div class="post-nav"><a href="/posts/effortlessly-move-dataverse-for-teams-solutions/" class="prev" rel="prev" title="Effortlessly Move Dataverse for Teams Solutions"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+        </div></div><div class="post-nav"><a href="/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/" class="prev" rel="prev" title="Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
             <a href="/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/" class="next" rel="next" title="Set folder permissions in SharePoint with Power Automate Flow">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
 </div></article></div>
             </main>
-            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.3">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt 1.0.2"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.134.2">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt 1.0.2"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
         </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/"></a></span></div>
 </div>
 </footer>

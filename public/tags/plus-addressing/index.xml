@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Plus Addressing - Tag - Tech Tweedie</title>
+        <link>http://localhost:1313/tags/plus-addressing/</link>
+        <description>Plus Addressing - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/plus-addressing/" rel="self" type="application/rss+xml" /><item>
+    <title>Power Platform Clinic Episode 7: Automatically Tag DevOps Tickets by Email</title>
+    <link>http://localhost:1313/posts/250720-power-platform-clinic-episode-seven/</link>
+    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250720-power-platform-clinic-episode-seven/</guid>
+    <description><![CDATA[<h1 id="auto-tag-devops-tickets-via-email-using-power-automate">Auto-Tag DevOps Tickets via Email using Power Automate</h1>
+<p>In this episode of the Power Platform Clinic, we explore how to keep Azure DevOps tickets updated when discussions happen over email.</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/FgAxJkx6Zyk?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<hr>
+<h2 id="why-its-handy">Why It’s Handy</h2>
+<p>You often need to chase suppliers or clients via email. This approach helps thread those email updates directly into DevOps using <strong>plus addressing</strong> and <strong>Power Automate</strong>.</p>]]></description>
+</item>
+</channel>
+</rss>

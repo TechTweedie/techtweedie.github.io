@@ -3,64 +3,64 @@
         <title>Tags - Tag - Tech Tweedie</title>
         <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>JavaScript</title>
-    <link>http://localhost:1313/tags/javascript/</link>
-    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/tags/javascript/</guid>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure DevOps</title>
+    <link>http://localhost:1313/tags/azure-devops/</link>
+    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/azure-devops/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Model Driven App</title>
-    <link>http://localhost:1313/tags/model-driven-app/</link>
-    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/tags/model-driven-app/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Status Reason</title>
-    <link>http://localhost:1313/tags/status-reason/</link>
-    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/tags/status-reason/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>UX</title>
-    <link>http://localhost:1313/tags/ux/</link>
-    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/tags/ux/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>EntraID</title>
-    <link>http://localhost:1313/tags/entraid/</link>
-    <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/entraid/</guid>
+    <title>Plus Addressing</title>
+    <link>http://localhost:1313/tags/plus-addressing/</link>
+    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/plus-addressing/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Power Automate</title>
     <link>http://localhost:1313/tags/power-automate/</link>
-    <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-automate/</guid>
+    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-automate/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Power Platform</title>
     <link>http://localhost:1313/tags/power-platform/</link>
-    <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-platform/</guid>
+    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-platform/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Pipeline</title>
-    <link>http://localhost:1313/tags/pipeline/</link>
-    <pubDate>Tue, 22 Oct 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/pipeline/</guid>
+    <title>Work Item Automation</title>
+    <link>http://localhost:1313/tags/work-item-automation/</link>
+    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/work-item-automation/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>PowerShell</title>
-    <link>http://localhost:1313/tags/powershell/</link>
-    <pubDate>Tue, 22 Oct 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/powershell/</guid>
+    <title>DevOps</title>
+    <link>http://localhost:1313/tags/devops/</link>
+    <pubDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/devops/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Backup</title>
-    <link>http://localhost:1313/tags/backup/</link>
-    <pubDate>Tue, 03 Sep 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/backup/</guid>
+    <title>Playwright</title>
+    <link>http://localhost:1313/tags/playwright/</link>
+    <pubDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/playwright/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Testing</title>
+    <link>http://localhost:1313/tags/testing/</link>
+    <pubDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/testing/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Career Development</title>
+    <link>http://localhost:1313/tags/career-development/</link>
+    <pubDate>Sun, 13 Jul 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/career-development/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Certifications</title>
+    <link>http://localhost:1313/tags/certifications/</link>
+    <pubDate>Sun, 13 Jul 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/certifications/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

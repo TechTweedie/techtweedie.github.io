@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Forms - Tag - Tech Tweedie</title>
+        <link>http://localhost:1313/tags/forms/</link>
+        <description>Forms - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 25 Jun 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/forms/" rel="self" type="application/rss+xml" /><item>
+    <title>Power Platform Clinic – Episode 5: Converting Forms with Images to PDF</title>
+    <link>http://localhost:1313/posts/250625-power-platform-clinic-episode-five/</link>
+    <pubDate>Wed, 25 Jun 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250625-power-platform-clinic-episode-five/</guid>
+    <description><![CDATA[<h1 id="power-platform-clinic--episode-5-converting-forms-with-images-to-pdf">Power Platform Clinic – Episode 5: Converting Forms with Images to PDF</h1>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/22SL8thkPmo?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<h2 id="introduction">Introduction</h2>
+<p>In this episode of the <strong>Power Platform Clinic</strong>, Ian (that’s me!) tackles a real-world community question:</p>
+<blockquote>
+<p><em>Is it possible to convert a Microsoft Form that contains both text and images into a PDF using Power Automate?</em></p>]]></description>
+</item>
+</channel>
+</rss>

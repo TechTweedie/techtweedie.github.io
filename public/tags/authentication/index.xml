@@ -1,0 +1,47 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Authentication - Tag - Tech Tweedie</title>
+        <link>http://localhost:1313/tags/authentication/</link>
+        <description>Authentication - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 24 Jun 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/authentication/" rel="self" type="application/rss+xml" /><item>
+    <title>Walkthrough Customising Entra External ID for Power Pages</title>
+    <link>http://localhost:1313/posts/250624-power-pages-customise-entra-external-id/</link>
+    <pubDate>Tue, 24 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250624-power-pages-customise-entra-external-id/</guid>
+    <description><![CDATA[<h1 id="walkthrough-customising-entra-external-id-for-power-pages">Walkthrough Customising Entra External ID for Power Pages</h1>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/s99cqsJ-kDE?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<h2 id="introduction">Introduction</h2>
+<p>Are you using <strong>Entra External ID</strong> with <strong>Power Pages</strong> and want to customise the login experience? This guide walks through exactly that — applying your own branding, images, colours, and layout to the Entra login screen for external users.</p>]]></description>
+</item>
+<item>
+    <title>Power Platform Clinic – Episode 4: Power Pages Authentication Options and Developer Accounts</title>
+    <link>http://localhost:1313/posts/250603-power-platform-clinic-episode-four/</link>
+    <pubDate>Tue, 03 Jun 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250603-power-platform-clinic-episode-four/</guid>
+    <description><![CDATA[<p><strong>Welcome to Episode 2 of the Power Platform Clinic with Duncan Boyne and Ian Tweedy.</strong></p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/a8Ypoliuseo?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p>In this episode, Duncan and Ian dive deep into:</p>
+<h2 id="-power-pages-authentication-options">🔐 Power Pages Authentication Options</h2>
+<p>Ian breaks down:</p>
+<ul>
+<li>The difference between <strong>public and private modes</strong> in Power Pages.</li>
+<li>How <strong>Entra ID, External Entra ID, and Azure B2C</strong> work for authenticating users.</li>
+<li>Why using <strong>Azure B2C or External Entra ID</strong> is often preferred, including centralised identity management, SIEM logging, and reducing password management headaches.</li>
+<li>How these options relate to <strong>OAuth and OIDC</strong> protocols for enabling social logins like LinkedIn or Google.</li>
+</ul>
+<p>Key takeaway: Understanding authentication options is crucial for designing secure Power Pages implementations that fit your organisation&rsquo;s user landscape, whether purely internal, external, or hybrid.</p>]]></description>
+</item>
+</channel>
+</rss>

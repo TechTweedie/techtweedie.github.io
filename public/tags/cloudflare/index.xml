@@ -7,11 +7,11 @@
     <title>Too Many Redirects on WordPress</title>
     <link>http://localhost:1313/posts/too-many-redirects-on-wordpress/</link>
     <pubDate>Sun, 17 Sep 2023 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/too-many-redirects-on-wordpress/</guid>
-    <description><![CDATA[Introduction I recently set up a new WordPress website for a friend. It was late one evening, and I was in a bit of a rush; as with many people online, I chose to use Cloudflare to protect the website.
-However, problems arose after setting up the WordPress website when I configured the SSL/TLS side of things.
-I switched on Cloudflare’s proxy as normal.
-So far so good.
-Then I continued to edit the site before handing it over to my friend; however, I noticed I was getting load errors.]]></description>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>I recently set up a new WordPress website for a friend. It was late one evening, and I was in a bit of a rush; as with many people online, I chose to use Cloudflare to protect the website.</p>
+<p>However, problems arose after setting up the WordPress website when I configured the SSL/TLS side of things.</p>
+<p>I switched on Cloudflare’s proxy as normal.</p>
+<p></p>]]></description>
 </item>
 </channel>
 </rss>

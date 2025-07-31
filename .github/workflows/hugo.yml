@@ -15,7 +15,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -69,6 +69,35 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+      - name: Commit built site to builtSite branch
+        run: |
+          # Configure Git
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+          # Check if the public directory exists
+          if [ ! -d "public" ]; then
+            echo "Error: public directory does not exist. Hugo build might have failed."
+            exit 1
+          fi
+
+          # Copy public directory to a temporary location
+          cp -r public /tmp/hugo-public
+
+          # Switch to the builtSite branch (create it if it doesn't exist)
+          git fetch origin builtSite || true
+          git checkout -B builtSite
+
+          # Clean out the branch
+          git rm -rf . || true
+
+          # Add the built site from temp location
+          cp -r /tmp/hugo-public/* .
+          git add .
+
+          # Commit and push changes
+          git commit -m "Update built site"
+          git push origin builtSite --force
 
   # Deployment job
   deploy:

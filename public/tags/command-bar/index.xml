@@ -7,15 +7,17 @@
     <title>Command Bar to Call Custom Page in Model Driven App</title>
     <link>http://localhost:1313/posts/command-bar-to-call-custom-page/</link>
     <pubDate>Sun, 23 Jun 2024 19:32:41 &#43;0100</pubDate><guid>http://localhost:1313/posts/command-bar-to-call-custom-page/</guid>
-    <description><![CDATA[Introduction Recently, I was asked if it was possible to place a message at the top of every form and view across an entire Model-Driven App. This message would then open a Custom Page that would display more detail. In this Blog post, I explain how this can be achieved and what steps need to be taken.
-For the purposes of this demo, we will call a custom help page from a command button.]]></description>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Recently, I was asked if it was possible to place a message at the top of every form and view across an entire Model-Driven App. This message would then open a Custom Page that would display more detail. In this Blog post, I explain how this can be achieved and what steps need to be taken.</p>
+<p>For the purposes of this demo, we will call a custom help page from a command button.</p>]]></description>
 </item>
 <item>
     <title>Clone with PowerFX Command button</title>
     <link>http://localhost:1313/posts/clone-with-powerfx-command-button/</link>
     <pubDate>Mon, 22 Apr 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/clone-with-powerfx-command-button/</guid>
-    <description><![CDATA[Introduction Cloning multiple records within a data view in a Model-Driven App is a common request from end users. It helps them quickly fill out data fields in situations where only a few values differ between records.
-In this blog post, we will explore how to add a custom button to the command bar in a Power Apps model-driven application to duplicate multiple records. Power Apps recently introduced this helpful feature, and the best part is that it can be achieved using Power FX, the same language used for developing canvas apps.]]></description>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Cloning multiple records within a data view in a Model-Driven App is a common request from end users. It helps them quickly fill out data fields in situations where only a few values differ between records.</p>
+<p>In this blog post, we will explore how to add a custom button to the command bar in a Power Apps model-driven application to duplicate multiple records. Power Apps recently introduced this helpful feature, and the best part is that it can be achieved using Power FX, the same language used for developing canvas apps. This latest capability has simplified the model-driven app development process, enabling anyone to customise the command bar, even those who are not proficient in JavaScript or experienced with the Ribbon Workbench.</p>]]></description>
 </item>
 </channel>
 </rss>

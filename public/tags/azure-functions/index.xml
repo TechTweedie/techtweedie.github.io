@@ -1,0 +1,27 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Azure Functions - Tag - Tech Tweedie</title>
+        <link>http://localhost:1313/tags/azure-functions/</link>
+        <description>Azure Functions - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 12 May 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azure-functions/" rel="self" type="application/rss+xml" /><item>
+    <title>Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</title>
+    <link>http://localhost:1313/posts/250522-nppug/</link>
+    <pubDate>Mon, 12 May 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250522-nppug/</guid>
+    <description><![CDATA[<h1 id="enabling-low-code-developers-to-create-custom-client-reports-with-a-helping-hand-from-azure--norfolk-power-platform-user-group">Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</h1>
+<p>📅 <strong>Date:</strong> 22nd May 2025<br>
+📍 <strong>Location:</strong> Norwich Digital Hub<br>
+🍕 <strong>Pizza included!</strong></p>
+<h2 id="session-overview">Session Overview</h2>
+<p>At the Norfolk Power Platform User Group, I delivered a session titled:</p>
+<p>✨ <strong>“Enabling low-code developers to create custom client reports with a helping hand from Azure”</strong></p>
+<p>In this session, I explored:</p>
+<ul>
+<li>Using Power Automate to generate custom reports securely.</li>
+<li>How to leverage an <strong>Azure Function as a reverse proxy</strong> to enhance security and scalability.</li>
+<li>An architectural pattern that integrates <strong>Dataverse, Power Automate, SharePoint, and Azure Functions</strong> to deliver dynamic, client-ready PDFs via secure links.</li>
+</ul>
+<h2 id="presentation-slides">Presentation Slides</h2>
+<p>You can view my full presentation here:</p>]]></description>
+</item>
+</channel>
+</rss>

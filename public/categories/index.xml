@@ -3,22 +3,28 @@
         <title>Categories - Category - Tech Tweedie</title>
         <link>http://localhost:1313/categories/</link>
         <description>Categories - Category - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Power Platform Clinic</title>
+    <link>http://localhost:1313/categories/power-platform-clinic/</link>
+    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/power-platform-clinic/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>How To</title>
+    <link>http://localhost:1313/categories/how-to/</link>
+    <pubDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/how-to/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Community</title>
+    <link>http://localhost:1313/categories/community/</link>
+    <pubDate>Sun, 22 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/community/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Power Platform</title>
     <link>http://localhost:1313/categories/power-platform/</link>
     <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/categories/power-platform/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>EntraID</title>
-    <link>http://localhost:1313/categories/entraid/</link>
-    <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/entraid/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Power Automate</title>
-    <link>http://localhost:1313/categories/power-automate/</link>
-    <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/power-automate/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -28,9 +34,15 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Hugo</title>
-    <link>http://localhost:1313/categories/hugo/</link>
-    <pubDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</pubDate><guid>http://localhost:1313/categories/hugo/</guid>
+    <title>Power Automate</title>
+    <link>http://localhost:1313/categories/power-automate/</link>
+    <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/power-automate/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Walkthrough</title>
+    <link>http://localhost:1313/categories/walkthrough/</link>
+    <pubDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</pubDate><guid>http://localhost:1313/categories/walkthrough/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>

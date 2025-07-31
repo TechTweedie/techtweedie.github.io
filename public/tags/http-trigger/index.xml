@@ -7,8 +7,9 @@
     <title>Query Parameters on HTTP Trigger</title>
     <link>http://localhost:1313/posts/query-parameters-on-http-trigger/</link>
     <pubDate>Sun, 03 Apr 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/query-parameters-on-http-trigger/</guid>
-    <description><![CDATA[Introduction Working with Power Automate, especially with HTTP triggers, can unlock a lot of potential in automating tasks and workflows. A common requirement is to use query parameters from the trigger URL within your flow. I’ve found a straightforward method to do this and thought it might be helpful to share.
-When your flow is triggered via an HTTP request, it might need to behave differently based on the values passed through query parameters.]]></description>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Working with Power Automate, especially with HTTP triggers, can unlock a lot of potential in automating tasks and workflows. A common requirement is to use query parameters from the trigger URL within your flow. I’ve found a straightforward method to do this and thought it might be helpful to share.</p>
+<p>When your flow is triggered via an HTTP request, it might need to behave differently based on the values passed through query parameters. For instance, you may want your flow to process data differently depending on a user ID or a specific action indicated in the URL.</p>]]></description>
 </item>
 </channel>
 </rss>
