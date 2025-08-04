@@ -92,3 +92,5 @@ Start today — your future self will thank you.
 ## Questions or Need a Hand?
 
 I love seeing this used in real projects. If you're stuck or want to suggest improvements, ping me on LinkedIn or drop a comment on the [YouTube video](https://www.youtube.com/watch?v=niGK67se5Es).
+
+https://lnkd.in/gJJs77rD 
