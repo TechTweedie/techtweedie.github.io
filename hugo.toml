@@ -142,7 +142,7 @@ theme = "FeelIt"
 # Home page config
 [params.home]
   # amount of RSS pages
-  rss = 30
+  rss = 100
   # Home page profile
 [params.home.profile]
   enable = true
