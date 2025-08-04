@@ -1,6 +1,6 @@
 ---
-title: "Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group"
-description: "In this session at the Norfolk Power Platform User Group, I shared how low-code developers can create secure, custom client reports using Power Automate and Azure. Learn about reverse proxy functions, integrating Azure Functions with Power Automate, and deploying the solution in your own environment."
+title: "Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Scottish Power Platform User Group"
+description: "In this session at the Scottish Power Platform User Group, I shared how low-code developers can create secure, custom client reports using Power Automate and Azure. Learn about reverse proxy functions, integrating Azure Functions with Power Automate, and deploying the solution in your own environment."
 tags:
   - Power Platform
   - Power Automate
@@ -8,27 +8,27 @@ tags:
   - Community Event
 categories:
   - Community
-date: 2025-05-22T06:00:00+01:00
-publishDate: 2025-05-22T06:00:00+01:00
-lastmod: 2025-05-22T06:00:00+01:00
+date: 2025-03-25T18:00:00+00:00
+publishDate: 2025-03-25T18:00:00+00:00
+lastmod: 2025-03-25T18:00:00+00:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
 - name: "featured-image"
-  src: "image.png"
+  src: "image-1.png"
 - name: "featured-image-preview"
-  src: "image.png"
+  src: "mage-2.png"
 lightgallery: true
 draft: false
 ---
 
-📅 **Date:** 22nd May 2025  
-📍 **Location:** Norwich Digital Hub  
-🍕 **Pizza included!**
+📅 **Date:** 25th March 2025  
+📍 **Location:** SWG3 Glasgow (100 Eastvale Pl, Stobcross Rd, Glasgow City)  
+🕕 **Time:** 6:00 PM to 9:00 PM GMT
 
 ## Session Overview
 
-At the Norfolk Power Platform User Group, I delivered a session titled:
+At the Scottish Power Platform User Group, I delivered a session titled:
 
 ✨ **“Enabling low-code developers to create custom client reports with a helping hand from Azure”**
 
@@ -42,7 +42,7 @@ In this session, I explored:
 
 You can view my full presentation here:
 
-➡️ [View the Presentation Slides](https://itweedie.github.io/flowproxy/250522-nppug/#/)
+➡️ [View the Presentation Slides](https://itweedie.github.io/flowproxy/250325-sppug/#/1)
 
 ## GitHub Repository
 
@@ -80,15 +80,8 @@ Many organisations need to provide custom PDF or HTML reports to clients securel
 
 ## Event Registration Link
 
-Here is the original event registration link for reference:
+Here is the event registration link:
 
-➡️ [Event Registration – Norfolk Power Platform User Group](https://lnkd.in/eMxdRaBH)
+➡️ [Event Registration – Scottish Power Platform User Group](https://www.meetup.com/scottish-power-platform-user-group/events/306536993/?utm_medium=referral&utm_campaign=announceModal_savedevents_share_modal&utm_source=link)
 
----
-
-💡 **Want to know more?**  
-Reach out if you’re interested in deploying this pattern in your organisation or have questions about Azure Functions and Power Automate integration.
-
----
-
-*Thank you to everyone who attended the session. It was great to see so much interest in combining low-code solutions with pro-code architecture to deliver real business value.*
+This event was proudly presented by the Scottish Power Platform User Group featuring sessions from community superstars Ian Tweedie and Duncan Boyne.
