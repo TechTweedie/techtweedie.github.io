@@ -1,5 +1,5 @@
 ---
-title: "Build Your First DevOps Pipeline for the Power Platform"
+title: "At the National Power Platform User Day: Build Your First DevOps Pipeline for the Power Platform"
 description: "Join me at the National User Group to learn how to build your first DevOps pipeline for the Power Platform."
 tags:
   - Power Platform
