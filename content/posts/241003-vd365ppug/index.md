@@ -97,4 +97,9 @@ Start today — your future self will thank you.
 
 I love seeing this used in real projects. If you're stuck or want to suggest improvements, ping me on LinkedIn or drop a comment on the [YouTube video](https://www.youtube.com/watch?v=niGK67se5Es).
 
-https://lnkd.in/gJJs77rD
+## Event Registration Link
+
+Here is the registration link for the Virtual Power Platform User Group event:
+
+➡️ [Event Registration – Virtual Power Platform User Group](https://www.meetup.com/d365ppug/events/303212067/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link&utm_version=v2)
+
