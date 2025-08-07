@@ -31,6 +31,10 @@ Good news! In this guide, I'll show you how to set these using an App Registrati
 - Setting permissions using sites.selected
 - Use Power Automate with the custom connector
 
+
+{{< youtube NhQvZ6dcpvg >}}
+
+
 ## Whats the problem
 
 Let's have a look at the problem we are trying to solve. We are going to go into Power Automate Flow and see if we can edit, add, or remove a SharePoint Permission using the [Standard SharePoint Connector](https://learn.microsoft.com/en-us/connectors/sharepointonline/).
