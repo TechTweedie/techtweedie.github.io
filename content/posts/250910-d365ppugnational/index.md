@@ -23,18 +23,16 @@ lightgallery: true
 draft: false
 ---
 
-# Playwright for Makers – Bringing One-Click UI Tests to Model-Driven Apps & Power Pages
-
 **📅 Date:** Wednesday, September 10, 2025  
 **🕒 Time:** 10:45 AM – 11:30 AM BST  
 **📍 Location:** UK D365 and Power Platform User Group, Microsoft UA92 Manchester, Room 102/103  
-**🎟️ Session Link:** [https://d365ppug-manchester-10-09-2025.sessionize.com/session/102103](https://d365ppug-manchester-10-09-2025.sessionize.com/session/102103)
+**🎟️ Session Link:** [https://d365ppug-national-10092025.sessionize.com/session/991575](https://d365ppug-national-10092025.sessionize.com/session/991575)
 
 ## Session Overview
 In this hands-on, demo-heavy session, **Ian Tweedie (TechTweedie)**, Power Platform Technical Consultant at Capgemini, will showcase how to integrate automated UI testing into your low-code CI/CD workflows. Using the **FREE Open Source Playwright for Power Platform DevOps Extension**, you’ll learn how to:
 
 - Create end-to-end tests for Model-Driven Apps and Power Pages.
-- Automate test user creation and permissions.
+- Automate test user permissions.
 - Generate rich HTML reports directly in Azure DevOps.
 
 Expect practical guidance, live demos, and a repeatable recipe to take home: **Commit → Automatic UI Tests → Deploy.**
