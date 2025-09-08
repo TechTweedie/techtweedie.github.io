@@ -65,6 +65,10 @@ Expect practical guidance, live demos, and a repeatable recipe to take home: **C
 
 AFTER THE EVENT
 
+## Got questions 
+
+Got a question or feeling a little stuck, just submit it to the [Power Platform Clinic](https://powerplatformclinic.github.io/) and I will be happy to answer it for you!
+
 ## Resources
 
 - [Playwright for Power Platform DevOps Extension](https://mightora.io/tools/cicd/playwright-for-power-platform/)
