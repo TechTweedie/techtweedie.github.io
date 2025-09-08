@@ -65,6 +65,8 @@ Expect practical guidance, live demos, and a repeatable recipe to take home: **C
 
 AFTER THE EVENT
 
+<!-- https://itweedie.github.io/devopspipelines/250910-playwright-for-makers/z -->
+
 ## Got questions 
 
 Got a question or feeling a little stuck, just submit it to the [Power Platform Clinic](https://powerplatformclinic.github.io/) and I will be happy to answer it for you!
