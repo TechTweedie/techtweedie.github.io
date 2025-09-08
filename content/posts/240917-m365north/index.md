@@ -1,5 +1,5 @@
 ---
-title: "At the M365 North User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – M365 North User Group"
+title: "At the M365 North User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure"
 description: "In this session at the M365 North User Group, I shared how low-code developers can create secure, custom client reports using Power Automate and Azure. Learn about reverse proxy functions, integrating Azure Functions with Power Automate, and deploying the solution in your own environment."
 tags:
   - Power Platform
