@@ -71,6 +71,7 @@ Got a question or feeling a little stuck, just submit it to the [Power Platform 
 
 ## Resources
 
+- [Get Started with Playwright for Model Driven Apps by James Ryan](https://jamesryan.dev/blog/get-started-with-playwright-for-power-apps)
 - [Playwright for Power Platform DevOps Extension](https://mightora.io/tools/cicd/playwright-for-power-platform/)
 - [Starter Repository Template](https://github.com/itweedie/playwright-powerplatform-template)
 - [CodeGen Documentation](https://playwright.dev/docs/codegen)
