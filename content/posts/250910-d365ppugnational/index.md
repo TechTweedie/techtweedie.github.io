@@ -61,9 +61,7 @@ Expect practical guidance, live demos, and a repeatable recipe to take home: **C
 
 ## Slides
 
-AFTER THE EVENT
-
-<!-- https://itweedie.github.io/devopspipelines/250910-playwright-for-makers/z -->
+[Link to Slides](https://itweedie.github.io/devopspipelines/250910-playwright-for-makers/p/)
 
 ## Got questions 
 
