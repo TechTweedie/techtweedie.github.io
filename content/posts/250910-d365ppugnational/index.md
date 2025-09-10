@@ -77,7 +77,7 @@ Got a question or feeling a little stuck, just submit it to the [Power Platform 
 - [Related YouTube video](https://techtweedie.github.io/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/)
 
 ### DevOps Pipeline
-
+ 
 ```yaml
 
 name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
