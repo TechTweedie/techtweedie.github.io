@@ -1,6 +1,6 @@
 ---
-title: "D365 & Power Platform UG North East – June 2025 Meetup"
-description: "Join us on June 26 in Newcastle for the D365 & Power Platform UG North East meetup. Network with the community and learn from expert sessions on AI grounding and modern Canvas App components."
+title: "D365 & Power Platform UG North East – September 2025 Meetup"
+description: "Join us on September 30 in Newcastle for the D365 & Power Platform UG North East meetup. Network with the community and learn from expert sessions on AI grounding and modern Canvas App components."
 tags:
   - Power Platform
   - Power Apps
