@@ -18,6 +18,8 @@ resources:
   src: "featureImage.png"
 lightgallery: true
 draft: false
+aliases:
+  - /send-emails-from-flow-without-a-service-account/
 ---
 
 Want to send emails from **Power Automate** but can't or don't want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?
