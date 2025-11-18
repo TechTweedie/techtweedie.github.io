@@ -1,0 +1,95 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Power Platform - Tag - Tech Tweedie</title>
+        <link>http://localhost:53760/tags/power-platform/</link>
+        <description>Power Platform - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/power-platform/" rel="self" type="application/rss+xml" /><item>
+    <title>Generate Power Platform Solution Documentation with Azure DevOps</title>
+    <link>http://localhost:53760/posts/251118-your-first-azure-devops-pipeline-for-power-platform/</link>
+    <pubDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/251118-your-first-azure-devops-pipeline-for-power-platform/</guid>
+    <description><![CDATA[Your First Azure DevOps Pipeline for Power Platform – A Complete Beginner’s Guide Have you ever wondered how to set up Azure DevOps pipelines for the Power Platform?
+Ever wished you could export your solutions safely, run tests, add security checks, generate documentation, or deploy across tenants with confidence?
+All of this becomes simple once you introduce Azure DevOps into your Power Platform ALM story — and in this guide (based on my YouTube walkthrough), I’ll show you exactly how to build your first Azure DevOps pipeline.]]></description>
+</item>
+<item>
+    <title>D365 &amp; Power Platform UG North East – June 2025 Meetup</title>
+    <link>http://localhost:53760/posts/250930-d365ppugne/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250930-d365ppugne/</guid>
+    <description><![CDATA[D365 &amp; Power Platform UG North East – September 2025 Meetup 📅 Date: Tuesday, September 30, 2025
+🕕 Time: 6:00 PM – 8:10 PM BST
+📍 Location: Haylofts, 5 Saint Thomas&rsquo; Street, Newcastle upon Tyne
+🎟️ Register Now: https://go.iantweedie.biz/meetup-d365ppugne-2509
+Co-Hosted By This event is proudly co-hosted by:
+Agata Guziur Justin Wilkinson Ian Tweedie Together, we’re bringing the North East community a fantastic evening of learning, sharing, and connection.
+Connect. Learn. Share.]]></description>
+</item>
+<item>
+    <title>Generate Power Platform Solution Documentation with Azure DevOps</title>
+    <link>http://localhost:53760/posts/250904-power-platform-documentation-extension/</link>
+    <pubDate>Thu, 04 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250904-power-platform-documentation-extension/</guid>
+    <description><![CDATA[Instantly Document Your Power Platform Solutions with Azure DevOps Are you tired of manually documenting your Power Platform solutions? Struggling to keep your tables, relationships, option sets, and workflows up to date for your team or clients? The Power Platform Documentation Extension for Azure DevOps is designed to solve these problems—automatically. This tool helps you generate clear, accurate, and SEO-friendly Markdown documentation for your wikis and repositories, saving you hours and improving collaboration.]]></description>
+</item>
+<item>
+    <title>Power Platform Clinic Episode 7: Automatically Tag DevOps Tickets by Email</title>
+    <link>http://localhost:53760/posts/250720-power-platform-clinic-episode-seven/</link>
+    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250720-power-platform-clinic-episode-seven/</guid>
+    <description><![CDATA[Auto-Tag DevOps Tickets via Email using Power Automate In this episode of the Power Platform Clinic, we explore how to keep Azure DevOps tickets updated when discussions happen over email.
+Why It’s Handy You often need to chase suppliers or clients via email. This approach helps thread those email updates directly into DevOps using plus addressing and Power Automate.
+What You’ll Need A shared mailbox that supports plus addressing Power Automate Azure DevOps API 🗺️ Flow Overview 🔧 Key Expressions Extract Recipient Email (Uppercase &amp; Split) @toUpper(triggerOutputs()?]]></description>
+</item>
+<item>
+    <title>Running ADVANCED Playwright Tests in Azure DevOps for Power Platform Apps</title>
+    <link>http://localhost:53760/posts/250715-running-advanced-playwright-tests-in-azure-devops-for-power-platform/</link>
+    <pubDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250715-running-advanced-playwright-tests-in-azure-devops-for-power-platform/</guid>
+    <description><![CDATA[🧪 Playwright + Power Platform + DevOps Pipelines? Yes please! Just dropped a new video where I walk through the latest update to my Playwright for Power Platform DevOps Extension. This time, we’re not just running tests — we’re dynamically assigning roles, business units, and teams to a test user before your Playwright test runs, and then removing them right after. Clean, controlled, reusable testing every time ✅
+🎯 What&rsquo;s new in this release?]]></description>
+</item>
+<item>
+    <title>Power Platform Clinic - Episode 6: Certs, Consultancy, and Career Conversations</title>
+    <link>http://localhost:53760/posts/250713-power-platform-clinic-episode-six/</link>
+    <pubDate>Sun, 13 Jul 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250713-power-platform-clinic-episode-six/</guid>
+    <description><![CDATA[Power Platform Clinic Episode 6 – Certs, Consultancy, and Career Conversations In this episode of the Power Platform Clinic, Duncan and I get stuck into some big-picture questions from the community—about Microsoft certifications, life as a consultant, and how to grow your career across the Power Platform and beyond.
+🎓 Are Microsoft Certifications Worth It? Spoiler: Yes, but with caveats.
+I share how I started collecting Microsoft certs back when they were being offered free (shoutout to the days of the 900 series!]]></description>
+</item>
+<item>
+    <title>Running Playwright Tests in Azure DevOps for Power Platform Apps</title>
+    <link>http://localhost:53760/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/</link>
+    <pubDate>Wed, 02 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/</guid>
+    <description><![CDATA[Introduction Are you looking to easily run Playwright tests for your Power Platform apps within an Azure DevOps pipeline? In this tutorial, I show you how to use my Playwright for Power Platform DevOps extension to run tests against your model-driven app, capture reports, and publish results.
+Below is the embedded video:
+What you will learn How to install the Playwright for Power Platform DevOps extension How to write a Playwright test that creates a Contact record using fake data How to set up your Azure DevOps pipeline to run these tests, archive reports, and publish results Code Snippet – Playwright Test Here is the test script used in the video to add a contact with fake data:]]></description>
+</item>
+<item>
+    <title>Walkthrough Customising Entra External ID for Power Pages</title>
+    <link>http://localhost:53760/posts/250624-power-pages-customise-entra-external-id/</link>
+    <pubDate>Tue, 24 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250624-power-pages-customise-entra-external-id/</guid>
+    <description><![CDATA[Walkthrough Customising Entra External ID for Power Pages Introduction Are you using Entra External ID with Power Pages and want to customise the login experience? This guide walks through exactly that — applying your own branding, images, colours, and layout to the Entra login screen for external users.
+This is especially useful for creating a polished, consistent experience when your users are accessing Power Pages from outside your organisation.
+If you’re new to setting up Entra External ID for Power Pages, I’ve also got a full video walkthrough on how to configure that — I’ll link it below.]]></description>
+</item>
+<item>
+    <title>At the National Power Platform User Day: Build Your First DevOps Pipeline for the Power Platform</title>
+    <link>http://localhost:53760/posts/250627-d365ppugnational/</link>
+    <pubDate>Sun, 22 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250627-d365ppugnational/</guid>
+    <description><![CDATA[Build Your First DevOps Pipeline for the Power Platform 📅 Date: Friday, June 27, 2025
+🕒 Time: 2:15 PM – 3:00 PM BST
+📍 Location: National Usergroup, Room G8
+🎟️ Session Link: https://d365ppug-national-27-06-2025.sessionize.com/session/905816
+Session Overview You’ve exported a solution. Maybe even unpacked it. But what’s next?
+In this hands-on, beginner-friendly session, Ian Tweedie (TechTweedie), Power Platform Technical Consultant at Capgemini, will walk you through building your very first DevOps pipeline for the Power Platform — using Azure DevOps and real-world tools that anyone can adopt.]]></description>
+</item>
+<item>
+    <title>D365 &amp; Power Platform UG North East – June 2025 Meetup</title>
+    <link>http://localhost:53760/posts/250626-d365ppugne/</link>
+    <pubDate>Sun, 01 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250626-d365ppugne/</guid>
+    <description><![CDATA[D365 &amp; Power Platform UG North East – June 2025 Meetup 📅 Date: Thursday, June 26, 2025
+🕕 Time: 6:00 PM – 8:10 PM BST
+📍 Location: Haylofts, 5 Saint Thomas&rsquo; Street, Newcastle upon Tyne
+🎟️ Register Now: https://mars.mightora.io/yourls/d365ppugne2506
+Co-Hosted By This event is proudly co-hosted by:
+Agata Guziur Justin Wilkinson Ian Tweedie Together, we’re bringing the North East community a fantastic evening of learning, sharing, and connection.
+Connect. Learn. Share.]]></description>
+</item>
+</channel>
+</rss>

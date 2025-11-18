@@ -1,0 +1,50 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Power Pages - Tag - Tech Tweedie</title>
+        <link>http://localhost:53760/tags/power-pages/</link>
+        <description>Power Pages - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 24 Jun 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/power-pages/" rel="self" type="application/rss+xml" /><item>
+    <title>Walkthrough Customising Entra External ID for Power Pages</title>
+    <link>http://localhost:53760/posts/250624-power-pages-customise-entra-external-id/</link>
+    <pubDate>Tue, 24 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250624-power-pages-customise-entra-external-id/</guid>
+    <description><![CDATA[Walkthrough Customising Entra External ID for Power Pages Introduction Are you using Entra External ID with Power Pages and want to customise the login experience? This guide walks through exactly that — applying your own branding, images, colours, and layout to the Entra login screen for external users.
+This is especially useful for creating a polished, consistent experience when your users are accessing Power Pages from outside your organisation.
+If you’re new to setting up Entra External ID for Power Pages, I’ve also got a full video walkthrough on how to configure that — I’ll link it below.]]></description>
+</item>
+<item>
+    <title>Power Platform Clinic – Episode 4: Power Pages Authentication Options and Developer Accounts</title>
+    <link>http://localhost:53760/posts/250603-power-platform-clinic-episode-four/</link>
+    <pubDate>Tue, 03 Jun 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250603-power-platform-clinic-episode-four/</guid>
+    <description><![CDATA[Welcome to Episode 2 of the Power Platform Clinic with Duncan Boyne and Ian Tweedy.
+In this episode, Duncan and Ian dive deep into:
+🔐 Power Pages Authentication Options Ian breaks down:
+The difference between public and private modes in Power Pages. How Entra ID, External Entra ID, and Azure B2C work for authenticating users. Why using Azure B2C or External Entra ID is often preferred, including centralised identity management, SIEM logging, and reducing password management headaches.]]></description>
+</item>
+<item>
+    <title>D365 &amp; Power Platform UG North East – March 2025 Meetup</title>
+    <link>http://localhost:53760/posts/250327-d365ppugne/</link>
+    <pubDate>Thu, 27 Mar 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250327-d365ppugne/</guid>
+    <description><![CDATA[D365 &amp; Power Platform UG North East – July 2025 Meetup
+📅 Date: Thursday, 27th March 2025
+🕕 Time: 6:30 PM – 8:30 PM BST
+📍 Location: BJSS, 12th Floor, Bank House, Newcastle upon Tyne NE1 6SQ 🎟️ Event Link: Meetup
+Co-Hosted By This event is proudly co-hosted by:
+Agata Guziur Justin Wilkinson Ian Tweedie Together, we’re bringing the North East community a fantastic evening of learning, sharing, and connection.]]></description>
+</item>
+<item>
+    <title>Azure B2C oAuth on Postman</title>
+    <link>http://localhost:53760/posts/azureb2c-oauth-in-postman/</link>
+    <pubDate>Mon, 14 Nov 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/azureb2c-oauth-in-postman/</guid>
+    <description><![CDATA[I had a problem where I needed to get my JWT token from Azure B2C OAuth 2.0 in order to troubleshoot an issue I was having in getting OAuth 2.0 working.
+Situation I needed to get the JWT token using Postman, decrypt it, and then provide it for troubleshooting the issue.
+How did I do that Get postman Create a new request, as far as I am aware it makes no difference what type of request you use so in this example, I will use a GET request.]]></description>
+</item>
+<item>
+    <title>PFX certificate for FREE for Power Pages</title>
+    <link>http://localhost:53760/posts/pfx-certificate-for-free-for-power-pages/</link>
+    <pubDate>Mon, 25 Jul 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/pfx-certificate-for-free-for-power-pages/</guid>
+    <description><![CDATA[Introduction Do you want to deploy Power Pages on a custom domain securely without the need to buy a custom certificate? In this blog post, I’m going to show you how to do this quickly and easily acquire a PFX certificate that you can then use to deploy to Power Pages.
+Pre-requisite This is a brilliant tool for generating SSL, and it is simple to use and quick to deploy.]]></description>
+</item>
+</channel>
+</rss>

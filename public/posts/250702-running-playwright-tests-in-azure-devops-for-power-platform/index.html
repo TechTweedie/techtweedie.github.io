@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=53760&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Running Playwright Tests in Azure DevOps for Power Platform Apps - Tech Tweedie</title><meta name="description" content="Beyond the low code, Tech Tweedie offers comprehensive guides and tutorials on Power Platform, Microsoft technologies, and Hugo. Learn how to build PCF controls, install Hugo on Windows 11, and more. Stay updated with our latest posts and in-depth content."><meta property="og:url" content="http://localhost:53760/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/">
+  <meta property="og:site_name" content="Tech Tweedie">
+  <meta property="og:title" content="Running Playwright Tests in Azure DevOps for Power Platform Apps">
+  <meta property="og:description" content="Learn how to run Playwright tests on your Power Platform model-driven apps using a free Azure DevOps extension. This tutorial walks you through installing the extension, creating a pipeline, and viewing your results with HTML reports and trace analysis.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-02T00:00:00+01:00">
+    <meta property="article:modified_time" content="2025-07-02T00:00:00+01:00">
+    <meta property="article:tag" content="Power Platform">
+    <meta property="article:tag" content="DevOps">
+    <meta property="article:tag" content="Playwright">
+    <meta property="article:tag" content="Testing">
+    <meta property="og:image" content="http://localhost:53760/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/thumbnail.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:53760/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/thumbnail.png">
+  <meta name="twitter:title" content="Running Playwright Tests in Azure DevOps for Power Platform Apps">
+  <meta name="twitter:description" content="Learn how to run Playwright tests on your Power Platform model-driven apps using a free Azure DevOps extension. This tutorial walks you through installing the extension, creating a pipeline, and viewing your results with HTML reports and trace analysis.">
+      <meta name="twitter:site" content="@itweedie">
+<meta name="application-name" content="Tech Tweedie">
+<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:53760/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/" /><link rel="prev" href="http://localhost:53760/posts/250625-power-platform-clinic-episode-five/" /><link rel="next" href="http://localhost:53760/posts/250713-power-platform-clinic-episode-six/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Running Playwright Tests in Azure DevOps for Power Platform Apps",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:53760\/posts\/250702-running-playwright-tests-in-azure-devops-for-power-platform\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/localhost:53760\/posts\/250702-running-playwright-tests-in-azure-devops-for-power-platform\/thumbnail.png",
+                            "width":  1408 ,
+                            "height":  768 
+                        }],"genre": "posts","keywords": "Power Platform, DevOps, Playwright, Testing","wordcount":  515 ,
+        "url": "http:\/\/localhost:53760\/posts\/250702-running-playwright-tests-in-azure-devops-for-power-platform\/","datePublished": "2025-07-02T00:00:00+01:00","dateModified": "2025-07-02T00:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "itweedie"},"author": {
+                "@type": "Person",
+                "name": "itweedie"
+            },"description": "Learn how to run Playwright tests on your Power Platform model-driven apps using a free Azure DevOps extension. This tutorial walks you through installing the extension, creating a pipeline, and viewing your results with HTML reports and trace analysis."
+    }
+    </script>
+        <script>
+          var _paq = window._paq = window._paq || [];
+           
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//mars.mightora.io/matomo/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '3']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        
+    </head><body data-header-desktop="auto" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/categories/community/" title="Supporting the Power Platform Community"> Community </a><a class="menu-item" href="/categories/how-to/" title="How to"> How to </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" rel="noopener noreffer" target="_blank"> YouTube </a><a class="menu-item" href="https://mightora.io/" rel="noopener noreffer" target="_blank"> Free Tools </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a class="menu-item" href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/categories/community/" title="Supporting the Power Platform Community">Community</a><a class="menu-item" href="/categories/how-to/" title="How to">How to</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" title="" rel="noopener noreffer" target="_blank">YouTube</a><a class="menu-item" href="https://mightora.io/" title="" rel="noopener noreffer" target="_blank">Free Tools</a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="disable"><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/thumbnail.png"
+        data-srcset="/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/thumbnail.png, /posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/thumbnail.png 1.5x, /posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/thumbnail.png 2x"
+        data-sizes="auto"
+        alt="/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/thumbnail.png"
+        title="Learn how to run Playwright tests on your Power Platform model-driven apps using a free Azure DevOps extension. This tutorial walks you through installing the extension, creating a pipeline, and viewing your results with HTML reports and trace analysis." /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Running Playwright Tests in Azure DevOps for Power Platform Apps</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>Author</a></span>&nbsp;<span class="post-category">published in <a href="/categories/how-to/"><i class="fa-regular fa-folder fa-fw"></i>How To</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-07-02">2025-07-02</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;515 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;3 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#what-you-will-learn">What you will learn</a></li>
+    <li><a href="#code-snippet--playwright-test">Code Snippet – Playwright Test</a></li>
+    <li><a href="#pipeline-yaml">Pipeline YAML</a></li>
+    <li><a href="#why-use-this-approach">Why use this approach?</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><h2 id="introduction">Introduction</h2>
+<p>Are you looking to easily run Playwright tests for your Power Platform apps within an Azure DevOps pipeline? In this tutorial, I show you how to use my <strong><a href="https://marketplace.visualstudio.com/items?itemName=mightoraio.mightora-playwright-for-power-platform" target="_blank" rel="noopener noreffer">Playwright for Power Platform DevOps extension</a></strong> to run tests against your model-driven app, capture reports, and publish results.</p>
+<p>Below is the embedded video:</p>
+<!-- raw HTML omitted -->
+
+
+    
+    <div class="video">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow="fullscreen"="allow="fullscreen"" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/IKgxUOEDFog?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" title="YouTube video"
+      ></iframe>
+    </div>
+
+<h2 id="what-you-will-learn">What you will learn</h2>
+<ul>
+<li>How to install the Playwright for Power Platform DevOps extension</li>
+<li>How to write a Playwright test that creates a Contact record using fake data</li>
+<li>How to set up your Azure DevOps pipeline to run these tests, archive reports, and publish results</li>
+</ul>
+<hr>
+<h2 id="code-snippet--playwright-test">Code Snippet – Playwright Test</h2>
+<p>Here is the test script used in the video to add a contact with fake data:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">test</span><span class="p">,</span> <span class="nx">expect</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;@playwright/test&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="s1">&#39;dotenv/config&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">interface</span> <span class="nx">Config</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">appUrl</span>: <span class="kt">string</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">appName</span>: <span class="kt">string</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">username</span>: <span class="kt">string</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">password</span>: <span class="kt">string</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">tenantId</span>: <span class="kt">string</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">config</span>: <span class="kt">Config</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">appUrl</span>: <span class="kt">process.env.APP_URL</span> <span class="o">||</span> <span class="s1">&#39;default_url&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">appName</span>: <span class="kt">process.env.APP_NAME</span> <span class="o">||</span> <span class="s1">&#39;default_name&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">username</span>: <span class="kt">process.env.O365_USERNAME</span> <span class="o">||</span> <span class="s1">&#39;default_username&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">password</span>: <span class="kt">process.env.O365_PASSWORD</span> <span class="o">||</span> <span class="s1">&#39;default_password&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">tenantId</span>: <span class="kt">process.env.O365_TENANT_ID</span> <span class="o">||</span> <span class="s1">&#39;default_tenant_id&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">fakeData</span><span class="o">:</span> <span class="p">{</span> <span class="nx">firstName</span>: <span class="kt">string</span><span class="p">;</span> <span class="nx">lastName</span>: <span class="kt">string</span><span class="p">;</span> <span class="nx">email</span>: <span class="kt">string</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;add-contact&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="p">({</span> <span class="nx">page</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">fetch</span> <span class="o">=</span> <span class="p">(</span><span class="k">await</span> <span class="kr">import</span><span class="p">(</span><span class="s1">&#39;node-fetch&#39;</span><span class="p">)).</span><span class="k">default</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">response</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://fakerapi.it/api/v2/custom?_quantity=1&amp;FirstName=firstName&amp;LastName=lastName&amp;Email=email&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">()</span> <span class="kr">as</span> <span class="p">{</span> <span class="nx">data</span>: <span class="kt">Array</span><span class="o">&lt;</span><span class="p">{</span> <span class="nx">FirstName</span>: <span class="kt">string</span><span class="p">;</span> <span class="nx">LastName</span>: <span class="kt">string</span><span class="p">;</span> <span class="nx">Email</span>: <span class="kt">string</span> <span class="p">}</span><span class="o">&gt;</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">user</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">fakeData</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">firstName</span>: <span class="kt">user.FirstName</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">lastName</span>: <span class="kt">user.LastName</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">email</span>: <span class="kt">user.Email</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="kr">goto</span><span class="p">(</span><span class="nx">config</span><span class="p">.</span><span class="nx">appUrl</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">appTitle</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">locator</span><span class="p">(</span><span class="sb">`text=&#34;</span><span class="si">${</span><span class="nx">config</span><span class="p">.</span><span class="nx">appName</span><span class="si">}</span><span class="sb">&#34;`</span><span class="p">).</span><span class="nx">first</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="k">await</span> <span class="nx">expect</span><span class="p">(</span><span class="nx">appTitle</span><span class="p">).</span><span class="nx">toBeVisible</span><span class="p">({</span> <span class="nx">timeout</span>: <span class="kt">10000</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">getByText</span><span class="p">(</span><span class="s1">&#39;AddSpecificResource_16Contacts&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">getByRole</span><span class="p">(</span><span class="s1">&#39;menuitem&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;New&#39;</span><span class="p">,</span> <span class="nx">exact</span>: <span class="kt">true</span> <span class="p">}).</span><span class="nx">click</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">getByRole</span><span class="p">(</span><span class="s1">&#39;button&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;dismiss&#39;</span> <span class="p">}).</span><span class="nx">click</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">getByRole</span><span class="p">(</span><span class="s1">&#39;textbox&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;First Name&#39;</span> <span class="p">}).</span><span class="nx">fill</span><span class="p">(</span><span class="nx">fakeData</span><span class="p">.</span><span class="nx">firstName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">getByRole</span><span class="p">(</span><span class="s1">&#39;textbox&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Last Name&#39;</span> <span class="p">}).</span><span class="nx">fill</span><span class="p">(</span><span class="nx">fakeData</span><span class="p">.</span><span class="nx">lastName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">getByRole</span><span class="p">(</span><span class="s1">&#39;textbox&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Email&#39;</span><span class="p">,</span> <span class="nx">exact</span>: <span class="kt">true</span> <span class="p">}).</span><span class="nx">fill</span><span class="p">(</span><span class="nx">fakeData</span><span class="p">.</span><span class="nx">email</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">getByRole</span><span class="p">(</span><span class="s1">&#39;menuitem&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Save &amp; Close&#39;</span> <span class="p">}).</span><span class="nx">click</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><hr>
+<h2 id="pipeline-yaml">Pipeline YAML</h2>
+<p>Here is the Azure DevOps pipeline YAML shown in the video to run your tests, archive reports, publish test results, and commit changes to your repo:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">$(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">trigger</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="l">none</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">pool</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">vmImage</span><span class="p">:</span><span class="w"> </span><span class="l">windows-latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">checkout</span><span class="p">:</span><span class="w"> </span><span class="l">self</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">persistCredentials</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">clean</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l">mightoria-playwrightForPowerPlatform@1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">testLocation</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(System.DefaultWorkingDirectory)/PlaywrightTests&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">browser</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;chromium&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">trace</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;on&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">outputLocation</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(System.DefaultWorkingDirectory)&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">appUrl</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;https://techtweedie.crm11.dynamics.com/main.aspx?appid=6653f9fc-b74b-f011-877a-6045bd0e2fc6&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">appName</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;MDA Playwright Testing&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">o365Username</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;playwright-test@Tweed.technology&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">o365Password</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(o365Password)&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l">ArchiveFiles@2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">rootFolderOrFile</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(System.DefaultWorkingDirectory)/playwright-report&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">includeRootFolder</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">archiveType</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;zip&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">archiveFile</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(System.DefaultWorkingDirectory)/playwright-report/playwright-report.zip&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">replaceExistingArchive</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">publish</span><span class="p">:</span><span class="w"> </span><span class="l">$(System.DefaultWorkingDirectory)/playwright-report/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">artifact</span><span class="p">:</span><span class="w"> </span><span class="l">playwright-report</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="l">always()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l">PublishTestResults@2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">testResultsFormat</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;JUnit&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">testResultsFiles</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;**/TEST-*.xml&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l">commitToRepo@2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">commitMsg</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(Date:yyyyMMdd)$(Rev:.r)&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">branchName</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;main&#39;</span><span class="w">
+</span></span></span></code></pre></div><hr>
+<h2 id="why-use-this-approach">Why use this approach?</h2>
+<p>✅ <strong>Simple integration</strong> – install the free DevOps extension<br>
+✅ <strong>Automated testing</strong> – validate your app’s functionality on every build<br>
+✅ <strong>Reports and trace analysis</strong> – diagnose flaky tests or environment issues<br>
+✅ <strong>Secure credentials</strong> – use pipeline variables for secrets</p>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>Running Playwright tests against your Power Platform apps in Azure DevOps is now easier than ever with the free extension I’ve released. Start incorporating tests into your pipelines to catch issues early, improve app quality, and increase confidence in every deployment.</p>
+<p>If you have any questions or want to see how this works with other Power Platform components such as Canvas Apps or Power Pages, leave a comment on the video – I’d be happy to cover those in future posts.</p>
+<p>Happy testing!</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/power-platform/">Power Platform</a>
+                </span><span><a href="/tags/devops/">DevOps</a>
+                </span><span><a href="/tags/playwright/">Playwright</a>
+                </span><span><a href="/tags/testing/">Testing</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2025-07-02</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span></span>
+        </div></div><div class="post-nav"><a href="/posts/250625-power-platform-clinic-episode-five/" class="prev" rel="prev" title="Power Platform Clinic – Episode 5: Converting Forms with Images to PDF"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/250713-power-platform-clinic-episode-six/" class="next" rel="next" title="Power Platform Clinic - Episode 6: Certs, Consultancy, and Career Conversations">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
+</div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.3">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt <nil>"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/"></a></span></div>
+</div>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"Tech Tweedie","id-2":"Tech Tweedie"},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>

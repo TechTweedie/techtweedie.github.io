@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Custom Domain - Tag - Tech Tweedie</title>
+        <link>http://localhost:53760/tags/custom-domain/</link>
+        <description>Custom Domain - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 25 Jul 2022 19:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/custom-domain/" rel="self" type="application/rss+xml" /><item>
+    <title>PFX certificate for FREE for Power Pages</title>
+    <link>http://localhost:53760/posts/pfx-certificate-for-free-for-power-pages/</link>
+    <pubDate>Mon, 25 Jul 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/pfx-certificate-for-free-for-power-pages/</guid>
+    <description><![CDATA[Introduction Do you want to deploy Power Pages on a custom domain securely without the need to buy a custom certificate? In this blog post, I’m going to show you how to do this quickly and easily acquire a PFX certificate that you can then use to deploy to Power Pages.
+Pre-requisite This is a brilliant tool for generating SSL, and it is simple to use and quick to deploy.]]></description>
+</item>
+</channel>
+</rss>

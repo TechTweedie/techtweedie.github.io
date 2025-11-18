@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>OAuth - Tag - Tech Tweedie</title>
+        <link>http://localhost:53760/tags/oauth/</link>
+        <description>OAuth - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 14 Nov 2022 19:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/oauth/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure B2C oAuth on Postman</title>
+    <link>http://localhost:53760/posts/azureb2c-oauth-in-postman/</link>
+    <pubDate>Mon, 14 Nov 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/azureb2c-oauth-in-postman/</guid>
+    <description><![CDATA[I had a problem where I needed to get my JWT token from Azure B2C OAuth 2.0 in order to troubleshoot an issue I was having in getting OAuth 2.0 working.
+Situation I needed to get the JWT token using Postman, decrypt it, and then provide it for troubleshooting the issue.
+How did I do that Get postman Create a new request, as far as I am aware it makes no difference what type of request you use so in this example, I will use a GET request.]]></description>
+</item>
+</channel>
+</rss>

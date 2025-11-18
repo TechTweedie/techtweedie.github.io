@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>UX - Tag - Tech Tweedie</title>
+        <link>http://localhost:53760/tags/ux/</link>
+        <description>UX - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:53760/tags/ux/" rel="self" type="application/rss+xml" /><item>
+    <title>Show and Hide Tabs Based on Status Reason in Model Driven Apps</title>
+    <link>http://localhost:53760/posts/250412-show-hide-status-reason/</link>
+    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</pubDate><guid>http://localhost:53760/posts/250412-show-hide-status-reason/</guid>
+    <description><![CDATA[Introduction Ever wanted to show or hide a tab in a Model-Driven App based on the Status Reason of a record? Maybe you’ve got a section of a form that’s only relevant when a record hits a specific state — like “Approved” or “Rejected”?
+This post walks you through a reusable JavaScript snippet I’ve shared on GitHub that dynamically toggles tab visibility based on the statuscode field.
+Why This Is Useful Sometimes users don’t need to see everything all the time.]]></description>
+</item>
+</channel>
+</rss>

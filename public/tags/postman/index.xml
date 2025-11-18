@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Postman - Tag - Tech Tweedie</title>
+        <link>http://localhost:53760/tags/postman/</link>
+        <description>Postman - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 15 Nov 2022 19:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/postman/" rel="self" type="application/rss+xml" /><item>
+    <title>Postman to Azure Table Storage</title>
+    <link>http://localhost:53760/posts/postman-to-azure-table-storage/</link>
+    <pubDate>Tue, 15 Nov 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/postman-to-azure-table-storage/</guid>
+    <description><![CDATA[This post is an example of how I posted data to Azure Table storage from Postman.
+Prerequisite You have access to Postman You have an Azure Storage account Steps Go to your Storage Account Click on Tables, and then click on Add table Add table to Azure Storage Account
+You should now have a table, in my example these are called test and test2.
+Next, generate a shared access signature (SAS), which is a URI that grants restricted access.]]></description>
+</item>
+<item>
+    <title>Azure B2C oAuth on Postman</title>
+    <link>http://localhost:53760/posts/azureb2c-oauth-in-postman/</link>
+    <pubDate>Mon, 14 Nov 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/azureb2c-oauth-in-postman/</guid>
+    <description><![CDATA[I had a problem where I needed to get my JWT token from Azure B2C OAuth 2.0 in order to troubleshoot an issue I was having in getting OAuth 2.0 working.
+Situation I needed to get the JWT token using Postman, decrypt it, and then provide it for troubleshooting the issue.
+How did I do that Get postman Create a new request, as far as I am aware it makes no difference what type of request you use so in this example, I will use a GET request.]]></description>
+</item>
+</channel>
+</rss>

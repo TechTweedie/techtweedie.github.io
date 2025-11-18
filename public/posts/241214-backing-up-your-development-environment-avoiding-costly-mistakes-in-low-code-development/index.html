@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=53760&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>At Learner to Leader: Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment - Tech Tweedie</title><meta name="description" content="Beyond the low code, Tech Tweedie offers comprehensive guides and tutorials on Power Platform, Microsoft technologies, and Hugo. Learn how to build PCF controls, install Hugo on Windows 11, and more. Stay updated with our latest posts and in-depth content."><meta property="og:url" content="http://localhost:53760/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/">
+  <meta property="og:site_name" content="Tech Tweedie">
+  <meta property="og:title" content="At Learner to Leader: Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment">
+  <meta property="og:description" content="In this session with the Power Platform Learner to Leader community, I shared how to avoid common mistakes and data loss by backing up your Power Platform development environment using Azure DevOps pipelines. Here&#39;s a step-by-step guide you can follow.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-14T06:00:00+01:00">
+    <meta property="article:modified_time" content="2024-12-14T06:00:00+01:00">
+    <meta property="article:tag" content="Power Platform">
+    <meta property="article:tag" content="DevOps">
+    <meta property="article:tag" content="Backup">
+    <meta property="article:tag" content="Azure DevOps">
+    <meta property="og:image" content="http://localhost:53760/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/thumbnail-2.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:53760/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/thumbnail-2.png">
+  <meta name="twitter:title" content="At Learner to Leader: Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment">
+  <meta name="twitter:description" content="In this session with the Power Platform Learner to Leader community, I shared how to avoid common mistakes and data loss by backing up your Power Platform development environment using Azure DevOps pipelines. Here&#39;s a step-by-step guide you can follow.">
+      <meta name="twitter:site" content="@itweedie">
+<meta name="application-name" content="Tech Tweedie">
+<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:53760/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/" /><link rel="prev" href="http://localhost:53760/posts/241109-lcnc/" /><link rel="next" href="http://localhost:53760/posts/250130-bppug/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "At Learner to Leader: Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:53760\/posts\/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/localhost:53760\/posts\/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development\/thumbnail-2.png",
+                            "width":  1408 ,
+                            "height":  768 
+                        }],"genre": "posts","keywords": "Power Platform, DevOps, Backup, Azure DevOps","wordcount":  429 ,
+        "url": "http:\/\/localhost:53760\/posts\/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development\/","datePublished": "2024-12-14T06:00:00+01:00","dateModified": "2024-12-14T06:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "itweedie"},"author": {
+                "@type": "Person",
+                "name": "itweedie"
+            },"description": "In this session with the Power Platform Learner to Leader community, I shared how to avoid common mistakes and data loss by backing up your Power Platform development environment using Azure DevOps pipelines. Here's a step-by-step guide you can follow."
+    }
+    </script>
+        <script>
+          var _paq = window._paq = window._paq || [];
+           
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//mars.mightora.io/matomo/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '3']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        
+    </head><body data-header-desktop="auto" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/categories/community/" title="Supporting the Power Platform Community"> Community </a><a class="menu-item" href="/categories/how-to/" title="How to"> How to </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" rel="noopener noreffer" target="_blank"> YouTube </a><a class="menu-item" href="https://mightora.io/" rel="noopener noreffer" target="_blank"> Free Tools </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a class="menu-item" href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/categories/community/" title="Supporting the Power Platform Community">Community</a><a class="menu-item" href="/categories/how-to/" title="How to">How to</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" title="" rel="noopener noreffer" target="_blank">YouTube</a><a class="menu-item" href="https://mightora.io/" title="" rel="noopener noreffer" target="_blank">Free Tools</a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="disable"><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/thumbnail-2.png"
+        data-srcset="/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/thumbnail-2.png, /posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/thumbnail-2.png 1.5x, /posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/thumbnail-2.png 2x"
+        data-sizes="auto"
+        alt="/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/thumbnail-2.png"
+        title="In this session with the Power Platform Learner to Leader community, I shared how to avoid common mistakes and data loss by backing up your Power Platform development environment using Azure DevOps pipelines. Here&#39;s a step-by-step guide you can follow." /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">At Learner to Leader: Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>Author</a></span>&nbsp;<span class="post-category">published in <a href="/categories/community/"><i class="fa-regular fa-folder fa-fw"></i>Community</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-12-14">2024-12-14</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;429 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;3 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-would-happen-if-you-lost-your-dev-environment">What Would Happen If You Lost Your Dev Environment?</a></li>
+    <li><a href="#why-back-up">Why Back Up?</a></li>
+    <li><a href="#what-youll-need">What You’ll Need</a></li>
+    <li><a href="#what-the-pipeline-does">What the Pipeline Does</a></li>
+    <li><a href="#what-if-youre-using-dataverse-for-teams">What If You’re Using Dataverse for Teams?</a></li>
+    <li><a href="#introducing-mightora-devops-extension">Introducing: Mightora DevOps Extension</a></li>
+    <li><a href="#try-it-yourself">Try It Yourself</a></li>
+    <li><a href="#questions-or-need-a-hand">Questions or Need a Hand?</a></li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><h2 id="what-would-happen-if-you-lost-your-dev-environment">What Would Happen If You Lost Your Dev Environment?</h2>
+<p>Ever wondered what would happen if someone accidentally deleted your development site or overwrote a key flow? Rebuilding from memory isn&rsquo;t just frustrating — it’s costly.</p>
+<p>This post walks through the process I demonstrated during my session with the <strong>Power Platform Learner to Leader</strong> community, showing how to <strong>automatically back up</strong> your environment using <strong>Azure DevOps</strong>, without requiring advanced YAML knowledge.</p>
+<p>📺 <strong>Watch the full session here</strong><br>
+
+
+    
+    <div class="video">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow="fullscreen"="allow="fullscreen"" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/niGK67se5Es?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" title="YouTube video"
+      ></iframe>
+    </div>
+</p>
+<h2 id="why-back-up">Why Back Up?</h2>
+<p>We’ve all seen it — shared dev environments, unmanaged solutions sitting idle, a delete button clicked in the wrong place, and <em>poof</em> — it’s gone.</p>
+<p>Setting up a DevOps pipeline gives you version control, rollback, and documentation <em>without</em> relying on memory or screenshots.</p>
+<h2 id="what-youll-need">What You’ll Need</h2>
+<ul>
+<li>A Power Platform environment (Dataverse)</li>
+<li>Azure DevOps (free tier is enough!)</li>
+<li>App Registration with permissions to Dataverse</li>
+<li>Five free DevOps licenses included per tenant</li>
+<li>One-time parallelism request (12-hour approval)</li>
+</ul>
+<h2 id="what-the-pipeline-does">What the Pipeline Does</h2>
+<p>Here&rsquo;s what we built together, step-by-step:</p>
+<ol>
+<li>✅ Install Power Platform Build Tools</li>
+<li>🔐 Create a service connection with your app registration</li>
+<li>📦 Export your solution (managed &amp; unmanaged)</li>
+<li>🔍 Unpack the solution into a Git repository</li>
+<li>📖 Optionally: Export reference data and download Power Pages site</li>
+<li>📄 Use my open-source DevOps extension to:
+<ul>
+<li>Document tables</li>
+<li>Visualise relationships with Mermaid.js</li>
+<li>Automatically commit changes to a Git repo</li>
+</ul>
+</li>
+<li>⏰ Schedule it to run multiple times per day</li>
+</ol>
+<blockquote>
+<p>This gives you historical snapshots — no more guesswork on &ldquo;what changed and when.&rdquo;</p>
+</blockquote>
+<h2 id="what-if-youre-using-dataverse-for-teams">What If You’re Using Dataverse for Teams?</h2>
+<p>I’ve built a special DevOps step that uses device login for backing up <strong>Dataverse for Teams</strong> environments too. It can’t run on a schedule (due to authentication), but it’s still a lifesaver when exporting and documenting your Teams-based solutions.</p>
+<h2 id="introducing-mightora-devops-extension">Introducing: Mightora DevOps Extension</h2>
+<p>This free tool helps you:</p>
+<ul>
+<li>📘 Auto-generate table documentation</li>
+<li>🔗 Build relationship diagrams</li>
+<li>🧠 Document Canvas Apps</li>
+<li>🔄 Push backups to your Git repo</li>
+<li>📅 Run backups on a schedule</li>
+</ul>
+<p>It’s open-source and available via the <a href="https://marketplace.visualstudio.com/items?itemName=mightoraio.mightora-power-platform-devOps-extension" target="_blank" rel="noopener noreffer">Visual Studio Marketplace</a>.</p>
+<h2 id="try-it-yourself">Try It Yourself</h2>
+<p>I’ve published the full presentation to GitHub with links and steps you can follow. Scan the QR code from the session or head over to my <a href="https://github.com/itweedie" target="_blank" rel="noopener noreffer">GitHub repo</a> to get started.</p>
+<p>No more “what did I change last week?”<br>
+No more “I wish I had a backup.”<br>
+Start today — your future self will thank you.</p>
+<h2 id="questions-or-need-a-hand">Questions or Need a Hand?</h2>
+<p>I love seeing this used in real projects. If you&rsquo;re stuck or want to suggest improvements, ping me on LinkedIn or drop a comment on the <a href="https://www.youtube.com/watch?v=niGK67se5Es" target="_blank" rel="noopener noreffer">YouTube video</a>.</p>
+<p><a href="https://lnkd.in/gJJs77rD" target="_blank" rel="noopener noreffer">https://lnkd.in/gJJs77rD</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/power-platform/">Power Platform</a>
+                </span><span><a href="/tags/devops/">DevOps</a>
+                </span><span><a href="/tags/backup/">Backup</a>
+                </span><span><a href="/tags/azure-devops/">Azure DevOps</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2024-12-14</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span></span>
+        </div></div><div class="post-nav"><a href="/posts/241109-lcnc/" class="prev" rel="prev" title="Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Low Code No Code Conference"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/250130-bppug/" class="next" rel="next" title="At Birmingham Power Platform User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
+</div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.3">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt <nil>"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/"></a></span></div>
+</div>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"Tech Tweedie","id-2":"Tech Tweedie"},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>

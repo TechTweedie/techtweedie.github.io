@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=53760&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Power Platform Developer Tools Install Script - Tech Tweedie</title><meta name="description" content="Beyond the low code, Tech Tweedie offers comprehensive guides and tutorials on Power Platform, Microsoft technologies, and Hugo. Learn how to build PCF controls, install Hugo on Windows 11, and more. Stay updated with our latest posts and in-depth content."><meta property="og:url" content="http://localhost:53760/posts/power-platform-developer-tools-install-script/">
+  <meta property="og:site_name" content="Tech Tweedie">
+  <meta property="og:title" content="Power Platform Developer Tools Install Script">
+  <meta property="og:description" content="Frequently moving between desktop builds, want to be able to get up and running quickly,  I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&#39;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-04T17:32:41+01:00">
+    <meta property="article:modified_time" content="2020-01-01T16:45:40+08:00">
+    <meta property="article:tag" content="Developer Tools">
+    <meta property="article:tag" content="Install Script">
+    <meta property="article:tag" content="Automation">
+    <meta property="article:tag" content="PowerShell">
+    <meta property="og:image" content="http://localhost:53760/posts/power-platform-developer-tools-install-script/featureImage.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:53760/posts/power-platform-developer-tools-install-script/featureImage.jpg">
+  <meta name="twitter:title" content="Power Platform Developer Tools Install Script">
+  <meta name="twitter:description" content="Frequently moving between desktop builds, want to be able to get up and running quickly,  I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&#39;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.">
+      <meta name="twitter:site" content="@itweedie">
+<meta name="application-name" content="Tech Tweedie">
+<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:53760/posts/power-platform-developer-tools-install-script/" /><link rel="prev" href="http://localhost:53760/posts/variables-in-powerfx-command-buttons/" /><link rel="next" href="http://localhost:53760/posts/how-to-install-hugo-on-windows-11/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Power Platform Developer Tools Install Script",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:53760\/posts\/power-platform-developer-tools-install-script\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/localhost:53760\/posts\/power-platform-developer-tools-install-script\/featureImage.jpg",
+                            "width":  1792 ,
+                            "height":  1024 
+                        }],"genre": "posts","keywords": "Developer Tools, Install Script, Automation, PowerShell","wordcount":  623 ,
+        "url": "http:\/\/localhost:53760\/posts\/power-platform-developer-tools-install-script\/","datePublished": "2024-06-04T17:32:41+01:00","dateModified": "2020-01-01T16:45:40+08:00","publisher": {
+            "@type": "Organization",
+            "name": "itweedie"},"author": {
+                "@type": "Person",
+                "name": "itweedie"
+            },"description": "Frequently moving between desktop builds, want to be able to get up and running quickly,  I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It's essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform."
+    }
+    </script>
+        <script>
+          var _paq = window._paq = window._paq || [];
+           
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//mars.mightora.io/matomo/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '3']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        
+    </head><body data-header-desktop="auto" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/categories/community/" title="Supporting the Power Platform Community"> Community </a><a class="menu-item" href="/categories/how-to/" title="How to"> How to </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" rel="noopener noreffer" target="_blank"> YouTube </a><a class="menu-item" href="https://mightora.io/" rel="noopener noreffer" target="_blank"> Free Tools </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a class="menu-item" href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/categories/community/" title="Supporting the Power Platform Community">Community</a><a class="menu-item" href="/categories/how-to/" title="How to">How to</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" title="" rel="noopener noreffer" target="_blank">YouTube</a><a class="menu-item" href="https://mightora.io/" title="" rel="noopener noreffer" target="_blank">Free Tools</a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="disable"><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/power-platform-developer-tools-install-script/featureImage.jpg"
+        data-srcset="/posts/power-platform-developer-tools-install-script/featureImage.jpg, /posts/power-platform-developer-tools-install-script/featureImage.jpg 1.5x, /posts/power-platform-developer-tools-install-script/featureImage.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/power-platform-developer-tools-install-script/featureImage.jpg"
+        title="Frequently moving between desktop builds, want to be able to get up and running quickly,  I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&#39;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform." /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Power Platform Developer Tools Install Script</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>Author</a></span>&nbsp;<span class="post-category">published in <a href="/categories/power-platform/"><i class="fa-regular fa-folder fa-fw"></i>Power Platform</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-06-04">2024-06-04</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;623 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;3 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#why-automate-your-setup">Why Automate Your Setup?</a></li>
+    <li><a href="#introducing-the-power-platform-developer-tools-install-script">Introducing the Power Platform Developer Tools Install Script</a></li>
+    <li><a href="#how-to-use-the-script">How to Use the Script</a>
+      <ul>
+        <li><a href="#behind-the-scenes-how-the-script-works">Behind the Scenes: How the Script Works</a></li>
+        <li><a href="#the-full-script">The full script</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+    <li><a href="#revisions">Revisions</a></li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><h2 id="introduction">Introduction</h2>
+<p>Frequently moving between desktop builds, want to be able to get up and running quickly,  I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&rsquo;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.</p>
+<p>In this blog post, I’ll share my PowerShell script, explain how it works, and show you how you can use it to streamline your own setup process.</p>
+<h2 id="why-automate-your-setup">Why Automate Your Setup?</h2>
+<p>Manually installing and configuring development tools can be a tedious process, especially if you need to do it frequently. By automating this process, you can:</p>
+<ul>
+<li>Save time and effort</li>
+<li>Ensure consistency across different setups</li>
+<li>Quickly get back to productive work</li>
+</ul>
+<h2 id="introducing-the-power-platform-developer-tools-install-script">Introducing the Power Platform Developer Tools Install Script</h2>
+<p>The script I developed leverages <code>winget</code> to install a variety of essential software packages. It also handles the setup of PowerShell modules, configuration of Git, installation of VSCode extensions, and more. Here’s a rundown of what the script does:</p>
+<ul>
+<li>Installs development tools such as Visual Studio Code, Power BI Desktop, SQL Server Management Studio, Windows Terminal, Notepad++, PowerToys, Postman, Visual Studio 2022 Professional, and Node Package Manager (NPM).</li>
+<li>Installs PowerShell modules for PowerApps Administration.</li>
+<li>Sets up Git and configures it with your Windows credentials.</li>
+<li>Installs Azure Storage Explorer.</li>
+<li>Downloads the latest release of XrmToolBox, extracts it to your Desktop, and organizes it in a specified folder.</li>
+<li>Installs useful VSCode extensions for Azure and Power Platform development.</li>
+</ul>
+<h2 id="how-to-use-the-script">How to Use the Script</h2>
+<p>Using the script is straightforward. Here are the steps to get your development environment set up quickly:</p>
+<ul>
+<li><strong>Open PowerShell with Administrative Privileges</strong><br>
+Make sure you run PowerShell as an administrator to ensure all tools and configurations can be applied.</li>
+<li><strong>Run the Script</strong><br>
+Copy and paste the following command into your PowerShell window. This command will download the script from my GitHub repository and execute it.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="c"># Ensure the Desktop directory exists</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$desktopPath</span> <span class="p">=</span> <span class="p">[</span><span class="no">System.Environment</span><span class="p">]::</span><span class="n">GetFolderPath</span><span class="p">(</span><span class="s1">&#39;Desktop&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="o">-Not</span> <span class="p">(</span><span class="nb">Test-Path</span> <span class="n">-Path</span> <span class="nv">$desktopPath</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">New-Item</span> <span class="n">-ItemType</span> <span class="n">Directory</span> <span class="n">-Path</span> <span class="nv">$desktopPath</span> <span class="p">|</span> <span class="nb">Out-Null</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Download and run the script from GitHub</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Invoke-WebRequest</span> <span class="n">-Uri</span> <span class="s2">&#34;https://raw.githubusercontent.com/itweedie/Power-Platform-Developer-Tools-Install-Script/main/install-power-platform-dev-tools.ps1&#34;</span> <span class="n">-OutFile</span> <span class="s2">&#34;</span><span class="nv">$desktopPath</span><span class="s2">\install-power-platform-dev-tools.ps1&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">PowerShell</span> <span class="n">-ExecutionPolicy</span> <span class="n">Bypass</span> <span class="o">-File</span> <span class="s2">&#34;</span><span class="nv">$desktopPath</span><span class="s2">\install-power-platform-dev-tools.ps1&#34;</span>
+</span></span></code></pre></div><ul>
+<li><strong>Follow the Prompts</strong><br>
+The script will guide you through the installation process, ensuring all necessary tools are set up correctly.</li>
+</ul>
+<h3 id="behind-the-scenes-how-the-script-works">Behind the Scenes: How the Script Works</h3>
+<p>The script is designed to handle various installation tasks and configurations efficiently. Here’s a brief overview of its key components:</p>
+<ul>
+<li><strong>Winget Commands</strong>: The script uses <code>winget</code> to install several essential tools, capturing any errors encountered during the process.</li>
+<li><strong>PowerShell Modules</strong>: It installs important PowerShell modules for PowerApps development.</li>
+<li><strong>Git Configuration</strong>: The script configures Git with your Windows credentials, ensuring a smooth version control setup.</li>
+<li><strong>VSCode Extensions</strong>: Several VSCode extensions are installed to enhance your development experience with Azure and Power Platform.</li>
+<li><strong>Node Package Manager (NPM)</strong>: Installs NPM for managing JavaScript packages, a crucial tool for many development projects.</li>
+</ul>
+<h3 id="the-full-script">The full script</h3>
+<p>You can view the full script here, feel free to contribute<br>
+<a href="https://github.com/itweedie/Power-Platform-Developer-Tools-Install-Script/blob/main/install-power-platform-dev-tools.ps1" target="_blank" rel="noopener noreffer">Power-Platform-Developer-Tools-Install-Script/install-power-platform-dev-tools.ps1 at main · itweedie/Power-Platform-Developer-Tools-Install-Script (github.com)</a></p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Automating the setup of your development environment can significantly improve your productivity and ensure consistency across different machines. By using my PowerShell script, you can quickly get all your essential tools installed and configured, allowing you to focus on what you do best—developing solutions on the Power Platform.</p>
+<p>Feel free to check out the <a href="https://github.com/itweedie/Power-Platform-Developer-Tools-Install-Script" target="_blank" rel="noopener noreffer">Power Platform Developer Tools Install Script</a> on GitHub. Contributions and feedback are welcome!</p>
+<p>Happy coding!</p>
+<h2 id="revisions">Revisions</h2>
+<ul>
+<li>2024-07-03: Posted on <a href="https://techtweedie.github.io" target="_blank" rel="noopener noreffer">https://techtweedie.github.io</a>, my new self hosted blog</li>
+<li>Originally posted on May 24, 2024 my blog <a href="https://helpmewithmy.technology" target="_blank" rel="noopener noreffer">https://helpmewithmy.technology</a>, a platform I am currently migrating away from.</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/developer-tools/">Developer Tools</a>
+                </span><span><a href="/tags/install-script/">Install Script</a>
+                </span><span><a href="/tags/automation/">Automation</a>
+                </span><span><a href="/tags/powershell/">PowerShell</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2020-01-01</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span></span>
+        </div></div><div class="post-nav"><a href="/posts/variables-in-powerfx-command-buttons/" class="prev" rel="prev" title="Variables in PowerFX Command Buttons"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/how-to-install-hugo-on-windows-11/" class="next" rel="next" title="How to Install Hugo on Windows 11">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
+</div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.3">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt <nil>"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/"></a></span></div>
+</div>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"Tech Tweedie","id-2":"Tech Tweedie"},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>

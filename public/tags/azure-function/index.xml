@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Azure Function - Tag - Tech Tweedie</title>
+        <link>http://localhost:53760/tags/azure-function/</link>
+        <description>Azure Function - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 14 Dec 2022 19:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/azure-function/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure Function with Azure B2C</title>
+    <link>http://localhost:53760/posts/azure-function-with-azure-b2c/</link>
+    <pubDate>Wed, 14 Dec 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/azure-function-with-azure-b2c/</guid>
+    <description><![CDATA[Azure functions are a very handy way of getting something small done very quickly. Often these have to be secured and sometimes with an identity provider that is not stright out of the box.
+Today I am going to take you through the steps I took to secure an azure function using Azure B2C.
+Step 1 – Create app in Azure B2C PREREQUISITE Azure Function The Azure Function URL Azure B2C Tenant configured with user flows STEP 1 To start with register an application in Azure B2C.]]></description>
+</item>
+</channel>
+</rss>

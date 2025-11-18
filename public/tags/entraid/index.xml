@@ -1,0 +1,31 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>EntraID - Tag - Tech Tweedie</title>
+        <link>http://localhost:53760/tags/entraid/</link>
+        <description>EntraID - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 24 Jun 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/entraid/" rel="self" type="application/rss+xml" /><item>
+    <title>Walkthrough Customising Entra External ID for Power Pages</title>
+    <link>http://localhost:53760/posts/250624-power-pages-customise-entra-external-id/</link>
+    <pubDate>Tue, 24 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250624-power-pages-customise-entra-external-id/</guid>
+    <description><![CDATA[Walkthrough Customising Entra External ID for Power Pages Introduction Are you using Entra External ID with Power Pages and want to customise the login experience? This guide walks through exactly that — applying your own branding, images, colours, and layout to the Entra login screen for external users.
+This is especially useful for creating a polished, consistent experience when your users are accessing Power Pages from outside your organisation.
+If you’re new to setting up Entra External ID for Power Pages, I’ve also got a full video walkthrough on how to configure that — I’ll link it below.]]></description>
+</item>
+<item>
+    <title>Walk through Power Pages with Entra External ID</title>
+    <link>http://localhost:53760/posts/250524-power-pages-with-entra-external-id/</link>
+    <pubDate>Sun, 25 May 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250524-power-pages-with-entra-external-id/</guid>
+    <description><![CDATA[Introduction Need to enable Entra External ID sign-in for your Power Pages site? Whether you&rsquo;re looking to support customer access or enable collaboration with external users, the combination of Power Pages and Entra ID is a powerful way to ensure secure, identity-driven access to your platform.
+In this walkthrough video, I demonstrate how to integrate Entra External ID with a Power Pages site, covering:
+Setting up Entra External ID Configuring identity providers Connecting the authentication flow with your Power Pages site Testing the login experience from an external user’s perspective Why Use Entra External ID with Power Pages?]]></description>
+</item>
+<item>
+    <title>Set folder permissions in SharePoint with Power Automate Flow</title>
+    <link>http://localhost:53760/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</link>
+    <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</guid>
+    <description><![CDATA[Want to grand and remove item or folder permissions in SharePoint using Power Automate with a Service Principle but can&rsquo;t do it? Not able to do it with the out of the box SharePoint Connector?
+Tired of dealing with Conditional Access Policies, password expirations, and frequent logins?
+Good news! In this guide, I&rsquo;ll show you how to set these using an App Registration. No service accounts, no password headaches. I&rsquo;ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:]]></description>
+</item>
+</channel>
+</rss>

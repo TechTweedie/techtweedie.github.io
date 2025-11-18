@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Developer Account - Tag - Tech Tweedie</title>
+        <link>http://localhost:53760/tags/developer-account/</link>
+        <description>Developer Account - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 03 Jun 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/developer-account/" rel="self" type="application/rss+xml" /><item>
+    <title>Power Platform Clinic – Episode 4: Power Pages Authentication Options and Developer Accounts</title>
+    <link>http://localhost:53760/posts/250603-power-platform-clinic-episode-four/</link>
+    <pubDate>Tue, 03 Jun 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250603-power-platform-clinic-episode-four/</guid>
+    <description><![CDATA[Welcome to Episode 2 of the Power Platform Clinic with Duncan Boyne and Ian Tweedy.
+In this episode, Duncan and Ian dive deep into:
+🔐 Power Pages Authentication Options Ian breaks down:
+The difference between public and private modes in Power Pages. How Entra ID, External Entra ID, and Azure B2C work for authenticating users. Why using Azure B2C or External Entra ID is often preferred, including centralised identity management, SIEM logging, and reducing password management headaches.]]></description>
+</item>
+</channel>
+</rss>

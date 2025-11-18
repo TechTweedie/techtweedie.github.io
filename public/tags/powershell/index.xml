@@ -1,0 +1,20 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>PowerShell - Tag - Tech Tweedie</title>
+        <link>http://localhost:53760/tags/powershell/</link>
+        <description>PowerShell - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 22 Oct 2024 07:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/powershell/" rel="self" type="application/rss+xml" /><item>
+    <title>Effortlessly Move Dataverse for Teams Solutions</title>
+    <link>http://localhost:53760/posts/effortlessly-move-dataverse-for-teams-solutions/</link>
+    <pubDate>Tue, 22 Oct 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/effortlessly-move-dataverse-for-teams-solutions/</guid>
+    <description><![CDATA[Do you need to move a Solution in Dataverse for Teams form one environment to another, are you unable to use a Pipeline to move a solution around? Want easy reputable steps? Need to be able to drill into what changes have taken place between solution builds.
+Today I will show you a tool that I have made to make this process easier by using a PowerShell Script to move Dataverse for Teams solutions between environments.]]></description>
+</item>
+<item>
+    <title>Power Platform Developer Tools Install Script</title>
+    <link>http://localhost:53760/posts/power-platform-developer-tools-install-script/</link>
+    <pubDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</pubDate><guid>http://localhost:53760/posts/power-platform-developer-tools-install-script/</guid>
+    <description><![CDATA[Introduction Frequently moving between desktop builds, want to be able to get up and running quickly, I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&rsquo;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.]]></description>
+</item>
+</channel>
+</rss>

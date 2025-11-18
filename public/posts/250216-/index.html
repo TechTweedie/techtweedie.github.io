@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Send Emails from Flow without a Service Account - Tech Tweedie</title><meta name="description" content="Learn how to send emails from Power Automate without a service account! 🚀 This step-by-step guide walks you through setting up an App Registration, securing permissions in Exchange Online, and using a custom connector—no password resets or login issues. Perfect for secure, scalable email automation in Microsoft 365! 🔗 #PowerAutomate #Microsoft365 #Automation"><meta property="og:url" content="http://localhost:1313/posts/250216-/">
+  <meta property="og:site_name" content="Tech Tweedie">
+  <meta property="og:title" content="Send Emails from Flow without a Service Account">
+  <meta property="og:description" content="Learn how to send emails from Power Automate without a service account! 🚀 This step-by-step guide walks you through setting up an App Registration, securing permissions in Exchange Online, and using a custom connector—no password resets or login issues. Perfect for secure, scalable email automation in Microsoft 365! 🔗 #PowerAutomate #Microsoft365 #Automation">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-10T09:00:00+01:00">
+    <meta property="article:modified_time" content="2025-02-10T09:00:00+01:00">
+    <meta property="article:tag" content="Power Automate">
+    <meta property="og:image" content="http://localhost:1313/posts/250216-/featureImage.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/posts/250216-/featureImage.png">
+  <meta name="twitter:title" content="Send Emails from Flow without a Service Account">
+  <meta name="twitter:description" content="Learn how to send emails from Power Automate without a service account! 🚀 This step-by-step guide walks you through setting up an App Registration, securing permissions in Exchange Online, and using a custom connector—no password resets or login issues. Perfect for secure, scalable email automation in Microsoft 365! 🔗 #PowerAutomate #Microsoft365 #Automation">
+      <meta name="twitter:site" content="@itweedie">
+<meta name="application-name" content="Tech Tweedie">
+<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/250216-/" /><link rel="prev" href="http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Send Emails from Flow without a Service Account",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/posts\/250216-\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/localhost:1313\/posts\/250216-\/featureImage.png",
+                            "width":  1792 ,
+                            "height":  300 
+                        }],"genre": "posts","keywords": "Power Automate","wordcount":  2125 ,
+        "url": "http:\/\/localhost:1313\/posts\/250216-\/","datePublished": "2025-02-10T09:00:00+01:00","dateModified": "2025-02-10T09:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "itweedie"},"author": {
+                "@type": "Person",
+                "name": "itweedie"
+            },"description": "Learn how to send emails from Power Automate without a service account! 🚀 This step-by-step guide walks you through setting up an App Registration, securing permissions in Exchange Online, and using a custom connector—no password resets or login issues. Perfect for secure, scalable email automation in Microsoft 365! 🔗 #PowerAutomate #Microsoft365 #Automation"
+    }
+    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" rel="noopener noreffer" target="_blank"> YouTube Channel </a><a class="menu-item" href="https://mightora.io/" rel="noopener noreffer" target="_blank"> Free Power Platform Tools </a><span class="menu-item delimiter"></span><a class="menu-item" href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" title="" rel="noopener noreffer" target="_blank">YouTube Channel</a><a class="menu-item" href="https://mightora.io/" title="" rel="noopener noreffer" target="_blank">Free Power Platform Tools</a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="disable"><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/250216-/featureImage.png"
+        data-srcset="/posts/250216-/featureImage.png, /posts/250216-/featureImage.png 1.5x, /posts/250216-/featureImage.png 2x"
+        data-sizes="auto"
+        alt="/posts/250216-/featureImage.png"
+        title="Learn how to send emails from Power Automate without a service account! 🚀 This step-by-step guide walks you through setting up an App Registration, securing permissions in Exchange Online, and using a custom connector—no password resets or login issues. Perfect for secure, scalable email automation in Microsoft 365! 🔗 #PowerAutomate #Microsoft365 #Automation" /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Send Emails from Flow without a Service Account</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="https://iantweedie.biz" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>itweedie</a></span>&nbsp;<span class="post-category">published in <a href="/categories/azure/"><i class="fa-regular fa-folder fa-fw"></i>Azure</a>&nbsp;<a href="/categories/power-platform/"><i class="fa-regular fa-folder fa-fw"></i>Power Platform</a>&nbsp;<a href="/categories/power-automate/"><i class="fa-regular fa-folder fa-fw"></i>Power Automate</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-02-10">2025-02-10</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;2125 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;10 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-the-app-registration">Create the App Registration</a>
+      <ul>
+        <li><a href="#step-1---log-in-to-entra">Step 1 - Log in to Entra</a></li>
+        <li><a href="#step-2---create-the-app-registration">Step 2 - Create the app registration</a></li>
+        <li><a href="#step-3---add-api-permission">Step 3 - Add API permission</a></li>
+        <li><a href="#step-4---grant-admin-consent">Step 4 - Grant Admin consent</a></li>
+      </ul>
+    </li>
+    <li><a href="#limiting-application-permissions-in-exchange">Limiting application permissions in Exchange</a>
+      <ul>
+        <li><a href="#step-1---set-up-a-mail-enabled-security-group">Step 1 - Set up a Mail Enabled Security Group</a></li>
+        <li><a href="#step-2---access-powershell">Step 2 - Access PowerShell</a></li>
+        <li><a href="#step-3---create-application-access-policy">Step 3 - Create Application Access Policy</a></li>
+        <li><a href="#step-4---import-and-connect">Step 4 - Import and Connect</a></li>
+        <li><a href="#step-5---lets-test-it-in-powershell">Step 5 - Let&rsquo;s test it in PowerShell</a></li>
+      </ul>
+    </li>
+    <li><a href="#download-and-testing-the-connector">Download and testing the connector</a>
+      <ul>
+        <li><a href="#step-1---find-custom-connectors">Step 1 - Find custom connectors</a></li>
+        <li><a href="#step-2---create-a-new-connector">Step 2 - Create a new connector</a></li>
+        <li><a href="#step-3---configure-your-connector">Step 3 - Configure your connector</a></li>
+        <li><a href="#step-4---add-c-to-process-the-attachment">Step 4 - Add C# to process the attachment</a></li>
+        <li><a href="#step-5---add-your-first-connection">Step 5 - Add your first connection</a></li>
+        <li><a href="#step-6---test">Step 6 - Test</a></li>
+        <li><a href="#step-7---lets-try-it-in-a-flow">Step 7 - Lets try it in a Flow</a></li>
+      </ul>
+    </li>
+    <li><a href="#sending-attachments">Sending attachments</a></li>
+    <li><a href="#conclusion-secure-scalable-email-sending-from-power-automate">Conclusion: Secure, Scalable Email Sending from Power Automate</a>
+      <ul>
+        <li><a href="#key-takeaways">Key Takeaways:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><p>Want to send emails from <strong>Power Automate</strong> but can&rsquo;t or don&rsquo;t want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?</p>
+<p>Good news! In this guide, I&rsquo;ll show you how to send emails directly from Microsoft Exchange using only an App Registration. No service accounts, no password headaches. I&rsquo;ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:</p>
+<ul>
+<li>Create and configure the App Registration</li>
+<li>Assign API permissions</li>
+<li>Restrict sending access to specific mailboxes</li>
+<li>Use Power Automate with the custom connector</li>
+</ul>
+<h2 id="create-the-app-registration">Create the App Registration</h2>
+<p>For this section you will need the help of a Global Administrator</p>
+<h3 id="step-1---log-in-to-entra">Step 1 - Log in to Entra</h3>
+<p>By default most users will have the ability to go to <a href="https://entra.microsoft.com" target="_blank" rel="noopener noreffer">https://entra.microsoft.com</a>
+and log in with your user account.</p>
+<h3 id="step-2---create-the-app-registration">Step 2 - Create the app registration</h3>
+<p>Next we are going to create an application registration so our Power Automate flow can talk directly to Exchange Online.</p>
+<ol>
+<li>When you are on the Entra Overview page, open up <strong>Identity</strong>.</li>
+<li>Then navigate to <strong>Applications</strong> in the left hand menu and then open up <strong>App Registrations</strong>.</li>
+<li>From there select <strong>New Registration</strong>.</li>
+<li>A new screen will open, give your new app registration a name and then click next.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="brave_T1ciTpvWmI.gif"
+        data-srcset="brave_T1ciTpvWmI.gif, brave_T1ciTpvWmI.gif 1.5x, brave_T1ciTpvWmI.gif 2x"
+        data-sizes="auto"
+        alt="brave_T1ciTpvWmI.gif"
+        title="alt text" /></p>
+<h3 id="step-3---add-api-permission">Step 3 - Add API permission</h3>
+<p>We then need to give our App Registration an API Permission, This will be the permission used to talk to Exchange Online.</p>
+<ol>
+<li>In the left hand menu click on <strong>API Permission</strong>.</li>
+<li>Click on <strong>Add permission</strong>.</li>
+<li>A window will then open, select <strong>Application Permission</strong>.</li>
+<li>Then using the search box type in <strong>mail.send</strong>.</li>
+<li>The list will then filter, as it does open up the <strong>Mail</strong> option and select <strong>mail.send</strong>.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Yes this permission lets your send emails as anyone, however we will restrict this later. <strong>DO NOT MISS USE IT IS POSSIBLE TO TRACK WHERE AN EMAIL CAME FROM</strong>.</p>
+</blockquote>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="brave_pyTrq7A2fH.gif"
+        data-srcset="brave_pyTrq7A2fH.gif, brave_pyTrq7A2fH.gif 1.5x, brave_pyTrq7A2fH.gif 2x"
+        data-sizes="auto"
+        alt="brave_pyTrq7A2fH.gif"
+        title="alt text" /></p>
+<h3 id="step-4---grant-admin-consent">Step 4 - Grant Admin consent</h3>
+<ol>
+<li>
+<p>You will notice that the Grant admin consent is grayed out
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="brave_w3uDbOYeBk.gif"
+        data-srcset="brave_w3uDbOYeBk.gif, brave_w3uDbOYeBk.gif 1.5x, brave_w3uDbOYeBk.gif 2x"
+        data-sizes="auto"
+        alt="brave_w3uDbOYeBk.gif"
+        title="alt text" /></p>
+</li>
+<li>
+<p>This is Because we currently lack administrative roles for our account. For this next step you will need a Global Admin.</p>
+</li>
+<li>
+<p>Ask a Global administrator to grant admin consent for you
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_b9Xouwxtt7.gif"
+        data-srcset="msedge_b9Xouwxtt7.gif, msedge_b9Xouwxtt7.gif 1.5x, msedge_b9Xouwxtt7.gif 2x"
+        data-sizes="auto"
+        alt="msedge_b9Xouwxtt7.gif"
+        title="alt text" /></p>
+</li>
+</ol>
+<h2 id="limiting-application-permissions-in-exchange">Limiting application permissions in Exchange</h2>
+<p>Our next step is to limit what permissions our application will have within exchange, we have already said it will have <code>mail.send</code>
+however without further limitation that ill allow the application to send emails from any users email account.</p>
+<p>This Stage will need to be done by an Exchange Online Administrator.</p>
+<blockquote>
+<p><strong>Further reading:</strong> Further information of these next steps can be found <a href="https://learn.microsoft.com/en-us/graph/auth-limit-mailbox-access" target="_blank" rel="noopener noreffer">here</a>.</p>
+</blockquote>
+<h3 id="step-1---set-up-a-mail-enabled-security-group">Step 1 - Set up a Mail Enabled Security Group</h3>
+<p>When we tell exchange that we want to restrict access in some way for an application registration, we need to first create a <strong>Mail-enabled Security group</strong>.</p>
+<p>There are a few ways to do this, however today we are going to do it from the Microsoft 365 Admin center.</p>
+<ol>
+<li>Go to <a href="https://admin.microsoft.com/" target="_blank" rel="noopener noreffer">Microsoft 365 Admin center</a></li>
+<li>Then open up <strong>Teams and Groups</strong>.</li>
+<li>Select &lsquo;Security&rsquo; from the menu.</li>
+<li>Click on <strong>Add new security group</strong>.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_JAl1jlS395-B.gif.gif"
+        data-srcset="msedge_JAl1jlS395-B.gif.gif, msedge_JAl1jlS395-B.gif.gif 1.5x, msedge_JAl1jlS395-B.gif.gif 2x"
+        data-sizes="auto"
+        alt="msedge_JAl1jlS395-B.gif.gif"
+        title="alt text" /></p>
+<h3 id="step-2---access-powershell">Step 2 - Access PowerShell</h3>
+<p>For this next step we are going to use some <strong>Powershell</strong>. You can do this from a location of your choice however today we are going to demo it from <strong>Cloud Shell</strong>.</p>
+<ol>
+<li>Navigate to Exchange Online <a href="https://admin.cloud.microsoft/exchange#/homepage" target="_blank" rel="noopener noreffer">https://admin.cloud.microsoft/exchange#/homepage</a>.</li>
+<li>Click on the <strong>Cloud Shell</strong> button in the top right hand corner.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_f9urvujFXS-B.gif.gif"
+        data-srcset="msedge_f9urvujFXS-B.gif.gif, msedge_f9urvujFXS-B.gif.gif 1.5x, msedge_f9urvujFXS-B.gif.gif 2x"
+        data-sizes="auto"
+        alt="msedge_f9urvujFXS-B.gif.gif"
+        title="alt text" /></p>
+<h3 id="step-3---create-application-access-policy">Step 3 - Create Application Access Policy</h3>
+<p>Next we are going to create an application access policy using both the <strong>Application ID</strong> and the <strong>Mail-enabled security group</strong> we created in earlier steps.</p>
+<ol>
+<li>Lets look at our command. <code>New-ApplicationAccessPolicy -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c -PolicyScopeGroupId PowerAutomateTest@Tweed.technology -AccessRight RestrictAccess -Description &quot;Restrict this app to members of PowerAutomateTest@Tweed.technology&quot;</code></li>
+<li>Breaking this down we have
+<ol>
+<li>Command: <code>New-ApplicationAccessPolicy</code> - This cmdlet creates a new application access policy in Microsoft 365.</li>
+<li>Parameter: <code>-AppId b9701c1e-1364-464d-93e4-01ae925e8d6c</code> - Specifies the unique identifier (AppId) of the application for which the policy is being created.</li>
+<li>Parameter: <code>-PolicyScopeGroupId PowerAutomateTest@Tweed.technology</code> - Defines the scope of the policy by specifying the group ID (email address) that the policy will apply to.</li>
+<li>Parameter: <code>-AccessRight RestrictAccess</code> - Sets the access right for the policy. In this case, it restricts access.</li>
+<li>Parameter: <code>-Description &quot;Restrict this app to members of PowerAutomateTest@Tweed.technology&quot;</code> - Provides a description for the policy, explaining its purpose.</li>
+</ol>
+</li>
+<li>Lets try running the command in <strong>PowerShell</strong> using the <strong>CloudShell</strong>.</li>
+<li>Oh no, it doesn&rsquo;t work. You could be forgiven for thinking that given we have opened this up from the Exchange Admin center that we would indeed already have access to and be connected to exchange online within the <strong>CloudShell</strong> but unfortunately we are not.</li>
+<li>Therefore before we go any further we need to install the Exchange Online Management Module. <code>Install-Module -Name ExchangeOnlineManagement -Force</code>.</li>
+</ol>
+<h3 id="step-4---import-and-connect">Step 4 - Import and Connect</h3>
+<p>Our next step, is really to go back a stage and import and connect to Exchange Online.</p>
+<p>To do this we need to:</p>
+<ol>
+<li>First we need to import the module we have just installed, to do this we run this command <code>Import-Module ExchangeOnlineManagement</code></li>
+<li>Next we need to connect to exchange, within the <strong>CloudShell</strong> the easiest way to to this is by using device login. Run this command <code>Connect-ExchangeOnline -Device</code>.</li>
+<li>This will give us a URL and a device code in order to log in to Exchange Online.</li>
+<li>Next lets try re-running our command to create the new policy <code>New-ApplicationAccessPolicy -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c -PolicyScopeGroupId PowerAutomateTest@Tweed.technology -AccessRight RestrictAccess -Description &quot;Restrict this app to members of PowerAutomateTest@Tweed.technology&quot;</code></li>
+<li>This time we get the response</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">ScopeName</span>        <span class="err">:</span> <span class="n">Power</span> <span class="n">Automate</span> <span class="n">Test</span>
+</span></span><span class="line"><span class="cl"><span class="n">ScopeIdentity</span>    <span class="err">:</span> <span class="n">Power</span> <span class="n">Automate</span> <span class="n">Test20250209121934</span>
+</span></span><span class="line"><span class="cl"><span class="n">Identity</span>         <span class="err">:</span> <span class="n">63759d9f-bfca</span><span class="p">-</span><span class="n">4f52-ae98</span><span class="p">-</span><span class="n">8f2f1d7bc173</span><span class="p">\</span><span class="n">b9701c1e</span><span class="p">-</span><span class="mf">1364</span><span class="p">-</span><span class="mf">464d</span><span class="p">-</span><span class="mf">93e4</span><span class="p">-</span><span class="n">01ae925e8d6c</span><span class="err">:</span><span class="n">S</span><span class="p">-</span><span class="mf">1</span><span class="p">-</span><span class="mf">5</span><span class="p">-</span><span class="mf">21</span><span class="p">-</span><span class="mf">3787302941</span><span class="p">-</span><span class="mf">3231517822</span><span class="p">-</span><span class="mf">469913106</span><span class="p">-</span><span class="mf">31437838</span><span class="p">;</span><span class="mf">9</span>
+</span></span><span class="line"><span class="cl">                   <span class="n">98e9d79</span><span class="p">-</span><span class="mf">817d</span><span class="p">-</span><span class="n">41c9</span><span class="p">-</span><span class="n">87d8-d9c07f27f4b2</span>
+</span></span><span class="line"><span class="cl"><span class="n">AppId</span>            <span class="err">:</span> <span class="n">b9701c1e</span><span class="p">-</span><span class="mf">1364</span><span class="p">-</span><span class="mf">464d</span><span class="p">-</span><span class="mf">93e4</span><span class="p">-</span><span class="n">01ae925e8d6c</span>
+</span></span><span class="line"><span class="cl"><span class="n">ScopeIdentityRaw</span> <span class="err">:</span> <span class="n">S</span><span class="p">-</span><span class="mf">1</span><span class="p">-</span><span class="mf">5</span><span class="p">-</span><span class="mf">21</span><span class="p">-</span><span class="mf">3787302941</span><span class="p">-</span><span class="mf">3231517822</span><span class="p">-</span><span class="mf">469913106</span><span class="p">-</span><span class="mf">31437838</span><span class="p">;</span><span class="n">998e9d79</span><span class="p">-</span><span class="mf">817d</span><span class="p">-</span><span class="n">41c9</span><span class="p">-</span><span class="n">87d8-d9c07f27f4b2</span>
+</span></span><span class="line"><span class="cl"><span class="n">Description</span>      <span class="err">:</span> <span class="n">Restrict</span> <span class="n">this</span> <span class="n">app</span> <span class="n">to</span> <span class="n">members</span> <span class="n">of</span> <span class="n">PowerAutomateTest</span><span class="nv">@Tweed</span><span class="p">.</span><span class="py">technology</span>
+</span></span><span class="line"><span class="cl"><span class="n">AccessRight</span>      <span class="err">:</span> <span class="n">RestrictAccess</span>
+</span></span><span class="line"><span class="cl"><span class="n">ShardType</span>        <span class="err">:</span> <span class="n">All</span>
+</span></span><span class="line"><span class="cl"><span class="n">IsValid</span>          <span class="err">:</span> <span class="n">True</span>
+</span></span><span class="line"><span class="cl"><span class="n">ObjectState</span>      <span class="err">:</span> <span class="n">Unchanged</span>
+</span></span></code></pre></div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_f9urvujFXS-C.gif.gif"
+        data-srcset="msedge_f9urvujFXS-C.gif.gif, msedge_f9urvujFXS-C.gif.gif 1.5x, msedge_f9urvujFXS-C.gif.gif 2x"
+        data-sizes="auto"
+        alt="msedge_f9urvujFXS-C.gif.gif"
+        title="alt text" /></p>
+<h3 id="step-5---lets-test-it-in-powershell">Step 5 - Let&rsquo;s test it in PowerShell</h3>
+<p>We can now test using PowerShell, to see if it&rsquo;s applied correctly.</p>
+<p>To do this:</p>
+<ol>
+<li>We are going to run the following command <code>Test-ApplicationAccessPolicy -Identity testABC@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c</code></li>
+<li>If we break down this command:
+<ol>
+<li>Command: <code>Test-ApplicationAccessPolicy</code> - This cmdlet tests an application access policy in Microsoft 365 to verify if a user has access.</li>
+<li>Parameter: <code>-Identity testABC@Tweed.technology</code> - Specifies the identity (email address) of the user to test against the application access policy.</li>
+<li>Parameter: <code>-AppId b9701c1e-1364-464d-93e4-01ae925e8d6c</code> - Specifies the unique identifier (AppId) of the application for which the policy is being tested.</li>
+</ol>
+</li>
+<li>Running the command we get the following response:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">AppId</span>             <span class="err">:</span> <span class="n">b9701c1e</span><span class="p">-</span><span class="mf">1364</span><span class="p">-</span><span class="mf">464d</span><span class="p">-</span><span class="mf">93e4</span><span class="p">-</span><span class="n">01ae925e8d6c</span>
+</span></span><span class="line"><span class="cl"><span class="n">Mailbox</span>           <span class="err">:</span> <span class="n">testABC</span>
+</span></span><span class="line"><span class="cl"><span class="n">MailboxId</span>         <span class="err">:</span> <span class="n">75283b3b</span><span class="p">-</span><span class="n">609a</span><span class="p">-</span><span class="n">4c1c-b8b8-baa1342fdfa6</span>
+</span></span><span class="line"><span class="cl"><span class="n">MailboxSid</span>        <span class="err">:</span> <span class="n">S</span><span class="p">-</span><span class="mf">1</span><span class="p">-</span><span class="mf">5</span><span class="p">-</span><span class="mf">21</span><span class="p">-</span><span class="mf">3787302941</span><span class="p">-</span><span class="mf">3231517822</span><span class="p">-</span><span class="mf">469913106</span><span class="p">-</span><span class="mf">31499791</span>
+</span></span><span class="line"><span class="cl"><span class="n">AccessCheckResult</span> <span class="err">:</span> <span class="n">Granted</span>
+</span></span></code></pre></div></li>
+<li>Let&rsquo;s test this against a different email address that is not within the <strong>Mail-enabled security group</strong> by running <code>Test-ApplicationAccessPolicy -Identity demo@Tweed.technology -AppId b9701c1e-1364-464d-93e4-01ae925e8d6c</code>.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">AppId</span>             <span class="err">:</span> <span class="n">b9701c1e</span><span class="p">-</span><span class="mf">1364</span><span class="p">-</span><span class="mf">464d</span><span class="p">-</span><span class="mf">93e4</span><span class="p">-</span><span class="n">01ae925e8d6c</span>
+</span></span><span class="line"><span class="cl"><span class="n">Mailbox</span>           <span class="err">:</span> <span class="n">demo</span>
+</span></span><span class="line"><span class="cl"><span class="n">MailboxId</span>         <span class="err">:</span> <span class="nb">d2ca4050-f8a9</span><span class="p">-</span><span class="mf">4986</span><span class="n">-b998</span><span class="p">-</span><span class="n">387603b466b6</span>
+</span></span><span class="line"><span class="cl"><span class="n">MailboxSid</span>        <span class="err">:</span> <span class="n">S</span><span class="p">-</span><span class="mf">1</span><span class="p">-</span><span class="mf">5</span><span class="p">-</span><span class="mf">21</span><span class="p">-</span><span class="mf">3787302941</span><span class="p">-</span><span class="mf">3231517822</span><span class="p">-</span><span class="mf">469913106</span><span class="p">-</span><span class="mf">19344836</span>
+</span></span><span class="line"><span class="cl"><span class="n">AccessCheckResult</span> <span class="err">:</span> <span class="n">Denied</span>
+</span></span></code></pre></div></li>
+<li>We can see it has being <strong>Denied</strong> which is the response we expected.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_4IBPmJ2a2n.gif"
+        data-srcset="msedge_4IBPmJ2a2n.gif, msedge_4IBPmJ2a2n.gif 1.5x, msedge_4IBPmJ2a2n.gif 2x"
+        data-sizes="auto"
+        alt="msedge_4IBPmJ2a2n.gif"
+        title="alt text" /></p>
+<h2 id="download-and-testing-the-connector">Download and testing the connector</h2>
+<h3 id="step-1---find-custom-connectors">Step 1 - Find custom connectors</h3>
+<p>First we need to find custom connectors in Power Automate.</p>
+<p>To do this we need to:</p>
+<ol>
+<li>Navigate to <code>https://make.powerautomate.com/</code></li>
+<li>Change our environment should you need to.</li>
+<li>Then in the left hand menu, navigate to <strong>More</strong> and then <strong>Discover all</strong>, and then locate <strong>Custom connectors</strong>.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_eb1IgNQwCG.gif"
+        data-srcset="msedge_eb1IgNQwCG.gif, msedge_eb1IgNQwCG.gif 1.5x, msedge_eb1IgNQwCG.gif 2x"
+        data-sizes="auto"
+        alt="msedge_eb1IgNQwCG.gif"
+        title="alt text" /></p>
+<h3 id="step-2---create-a-new-connector">Step 2 - Create a new connector</h3>
+<ol>
+<li>Click on <strong>New custom connector</strong>.</li>
+<li>Then click on <strong>Import an OpenAPI from URL</strong>.</li>
+<li>Then enter in the connector name <code>Send email using Graph</code>.</li>
+<li>Then enter in the URL <code>https://raw.githubusercontent.com/itweedie/PowerPlatform-Send-Emails-from-Power-Automate-without-a-Service-Account/refs/heads/main/connector/shared_mightora-5fsend-20mail-20with-20graph-5fe07b0f04a8b0d4c3/apiDefinition.swagger.json</code></li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_Q2g7mnzmR9.gif"
+        data-srcset="msedge_Q2g7mnzmR9.gif, msedge_Q2g7mnzmR9.gif 1.5x, msedge_Q2g7mnzmR9.gif 2x"
+        data-sizes="auto"
+        alt="msedge_Q2g7mnzmR9.gif"
+        title="alt text" /></p>
+<h3 id="step-3---configure-your-connector">Step 3 - Configure your connector</h3>
+<ol>
+<li>Click on to the Security tab.</li>
+<li>Make sure we are using <strong>OAuth 2.0</strong></li>
+<li>Make sure the Identity Provider is set to <strong>Azure Active Directory</strong> and that <strong>Enable Service Principle support</strong> is ticked.</li>
+<li>Click in to <strong>Client ID</strong></li>
+<li>Navigate back to Entra and locate your App Registration.</li>
+<li>Copy the <strong>Client ID</strong> and paste it in to the <strong>Client ID</strong> box on the Custom Connector.</li>
+<li>Go back to the App Registration in Entra, and click on <strong>Certificates &amp; secrets</strong>, then click on <strong>New client secret</strong>. Choose a name and a reasonable date for expiry that fits within your organisations policy&rsquo;s.</li>
+<li>Copy the <strong>Secret value</strong>, NOT Secret ID, and paste it in to your connector. You will need your secret ID one more time so keep the Entra page open with it on.</li>
+<li>Click Create</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_aKfrGH1oIO.gif"
+        data-srcset="msedge_aKfrGH1oIO.gif, msedge_aKfrGH1oIO.gif 1.5x, msedge_aKfrGH1oIO.gif 2x"
+        data-sizes="auto"
+        alt="msedge_aKfrGH1oIO.gif"
+        title="alt text" /></p>
+<h3 id="step-4---add-c-to-process-the-attachment">Step 4 - Add C# to process the attachment</h3>
+<p>In order to be able to send attachments we need to add some C# to our connector. If you are not going to be sending attachments you can skip this step.</p>
+<p>To do this you need to:</p>
+<ol>
+<li>Click on to <strong>Code</strong></li>
+<li>Click to enable code.</li>
+<li>Copy and pase the below code in to the code box.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Script</span> <span class="p">:</span> <span class="n">ScriptBase</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">override</span> <span class="kd">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">HttpResponseMessage</span><span class="p">&gt;</span> <span class="n">ExecuteAsync</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Read the request content as a string</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">var</span> <span class="n">requestContentAsString</span> <span class="p">=</span> <span class="k">await</span> <span class="k">this</span><span class="p">.</span><span class="n">Context</span><span class="p">.</span><span class="n">Request</span><span class="p">.</span><span class="n">Content</span><span class="p">.</span><span class="n">ReadAsStringAsync</span><span class="p">().</span><span class="n">ConfigureAwait</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="c1">// Parse the request content string into a JSON object</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">var</span> <span class="n">requestContentAsJson</span> <span class="p">=</span> <span class="n">JObject</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">requestContentAsString</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Modify the attachments array if it exists</span>
+</span></span><span class="line"><span class="cl">        <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">attachmentFileTypes</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">requestContentAsJson</span><span class="p">[</span><span class="s">&#34;message&#34;</span><span class="p">]?[</span><span class="s">&#34;attachments&#34;</span><span class="p">]</span> <span class="k">is</span> <span class="n">JArray</span> <span class="n">attachments</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">attachment</span> <span class="k">in</span> <span class="n">attachments</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1">// Add the @odata.type element</span>
+</span></span><span class="line"><span class="cl">                <span class="n">attachment</span><span class="p">[</span><span class="s">&#34;@odata.type&#34;</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;#microsoft.graph.fileAttachment&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="c1">// Set the modified JSON back to the request content</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="n">Context</span><span class="p">.</span><span class="n">Request</span><span class="p">.</span><span class="n">Content</span> <span class="p">=</span> <span class="n">CreateJsonContent</span><span class="p">(</span><span class="n">requestContentAsJson</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Send the API request and get the response</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">var</span> <span class="n">response</span> <span class="p">=</span> <span class="k">await</span> <span class="k">this</span><span class="p">.</span><span class="n">Context</span><span class="p">.</span><span class="n">SendAsync</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">Context</span><span class="p">.</span><span class="n">Request</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="n">CancellationToken</span><span class="p">).</span><span class="n">ConfigureAwait</span><span class="p">(</span><span class="n">continueOnCapturedContext</span><span class="p">:</span> <span class="kc">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Read the response content as a string</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">var</span> <span class="n">responseContentAsString</span> <span class="p">=</span> <span class="k">await</span> <span class="n">response</span><span class="p">.</span><span class="n">Content</span><span class="p">.</span><span class="n">ReadAsStringAsync</span><span class="p">().</span><span class="n">ConfigureAwait</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Check if the response content is empty or null</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="kt">string</span><span class="p">.</span><span class="n">IsNullOrEmpty</span><span class="p">(</span><span class="n">responseContentAsString</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Set a default message if there is no response from the endpoint</span>
+</span></span><span class="line"><span class="cl">            <span class="n">responseContentAsString</span> <span class="p">=</span> <span class="s">&#34;{\&#34;message\&#34;: \&#34;No response from the endpoint\&#34;}&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// Try to parse the response content string into a JSON object</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">var</span> <span class="n">responseContentAsJson</span> <span class="p">=</span> <span class="n">JObject</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">responseContentAsString</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                
+</span></span><span class="line"><span class="cl">                <span class="c1">// Convert the JSON object back to a string</span>
+</span></span><span class="line"><span class="cl">                <span class="n">responseContentAsString</span> <span class="p">=</span> <span class="n">responseContentAsJson</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">catch</span> <span class="p">(</span><span class="n">JsonReaderException</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// If parsing fails, set an error message with the invalid JSON response</span>
+</span></span><span class="line"><span class="cl">                <span class="n">responseContentAsString</span> <span class="p">=</span> <span class="s">$&#34;{{\&#34;</span><span class="n">message</span><span class="err">\</span><span class="s">&#34;: \&#34;Invalid JSON response\&#34;, \&#34;response\&#34;: \&#34;{responseContentAsString}\&#34;}}&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Create a JSON object to include the original request and the response content</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">var</span> <span class="n">finalResponseContent</span> <span class="p">=</span> <span class="k">new</span> <span class="n">JObject</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="na">
+</span></span></span><span class="line"><span class="cl"><span class="na">            [&#34;version&#34;]</span> <span class="p">=</span> <span class="s">&#34;1.2.0&#34;</span><span class="p">,</span> <span class="c1">// Add version number here</span>
+</span></span><span class="line"><span class="cl"><span class="na">            [&#34;responseContent&#34;]</span> <span class="p">=</span> <span class="n">JObject</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">responseContentAsString</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">        <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Set the response content back to the JSON string</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span><span class="p">.</span><span class="n">Content</span> <span class="p">=</span> <span class="n">CreateJsonContent</span><span class="p">(</span><span class="n">finalResponseContent</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Return the response</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">response</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">bool</span> <span class="n">IsBinary</span><span class="p">(</span><span class="kt">string</span> <span class="n">content</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Check if the content contains non-printable characters</span>
+</span></span><span class="line"><span class="cl">        <span class="k">foreach</span> <span class="p">(</span><span class="kt">char</span> <span class="n">c</span> <span class="k">in</span> <span class="n">content</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="kt">char</span><span class="p">.</span><span class="n">IsControl</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="n">c</span> <span class="p">!=</span> <span class="sc">&#39;\r&#39;</span> <span class="p">&amp;&amp;</span> <span class="n">c</span> <span class="p">!=</span> <span class="sc">&#39;\n&#39;</span> <span class="p">&amp;&amp;</span> <span class="n">c</span> <span class="p">!=</span> <span class="sc">&#39;\t&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_ETA3maJOWu.gif"
+        data-srcset="msedge_ETA3maJOWu.gif, msedge_ETA3maJOWu.gif 1.5x, msedge_ETA3maJOWu.gif 2x"
+        data-sizes="auto"
+        alt="msedge_ETA3maJOWu.gif"
+        title="alt text" /></p>
+<h3 id="step-5---add-your-first-connection">Step 5 - Add your first connection</h3>
+<ol>
+<li>Click on to Test.</li>
+<li>Then click on to <strong>New connection</strong>.</li>
+<li>You should then get a screen which lets your choose <strong>Service Principle</strong>, if you don&rsquo;t repeat step 3.</li>
+<li>Then click <strong>Create Connection</strong>.</li>
+<li>Enter in your <strong>Secret</strong> (we do this first as we already have the page open from Step 3).</li>
+<li>Then enter in your <strong>Client ID</strong> and <strong>Tenant ID</strong>.</li>
+<li>Then click <strong>Create Connection</strong>.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_2mOjLRkn39.gif"
+        data-srcset="msedge_2mOjLRkn39.gif, msedge_2mOjLRkn39.gif 1.5x, msedge_2mOjLRkn39.gif 2x"
+        data-sizes="auto"
+        alt="msedge_2mOjLRkn39.gif"
+        title="alt text" /></p>
+<h3 id="step-6---test">Step 6 - Test</h3>
+<ol>
+<li>On the Test screen scroll down to <strong>Operations</strong>.</li>
+<li>Enter in the following:</li>
+</ol>
+<ul>
+<li>user-email: An email address you placed in the mail enabled security group earlier</li>
+<li>message.subject: test message</li>
+<li>message.body.contentType: HTML</li>
+<li>message.body.content: test</li>
+<li>saveToSentItems: true</li>
+<li>emailAddress.address (note first one only): An email address you would like to send to</li>
+</ul>
+<ol start="3">
+<li>Then press <strong>Test operation</strong></li>
+<li>Scroll down to <strong>Response</strong> and you should get a 202.</li>
+<li>Test and make sure the email comes through.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_jHKMp5JkcW.gif"
+        data-srcset="msedge_jHKMp5JkcW.gif, msedge_jHKMp5JkcW.gif 1.5x, msedge_jHKMp5JkcW.gif 2x"
+        data-sizes="auto"
+        alt="msedge_jHKMp5JkcW.gif"
+        title="alt text" /></p>
+<h3 id="step-7---lets-try-it-in-a-flow">Step 7 - Lets try it in a Flow</h3>
+<ol>
+<li>Click on <strong>My flows</strong></li>
+<li>Create a new flow.</li>
+<li>Add a trigger.</li>
+<li>Add a new step.</li>
+<li>From Connector type choose Custom.</li>
+<li>Then select <strong>Send email using Graph</strong> from the list.</li>
+<li>Fill out the details for the connector that you want to use.</li>
+<li>Test and make sure the email comes through.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_7if2t23IPS.gif"
+        data-srcset="msedge_7if2t23IPS.gif, msedge_7if2t23IPS.gif 1.5x, msedge_7if2t23IPS.gif 2x"
+        data-sizes="auto"
+        alt="msedge_7if2t23IPS.gif"
+        title="alt text" /></p>
+<h2 id="sending-attachments">Sending attachments</h2>
+<p>If you are planing to use this connector to send attachments, if the file is binary you will need to convert it to base64.</p>
+<h2 id="conclusion-secure-scalable-email-sending-from-power-automate">Conclusion: Secure, Scalable Email Sending from Power Automate</h2>
+<p>By following this guide, you’ve successfully set up a <strong>secure, scalable</strong> way to send emails from <strong>Power Automate</strong>—without relying on service accounts, password resets, or Conditional Access headaches.</p>
+<p>With your <strong>App Registration configured</strong>, <strong>permissions locked down</strong>, and <strong>custom connector deployed</strong>, you now have a <strong>robust</strong> method to send emails directly through <strong>Exchange Online</strong>—while ensuring access is tightly controlled.</p>
+<h3 id="key-takeaways">Key Takeaways:</h3>
+<p>✅ <strong>No Service Account Required</strong> – Uses an App Registration instead.<br>
+✅ <strong>Secure and Controlled</strong> – Email sending is restricted to specific mailboxes.<br>
+✅ <strong>Fully Automated</strong> – No need to log in or manage passwords.<br>
+✅ <strong>Scalable and Future-Proof</strong> – Works seamlessly across flows, reducing admin overhead.</p>
+<p>Now that your setup is complete, you can start integrating <strong>email automation into your Power Automate workflows</strong> with confidence. Give it a try, experiment with different use cases, and let me know how it works for you!</p>
+<p>🚀 <strong>Happy automating!</strong> 🚀</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/power-automate/">Power Automate</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2025-02-10</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span><a href="#" onclick="return false;" title="Share on Twitter" data-sharer="twitter" data-url="http://localhost:1313/posts/250216-/" data-title="Send Emails from Flow without a Service Account" data-via="itweedie" data-hashtags="Power Automate"><i class="fa-brands fa-square-x-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/250216-/" data-hashtag="Power Automate"><i class="fa-brands fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="Share on Linkedin" data-sharer="linkedin" data-url="http://localhost:1313/posts/250216-/"><i class="fa-brands fa-linkedin fa-fw"></i></a><a href="#" onclick="return false;" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://localhost:1313/posts/250216-/" data-title="Send Emails from Flow without a Service Account" data-web><i class="fa-brands fa-whatsapp fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/posts/send-emails-from-flow-without-a-service-account/" class="prev" rel="prev" title="Send Emails from Flow without a Service Account"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a></div></div>
+</div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.3">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt 1.0.2"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/"></a></span></div>
+</div>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"Tech Tweedie","id-2":"Tech Tweedie"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>

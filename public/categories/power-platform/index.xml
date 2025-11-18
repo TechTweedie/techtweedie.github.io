@@ -1,0 +1,77 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Power Platform - Category - Tech Tweedie</title>
+        <link>http://localhost:53760/categories/power-platform/</link>
+        <description>Power Platform - Category - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:53760/categories/power-platform/" rel="self" type="application/rss+xml" /><item>
+    <title>Show and Hide Tabs Based on Status Reason in Model Driven Apps</title>
+    <link>http://localhost:53760/posts/250412-show-hide-status-reason/</link>
+    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</pubDate><guid>http://localhost:53760/posts/250412-show-hide-status-reason/</guid>
+    <description><![CDATA[Introduction Ever wanted to show or hide a tab in a Model-Driven App based on the Status Reason of a record? Maybe you’ve got a section of a form that’s only relevant when a record hits a specific state — like “Approved” or “Rejected”?
+This post walks you through a reusable JavaScript snippet I’ve shared on GitHub that dynamically toggles tab visibility based on the statuscode field.
+Why This Is Useful Sometimes users don’t need to see everything all the time.]]></description>
+</item>
+<item>
+    <title>Send Emails from Flow without a Service Account</title>
+    <link>http://localhost:53760/posts/send-emails-from-flow-without-a-service-account/</link>
+    <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/send-emails-from-flow-without-a-service-account/</guid>
+    <description><![CDATA[Want to send emails from Power Automate but can&rsquo;t or don&rsquo;t want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?
+Good news! In this guide, I&rsquo;ll show you how to send emails directly from Microsoft Exchange using only an App Registration. No service accounts, no password headaches.]]></description>
+</item>
+<item>
+    <title>Effortlessly Move Dataverse for Teams Solutions</title>
+    <link>http://localhost:53760/posts/effortlessly-move-dataverse-for-teams-solutions/</link>
+    <pubDate>Tue, 22 Oct 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/effortlessly-move-dataverse-for-teams-solutions/</guid>
+    <description><![CDATA[Do you need to move a Solution in Dataverse for Teams form one environment to another, are you unable to use a Pipeline to move a solution around? Want easy reputable steps? Need to be able to drill into what changes have taken place between solution builds.
+Today I will show you a tool that I have made to make this process easier by using a PowerShell Script to move Dataverse for Teams solutions between environments.]]></description>
+</item>
+<item>
+    <title>Securing Power Automate for Production</title>
+    <link>http://localhost:53760/posts/securing-power-automate-for-production/</link>
+    <pubDate>Mon, 05 Aug 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/securing-power-automate-for-production/</guid>
+    <description><![CDATA[Introduction Power Automate is a wonderful tool, but there is a world of difference between building something for personal productivity and utilising this amazing low-code tool for production, where an important business application will rely on it.
+When considering a workload like this, we need to make it easier to manage and troubleshoot, ensure reliability, and prioritise security. Finally, if the worst were to happen, such as some credentials becoming leaked or an endpoint being compromised, how can we configure this so that damage is limited?]]></description>
+</item>
+<item>
+    <title>Command Bar to Call Custom Page in Model Driven App</title>
+    <link>http://localhost:53760/posts/command-bar-to-call-custom-page/</link>
+    <pubDate>Sun, 23 Jun 2024 19:32:41 &#43;0100</pubDate><guid>http://localhost:53760/posts/command-bar-to-call-custom-page/</guid>
+    <description><![CDATA[Introduction Recently, I was asked if it was possible to place a message at the top of every form and view across an entire Model-Driven App. This message would then open a Custom Page that would display more detail. In this Blog post, I explain how this can be achieved and what steps need to be taken.
+For the purposes of this demo, we will call a custom help page from a command button.]]></description>
+</item>
+<item>
+    <title>Build a Basic PCF Field Control</title>
+    <link>http://localhost:53760/posts/build-a-basic-pcf-field-control/</link>
+    <pubDate>Sun, 16 Jun 2024 19:32:41 &#43;0100</pubDate><guid>http://localhost:53760/posts/build-a-basic-pcf-field-control/</guid>
+    <description><![CDATA[Introduction Want to get started using the Power Apps Component Framework (PCF), would you like to start building controls. In this blog post we are going to step through the process to building your first component.
+You can watch the accompanying YouTube video here What languages To build out our component, we will be using both TypeScript and HTML. Don&rsquo;t worry if you haven&rsquo;t worked with these before.
+Tools The tools we will be using today will be;]]></description>
+</item>
+<item>
+    <title>Power Platform Developer Tools Install Script</title>
+    <link>http://localhost:53760/posts/power-platform-developer-tools-install-script/</link>
+    <pubDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</pubDate><guid>http://localhost:53760/posts/power-platform-developer-tools-install-script/</guid>
+    <description><![CDATA[Introduction Frequently moving between desktop builds, want to be able to get up and running quickly, I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&rsquo;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.]]></description>
+</item>
+<item>
+    <title>Variables in PowerFX Command Buttons</title>
+    <link>http://localhost:53760/posts/variables-in-powerfx-command-buttons/</link>
+    <pubDate>Fri, 24 May 2024 00:00:00 &#43;0000</pubDate><guid>http://localhost:53760/posts/variables-in-powerfx-command-buttons/</guid>
+    <description><![CDATA[Introduction Have you ever wondered if you can use Environment Variables in a PowerFX button, how to create a custom email link button in the command bar of your Power Apps model-driven application using environment variables and Power FX? Luckily, Power Apps has made it possible to achieve this. With the help of Power FX, which is the same language used in canvas app development, anyone can efficiently customise their app’s command bar without needing prior knowledge of JavaScript or the Ribbon Workbench.]]></description>
+</item>
+<item>
+    <title>Clone with PowerFX Command button</title>
+    <link>http://localhost:53760/posts/clone-with-powerfx-command-button/</link>
+    <pubDate>Mon, 22 Apr 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/clone-with-powerfx-command-button/</guid>
+    <description><![CDATA[Introduction Cloning multiple records within a data view in a Model-Driven App is a common request from end users. It helps them quickly fill out data fields in situations where only a few values differ between records.
+In this blog post, we will explore how to add a custom button to the command bar in a Power Apps model-driven application to duplicate multiple records. Power Apps recently introduced this helpful feature, and the best part is that it can be achieved using Power FX, the same language used for developing canvas apps.]]></description>
+</item>
+<item>
+    <title>Create a Solution Configuration File</title>
+    <link>http://localhost:53760/posts/choose-what-dataverse-search-indexes/</link>
+    <pubDate>Wed, 07 Feb 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/choose-what-dataverse-search-indexes/</guid>
+    <description><![CDATA[Introduction Want to deploy your Power Apps Solution files quickly via Pipelines? Not sure how to set your environment variable or connection references. This blog post will explain how we solved this problem using a Solution Configuration File.
+Understanding the Need for a Solution Settings File A solution settings file is crucial when your solution involves environment variables or connection references. Without it, you might end up with configurations that do not carry over the intended values, leading to solutions that don’t behave as expected in different environments.]]></description>
+</item>
+</channel>
+</rss>

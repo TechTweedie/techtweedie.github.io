@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Testing - Tag - Tech Tweedie</title>
+        <link>http://localhost:53760/tags/testing/</link>
+        <description>Testing - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/testing/" rel="self" type="application/rss+xml" /><item>
+    <title>Running ADVANCED Playwright Tests in Azure DevOps for Power Platform Apps</title>
+    <link>http://localhost:53760/posts/250715-running-advanced-playwright-tests-in-azure-devops-for-power-platform/</link>
+    <pubDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250715-running-advanced-playwright-tests-in-azure-devops-for-power-platform/</guid>
+    <description><![CDATA[🧪 Playwright + Power Platform + DevOps Pipelines? Yes please! Just dropped a new video where I walk through the latest update to my Playwright for Power Platform DevOps Extension. This time, we’re not just running tests — we’re dynamically assigning roles, business units, and teams to a test user before your Playwright test runs, and then removing them right after. Clean, controlled, reusable testing every time ✅
+🎯 What&rsquo;s new in this release?]]></description>
+</item>
+<item>
+    <title>Running Playwright Tests in Azure DevOps for Power Platform Apps</title>
+    <link>http://localhost:53760/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/</link>
+    <pubDate>Wed, 02 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/</guid>
+    <description><![CDATA[Introduction Are you looking to easily run Playwright tests for your Power Platform apps within an Azure DevOps pipeline? In this tutorial, I show you how to use my Playwright for Power Platform DevOps extension to run tests against your model-driven app, capture reports, and publish results.
+Below is the embedded video:
+What you will learn How to install the Playwright for Power Platform DevOps extension How to write a Playwright test that creates a Contact record using fake data How to set up your Azure DevOps pipeline to run these tests, archive reports, and publish results Code Snippet – Playwright Test Here is the test script used in the video to add a contact with fake data:]]></description>
+</item>
+</channel>
+</rss>

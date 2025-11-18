@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=53760&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Generate Power Platform Solution Documentation with Azure DevOps - Tech Tweedie</title><meta name="description" content="Beyond the low code, Tech Tweedie offers comprehensive guides and tutorials on Power Platform, Microsoft technologies, and Hugo. Learn how to build PCF controls, install Hugo on Windows 11, and more. Stay updated with our latest posts and in-depth content."><meta property="og:url" content="http://localhost:53760/posts/251118-your-first-azure-devops-pipeline-for-power-platform/">
+  <meta property="og:site_name" content="Tech Tweedie">
+  <meta property="og:title" content="Generate Power Platform Solution Documentation with Azure DevOps">
+  <meta property="og:description" content="Learn how to automatically generate clear, accurate documentation for your Power Platform solutions using the Power Platform Documentation Extension for Azure DevOps.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-18T06:00:00+01:00">
+    <meta property="article:modified_time" content="2025-11-18T06:00:00+01:00">
+    <meta property="article:tag" content="Power Platform">
+    <meta property="article:tag" content="DevOps">
+    <meta property="og:image" content="http://localhost:53760/posts/251118-your-first-azure-devops-pipeline-for-power-platform/thin.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:53760/posts/251118-your-first-azure-devops-pipeline-for-power-platform/thin.png">
+  <meta name="twitter:title" content="Generate Power Platform Solution Documentation with Azure DevOps">
+  <meta name="twitter:description" content="Learn how to automatically generate clear, accurate documentation for your Power Platform solutions using the Power Platform Documentation Extension for Azure DevOps.">
+      <meta name="twitter:site" content="@itweedie">
+<meta name="application-name" content="Tech Tweedie">
+<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:53760/posts/251118-your-first-azure-devops-pipeline-for-power-platform/" /><link rel="prev" href="http://localhost:53760/posts/250930-d365ppugne/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Generate Power Platform Solution Documentation with Azure DevOps",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:53760\/posts\/251118-your-first-azure-devops-pipeline-for-power-platform\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/localhost:53760\/posts\/251118-your-first-azure-devops-pipeline-for-power-platform\/thin.png",
+                            "width":  1280 ,
+                            "height":  300 
+                        }],"genre": "posts","keywords": "Power Platform, DevOps","wordcount":  886 ,
+        "url": "http:\/\/localhost:53760\/posts\/251118-your-first-azure-devops-pipeline-for-power-platform\/","datePublished": "2025-11-18T06:00:00+01:00","dateModified": "2025-11-18T06:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "itweedie"},"author": {
+                "@type": "Person",
+                "name": "itweedie"
+            },"description": "Learn how to automatically generate clear, accurate documentation for your Power Platform solutions using the Power Platform Documentation Extension for Azure DevOps."
+    }
+    </script>
+        <script>
+          var _paq = window._paq = window._paq || [];
+           
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//mars.mightora.io/matomo/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '3']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        
+    </head><body data-header-desktop="auto" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/categories/community/" title="Supporting the Power Platform Community"> Community </a><a class="menu-item" href="/categories/how-to/" title="How to"> How to </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" rel="noopener noreffer" target="_blank"> YouTube </a><a class="menu-item" href="https://mightora.io/" rel="noopener noreffer" target="_blank"> Free Tools </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a class="menu-item" href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/categories/community/" title="Supporting the Power Platform Community">Community</a><a class="menu-item" href="/categories/how-to/" title="How to">How to</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" title="" rel="noopener noreffer" target="_blank">YouTube</a><a class="menu-item" href="https://mightora.io/" title="" rel="noopener noreffer" target="_blank">Free Tools</a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="disable"><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/251118-your-first-azure-devops-pipeline-for-power-platform/thin.png"
+        data-srcset="/posts/251118-your-first-azure-devops-pipeline-for-power-platform/thin.png, /posts/251118-your-first-azure-devops-pipeline-for-power-platform/thin.png 1.5x, /posts/251118-your-first-azure-devops-pipeline-for-power-platform/thin.png 2x"
+        data-sizes="auto"
+        alt="/posts/251118-your-first-azure-devops-pipeline-for-power-platform/thin.png"
+        title="Learn how to automatically generate clear, accurate documentation for your Power Platform solutions using the Power Platform Documentation Extension for Azure DevOps." /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Generate Power Platform Solution Documentation with Azure DevOps</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>Author</a></span>&nbsp;<span class="post-category">published in <a href="/categories/how-to/"><i class="fa-regular fa-folder fa-fw"></i>How To</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2025-11-18">2025-11-18</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;886 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;5 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#your-first-azure-devops-pipeline-for-power-platform--a-complete-beginners-guide">Your First Azure DevOps Pipeline for Power Platform – A Complete Beginner’s Guide</a>
+      <ul>
+        <li><a href="#-watch-the-video-tutorial">🎥 Watch the video tutorial</a></li>
+      </ul>
+    </li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#prerequisites">Prerequisites</a>
+      <ul>
+        <li><a href="#1-dataverse-system-administrator-permissions"><strong>1. Dataverse System Administrator permissions</strong></a></li>
+        <li><a href="#2-an-azure-devops-organisation-basic-licence"><strong>2. An Azure DevOps organisation (Basic licence)</strong></a></li>
+        <li><a href="#3-parallelism-request-free"><strong>3. Parallelism Request (free)</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#step-1--create-an-app-registration">Step 1 — Create an App Registration</a></li>
+    <li><a href="#step-2--add-the-app-user-in-dataverse">Step 2 — Add the App User in Dataverse</a></li>
+    <li><a href="#step-3--create-the-devops-service-connection">Step 3 — Create the DevOps Service Connection</a></li>
+    <li><a href="#step-4--structure-your-repository">Step 4 — Structure Your Repository</a></li>
+    <li><a href="#step-5--create-your-first-pipeline">Step 5 — Create Your First Pipeline</a></li>
+    <li><a href="#step-6--fix-parallelism-if-needed">Step 6 — Fix Parallelism (If Needed)</a></li>
+    <li><a href="#step-7--build-the-export-pipeline">Step 7 — Build the Export Pipeline</a>
+      <ul>
+        <li><a href="#1-add-name--variables">1. Add name + variables</a></li>
+        <li><a href="#2-use-windows-build-agent">2. Use Windows build agent</a></li>
+        <li><a href="#4-pipeline-steps">4. Pipeline Steps</a></li>
+        <li><a href="#3-commit-to-the-repository">3. Commit to the repository</a></li>
+      </ul>
+    </li>
+    <li><a href="#step-8--fix-build-service-permissions-if-needed">Step 8 — Fix Build Service Permissions (If Needed)</a></li>
+    <li><a href="#step-9--review-the-exported-solution">Step 9 — Review the Exported Solution</a>
+      <ul>
+        <li><a href="#-managed-zip">✔ Managed ZIP</a></li>
+        <li><a href="#-unmanaged-zip">✔ Unmanaged ZIP</a></li>
+        <li><a href="#-settings-file">✔ Settings file</a></li>
+        <li><a href="#-unpacked-solution-including">✔ Unpacked solution including:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><h2 id="your-first-azure-devops-pipeline-for-power-platform--a-complete-beginners-guide">Your First Azure DevOps Pipeline for Power Platform – A Complete Beginner’s Guide</h2>
+<p>Have you ever wondered how to set up Azure DevOps pipelines for the Power Platform?<br>
+Ever wished you could <em>export your solutions safely</em>, <em>run tests</em>, <em>add security checks</em>, <em>generate documentation</em>, or <em>deploy across tenants</em> with confidence?</p>
+<p>All of this becomes simple once you introduce Azure DevOps into your Power Platform ALM story — and in this guide (based on my YouTube walkthrough), I’ll show you exactly how to build <strong>your first Azure DevOps pipeline</strong>.</p>
+<p>Whether you&rsquo;re brand new to DevOps or just automating your Power Platform workflows, this guide will get you from nothing to a working pipeline step-by-step.</p>
+<h3 id="-watch-the-video-tutorial">🎥 Watch the video tutorial</h3>
+
+
+    
+    <div class="video">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow="fullscreen"="allow="fullscreen"" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/OUcXHBx3wJY?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" title="YouTube video"
+      ></iframe>
+    </div>
+
+<h2 id="introduction">Introduction</h2>
+<p>In this walkthrough, we’re going to build a simple Azure DevOps pipeline that:</p>
+<p>✔ Connects securely to your Dataverse environment<br>
+✔ Exports a Power Platform solution<br>
+✔ Unpacks it into source control<br>
+✔ Commits the changes to your repository</p>
+<p>Later, you can extend this pipeline to build, deploy, test, create documentation, enforce ALM governance, and much more — but today we focus on getting your first working pipeline running.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before we touch DevOps, we need three things.</p>
+<h3 id="1-dataverse-system-administrator-permissions"><strong>1. Dataverse System Administrator permissions</strong></h3>
+<p>You need the ability to add/remove users (because we’ll add a service principal).</p>
+<h3 id="2-an-azure-devops-organisation-basic-licence"><strong>2. An Azure DevOps organisation (Basic licence)</strong></h3>
+<p>The first five are free, so you&rsquo;re almost certainly covered.</p>
+<h3 id="3-parallelism-request-free"><strong>3. Parallelism Request (free)</strong></h3>
+<p>Azure DevOps uses a hosted VM to run pipelines, but you must request free parallelism.<br>
+Submit it here:</p>
+<p><strong><a href="https://aka.ms/azpipelines-parallelism-request" target="_blank" rel="noopener noreffer">https://aka.ms/azpipelines-parallelism-request</a></strong></p>
+<p>Approval normally takes a few minutes.</p>
+<p>After that, install the <strong>Power Platform Build Tools</strong> extension from the Visual Studio Marketplace.</p>
+<h2 id="step-1--create-an-app-registration">Step 1 — Create an App Registration</h2>
+<p>We need a service principal so our pipeline can authenticate to Dataverse.</p>
+<ol>
+<li>Open <strong>Entra Admin Center → App Registrations</strong></li>
+<li>Select <strong>New Registration</strong></li>
+<li>Add API permission <strong>Dynamic CRM → user_impersonation</strong></li>
+<li>No admin consent required</li>
+<li>Copy:
+<ul>
+<li>Client ID</li>
+<li>Tenant ID</li>
+<li>Secret</li>
+</ul>
+</li>
+</ol>
+<p>Keep them safe — we’ll need them later.</p>
+<h2 id="step-2--add-the-app-user-in-dataverse">Step 2 — Add the App User in Dataverse</h2>
+<p>In the <strong>Power Platform Admin Center</strong>:</p>
+<ol>
+<li>Open your environment</li>
+<li>Go to <strong>Settings → Users → Application Users</strong></li>
+<li>Click <strong>New App User</strong></li>
+<li>Choose your App Registration</li>
+<li>Assign <strong>System Administrator</strong> (for demo purposes)</li>
+</ol>
+<h2 id="step-3--create-the-devops-service-connection">Step 3 — Create the DevOps Service Connection</h2>
+<p>In Azure DevOps:</p>
+<ol>
+<li>Open <strong>Project Settings → Service Connections</strong></li>
+<li>Select <strong>New Service Connection → Power Platform</strong></li>
+<li>Enter:
+<ul>
+<li>Environment URL</li>
+<li>Client ID</li>
+<li>Tenant ID</li>
+<li>Secret</li>
+</ul>
+</li>
+<li>Name it something like <strong>Dataverse - Backup</strong></li>
+</ol>
+<p>This will be the authentication method for your pipeline.</p>
+<h2 id="step-4--structure-your-repository">Step 4 — Structure Your Repository</h2>
+<p>A recommended structure:</p>
+<pre tabindex="0"><code>MyPowerPlatformProject/
+├── solutions/
+│   ├── src/
+│   │   └── MySolution/
+│   └── MySolution.zip
+├── pipelines/
+│   ├── export-solution.yml
+│   ├── build-and-deploy-solution.yml
+├── documentation/
+└── README.md
+</code></pre><h2 id="step-5--create-your-first-pipeline">Step 5 — Create Your First Pipeline</h2>
+<p>Inside <strong>Pipelines → New Pipeline</strong>:</p>
+<ol>
+<li>Choose <strong>Azure Repos Git</strong></li>
+<li>Select your repo</li>
+<li>Choose <strong>Starter Pipeline</strong></li>
+<li>Save it under:<br>
+<strong>/pipelines/export-solution.yml</strong></li>
+</ol>
+<p>Your first run will likely fail due to parallelism — this is normal.</p>
+<h2 id="step-6--fix-parallelism-if-needed">Step 6 — Fix Parallelism (If Needed)</h2>
+<p>If you get an error about free parallelism not being enabled:</p>
+<p>👉 Submit the form: <strong><a href="https://aka.ms/azpipelines-parallelism-request" target="_blank" rel="noopener noreffer">https://aka.ms/azpipelines-parallelism-request</a></strong></p>
+<p>Once approved, rerun your pipeline — it should now work.</p>
+<h2 id="step-7--build-the-export-pipeline">Step 7 — Build the Export Pipeline</h2>
+<p>Now we turn the basic boilerplate pipeline into something useful.</p>
+<h3 id="1-add-name--variables">1. Add name + variables</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">$(TeamProject)_$(BuildDefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">variables</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">varPowerPlatformSPN</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l">Dataverse - Backup</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">varSolutionName</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l">ExpenseReportManager1</span><span class="w">
+</span></span></span></code></pre></div><h3 id="2-use-windows-build-agent">2. Use Windows build agent</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">pool</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">vmImage</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;windows-latest&#39;</span><span class="w">
+</span></span></span></code></pre></div><h3 id="4-pipeline-steps">4. Pipeline Steps</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">checkout</span><span class="p">:</span><span class="w"> </span><span class="l">self</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">persistCredentials</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">clean</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l">PowerPlatformToolInstaller@2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">DefaultVersion</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">AddToolsToPath</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l">PowerPlatformSetSolutionVersion@2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">authenticationType</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;PowerPlatformSPN&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">PowerPlatformSPN</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(varPowerPlatformSPN)&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">SolutionName</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(varSolutionName)&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">SolutionVersionNumber</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;1.0.0.$(Build.BuildID)&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l">PowerPlatformExportSolution@2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">authenticationType</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;PowerPlatformSPN&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">PowerPlatformSPN</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(varPowerPlatformSPN)&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">SolutionName</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(varSolutionName)&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">SolutionOutputFile</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(Build.SourcesDirectory)\solutions\$(varSolutionName)_1.0.0.$(Build.BuildID)_managed.zip&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">Managed</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">AsyncOperation</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">MaxAsyncWaitTime</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;60&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l">PowerPlatformExportSolution@2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">authenticationType</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;PowerPlatformSPN&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">PowerPlatformSPN</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(varPowerPlatformSPN)&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">SolutionName</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(varSolutionName)&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">SolutionOutputFile</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(Build.SourcesDirectory)\solutions\$(varSolutionName)_1.0.0.$(Build.BuildID).zip&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">Managed</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">AsyncOperation</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">MaxAsyncWaitTime</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;60&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l">PowerPlatformUnpackSolution@2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">SolutionInputFile</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(Build.SourcesDirectory)\solutions\$(varSolutionName)_1.0.0.$(Build.BuildID).zip&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">SolutionTargetFolder</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(Build.SourcesDirectory)\solutions\src\$(varSolutionName)&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">SolutionType</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Both&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l">PowerShell@2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">targetType</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;inline&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;pac solution create-settings --solution-zip $(Build.SourcesDirectory)\solutions\$(varSolutionName)_1.0.0.$(Build.BuildID).zip --settings-file $(Build.SourcesDirectory)\solutions\$(varSolutionName)-settings.json&#39;</span><span class="w">
+</span></span></span></code></pre></div><h3 id="3-commit-to-the-repository">3. Commit to the repository</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl">- <span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l">CmdLine@2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span></span></span><span class="line"><span class="cl"><span class="sd">      echo commit all changes
+</span></span></span><span class="line"><span class="cl"><span class="sd">      git config user.email &#34;$(Build.RequestedForEmail)&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sd">      git config user.name &#34;$(Build.RequestedFor)&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sd">      git checkout -b main
+</span></span></span><span class="line"><span class="cl"><span class="sd">      git add --all
+</span></span></span><span class="line"><span class="cl"><span class="sd">      git commit -m &#34;Latest solution changes.&#34;
+</span></span></span><span class="line"><span class="cl"><span class="sd">      echo push code to new repo
+</span></span></span><span class="line"><span class="cl"><span class="sd">      git -c http.extraheader=&#34;AUTHORIZATION: bearer $(System.AccessToken)&#34; push origin main</span><span class="w">      
+</span></span></span></code></pre></div><h2 id="step-8--fix-build-service-permissions-if-needed">Step 8 — Fix Build Service Permissions (If Needed)</h2>
+<p>If you see:</p>
+<p><strong>“Build Service does not have Contribute permissions”</strong></p>
+<p>Fix it here:</p>
+<p><strong>Project Settings → Repositories → {repo} → Security</strong></p>
+<p>Find:</p>
+<p><strong>ProjectName Build Service (ProjectName)</strong><br>
+Set <strong>Contribute = Allow</strong></p>
+<p>Re-run — pipeline succeeds.</p>
+<h2 id="step-9--review-the-exported-solution">Step 9 — Review the Exported Solution</h2>
+<p>Your repo now contains:</p>
+<h3 id="-managed-zip">✔ Managed ZIP</h3>
+<h3 id="-unmanaged-zip">✔ Unmanaged ZIP</h3>
+<h3 id="-settings-file">✔ Settings file</h3>
+<h3 id="-unpacked-solution-including">✔ Unpacked solution including:</h3>
+<ul>
+<li>Entities</li>
+<li>Model-driven apps</li>
+<li>Canvas apps (if any)</li>
+<li>Workflows</li>
+<li>Security roles</li>
+<li>Choices</li>
+<li>Relationships</li>
+<li>Customizations</li>
+<li>Plans</li>
+</ul>
+<p>Everything you need for full Git-based version control.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>🎉 <strong>Congratulations — you now have a working Azure DevOps export pipeline!</strong></p>
+<p>This pipeline gives you:</p>
+<p>✔ A safe, repeatable backup<br>
+✔ Git history of every solution change<br>
+✔ Managed + unmanaged builds<br>
+✔ A foundation for full ALM automation</p>
+<p>From here, you can expand into:</p>
+<ul>
+<li>Deployment pipelines</li>
+<li>Automated versioning</li>
+<li>Power Pages / Portal pipelines</li>
+<li>Automated documentation</li>
+<li>Solution analysis &amp; testing</li>
+<li>Cross-tenant deployments</li>
+<li>Pull request validation</li>
+</ul>
+<p>If you’d like the next blog/video to cover <strong>solution deployment</strong>, <strong>unit testing</strong>, <strong>wiki documentation generation</strong>, or <strong>advanced ALM</strong>, just let me know!</p>
+<hr>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/power-platform/">Power Platform</a>
+                </span><span><a href="/tags/devops/">DevOps</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2025-11-18</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span></span>
+        </div></div><div class="post-nav"><a href="/posts/250930-d365ppugne/" class="prev" rel="prev" title="D365 &amp; Power Platform UG North East – June 2025 Meetup"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a></div></div>
+</div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.3">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt <nil>"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/"></a></span></div>
+</div>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"Tech Tweedie","id-2":"Tech Tweedie"},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>

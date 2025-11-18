@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=53760&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Azure B2C oAuth on Postman - Tech Tweedie</title><meta name="description" content="Beyond the low code, Tech Tweedie offers comprehensive guides and tutorials on Power Platform, Microsoft technologies, and Hugo. Learn how to build PCF controls, install Hugo on Windows 11, and more. Stay updated with our latest posts and in-depth content."><meta property="og:url" content="http://localhost:53760/posts/azureb2c-oauth-in-postman/">
+  <meta property="og:site_name" content="Tech Tweedie">
+  <meta property="og:title" content="Azure B2C oAuth on Postman">
+  <meta property="og:description" content="I had a problem where I needed to get my JWT token from Azure B2C OAuth 2.0 in order to troubleshoot an issue I was having in getting OAuth 2.0 working.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-11-14T19:00:00+01:00">
+    <meta property="article:modified_time" content="2024-07-01T19:45:40+08:00">
+    <meta property="article:tag" content="JWT Token">
+    <meta property="article:tag" content="OAuth">
+    <meta property="article:tag" content="Azure B2C">
+    <meta property="article:tag" content="Power Pages">
+    <meta property="article:tag" content="Postman">
+    <meta property="og:image" content="http://localhost:53760/posts/azureb2c-oauth-in-postman/featureImage_o.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:53760/posts/azureb2c-oauth-in-postman/featureImage_o.webp">
+  <meta name="twitter:title" content="Azure B2C oAuth on Postman">
+  <meta name="twitter:description" content="I had a problem where I needed to get my JWT token from Azure B2C OAuth 2.0 in order to troubleshoot an issue I was having in getting OAuth 2.0 working.">
+      <meta name="twitter:site" content="@itweedie">
+<meta name="application-name" content="Tech Tweedie">
+<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:53760/posts/azureb2c-oauth-in-postman/" /><link rel="prev" href="http://localhost:53760/posts/pfx-certificate-for-free-for-power-pages/" /><link rel="next" href="http://localhost:53760/posts/postman-to-azure-table-storage/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Azure B2C oAuth on Postman",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:53760\/posts\/azureb2c-oauth-in-postman\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/localhost:53760\/posts\/azureb2c-oauth-in-postman\/featureImage.png",
+                            "width":  1792 ,
+                            "height":  300 
+                        }],"genre": "posts","keywords": "JWT Token, oAuth, Azure B2C, Power Pages, Postman","wordcount":  363 ,
+        "url": "http:\/\/localhost:53760\/posts\/azureb2c-oauth-in-postman\/","datePublished": "2022-11-14T19:00:00+01:00","dateModified": "2024-07-01T19:45:40+08:00","publisher": {
+            "@type": "Organization",
+            "name": "itweedie"},"author": {
+                "@type": "Person",
+                "name": "itweedie"
+            },"description": "I had a problem where I needed to get my JWT token from Azure B2C OAuth 2.0 in order to troubleshoot an issue I was having in getting OAuth 2.0 working."
+    }
+    </script>
+        <script>
+          var _paq = window._paq = window._paq || [];
+           
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//mars.mightora.io/matomo/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '3']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        
+    </head><body data-header-desktop="auto" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/categories/community/" title="Supporting the Power Platform Community"> Community </a><a class="menu-item" href="/categories/how-to/" title="How to"> How to </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" rel="noopener noreffer" target="_blank"> YouTube </a><a class="menu-item" href="https://mightora.io/" rel="noopener noreffer" target="_blank"> Free Tools </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a class="menu-item" href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/categories/community/" title="Supporting the Power Platform Community">Community</a><a class="menu-item" href="/categories/how-to/" title="How to">How to</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" title="" rel="noopener noreffer" target="_blank">YouTube</a><a class="menu-item" href="https://mightora.io/" title="" rel="noopener noreffer" target="_blank">Free Tools</a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="disable"><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/azureb2c-oauth-in-postman/featureImage.png"
+        data-srcset="/posts/azureb2c-oauth-in-postman/featureImage.png, /posts/azureb2c-oauth-in-postman/featureImage.png 1.5x, /posts/azureb2c-oauth-in-postman/featureImage.png 2x"
+        data-sizes="auto"
+        alt="/posts/azureb2c-oauth-in-postman/featureImage.png"
+        title="I had a problem where I needed to get my JWT token from Azure B2C OAuth 2.0 in order to troubleshoot an issue I was having in getting OAuth 2.0 working." /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Azure B2C oAuth on Postman</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>Author</a></span>&nbsp;<span class="post-category">published in <a href="/categories/trubbleshooting/"><i class="fa-regular fa-folder fa-fw"></i>Trubbleshooting</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-11-14">2022-11-14</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;363 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;2 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><p>I had a problem where I needed to get my JWT token from Azure B2C OAuth 2.0 in order to troubleshoot an issue I was having in getting OAuth 2.0 working.</p>
+<h4 id="situation">Situation</h4>
+<p>I needed to get the JWT token using Postman, decrypt it, and then provide it for troubleshooting the issue.</p>
+<h4 id="how-did-i-do-that">How did I do that</h4>
+<ul>
+<li>Get postman</li>
+<li>Create a new request, as far as I am aware it makes no difference what type of request you use so in this example, I will use a <strong>GET</strong> request.</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="img/image-1.png"
+        data-srcset="/posts/azureb2c-oauth-in-postman/img/image-1.png, img/image-1.png 1.5x, /posts/azureb2c-oauth-in-postman/img/image-1.png 2x"
+        data-sizes="auto"
+        alt="/posts/azureb2c-oauth-in-postman/img/image-1.png"
+        title="/posts/azureb2c-oauth-in-postman/img/image-1.png" /></p>
+<ul>
+<li>Click on <strong>Authorization</strong>, and then choose Type <strong>OAuth 2.0</strong>, and then chose <strong>Request Headers</strong></li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="img/image-2.png"
+        data-srcset="/posts/azureb2c-oauth-in-postman/img/image-2.png, img/image-2.png 1.5x, /posts/azureb2c-oauth-in-postman/img/image-2.png 2x"
+        data-sizes="auto"
+        alt="/posts/azureb2c-oauth-in-postman/img/image-2.png"
+        title="/posts/azureb2c-oauth-in-postman/img/image-2.png" /></p>
+<ul>
+<li>Next, on the right-hand side of the screen you will see some options for <strong>Configuring a New Token</strong>
+<ul>
+<li>Enter in a <strong>Token Name</strong>, this is just used as a friendly name in postman as far as I am aware.</li>
+<li>Choose a <strong>Grant Type</strong>, in this example I am using <strong>Authorisation Code</strong>.</li>
+<li>Untick <strong>Authorise using browser</strong>, and enter in a <strong>Callback URL</strong>, this must be also configured within your client settings with your provider, in my case within App Registrations within Azure B2C.</li>
+<li>Enter an <strong>Auth URL</strong>, in my case this is the authorisation endpoint in Azure B2C.</li>
+<li>Enter an <strong>Access Token URL</strong>, in my case this is the token URL from Azure B2C</li>
+<li>Enter in the <strong>Client ID</strong>, for Azure B2C I got this from app registrations</li>
+<li>Enter in the <strong>Client Secret</strong>, for Azure B2C I got this from app registrations</li>
+<li>For <strong>Scope</strong>, enter in the required scopes you want to test with, in my case this was <strong>profile openid email</strong></li>
+<li>Under <strong>State</strong> enter in anything you want, so for me this was just the word test.</li>
+<li>Under <strong>Client Authorisation</strong>, choose <strong>Send client credentials in body</strong>. I am not sure what this setting does or means.</li>
+</ul>
+</li>
+</ul>
+<p>See my image below</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="img/image-3.png"
+        data-srcset="/posts/azureb2c-oauth-in-postman/img/image-3.png, img/image-3.png 1.5x, /posts/azureb2c-oauth-in-postman/img/image-3.png 2x"
+        data-sizes="auto"
+        alt="/posts/azureb2c-oauth-in-postman/img/image-3.png"
+        title="/posts/azureb2c-oauth-in-postman/img/image-3.png" /></p>
+<ul>
+<li>Once you have filled in everything, click on <strong>Get New Access Token</strong>, and it will then take you through the login process. Complete the login process and a pop up should appear with an access token.</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="img/image-4.png"
+        data-srcset="/posts/azureb2c-oauth-in-postman/img/image-4.png, img/image-4.png 1.5x, /posts/azureb2c-oauth-in-postman/img/image-4.png 2x"
+        data-sizes="auto"
+        alt="/posts/azureb2c-oauth-in-postman/img/image-4.png"
+        title="/posts/azureb2c-oauth-in-postman/img/image-4.png" /></p>
+<ul>
+<li>Copy the output for <strong>id_token</strong> to your clipboard, and then go to <a href="https://jwt.io/" target="_blank" rel="noopener noreffer">https://jwt.io/</a></li>
+<li>Paste the encoded token in, and then the decoded token should appear.</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/jwt-token/">JWT Token</a>
+                </span><span><a href="/tags/oauth/">OAuth</a>
+                </span><span><a href="/tags/azure-b2c/">Azure B2C</a>
+                </span><span><a href="/tags/power-pages/">Power Pages</a>
+                </span><span><a href="/tags/postman/">Postman</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2024-07-01</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span></span>
+        </div></div><div class="post-nav"><a href="/posts/pfx-certificate-for-free-for-power-pages/" class="prev" rel="prev" title="PFX certificate for FREE for Power Pages"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/postman-to-azure-table-storage/" class="next" rel="next" title="Postman to Azure Table Storage">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
+</div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.3">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt <nil>"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/"></a></span></div>
+</div>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"Tech Tweedie","id-2":"Tech Tweedie"},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>

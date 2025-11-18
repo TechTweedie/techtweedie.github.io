@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Share Knowledge - Tag - Tech Tweedie</title>
+        <link>http://localhost:1313/tags/share-knowledge/</link>
+        <description>Share Knowledge - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/share-knowledge/" rel="self" type="application/rss+xml" /><item>
+    <title>How to Install Hugo on Windows 11</title>
+    <link>http://localhost:1313/posts/how-to-install-hugo-on-windows-11/</link>
+    <pubDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</pubDate><guid>http://localhost:1313/posts/how-to-install-hugo-on-windows-11/</guid>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Hugo is a open-source static site generator, designed for speed and flexibility, making it an excellent choice when creating modern websites, blogs, and documentation. In this guide, we&rsquo;ll walk you through the steps to install Hugo on your Windows 11 machine.</p>]]></description>
+</item>
+</channel>
+</rss>

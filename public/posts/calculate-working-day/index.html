@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=53760&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Calculate Working Day - Tech Tweedie</title><meta name="description" content="Beyond the low code, Tech Tweedie offers comprehensive guides and tutorials on Power Platform, Microsoft technologies, and Hugo. Learn how to build PCF controls, install Hugo on Windows 11, and more. Stay updated with our latest posts and in-depth content."><meta property="og:url" content="http://localhost:53760/posts/calculate-working-day/">
+  <meta property="og:site_name" content="Tech Tweedie">
+  <meta property="og:title" content="Calculate Working Day">
+  <meta property="og:description" content="Calculating working days in Power Automate can be challenging due to the various factors like weekends, holidays, and custom schedules. To help simplify this process, I’ve developed a tool designed to handle multiple working day scenarios with ease. This post walks you through the setup and usage of the tool, complete with step-by-step instructions.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-24T09:00:00+01:00">
+    <meta property="article:modified_time" content="2024-09-24T09:00:00+01:00">
+    <meta property="article:tag" content="Power Automate">
+    <meta property="og:image" content="http://localhost:53760/posts/calculate-working-day/featureImage.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:53760/posts/calculate-working-day/featureImage.png">
+  <meta name="twitter:title" content="Calculate Working Day">
+  <meta name="twitter:description" content="Calculating working days in Power Automate can be challenging due to the various factors like weekends, holidays, and custom schedules. To help simplify this process, I’ve developed a tool designed to handle multiple working day scenarios with ease. This post walks you through the setup and usage of the tool, complete with step-by-step instructions.">
+      <meta name="twitter:site" content="@itweedie">
+<meta name="application-name" content="Tech Tweedie">
+<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:53760/posts/calculate-working-day/" /><link rel="prev" href="http://localhost:53760/posts/240917-m365north/" /><link rel="next" href="http://localhost:53760/posts/241003-vd365ppug/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Calculate Working Day",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:53760\/posts\/calculate-working-day\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/localhost:53760\/posts\/calculate-working-day\/featureImage.png",
+                            "width":  1792 ,
+                            "height":  300 
+                        }],"genre": "posts","keywords": "Power Automate","wordcount":  1149 ,
+        "url": "http:\/\/localhost:53760\/posts\/calculate-working-day\/","datePublished": "2024-09-24T09:00:00+01:00","dateModified": "2024-09-24T09:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "itweedie"},"author": {
+                "@type": "Person",
+                "name": "itweedie"
+            },"description": "Calculating working days in Power Automate can be challenging due to the various factors like weekends, holidays, and custom schedules. To help simplify this process, I’ve developed a tool designed to handle multiple working day scenarios with ease. This post walks you through the setup and usage of the tool, complete with step-by-step instructions."
+    }
+    </script>
+        <script>
+          var _paq = window._paq = window._paq || [];
+           
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//mars.mightora.io/matomo/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '3']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        
+    </head><body data-header-desktop="auto" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/categories/community/" title="Supporting the Power Platform Community"> Community </a><a class="menu-item" href="/categories/how-to/" title="How to"> How to </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" rel="noopener noreffer" target="_blank"> YouTube </a><a class="menu-item" href="https://mightora.io/" rel="noopener noreffer" target="_blank"> Free Tools </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a class="menu-item" href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Tech Tweedie"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo-01_150x150.png"
+        data-srcset="/logo-01_150x150.png, /logo-01_150x150.png 1.5x, /logo-01_150x150.png 2x"
+        data-sizes="auto"
+        alt="/logo-01_150x150.png"
+        title="/logo-01_150x150.png" /><span class="header-title-pre"> </span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fa-solid fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fa-solid fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fa-solid fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/categories/community/" title="Supporting the Power Platform Community">Community</a><a class="menu-item" href="/categories/how-to/" title="How to">How to</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="https://www.youtube.com/channel/UCy1a2QSDVZNDwZf7KbNmoHQ" title="" rel="noopener noreffer" target="_blank">YouTube</a><a class="menu-item" href="https://mightora.io/" title="" rel="noopener noreffer" target="_blank">Free Tools</a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fa-solid fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="#" onclick="return false;" class="theme-switch" title="Switch Theme">
+                    <i class="fa-solid fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="disable"><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/calculate-working-day/featureImage.png"
+        data-srcset="/posts/calculate-working-day/featureImage.png, /posts/calculate-working-day/featureImage.png 1.5x, /posts/calculate-working-day/featureImage.png 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/featureImage.png"
+        title="Calculating working days in Power Automate can be challenging due to the various factors like weekends, holidays, and custom schedules. To help simplify this process, I’ve developed a tool designed to handle multiple working day scenarios with ease. This post walks you through the setup and usage of the tool, complete with step-by-step instructions." /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Calculate Working Day</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle fa-fw"></i>Author</a></span>&nbsp;<span class="post-category">published in <a href="/categories/azure/"><i class="fa-regular fa-folder fa-fw"></i>Azure</a></span></div>
+                <div class="post-meta-line"><span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-09-24">2024-09-24</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;1149 words</span>&nbsp;
+                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;6 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fa-solid fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#about-the-connector">About the connector</a>
+      <ul>
+        <li><a href="#find-out-more">Find out more</a></li>
+      </ul>
+    </li>
+    <li><a href="#steps-to-use-the-connector">Steps to use the connector</a>
+      <ul>
+        <li><a href="#step-1---create-a-power-automate-flow">Step 1 - Create a Power Automate Flow</a></li>
+        <li><a href="#step-2---lets-add-the-connector">Step 2 - Lets add the connector</a></li>
+        <li><a href="#step-3---enter-in-the-api-key">Step 3 - Enter in the API key</a></li>
+        <li><a href="#step-4---configure-basic-working-day">Step 4 - Configure Basic working Day</a></li>
+        <li><a href="#step-5---test-it">Step 5 - Test it</a></li>
+        <li><a href="#step-6---date-in-x-working-days">Step 6 - Date In X Working Days</a></li>
+        <li><a href="#step-7---test-date-in-x-working-days">Step 7 - Test Date In X Working Days</a></li>
+        <li><a href="#step-8---lets-complicate-it-a-little">Step 8 - Lets complicate it a little</a></li>
+        <li><a href="#step-9---lets-use-a-combination-of-all-calculated-working-day-endpoints">Step 9 - Lets use a Combination of all Calculated Working Day Endpoints</a></li>
+        <li><a href="#step-9---lets-test-combination-action">Step 9 - Lets test Combination action</a></li>
+        <li><a href="#step-10---lets-add-in-some-non-working-days">Step 10 - Lets add in some non-working days</a></li>
+        <li><a href="#step-10---combined-with-no-bank-holidays">Step 10 - Combined with no bank holidays</a></li>
+        <li><a href="#step-11---is-today-a-working-day">Step 11 - Is today a working day</a></li>
+        <li><a href="#step-12---first-and-last-working-days-of-a-month">Step 12 - First and Last working days of a month</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><p>Want to Calculate Working Day in Power Automate, having trubble with the number of variations. That’s why I’ve put together a nifty little tool to help out the community and make this process a whole lot easier. In this post, I&rsquo;ll guide you step-by-step through setting up and using this tool. Whether you’re trying to figure out the next working day, handle complex scheduling, or just want a smoother way to automate your date calculations, this is for you. Let’s dive in.</p>
+<p><strong>You can watch the accompanying YouTube video here</strong>
+
+
+    
+    <div class="video">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow="fullscreen"="allow="fullscreen"" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/QVesCxG9-80?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" title="YouTube video"
+      ></iframe>
+    </div>
+</p>
+<h2 id="about-the-connector">About the connector</h2>
+<p>The Calcualte Working Day connector is <strong>free</strong> to use for everyone, has been through the <strong>Certified Connector</strong> process, and has being created as a contrubution to the Power Platform Community.</p>
+<h3 id="find-out-more">Find out more</h3>
+<ul>
+<li>Microsoft Learn documentation <a href="https://learn.microsoft.com/en-us/connectors/calculateworkingday/" target="_blank" rel="noopener noreffer">here</a></li>
+<li>You can access more detailed documentation on the connector <a href="https://mightora.io/power-automate-connectors/calculate-working-day/" target="_blank" rel="noopener noreffer">here</a>.</li>
+</ul>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fa-solid fa-lightbulb fa-fw"></i>Tip<i class="details-icon fa-solid fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>Quick Start:</strong></p>
+<ol>
+<li>Add the step in to your Power Automate Flow</li>
+<li>If asked for API key please enter <code>free</code> and if asked for endpoint select <code>RapidAPI</code>.</li>
+<li>Pass in your date values.</li>
+</ol></div>
+        </div>
+    </div>
+<h2 id="steps-to-use-the-connector">Steps to use the connector</h2>
+<p>Below are a number of steps and examples covering how to use the Calculate Working Day connector.</p>
+<h3 id="step-1---create-a-power-automate-flow">Step 1 - Create a Power Automate Flow</h3>
+<p>We are going to create a Power Automate Flow with a manual trigger. We are also going to add a date field to that trigger.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="Step%201%20-%20Create%20a%20Power%20Automate%20Flow.gif"
+        data-srcset="/posts/calculate-working-day/Step%201%20-%20Create%20a%20Power%20Automate%20Flow.gif, Step%201%20-%20Create%20a%20Power%20Automate%20Flow.gif 1.5x, /posts/calculate-working-day/Step%201%20-%20Create%20a%20Power%20Automate%20Flow.gif 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/Step%201%20-%20Create%20a%20Power%20Automate%20Flow.gif"
+        title="/posts/calculate-working-day/Step%201%20-%20Create%20a%20Power%20Automate%20Flow.gif" /></p>
+<h3 id="step-2---lets-add-the-connector">Step 2 - Lets add the connector</h3>
+<p>Then we are going to search for the connector <code>Calculate Working Day</code> in the connector list.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="Step%202%20-%20Lets%20add%20the%20connector.gif"
+        data-srcset="/posts/calculate-working-day/Step%202%20-%20Lets%20add%20the%20connector.gif, Step%202%20-%20Lets%20add%20the%20connector.gif 1.5x, /posts/calculate-working-day/Step%202%20-%20Lets%20add%20the%20connector.gif 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/Step%202%20-%20Lets%20add%20the%20connector.gif"
+        title="/posts/calculate-working-day/Step%202%20-%20Lets%20add%20the%20connector.gif" /></p>
+<h3 id="step-3---enter-in-the-api-key">Step 3 - Enter in the API key</h3>
+<p>We are going to enter in the API key, currently you can just enter in <code>free</code> for the key. However we may need to change this in the future to put some throttling in place but we will always be <strong>FREE</strong>.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="Step%203%20-%20Enter%20in%20the%20API%20key.gif"
+        data-srcset="/posts/calculate-working-day/Step%203%20-%20Enter%20in%20the%20API%20key.gif, Step%203%20-%20Enter%20in%20the%20API%20key.gif 1.5x, /posts/calculate-working-day/Step%203%20-%20Enter%20in%20the%20API%20key.gif 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/Step%203%20-%20Enter%20in%20the%20API%20key.gif"
+        title="/posts/calculate-working-day/Step%203%20-%20Enter%20in%20the%20API%20key.gif" /></p>
+<h3 id="step-4---configure-basic-working-day">Step 4 - Configure Basic working Day</h3>
+<p>Lets configure our first connector, <strong>Basic Next Working Day</strong>, this connector will tell you when the next working day is, assuming working days are Monday to Friday.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="Step%204%20-%20Configure%20Basic%20working%20Day.gif"
+        data-srcset="/posts/calculate-working-day/Step%204%20-%20Configure%20Basic%20working%20Day.gif, Step%204%20-%20Configure%20Basic%20working%20Day.gif 1.5x, /posts/calculate-working-day/Step%204%20-%20Configure%20Basic%20working%20Day.gif 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/Step%204%20-%20Configure%20Basic%20working%20Day.gif"
+        title="/posts/calculate-working-day/Step%204%20-%20Configure%20Basic%20working%20Day.gif" /></p>
+<h3 id="step-5---test-it">Step 5 - Test it</h3>
+<p>Lets give that a test to see if it works.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="Step%205%20-%20Test%20it.gif"
+        data-srcset="/posts/calculate-working-day/Step%205%20-%20Test%20it.gif, Step%205%20-%20Test%20it.gif 1.5x, /posts/calculate-working-day/Step%205%20-%20Test%20it.gif 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/Step%205%20-%20Test%20it.gif"
+        title="/posts/calculate-working-day/Step%205%20-%20Test%20it.gif" /></p>
+<h3 id="step-6---date-in-x-working-days">Step 6 - Date In X Working Days</h3>
+<p>Lets complicate matters slightly, lets calculate the working day in <strong>4</strong> working days time, assuming that <strong>Monday</strong>, <strong>Tuesday</strong>, <strong>Wednesday</strong>, <strong>Thursday</strong>, <strong>Friday</strong> are all working days. This is symbolised by <code>1,2,3,4,5</code> in the <strong>Working Days</strong> input box.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="Step%206%20-%20Date%20In%20X%20Working%20Days.gif"
+        data-srcset="/posts/calculate-working-day/Step%206%20-%20Date%20In%20X%20Working%20Days.gif, Step%206%20-%20Date%20In%20X%20Working%20Days.gif 1.5x, /posts/calculate-working-day/Step%206%20-%20Date%20In%20X%20Working%20Days.gif 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/Step%206%20-%20Date%20In%20X%20Working%20Days.gif"
+        title="/posts/calculate-working-day/Step%206%20-%20Date%20In%20X%20Working%20Days.gif" /></p>
+<h3 id="step-7---test-date-in-x-working-days">Step 7 - Test Date In X Working Days</h3>
+<p>Now lets give that a test, to see if it works.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="Step%207%20-%20Lets%20test%20Date%20In%20X%20Working%20Days.gif"
+        data-srcset="/posts/calculate-working-day/Step%207%20-%20Lets%20test%20Date%20In%20X%20Working%20Days.gif, Step%207%20-%20Lets%20test%20Date%20In%20X%20Working%20Days.gif 1.5x, /posts/calculate-working-day/Step%207%20-%20Lets%20test%20Date%20In%20X%20Working%20Days.gif 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/Step%207%20-%20Lets%20test%20Date%20In%20X%20Working%20Days.gif"
+        title="/posts/calculate-working-day/Step%207%20-%20Lets%20test%20Date%20In%20X%20Working%20Days.gif" /></p>
+<h3 id="step-8---lets-complicate-it-a-little">Step 8 - Lets complicate it a little</h3>
+<p>Lets say we want to know the working day in <strong>4</strong> working days time, however only <strong>Monday</strong> and <strong>Wednesday</strong> are working days.</p>
+<p>We configure this by entering <code>1,3</code> in to the <strong>Working Days</strong> input box.</p>
+<p>As we can see it calculate the working day to be 7th October.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="Step%208%20-%20Lets%20complicate%20it%20a%20little.gif"
+        data-srcset="/posts/calculate-working-day/Step%208%20-%20Lets%20complicate%20it%20a%20little.gif, Step%208%20-%20Lets%20complicate%20it%20a%20little.gif 1.5x, /posts/calculate-working-day/Step%208%20-%20Lets%20complicate%20it%20a%20little.gif 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/Step%208%20-%20Lets%20complicate%20it%20a%20little.gif"
+        title="/posts/calculate-working-day/Step%208%20-%20Lets%20complicate%20it%20a%20little.gif" /></p>
+<h3 id="step-9---lets-use-a-combination-of-all-calculated-working-day-endpoints">Step 9 - Lets use a Combination of all Calculated Working Day Endpoints</h3>
+<p>Using the action <strong>Combination of all Calculated Working Day Endpoints</strong>, lets set it again, but this time using the <strong>Trigger Date</strong> field as the <strong>Input Date</strong> on the connector.</p>
+<p>We also want to set it so that <strong>Working Days</strong> are only a <strong>Monday</strong> and <strong>Wednesday</strong>.</p>
+<p>We also want to add in a filter for <strong>Scottish bank holidays</strong>.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="Step%209%20-%20Combination%20of%20all.gif"
+        data-srcset="/posts/calculate-working-day/Step%209%20-%20Combination%20of%20all.gif, Step%209%20-%20Combination%20of%20all.gif 1.5x, /posts/calculate-working-day/Step%209%20-%20Combination%20of%20all.gif 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/Step%209%20-%20Combination%20of%20all.gif"
+        title="/posts/calculate-working-day/Step%209%20-%20Combination%20of%20all.gif" /></p>
+<h3 id="step-9---lets-test-combination-action">Step 9 - Lets test Combination action</h3>
+<p>Ok, lets give that a test, we can see it has returned some useful data for us. The connectors has told us based on what we input that;</p>
+<ul>
+<li>The <strong>Next working day</strong> is <code>2024-12-30</code></li>
+<li>The <strong>Working day in x days</strong> is <code>2025-01-13</code></li>
+</ul>
+<p>Because this is a combination of all our end points it has given us some other information as well;</p>
+<ul>
+<li>The <strong>First Working day of month</strong> is <code>2024-12-04</code></li>
+<li>The <strong>Last Working day of month</strong> is <code>2024-12-30</code></li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="Step%209%20-%20Lets%20test%20Combination%20action.gif"
+        data-srcset="/posts/calculate-working-day/Step%209%20-%20Lets%20test%20Combination%20action.gif, Step%209%20-%20Lets%20test%20Combination%20action.gif 1.5x, /posts/calculate-working-day/Step%209%20-%20Lets%20test%20Combination%20action.gif 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/Step%209%20-%20Lets%20test%20Combination%20action.gif"
+        title="/posts/calculate-working-day/Step%209%20-%20Lets%20test%20Combination%20action.gif" /></p>
+<h3 id="step-10---lets-add-in-some-non-working-days">Step 10 - Lets add in some non-working days</h3>
+<p>Lets take this one step further, lets add in some <strong>Non working days</strong> as <code>2024-12-23,2024-12-24,2024-12-27,2024-12-30,2024-12-31</code> as maybe your business is closed over this period. We are also going to change our <strong>Input Date</strong> to be <code>2024-12-20</code>.</p>
+<p>With this new information what has the connector told us;</p>
+<ul>
+<li>Is input date a working day <code>No</code></li>
+<li>Next working day <code>2025-01-06</code></li>
+<li>Working day in x days <code>2025-01-15</code></li>
+<li>First Working day of month <code>2024-12-04</code></li>
+<li>Last working day of month <code>2024-12-18</code></li>
+</ul>
+<p>Currently this end point only supports UK Bank Holidays, there is an update coming which will allow you to select none for bank holidays.</p>
+<p>However we can enter a blank custom value to not filter out any bank holidays.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="Step%209%20-%20add%20non-working%20days.gif"
+        data-srcset="/posts/calculate-working-day/Step%209%20-%20add%20non-working%20days.gif, Step%209%20-%20add%20non-working%20days.gif 1.5x, /posts/calculate-working-day/Step%209%20-%20add%20non-working%20days.gif 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/Step%209%20-%20add%20non-working%20days.gif"
+        title="/posts/calculate-working-day/Step%209%20-%20add%20non-working%20days.gif" /></p>
+<h3 id="step-10---combined-with-no-bank-holidays">Step 10 - Combined with no bank holidays</h3>
+<p>Changing the settings of our connector to work with no bank holidays, lets use the same settings as above but this time changing the <strong>Filter bank holidays for Country</strong> to no value.</p>
+<p>We are also going to keep our <strong>Input Date</strong> to be <code>2024-12-20</code>.</p>
+<p>With this new information what has the connector told us;</p>
+<ul>
+<li>Is input date a working day <code>No</code></li>
+<li>Next working day <code>2024-12-25</code></li>
+<li>Working day in x days <code>2025-01-08</code></li>
+<li>First Working day of month <code>2024-12-02</code></li>
+<li>Last working day of month <code>2024-12-25</code></li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="msedge_JUEtbZwLOg.gif"
+        data-srcset="/posts/calculate-working-day/msedge_JUEtbZwLOg.gif, msedge_JUEtbZwLOg.gif 1.5x, /posts/calculate-working-day/msedge_JUEtbZwLOg.gif 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/msedge_JUEtbZwLOg.gif"
+        title="/posts/calculate-working-day/msedge_JUEtbZwLOg.gif" /></p>
+<h3 id="step-11---is-today-a-working-day">Step 11 - Is today a working day</h3>
+<p>Lets take a look at another connector, <strong>Is Today A Working Day</strong>, this one tells you if today is a working day or not based on the <strong>Working Days</strong> entered.</p>
+<p>Trying this connector out, we enter that our only working day is a <strong>Friday</strong> by using <code>5</code>.</p>
+<p>As you can see we are testing this on a Monday and therefore it tells us that today is not one of the working days.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="Step%2011%20-%20Is%20today%20a%20working%20day.gif"
+        data-srcset="/posts/calculate-working-day/Step%2011%20-%20Is%20today%20a%20working%20day.gif, Step%2011%20-%20Is%20today%20a%20working%20day.gif 1.5x, /posts/calculate-working-day/Step%2011%20-%20Is%20today%20a%20working%20day.gif 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/Step%2011%20-%20Is%20today%20a%20working%20day.gif"
+        title="/posts/calculate-working-day/Step%2011%20-%20Is%20today%20a%20working%20day.gif" /></p>
+<h3 id="step-12---first-and-last-working-days-of-a-month">Step 12 - First and Last working days of a month</h3>
+<p>We also have an action called <strong>First And Last Working Day Of Month</strong>, this action will tell you the first and the last working days of the month.</p>
+<p>In this example we have entered in;</p>
+<ul>
+<li>Working Days as being <strong>Monday</strong>, <strong>Tuesday</strong>, <strong>Wednesday</strong> by entering <code>1,2,3</code></li>
+</ul>
+<p>In the response we can see that based on the date provided it has calculated the first and last working day of the month to be;</p>
+<ul>
+<li>First Working day as <code>2024-09-02</code></li>
+<li>Last working day as <code>2024-09-30</code></li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="Step%2012%20-%20First%20and%20Last%20working%20days%20of%20a%20month.gif"
+        data-srcset="/posts/calculate-working-day/Step%2012%20-%20First%20and%20Last%20working%20days%20of%20a%20month.gif, Step%2012%20-%20First%20and%20Last%20working%20days%20of%20a%20month.gif 1.5x, /posts/calculate-working-day/Step%2012%20-%20First%20and%20Last%20working%20days%20of%20a%20month.gif 2x"
+        data-sizes="auto"
+        alt="/posts/calculate-working-day/Step%2012%20-%20First%20and%20Last%20working%20days%20of%20a%20month.gif"
+        title="/posts/calculate-working-day/Step%2012%20-%20First%20and%20Last%20working%20days%20of%20a%20month.gif" /></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>With the various connectors outlined in this guide, you now have a powerful toolkit to handle a wide range of working day calculations within Power Automate. Whether you need to find the next working day, calculate a future date, or exclude specific holidays and non-working days, these connectors make the process seamless and adaptable to your specific needs.</p>
+<p>This tool is designed to be flexible and user-friendly, allowing you to quickly and accurately perform complex date calculations with ease. And while this guide focused on basic scenarios, the connectors are capable of handling even more intricate requirements as you explore their full potential.</p>
+<p>As always, I&rsquo;m keen to hear your feedback and see how you implement these solutions. If you have any questions or suggestions, feel free to reach out—let&rsquo;s continue to make Power Automate workflows even more powerful together!</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/power-automate/">Power Automate</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2024-09-24</span>
+            </div><div class="post-info-mod"></div>
+        </div><div class="post-info-share">
+            <span></span>
+        </div></div><div class="post-nav"><a href="/posts/240917-m365north/" class="prev" rel="prev" title="At the M365 North User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – M365 North User Group"><i class="fa-solid fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/241003-vd365ppug/" class="next" rel="next" title="At the Virtual Power Platform User Group Presenting - Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment">Next Post<i class="fa-solid fa-angle-right fa-fw"></i></a></div></div>
+</div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line">Tech Tweedie Blog</div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.126.3">Hugo</a> | Theme - <a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt <nil>"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>
+        </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/"></a></span></div>
+</div>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fa-solid fa-chevron-up fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"Tech Tweedie","id-2":"Tech Tweedie"},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>

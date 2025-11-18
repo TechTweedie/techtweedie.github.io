@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cloudflare - Tag - Tech Tweedie</title>
+        <link>http://localhost:53760/tags/cloudflare/</link>
+        <description>Cloudflare - Tag - Tech Tweedie</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 17 Sep 2023 19:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/cloudflare/" rel="self" type="application/rss+xml" /><item>
+    <title>Too Many Redirects on WordPress</title>
+    <link>http://localhost:53760/posts/too-many-redirects-on-wordpress/</link>
+    <pubDate>Sun, 17 Sep 2023 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/too-many-redirects-on-wordpress/</guid>
+    <description><![CDATA[Introduction I recently set up a new WordPress website for a friend. It was late one evening, and I was in a bit of a rush; as with many people online, I chose to use Cloudflare to protect the website.
+However, problems arose after setting up the WordPress website when I configured the SSL/TLS side of things.
+I switched on Cloudflare’s proxy as normal.
+So far so good.
+Then I continued to edit the site before handing it over to my friend; however, I noticed I was getting load errors.]]></description>
+</item>
+</channel>
+</rss>
