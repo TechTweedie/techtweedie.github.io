@@ -17,7 +17,7 @@ resources:
 - name: "featured-image-preview"
   src: "large.png"
 lightgallery: true
-draft: false
+draft: false 
 ---
 
 ## Your First Azure DevOps Pipeline for Power Platform – A Complete Beginner’s Guide
