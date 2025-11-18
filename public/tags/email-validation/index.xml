@@ -1,12 +1,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Email Validation - Tag - Tech Tweedie</title>
-        <link>http://localhost:53760/tags/email-validation/</link>
+        <link>http://localhost:1313/tags/email-validation/</link>
         <description>Email Validation - Tag - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 20 May 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/email-validation/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 20 May 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/email-validation/" rel="self" type="application/rss+xml" /><item>
     <title>Power Platform Clinic – Episode 2</title>
-    <link>http://localhost:53760/posts/250520-power-platform-clinic-episode-two/</link>
-    <pubDate>Tue, 20 May 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250520-power-platform-clinic-episode-two/</guid>
+    <link>http://localhost:1313/posts/250520-power-platform-clinic-episode-two/</link>
+    <pubDate>Tue, 20 May 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250520-power-platform-clinic-episode-two/</guid>
     <description><![CDATA[Welcome to Episode 2 of the Power Platform Clinic with Duncan and Ian!
 In this episode:
 ✅ Validating Email Domains with Power Automate Ian shares a powerful, free way to validate email domains using Power Automate, showing:

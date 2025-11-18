@@ -1,12 +1,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>External ID - Tag - Tech Tweedie</title>
-        <link>http://localhost:53760/tags/external-id/</link>
+        <link>http://localhost:1313/tags/external-id/</link>
         <description>External ID - Tag - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 24 Jun 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/external-id/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 24 Jun 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/external-id/" rel="self" type="application/rss+xml" /><item>
     <title>Walkthrough Customising Entra External ID for Power Pages</title>
-    <link>http://localhost:53760/posts/250624-power-pages-customise-entra-external-id/</link>
-    <pubDate>Tue, 24 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250624-power-pages-customise-entra-external-id/</guid>
+    <link>http://localhost:1313/posts/250624-power-pages-customise-entra-external-id/</link>
+    <pubDate>Tue, 24 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250624-power-pages-customise-entra-external-id/</guid>
     <description><![CDATA[Walkthrough Customising Entra External ID for Power Pages Introduction Are you using Entra External ID with Power Pages and want to customise the login experience? This guide walks through exactly that — applying your own branding, images, colours, and layout to the Entra login screen for external users.
 This is especially useful for creating a polished, consistent experience when your users are accessing Power Pages from outside your organisation.
 If you’re new to setting up Entra External ID for Power Pages, I’ve also got a full video walkthrough on how to configure that — I’ll link it below.]]></description>

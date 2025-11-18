@@ -1,66 +1,66 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - Tech Tweedie</title>
-        <link>http://localhost:53760/tags/</link>
+        <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
     <title>DevOps</title>
-    <link>http://localhost:53760/tags/devops/</link>
-    <pubDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/tags/devops/</guid>
+    <link>http://localhost:1313/tags/devops/</link>
+    <pubDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/devops/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Power Platform</title>
-    <link>http://localhost:53760/tags/power-platform/</link>
-    <pubDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/tags/power-platform/</guid>
+    <link>http://localhost:1313/tags/power-platform/</link>
+    <pubDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-platform/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>AI</title>
-    <link>http://localhost:53760/tags/ai/</link>
-    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/tags/ai/</guid>
+    <link>http://localhost:1313/tags/ai/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/ai/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Canvas Apps</title>
-    <link>http://localhost:53760/tags/canvas-apps/</link>
-    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/tags/canvas-apps/</guid>
+    <link>http://localhost:1313/tags/canvas-apps/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/canvas-apps/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Community Event</title>
-    <link>http://localhost:53760/tags/community-event/</link>
-    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/tags/community-event/</guid>
+    <link>http://localhost:1313/tags/community-event/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/community-event/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Microsoft 365</title>
-    <link>http://localhost:53760/tags/microsoft-365/</link>
-    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/tags/microsoft-365/</guid>
+    <link>http://localhost:1313/tags/microsoft-365/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/microsoft-365/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Power Apps</title>
-    <link>http://localhost:53760/tags/power-apps/</link>
-    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/tags/power-apps/</guid>
+    <link>http://localhost:1313/tags/power-apps/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-apps/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Power Automate</title>
-    <link>http://localhost:53760/tags/power-automate/</link>
-    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/tags/power-automate/</guid>
+    <link>http://localhost:1313/tags/power-automate/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-automate/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Azure DevOps Extension</title>
-    <link>http://localhost:53760/tags/azure-devops-extension/</link>
-    <pubDate>Thu, 04 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/tags/azure-devops-extension/</guid>
+    <title>Automated Testing</title>
+    <link>http://localhost:1313/tags/automated-testing/</link>
+    <pubDate>Wed, 10 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/automated-testing/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Documentation</title>
-    <link>http://localhost:53760/tags/documentation/</link>
-    <pubDate>Thu, 04 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/tags/documentation/</guid>
+    <title>Azure DevOps</title>
+    <link>http://localhost:1313/tags/azure-devops/</link>
+    <pubDate>Wed, 10 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/azure-devops/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

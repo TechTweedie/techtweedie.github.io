@@ -6,7 +6,7 @@ languageCode = "en"
 title = "Tech Tweedie"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "FeelItCopy"
+theme = "FeelIt"
 
 [params]
   # FeelIt theme version

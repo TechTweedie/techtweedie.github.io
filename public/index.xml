@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tech Tweedie</title>
-        <link>http://localhost:53760/</link>
+        <link>http://localhost:1313/</link>
         <description>Beyond the low code, Tech Tweedie offers comprehensive guides and tutorials on Power Platform, Microsoft technologies, and Hugo. Learn how to build PCF controls, install Hugo on Windows 11, and more. Stay updated with our latest posts and in-depth content.</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</lastBuildDate>
-            <atom:link href="http://localhost:53760/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Generate Power Platform Solution Documentation with Azure DevOps</title>
-    <link>http://localhost:53760/posts/251118-your-first-azure-devops-pipeline-for-power-platform/</link>
-    <pubDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/251118-your-first-azure-devops-pipeline-for-power-platform/</guid>
+    <link>http://localhost:1313/posts/251118-your-first-azure-devops-pipeline-for-power-platform/</link>
+    <pubDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/251118-your-first-azure-devops-pipeline-for-power-platform/</guid>
     <description><![CDATA[Your First Azure DevOps Pipeline for Power Platform – A Complete Beginner’s Guide Have you ever wondered how to set up Azure DevOps pipelines for the Power Platform?
 Ever wished you could export your solutions safely, run tests, add security checks, generate documentation, or deploy across tenants with confidence?
 All of this becomes simple once you introduce Azure DevOps into your Power Platform ALM story — and in this guide (based on my YouTube walkthrough), I’ll show you exactly how to build your first Azure DevOps pipeline.]]></description>
 </item>
 <item>
-    <title>D365 &amp; Power Platform UG North East – June 2025 Meetup</title>
-    <link>http://localhost:53760/posts/250930-d365ppugne/</link>
-    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250930-d365ppugne/</guid>
+    <title>D365 &amp; Power Platform UG North East – September 2025 Meetup</title>
+    <link>http://localhost:1313/posts/250930-d365ppugne/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250930-d365ppugne/</guid>
     <description><![CDATA[D365 &amp; Power Platform UG North East – September 2025 Meetup 📅 Date: Tuesday, September 30, 2025
 🕕 Time: 6:00 PM – 8:10 PM BST
 📍 Location: Haylofts, 5 Saint Thomas&rsquo; Street, Newcastle upon Tyne
@@ -26,62 +26,72 @@ Agata Guziur Justin Wilkinson Ian Tweedie Together, we’re bringing the North E
 Connect. Learn. Share.]]></description>
 </item>
 <item>
+    <title>Playwright for Makers – Bringing One-Click UI Tests to Model-Driven Apps &amp; Power Pages</title>
+    <link>http://localhost:1313/posts/250910-d365ppugnational/</link>
+    <pubDate>Wed, 10 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250910-d365ppugnational/</guid>
+    <description><![CDATA[📅 Date: Wednesday, September 10, 2025
+🕒 Time: 10:45 AM – 11:30 AM BST
+📍 Location: UK D365 and Power Platform User Group, Microsoft UA92 Manchester, Room 102/103
+🎟️ Session Link: https://d365ppug-national-10092025.sessionize.com/session/991575
+Session Overview In this hands-on, demo-heavy session, Ian Tweedie (TechTweedie), Power Platform Technical Consultant at Capgemini, will showcase how to integrate automated UI testing into your low-code CI/CD workflows. Using the FREE Open Source Playwright for Power Platform DevOps Extension, you’ll learn how to:]]></description>
+</item>
+<item>
     <title>Generate Power Platform Solution Documentation with Azure DevOps</title>
-    <link>http://localhost:53760/posts/250904-power-platform-documentation-extension/</link>
-    <pubDate>Thu, 04 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250904-power-platform-documentation-extension/</guid>
+    <link>http://localhost:1313/posts/250904-power-platform-documentation-extension/</link>
+    <pubDate>Thu, 04 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250904-power-platform-documentation-extension/</guid>
     <description><![CDATA[Instantly Document Your Power Platform Solutions with Azure DevOps Are you tired of manually documenting your Power Platform solutions? Struggling to keep your tables, relationships, option sets, and workflows up to date for your team or clients? The Power Platform Documentation Extension for Azure DevOps is designed to solve these problems—automatically. This tool helps you generate clear, accurate, and SEO-friendly Markdown documentation for your wikis and repositories, saving you hours and improving collaboration.]]></description>
 </item>
 <item>
     <title>Power Platform Clinic Episode 7: Automatically Tag DevOps Tickets by Email</title>
-    <link>http://localhost:53760/posts/250720-power-platform-clinic-episode-seven/</link>
-    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250720-power-platform-clinic-episode-seven/</guid>
+    <link>http://localhost:1313/posts/250720-power-platform-clinic-episode-seven/</link>
+    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250720-power-platform-clinic-episode-seven/</guid>
     <description><![CDATA[Auto-Tag DevOps Tickets via Email using Power Automate In this episode of the Power Platform Clinic, we explore how to keep Azure DevOps tickets updated when discussions happen over email.
 Why It’s Handy You often need to chase suppliers or clients via email. This approach helps thread those email updates directly into DevOps using plus addressing and Power Automate.
 What You’ll Need A shared mailbox that supports plus addressing Power Automate Azure DevOps API 🗺️ Flow Overview 🔧 Key Expressions Extract Recipient Email (Uppercase &amp; Split) @toUpper(triggerOutputs()?]]></description>
 </item>
 <item>
     <title>Running ADVANCED Playwright Tests in Azure DevOps for Power Platform Apps</title>
-    <link>http://localhost:53760/posts/250715-running-advanced-playwright-tests-in-azure-devops-for-power-platform/</link>
-    <pubDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250715-running-advanced-playwright-tests-in-azure-devops-for-power-platform/</guid>
+    <link>http://localhost:1313/posts/250715-running-advanced-playwright-tests-in-azure-devops-for-power-platform/</link>
+    <pubDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250715-running-advanced-playwright-tests-in-azure-devops-for-power-platform/</guid>
     <description><![CDATA[🧪 Playwright + Power Platform + DevOps Pipelines? Yes please! Just dropped a new video where I walk through the latest update to my Playwright for Power Platform DevOps Extension. This time, we’re not just running tests — we’re dynamically assigning roles, business units, and teams to a test user before your Playwright test runs, and then removing them right after. Clean, controlled, reusable testing every time ✅
 🎯 What&rsquo;s new in this release?]]></description>
 </item>
 <item>
     <title>Power Platform Clinic - Episode 6: Certs, Consultancy, and Career Conversations</title>
-    <link>http://localhost:53760/posts/250713-power-platform-clinic-episode-six/</link>
-    <pubDate>Sun, 13 Jul 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250713-power-platform-clinic-episode-six/</guid>
+    <link>http://localhost:1313/posts/250713-power-platform-clinic-episode-six/</link>
+    <pubDate>Sun, 13 Jul 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250713-power-platform-clinic-episode-six/</guid>
     <description><![CDATA[Power Platform Clinic Episode 6 – Certs, Consultancy, and Career Conversations In this episode of the Power Platform Clinic, Duncan and I get stuck into some big-picture questions from the community—about Microsoft certifications, life as a consultant, and how to grow your career across the Power Platform and beyond.
 🎓 Are Microsoft Certifications Worth It? Spoiler: Yes, but with caveats.
 I share how I started collecting Microsoft certs back when they were being offered free (shoutout to the days of the 900 series!]]></description>
 </item>
 <item>
     <title>Running Playwright Tests in Azure DevOps for Power Platform Apps</title>
-    <link>http://localhost:53760/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/</link>
-    <pubDate>Wed, 02 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/</guid>
+    <link>http://localhost:1313/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/</link>
+    <pubDate>Wed, 02 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/</guid>
     <description><![CDATA[Introduction Are you looking to easily run Playwright tests for your Power Platform apps within an Azure DevOps pipeline? In this tutorial, I show you how to use my Playwright for Power Platform DevOps extension to run tests against your model-driven app, capture reports, and publish results.
 Below is the embedded video:
 What you will learn How to install the Playwright for Power Platform DevOps extension How to write a Playwright test that creates a Contact record using fake data How to set up your Azure DevOps pipeline to run these tests, archive reports, and publish results Code Snippet – Playwright Test Here is the test script used in the video to add a contact with fake data:]]></description>
 </item>
 <item>
     <title>Power Platform Clinic – Episode 5: Converting Forms with Images to PDF</title>
-    <link>http://localhost:53760/posts/250625-power-platform-clinic-episode-five/</link>
-    <pubDate>Wed, 25 Jun 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250625-power-platform-clinic-episode-five/</guid>
+    <link>http://localhost:1313/posts/250625-power-platform-clinic-episode-five/</link>
+    <pubDate>Wed, 25 Jun 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250625-power-platform-clinic-episode-five/</guid>
     <description><![CDATA[Power Platform Clinic – Episode 5: Converting Forms with Images to PDF Introduction In this episode of the Power Platform Clinic, Ian (that’s me!) tackles a real-world community question:
 Is it possible to convert a Microsoft Form that contains both text and images into a PDF using Power Automate?
 As usual, we go deep on the technical side—pulling data, parsing responses, handling images, encoding files as base64, generating dynamic HTML, and finally converting it all to a PDF and emailing it out.]]></description>
 </item>
 <item>
     <title>Walkthrough Customising Entra External ID for Power Pages</title>
-    <link>http://localhost:53760/posts/250624-power-pages-customise-entra-external-id/</link>
-    <pubDate>Tue, 24 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250624-power-pages-customise-entra-external-id/</guid>
+    <link>http://localhost:1313/posts/250624-power-pages-customise-entra-external-id/</link>
+    <pubDate>Tue, 24 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250624-power-pages-customise-entra-external-id/</guid>
     <description><![CDATA[Walkthrough Customising Entra External ID for Power Pages Introduction Are you using Entra External ID with Power Pages and want to customise the login experience? This guide walks through exactly that — applying your own branding, images, colours, and layout to the Entra login screen for external users.
 This is especially useful for creating a polished, consistent experience when your users are accessing Power Pages from outside your organisation.
 If you’re new to setting up Entra External ID for Power Pages, I’ve also got a full video walkthrough on how to configure that — I’ll link it below.]]></description>
 </item>
 <item>
     <title>At the National Power Platform User Day: Build Your First DevOps Pipeline for the Power Platform</title>
-    <link>http://localhost:53760/posts/250627-d365ppugnational/</link>
-    <pubDate>Sun, 22 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250627-d365ppugnational/</guid>
+    <link>http://localhost:1313/posts/250627-d365ppugnational/</link>
+    <pubDate>Sun, 22 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250627-d365ppugnational/</guid>
     <description><![CDATA[Build Your First DevOps Pipeline for the Power Platform 📅 Date: Friday, June 27, 2025
 🕒 Time: 2:15 PM – 3:00 PM BST
 📍 Location: National Usergroup, Room G8
@@ -91,8 +101,8 @@ In this hands-on, beginner-friendly session, Ian Tweedie (TechTweedie), Power Pl
 </item>
 <item>
     <title>Power Platform Clinic – Episode 4: Power Pages Authentication Options and Developer Accounts</title>
-    <link>http://localhost:53760/posts/250603-power-platform-clinic-episode-four/</link>
-    <pubDate>Tue, 03 Jun 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250603-power-platform-clinic-episode-four/</guid>
+    <link>http://localhost:1313/posts/250603-power-platform-clinic-episode-four/</link>
+    <pubDate>Tue, 03 Jun 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250603-power-platform-clinic-episode-four/</guid>
     <description><![CDATA[Welcome to Episode 2 of the Power Platform Clinic with Duncan Boyne and Ian Tweedy.
 In this episode, Duncan and Ian dive deep into:
 🔐 Power Pages Authentication Options Ian breaks down:
@@ -100,8 +110,8 @@ The difference between public and private modes in Power Pages. How Entra ID, Ex
 </item>
 <item>
     <title>D365 &amp; Power Platform UG North East – June 2025 Meetup</title>
-    <link>http://localhost:53760/posts/250626-d365ppugne/</link>
-    <pubDate>Sun, 01 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250626-d365ppugne/</guid>
+    <link>http://localhost:1313/posts/250626-d365ppugne/</link>
+    <pubDate>Sun, 01 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250626-d365ppugne/</guid>
     <description><![CDATA[D365 &amp; Power Platform UG North East – June 2025 Meetup 📅 Date: Thursday, June 26, 2025
 🕕 Time: 6:00 PM – 8:10 PM BST
 📍 Location: Haylofts, 5 Saint Thomas&rsquo; Street, Newcastle upon Tyne
@@ -112,24 +122,24 @@ Connect. Learn. Share.]]></description>
 </item>
 <item>
     <title>Power Platform Clinic – Episode 3: Calling a Dad Joke API and Custom Visuals in Power BI Clinic</title>
-    <link>http://localhost:53760/posts/250526-power-platform-clinic-episode-three/</link>
-    <pubDate>Mon, 26 May 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250526-power-platform-clinic-episode-three/</guid>
+    <link>http://localhost:1313/posts/250526-power-platform-clinic-episode-three/</link>
+    <pubDate>Mon, 26 May 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250526-power-platform-clinic-episode-three/</guid>
     <description><![CDATA[Welcome back to the Power Platform Clinic, your weekly check-in for diagnosing everyday Power Platform challenges — and fixing them without the consulting invoice.
 Whether you&rsquo;re a maker, a consultant, or someone who just typed &ldquo;Power Automate funny API&rdquo; into Google — you’re in the right place.
 In this week’s episode (Episode 3!), co-hosted by myself (Tech Tweedie) and Duncan (Power BI Kinda Guy), we tackled two questions you’ve either already asked — or definitely will soon.]]></description>
 </item>
 <item>
     <title>Walk through Power Pages with Entra External ID</title>
-    <link>http://localhost:53760/posts/250524-power-pages-with-entra-external-id/</link>
-    <pubDate>Sun, 25 May 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250524-power-pages-with-entra-external-id/</guid>
+    <link>http://localhost:1313/posts/250524-power-pages-with-entra-external-id/</link>
+    <pubDate>Sun, 25 May 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250524-power-pages-with-entra-external-id/</guid>
     <description><![CDATA[Introduction Need to enable Entra External ID sign-in for your Power Pages site? Whether you&rsquo;re looking to support customer access or enable collaboration with external users, the combination of Power Pages and Entra ID is a powerful way to ensure secure, identity-driven access to your platform.
 In this walkthrough video, I demonstrate how to integrate Entra External ID with a Power Pages site, covering:
 Setting up Entra External ID Configuring identity providers Connecting the authentication flow with your Power Pages site Testing the login experience from an external user’s perspective Why Use Entra External ID with Power Pages?]]></description>
 </item>
 <item>
     <title>At the Norfolk Power Platform User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</title>
-    <link>http://localhost:53760/posts/250522-nppug/</link>
-    <pubDate>Thu, 22 May 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250522-nppug/</guid>
+    <link>http://localhost:1313/posts/250522-nppug/</link>
+    <pubDate>Thu, 22 May 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250522-nppug/</guid>
     <description><![CDATA[📅 Date: 22nd May 2025
 📍 Location: Norwich Digital Hub
 🍕 Pizza included!
@@ -140,8 +150,8 @@ Using Power Automate to generate custom reports securely. How to leverage an Azu
 </item>
 <item>
     <title>Power Platform Clinic – Episode 2</title>
-    <link>http://localhost:53760/posts/250520-power-platform-clinic-episode-two/</link>
-    <pubDate>Tue, 20 May 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250520-power-platform-clinic-episode-two/</guid>
+    <link>http://localhost:1313/posts/250520-power-platform-clinic-episode-two/</link>
+    <pubDate>Tue, 20 May 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250520-power-platform-clinic-episode-two/</guid>
     <description><![CDATA[Welcome to Episode 2 of the Power Platform Clinic with Duncan and Ian!
 In this episode:
 ✅ Validating Email Domains with Power Automate Ian shares a powerful, free way to validate email domains using Power Automate, showing:
@@ -149,16 +159,16 @@ Why validating the entire email address is tricky without sending a link How to 
 </item>
 <item>
     <title>Show and Hide Tabs Based on Status Reason in Model Driven Apps</title>
-    <link>http://localhost:53760/posts/250412-show-hide-status-reason/</link>
-    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</pubDate><guid>http://localhost:53760/posts/250412-show-hide-status-reason/</guid>
+    <link>http://localhost:1313/posts/250412-show-hide-status-reason/</link>
+    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/250412-show-hide-status-reason/</guid>
     <description><![CDATA[Introduction Ever wanted to show or hide a tab in a Model-Driven App based on the Status Reason of a record? Maybe you’ve got a section of a form that’s only relevant when a record hits a specific state — like “Approved” or “Rejected”?
 This post walks you through a reusable JavaScript snippet I’ve shared on GitHub that dynamically toggles tab visibility based on the statuscode field.
 Why This Is Useful Sometimes users don’t need to see everything all the time.]]></description>
 </item>
 <item>
     <title>Power Platform Clinic Episode 1</title>
-    <link>http://localhost:53760/posts/250412-power-platform-clinic-episode-one/</link>
-    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250412-power-platform-clinic-episode-one/</guid>
+    <link>http://localhost:1313/posts/250412-power-platform-clinic-episode-one/</link>
+    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250412-power-platform-clinic-episode-one/</guid>
     <description><![CDATA[Welcome to the very first episode of Power Platform Clinic with Duncan and Ian.
 In this episode:
 ✅ Topic 1 – Show/Hide Tabs Dynamically in Model Driven Apps Ian walks through how to show or hide a whole tab in a model-driven app based on the value of a field, such as Status Reason. The demo covers:
@@ -166,8 +176,8 @@ Why you might want to hide/show tabs A full explanation of the JavaScript snippe
 </item>
 <item>
     <title>D365 &amp; Power Platform UG North East – March 2025 Meetup</title>
-    <link>http://localhost:53760/posts/250327-d365ppugne/</link>
-    <pubDate>Thu, 27 Mar 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250327-d365ppugne/</guid>
+    <link>http://localhost:1313/posts/250327-d365ppugne/</link>
+    <pubDate>Thu, 27 Mar 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250327-d365ppugne/</guid>
     <description><![CDATA[D365 &amp; Power Platform UG North East – July 2025 Meetup
 📅 Date: Thursday, 27th March 2025
 🕕 Time: 6:30 PM – 8:30 PM BST
@@ -177,8 +187,8 @@ Agata Guziur Justin Wilkinson Ian Tweedie Together, we’re bringing the North E
 </item>
 <item>
     <title>At the Scottish Power Platform User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Scottish Power Platform User Group</title>
-    <link>http://localhost:53760/posts/250325-sppug/</link>
-    <pubDate>Tue, 25 Mar 2025 18:00:00 &#43;0000</pubDate><guid>http://localhost:53760/posts/250325-sppug/</guid>
+    <link>http://localhost:1313/posts/250325-sppug/</link>
+    <pubDate>Tue, 25 Mar 2025 18:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/250325-sppug/</guid>
     <description><![CDATA[📅 Date: 25th March 2025
 📍 Location: SWG3 Glasgow (100 Eastvale Pl, Stobcross Rd, Glasgow City)
 🕕 Time: 6:00 PM to 9:00 PM GMT
@@ -189,23 +199,23 @@ Using Power Automate to generate custom reports securely. How to leverage an Azu
 </item>
 <item>
     <title>Set folder permissions in SharePoint with Power Automate Flow</title>
-    <link>http://localhost:53760/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</link>
-    <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</guid>
+    <link>http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</link>
+    <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</guid>
     <description><![CDATA[Want to grand and remove item or folder permissions in SharePoint using Power Automate with a Service Principle but can&rsquo;t do it? Not able to do it with the out of the box SharePoint Connector?
 Tired of dealing with Conditional Access Policies, password expirations, and frequent logins?
 Good news! In this guide, I&rsquo;ll show you how to set these using an App Registration. No service accounts, no password headaches. I&rsquo;ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:]]></description>
 </item>
 <item>
     <title>Send Emails from Flow without a Service Account</title>
-    <link>http://localhost:53760/posts/send-emails-from-flow-without-a-service-account/</link>
-    <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/send-emails-from-flow-without-a-service-account/</guid>
+    <link>http://localhost:1313/posts/250210-send-emails-from-flow-without-a-service-account/</link>
+    <pubDate>Mon, 10 Feb 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250210-send-emails-from-flow-without-a-service-account/</guid>
     <description><![CDATA[Want to send emails from Power Automate but can&rsquo;t or don&rsquo;t want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?
 Good news! In this guide, I&rsquo;ll show you how to send emails directly from Microsoft Exchange using only an App Registration. No service accounts, no password headaches.]]></description>
 </item>
 <item>
     <title>At Birmingham Power Platform User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</title>
-    <link>http://localhost:53760/posts/250130-bppug/</link>
-    <pubDate>Thu, 30 Jan 2025 18:30:00 &#43;0000</pubDate><guid>http://localhost:53760/posts/250130-bppug/</guid>
+    <link>http://localhost:1313/posts/250130-bppug/</link>
+    <pubDate>Thu, 30 Jan 2025 18:30:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/250130-bppug/</guid>
     <description><![CDATA[📅 Date: 30th January 2025
 📍 Location: Wesleyan, Colmore Circus Queensway, Birmingham
 🕕 Time: 6:30 PM to 9:00 PM GMT
@@ -216,15 +226,15 @@ Using Power Automate to generate custom reports securely. How to leverage an Azu
 </item>
 <item>
     <title>At Learner to Leader: Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment</title>
-    <link>http://localhost:53760/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/</link>
-    <pubDate>Sat, 14 Dec 2024 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/</guid>
+    <link>http://localhost:1313/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/</link>
+    <pubDate>Sat, 14 Dec 2024 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/</guid>
     <description><![CDATA[What Would Happen If You Lost Your Dev Environment? Ever wondered what would happen if someone accidentally deleted your development site or overwrote a key flow? Rebuilding from memory isn&rsquo;t just frustrating — it’s costly.
 This post walks through the process I demonstrated during my session with the Power Platform Learner to Leader community, showing how to automatically back up your environment using Azure DevOps, without requiring advanced YAML knowledge.]]></description>
 </item>
 <item>
     <title>Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Low Code No Code Conference</title>
-    <link>http://localhost:53760/posts/241109-lcnc/</link>
-    <pubDate>Sat, 09 Nov 2024 00:00:00 &#43;0000</pubDate><guid>http://localhost:53760/posts/241109-lcnc/</guid>
+    <link>http://localhost:1313/posts/241109-lcnc/</link>
+    <pubDate>Sat, 09 Nov 2024 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/241109-lcnc/</guid>
     <description><![CDATA[📅 Date: 9th November 2024
 📍 Location: Online
 Session Overview At the Low Code No Code Microsoft Power Platform Conference 2024, I delivered a session titled:
@@ -233,28 +243,28 @@ Many of us have found a way to deliver custom reports from Dataverse, or other o
 </item>
 <item>
     <title>Effortlessly Move Dataverse for Teams Solutions</title>
-    <link>http://localhost:53760/posts/effortlessly-move-dataverse-for-teams-solutions/</link>
-    <pubDate>Tue, 22 Oct 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/effortlessly-move-dataverse-for-teams-solutions/</guid>
+    <link>http://localhost:1313/posts/effortlessly-move-dataverse-for-teams-solutions/</link>
+    <pubDate>Tue, 22 Oct 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/effortlessly-move-dataverse-for-teams-solutions/</guid>
     <description><![CDATA[Do you need to move a Solution in Dataverse for Teams form one environment to another, are you unable to use a Pipeline to move a solution around? Want easy reputable steps? Need to be able to drill into what changes have taken place between solution builds.
 Today I will show you a tool that I have made to make this process easier by using a PowerShell Script to move Dataverse for Teams solutions between environments.]]></description>
 </item>
 <item>
     <title>At the Virtual Power Platform User Group Presenting - Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment</title>
-    <link>http://localhost:53760/posts/241003-vd365ppug/</link>
-    <pubDate>Thu, 03 Oct 2024 18:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/241003-vd365ppug/</guid>
+    <link>http://localhost:1313/posts/241003-vd365ppug/</link>
+    <pubDate>Thu, 03 Oct 2024 18:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/241003-vd365ppug/</guid>
     <description><![CDATA[What Would Happen If You Lost Your Dev Environment? Ever wondered what would happen if someone accidentally deleted your development site or overwrote a key flow? Rebuilding from memory isn&rsquo;t just frustrating — it’s costly.
 This post walks through the process I demonstrated during my session with the Power Platform Learner to Leader community, showing how to automatically back up your environment using Azure DevOps, without requiring advanced YAML knowledge.]]></description>
 </item>
 <item>
     <title>Calculate Working Day</title>
-    <link>http://localhost:53760/posts/calculate-working-day/</link>
-    <pubDate>Tue, 24 Sep 2024 09:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/calculate-working-day/</guid>
+    <link>http://localhost:1313/posts/240924-calculate-working-day/</link>
+    <pubDate>Tue, 24 Sep 2024 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/240924-calculate-working-day/</guid>
     <description><![CDATA[Want to Calculate Working Day in Power Automate, having trubble with the number of variations. That’s why I’ve put together a nifty little tool to help out the community and make this process a whole lot easier. In this post, I&rsquo;ll guide you step-by-step through setting up and using this tool. Whether you’re trying to figure out the next working day, handle complex scheduling, or just want a smoother way to automate your date calculations, this is for you.]]></description>
 </item>
 <item>
-    <title>At the M365 North User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – M365 North User Group</title>
-    <link>http://localhost:53760/posts/240917-m365north/</link>
-    <pubDate>Tue, 17 Sep 2024 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/240917-m365north/</guid>
+    <title>At the M365 North User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure</title>
+    <link>http://localhost:1313/posts/240917-m365north/</link>
+    <pubDate>Tue, 17 Sep 2024 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/240917-m365north/</guid>
     <description><![CDATA[📅 Date: 17th September 2024
 📍 Location: M365 North User Group
 Session Overview At the M365 North User Group, I delivered a session titled:
@@ -263,84 +273,84 @@ Many of us have found a way to deliver custom reports from Dataverse, or other o
 </item>
 <item>
     <title>Backup Dataverse Development Environment</title>
-    <link>http://localhost:53760/posts/backup-dataverse-development-environment/</link>
-    <pubDate>Tue, 03 Sep 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/backup-dataverse-development-environment/</guid>
+    <link>http://localhost:1313/posts/backup-dataverse-development-environment/</link>
+    <pubDate>Tue, 03 Sep 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/backup-dataverse-development-environment/</guid>
     <description><![CDATA[Introduction Ever wondered what would happen if you lost your development environment? How do you feel about having to do all of that work again? What about if you spot a problem days later? Can you remember the value you changed three days ago in that flow? Have you ever seen someone delete the website record by mistake.
 These are all situations I have been in over the last few years, and having a Pipeline in place to ensure backup of your hard work is extremely important.]]></description>
 </item>
 <item>
     <title>Securing Power Automate for Production</title>
-    <link>http://localhost:53760/posts/securing-power-automate-for-production/</link>
-    <pubDate>Mon, 05 Aug 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/securing-power-automate-for-production/</guid>
+    <link>http://localhost:1313/posts/securing-power-automate-for-production/</link>
+    <pubDate>Mon, 05 Aug 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/securing-power-automate-for-production/</guid>
     <description><![CDATA[Introduction Power Automate is a wonderful tool, but there is a world of difference between building something for personal productivity and utilising this amazing low-code tool for production, where an important business application will rely on it.
 When considering a workload like this, we need to make it easier to manage and troubleshoot, ensure reliability, and prioritise security. Finally, if the worst were to happen, such as some credentials becoming leaked or an endpoint being compromised, how can we configure this so that damage is limited?]]></description>
 </item>
 <item>
     <title>Command Bar to Call Custom Page in Model Driven App</title>
-    <link>http://localhost:53760/posts/command-bar-to-call-custom-page/</link>
-    <pubDate>Sun, 23 Jun 2024 19:32:41 &#43;0100</pubDate><guid>http://localhost:53760/posts/command-bar-to-call-custom-page/</guid>
+    <link>http://localhost:1313/posts/command-bar-to-call-custom-page/</link>
+    <pubDate>Sun, 23 Jun 2024 19:32:41 &#43;0100</pubDate><guid>http://localhost:1313/posts/command-bar-to-call-custom-page/</guid>
     <description><![CDATA[Introduction Recently, I was asked if it was possible to place a message at the top of every form and view across an entire Model-Driven App. This message would then open a Custom Page that would display more detail. In this Blog post, I explain how this can be achieved and what steps need to be taken.
 For the purposes of this demo, we will call a custom help page from a command button.]]></description>
 </item>
 <item>
     <title>Build a Basic PCF Field Control</title>
-    <link>http://localhost:53760/posts/build-a-basic-pcf-field-control/</link>
-    <pubDate>Sun, 16 Jun 2024 19:32:41 &#43;0100</pubDate><guid>http://localhost:53760/posts/build-a-basic-pcf-field-control/</guid>
+    <link>http://localhost:1313/posts/build-a-basic-pcf-field-control/</link>
+    <pubDate>Sun, 16 Jun 2024 19:32:41 &#43;0100</pubDate><guid>http://localhost:1313/posts/build-a-basic-pcf-field-control/</guid>
     <description><![CDATA[Introduction Want to get started using the Power Apps Component Framework (PCF), would you like to start building controls. In this blog post we are going to step through the process to building your first component.
 You can watch the accompanying YouTube video here What languages To build out our component, we will be using both TypeScript and HTML. Don&rsquo;t worry if you haven&rsquo;t worked with these before.
 Tools The tools we will be using today will be;]]></description>
 </item>
 <item>
     <title>How to Install Hugo on Windows 11</title>
-    <link>http://localhost:53760/posts/how-to-install-hugo-on-windows-11/</link>
-    <pubDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</pubDate><guid>http://localhost:53760/posts/how-to-install-hugo-on-windows-11/</guid>
+    <link>http://localhost:1313/posts/how-to-install-hugo-on-windows-11/</link>
+    <pubDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</pubDate><guid>http://localhost:1313/posts/how-to-install-hugo-on-windows-11/</guid>
     <description><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>Hugo is a open-source static site generator, designed for speed and flexibility, making it an excellent choice when creating modern websites, blogs, and documentation. In this guide, we&rsquo;ll walk you through the steps to install Hugo on your Windows 11 machine.</p>]]></description>
 </item>
 <item>
     <title>Power Platform Developer Tools Install Script</title>
-    <link>http://localhost:53760/posts/power-platform-developer-tools-install-script/</link>
-    <pubDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</pubDate><guid>http://localhost:53760/posts/power-platform-developer-tools-install-script/</guid>
+    <link>http://localhost:1313/posts/power-platform-developer-tools-install-script/</link>
+    <pubDate>Tue, 04 Jun 2024 17:32:41 &#43;0100</pubDate><guid>http://localhost:1313/posts/power-platform-developer-tools-install-script/</guid>
     <description><![CDATA[Introduction Frequently moving between desktop builds, want to be able to get up and running quickly, I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&rsquo;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.]]></description>
 </item>
 <item>
     <title>Variables in PowerFX Command Buttons</title>
-    <link>http://localhost:53760/posts/variables-in-powerfx-command-buttons/</link>
-    <pubDate>Fri, 24 May 2024 00:00:00 &#43;0000</pubDate><guid>http://localhost:53760/posts/variables-in-powerfx-command-buttons/</guid>
+    <link>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</link>
+    <pubDate>Fri, 24 May 2024 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</guid>
     <description><![CDATA[Introduction Have you ever wondered if you can use Environment Variables in a PowerFX button, how to create a custom email link button in the command bar of your Power Apps model-driven application using environment variables and Power FX? Luckily, Power Apps has made it possible to achieve this. With the help of Power FX, which is the same language used in canvas app development, anyone can efficiently customise their app’s command bar without needing prior knowledge of JavaScript or the Ribbon Workbench.]]></description>
 </item>
 <item>
     <title>Clone with PowerFX Command button</title>
-    <link>http://localhost:53760/posts/clone-with-powerfx-command-button/</link>
-    <pubDate>Mon, 22 Apr 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/clone-with-powerfx-command-button/</guid>
+    <link>http://localhost:1313/posts/clone-with-powerfx-command-button/</link>
+    <pubDate>Mon, 22 Apr 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/clone-with-powerfx-command-button/</guid>
     <description><![CDATA[Introduction Cloning multiple records within a data view in a Model-Driven App is a common request from end users. It helps them quickly fill out data fields in situations where only a few values differ between records.
 In this blog post, we will explore how to add a custom button to the command bar in a Power Apps model-driven application to duplicate multiple records. Power Apps recently introduced this helpful feature, and the best part is that it can be achieved using Power FX, the same language used for developing canvas apps.]]></description>
 </item>
 <item>
     <title>Streamlining Webhook Testing</title>
-    <link>http://localhost:53760/posts/steamlining-webhook-testing/</link>
-    <pubDate>Fri, 09 Feb 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/steamlining-webhook-testing/</guid>
+    <link>http://localhost:1313/posts/steamlining-webhook-testing/</link>
+    <pubDate>Fri, 09 Feb 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/steamlining-webhook-testing/</guid>
     <description><![CDATA[Streamlining Webhook Testing with Webhook.site I often find myself undertaking some form of prototyping or investigation. For instance lets say I am publishing an end point for a client to connect to via a HTTP call, often also referred to as a web hook.
 One such issue this can introjuce is being able to see what is the actual request been made.
 I came across Webhook.site, which has proved particularly useful in testing and troubleshooting webhooks.]]></description>
 </item>
 <item>
     <title>Create a Solution Configuration File</title>
-    <link>http://localhost:53760/posts/choose-what-dataverse-search-indexes/</link>
-    <pubDate>Wed, 07 Feb 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/choose-what-dataverse-search-indexes/</guid>
+    <link>http://localhost:1313/posts/choose-what-dataverse-search-indexes/</link>
+    <pubDate>Wed, 07 Feb 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/choose-what-dataverse-search-indexes/</guid>
     <description><![CDATA[Introduction Want to deploy your Power Apps Solution files quickly via Pipelines? Not sure how to set your environment variable or connection references. This blog post will explain how we solved this problem using a Solution Configuration File.
 Understanding the Need for a Solution Settings File A solution settings file is crucial when your solution involves environment variables or connection references. Without it, you might end up with configurations that do not carry over the intended values, leading to solutions that don’t behave as expected in different environments.]]></description>
 </item>
 <item>
     <title>Bias of Maslow’s Hammer</title>
-    <link>http://localhost:53760/posts/bias-of-maslows-hammer/</link>
-    <pubDate>Sat, 03 Feb 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/bias-of-maslows-hammer/</guid>
+    <link>http://localhost:1313/posts/bias-of-maslows-hammer/</link>
+    <pubDate>Sat, 03 Feb 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/bias-of-maslows-hammer/</guid>
     <description><![CDATA[In the vast and evolving landscape of software development, the principles guiding our choices often transcend the technical. One psychological concept, Maslow’s Hammer, poignantly captures a cognitive bias that impacts much more than our personal lives—it resonates deeply within the realm of software architecture. Commonly paraphrased as, “If all you have is a hammer, everything looks like a nail,” this law, attributed to Abraham Maslow, underscores the tendency to over-rely on familiar tools or methods at the expense of potentially more effective solutions.]]></description>
 </item>
 <item>
     <title>Too Many Redirects on WordPress</title>
-    <link>http://localhost:53760/posts/too-many-redirects-on-wordpress/</link>
-    <pubDate>Sun, 17 Sep 2023 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/too-many-redirects-on-wordpress/</guid>
+    <link>http://localhost:1313/posts/too-many-redirects-on-wordpress/</link>
+    <pubDate>Sun, 17 Sep 2023 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/too-many-redirects-on-wordpress/</guid>
     <description><![CDATA[Introduction I recently set up a new WordPress website for a friend. It was late one evening, and I was in a bit of a rush; as with many people online, I chose to use Cloudflare to protect the website.
 However, problems arose after setting up the WordPress website when I configured the SSL/TLS side of things.
 I switched on Cloudflare’s proxy as normal.
@@ -349,23 +359,23 @@ Then I continued to edit the site before handing it over to my friend; however, 
 </item>
 <item>
     <title>Thinking Environment Meetings</title>
-    <link>http://localhost:53760/posts/thinking-environment-meetings/</link>
-    <pubDate>Sun, 18 Dec 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/thinking-environment-meetings/</guid>
+    <link>http://localhost:1313/posts/thinking-environment-meetings/</link>
+    <pubDate>Sun, 18 Dec 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/thinking-environment-meetings/</guid>
     <description><![CDATA[In today’s remote work environment, the significance of effective team meetings cannot be overstated. These gatherings are pivotal for aligning goals, addressing challenges, and fostering team cohesion.
 However, not all meetings are created equal. The introduction of a Thinking Environment, as outlined by Nancy Kline in her book “Time to Think,” offers a transformative approach to traditional meetings. When combined with the structured reflection of retrospectives, this approach can elevate the effectiveness of team meetings.]]></description>
 </item>
 <item>
     <title>Azure Function with Azure B2C</title>
-    <link>http://localhost:53760/posts/azure-function-with-azure-b2c/</link>
-    <pubDate>Wed, 14 Dec 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/azure-function-with-azure-b2c/</guid>
+    <link>http://localhost:1313/posts/azure-function-with-azure-b2c/</link>
+    <pubDate>Wed, 14 Dec 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/azure-function-with-azure-b2c/</guid>
     <description><![CDATA[Azure functions are a very handy way of getting something small done very quickly. Often these have to be secured and sometimes with an identity provider that is not stright out of the box.
 Today I am going to take you through the steps I took to secure an azure function using Azure B2C.
 Step 1 – Create app in Azure B2C PREREQUISITE Azure Function The Azure Function URL Azure B2C Tenant configured with user flows STEP 1 To start with register an application in Azure B2C.]]></description>
 </item>
 <item>
     <title>Postman to Azure Table Storage</title>
-    <link>http://localhost:53760/posts/postman-to-azure-table-storage/</link>
-    <pubDate>Tue, 15 Nov 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/postman-to-azure-table-storage/</guid>
+    <link>http://localhost:1313/posts/postman-to-azure-table-storage/</link>
+    <pubDate>Tue, 15 Nov 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/postman-to-azure-table-storage/</guid>
     <description><![CDATA[This post is an example of how I posted data to Azure Table storage from Postman.
 Prerequisite You have access to Postman You have an Azure Storage account Steps Go to your Storage Account Click on Tables, and then click on Add table Add table to Azure Storage Account
 You should now have a table, in my example these are called test and test2.
@@ -373,30 +383,30 @@ Next, generate a shared access signature (SAS), which is a URI that grants rest
 </item>
 <item>
     <title>Azure B2C oAuth on Postman</title>
-    <link>http://localhost:53760/posts/azureb2c-oauth-in-postman/</link>
-    <pubDate>Mon, 14 Nov 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/azureb2c-oauth-in-postman/</guid>
+    <link>http://localhost:1313/posts/azureb2c-oauth-in-postman/</link>
+    <pubDate>Mon, 14 Nov 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/azureb2c-oauth-in-postman/</guid>
     <description><![CDATA[I had a problem where I needed to get my JWT token from Azure B2C OAuth 2.0 in order to troubleshoot an issue I was having in getting OAuth 2.0 working.
 Situation I needed to get the JWT token using Postman, decrypt it, and then provide it for troubleshooting the issue.
 How did I do that Get postman Create a new request, as far as I am aware it makes no difference what type of request you use so in this example, I will use a GET request.]]></description>
 </item>
 <item>
     <title>PFX certificate for FREE for Power Pages</title>
-    <link>http://localhost:53760/posts/pfx-certificate-for-free-for-power-pages/</link>
-    <pubDate>Mon, 25 Jul 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/pfx-certificate-for-free-for-power-pages/</guid>
+    <link>http://localhost:1313/posts/pfx-certificate-for-free-for-power-pages/</link>
+    <pubDate>Mon, 25 Jul 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/pfx-certificate-for-free-for-power-pages/</guid>
     <description><![CDATA[Introduction Do you want to deploy Power Pages on a custom domain securely without the need to buy a custom certificate? In this blog post, I’m going to show you how to do this quickly and easily acquire a PFX certificate that you can then use to deploy to Power Pages.
 Pre-requisite This is a brilliant tool for generating SSL, and it is simple to use and quick to deploy.]]></description>
 </item>
 <item>
     <title>Query Parameters on HTTP Trigger</title>
-    <link>http://localhost:53760/posts/query-parameters-on-http-trigger/</link>
-    <pubDate>Sun, 03 Apr 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/query-parameters-on-http-trigger/</guid>
+    <link>http://localhost:1313/posts/query-parameters-on-http-trigger/</link>
+    <pubDate>Sun, 03 Apr 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/query-parameters-on-http-trigger/</guid>
     <description><![CDATA[Introduction Working with Power Automate, especially with HTTP triggers, can unlock a lot of potential in automating tasks and workflows. A common requirement is to use query parameters from the trigger URL within your flow. I’ve found a straightforward method to do this and thought it might be helpful to share.
 When your flow is triggered via an HTTP request, it might need to behave differently based on the values passed through query parameters.]]></description>
 </item>
 <item>
     <title></title>
-    <link>http://localhost:53760/posts/250131-bppug/</link>
-    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate><guid>http://localhost:53760/posts/250131-bppug/</guid>
+    <link>http://localhost:1313/posts/250131-bppug/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/250131-bppug/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

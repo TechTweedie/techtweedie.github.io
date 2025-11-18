@@ -1,12 +1,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Power Platform Security - Tag - Tech Tweedie</title>
-        <link>http://localhost:53760/tags/power-platform-security/</link>
+        <link>http://localhost:1313/tags/power-platform-security/</link>
         <description>Power Platform Security - Tag - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 05 Aug 2024 19:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/power-platform-security/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 05 Aug 2024 19:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/power-platform-security/" rel="self" type="application/rss+xml" /><item>
     <title>Securing Power Automate for Production</title>
-    <link>http://localhost:53760/posts/securing-power-automate-for-production/</link>
-    <pubDate>Mon, 05 Aug 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/securing-power-automate-for-production/</guid>
+    <link>http://localhost:1313/posts/securing-power-automate-for-production/</link>
+    <pubDate>Mon, 05 Aug 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/securing-power-automate-for-production/</guid>
     <description><![CDATA[Introduction Power Automate is a wonderful tool, but there is a world of difference between building something for personal productivity and utilising this amazing low-code tool for production, where an important business application will rely on it.
 When considering a workload like this, we need to make it easier to manage and troubleshoot, ensure reliability, and prioritise security. Finally, if the worst were to happen, such as some credentials becoming leaked or an endpoint being compromised, how can we configure this so that damage is limited?]]></description>
 </item>

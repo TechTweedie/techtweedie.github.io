@@ -1,12 +1,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Model Driven Apps - Tag - Tech Tweedie</title>
-        <link>http://localhost:53760/tags/model-driven-apps/</link>
+        <link>http://localhost:1313/tags/model-driven-apps/</link>
         <description>Model Driven Apps - Tag - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Apr 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/model-driven-apps/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Apr 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/model-driven-apps/" rel="self" type="application/rss+xml" /><item>
     <title>Power Platform Clinic Episode 1</title>
-    <link>http://localhost:53760/posts/250412-power-platform-clinic-episode-one/</link>
-    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250412-power-platform-clinic-episode-one/</guid>
+    <link>http://localhost:1313/posts/250412-power-platform-clinic-episode-one/</link>
+    <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250412-power-platform-clinic-episode-one/</guid>
     <description><![CDATA[Welcome to the very first episode of Power Platform Clinic with Duncan and Ian.
 In this episode:
 ✅ Topic 1 – Show/Hide Tabs Dynamically in Model Driven Apps Ian walks through how to show or hide a whole tab in a model-driven app based on the value of a field, such as Status Reason. The demo covers:
@@ -14,8 +14,8 @@ Why you might want to hide/show tabs A full explanation of the JavaScript snippe
 </item>
 <item>
     <title>D365 &amp; Power Platform UG North East – March 2025 Meetup</title>
-    <link>http://localhost:53760/posts/250327-d365ppugne/</link>
-    <pubDate>Thu, 27 Mar 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250327-d365ppugne/</guid>
+    <link>http://localhost:1313/posts/250327-d365ppugne/</link>
+    <pubDate>Thu, 27 Mar 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250327-d365ppugne/</guid>
     <description><![CDATA[D365 &amp; Power Platform UG North East – July 2025 Meetup
 📅 Date: Thursday, 27th March 2025
 🕕 Time: 6:30 PM – 8:30 PM BST
@@ -25,21 +25,21 @@ Agata Guziur Justin Wilkinson Ian Tweedie Together, we’re bringing the North E
 </item>
 <item>
     <title>Variables in PowerFX Command Buttons</title>
-    <link>http://localhost:53760/posts/variables-in-powerfx-command-buttons/</link>
-    <pubDate>Fri, 24 May 2024 00:00:00 &#43;0000</pubDate><guid>http://localhost:53760/posts/variables-in-powerfx-command-buttons/</guid>
+    <link>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</link>
+    <pubDate>Fri, 24 May 2024 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/variables-in-powerfx-command-buttons/</guid>
     <description><![CDATA[Introduction Have you ever wondered if you can use Environment Variables in a PowerFX button, how to create a custom email link button in the command bar of your Power Apps model-driven application using environment variables and Power FX? Luckily, Power Apps has made it possible to achieve this. With the help of Power FX, which is the same language used in canvas app development, anyone can efficiently customise their app’s command bar without needing prior knowledge of JavaScript or the Ribbon Workbench.]]></description>
 </item>
 <item>
     <title>Clone with PowerFX Command button</title>
-    <link>http://localhost:53760/posts/clone-with-powerfx-command-button/</link>
-    <pubDate>Mon, 22 Apr 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/clone-with-powerfx-command-button/</guid>
+    <link>http://localhost:1313/posts/clone-with-powerfx-command-button/</link>
+    <pubDate>Mon, 22 Apr 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/clone-with-powerfx-command-button/</guid>
     <description><![CDATA[Introduction Cloning multiple records within a data view in a Model-Driven App is a common request from end users. It helps them quickly fill out data fields in situations where only a few values differ between records.
 In this blog post, we will explore how to add a custom button to the command bar in a Power Apps model-driven application to duplicate multiple records. Power Apps recently introduced this helpful feature, and the best part is that it can be achieved using Power FX, the same language used for developing canvas apps.]]></description>
 </item>
 <item>
     <title>Create a Solution Configuration File</title>
-    <link>http://localhost:53760/posts/choose-what-dataverse-search-indexes/</link>
-    <pubDate>Wed, 07 Feb 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/choose-what-dataverse-search-indexes/</guid>
+    <link>http://localhost:1313/posts/choose-what-dataverse-search-indexes/</link>
+    <pubDate>Wed, 07 Feb 2024 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/choose-what-dataverse-search-indexes/</guid>
     <description><![CDATA[Introduction Want to deploy your Power Apps Solution files quickly via Pipelines? Not sure how to set your environment variable or connection references. This blog post will explain how we solved this problem using a Solution Configuration File.
 Understanding the Need for a Solution Settings File A solution settings file is crucial when your solution involves environment variables or connection references. Without it, you might end up with configurations that do not carry over the intended values, leading to solutions that don’t behave as expected in different environments.]]></description>
 </item>

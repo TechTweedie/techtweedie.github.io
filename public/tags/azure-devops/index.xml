@@ -1,20 +1,30 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Azure DevOps - Tag - Tech Tweedie</title>
-        <link>http://localhost:53760/tags/azure-devops/</link>
+        <link>http://localhost:1313/tags/azure-devops/</link>
         <description>Azure DevOps - Tag - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/azure-devops/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 10 Sep 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azure-devops/" rel="self" type="application/rss+xml" /><item>
+    <title>Playwright for Makers – Bringing One-Click UI Tests to Model-Driven Apps &amp; Power Pages</title>
+    <link>http://localhost:1313/posts/250910-d365ppugnational/</link>
+    <pubDate>Wed, 10 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250910-d365ppugnational/</guid>
+    <description><![CDATA[📅 Date: Wednesday, September 10, 2025
+🕒 Time: 10:45 AM – 11:30 AM BST
+📍 Location: UK D365 and Power Platform User Group, Microsoft UA92 Manchester, Room 102/103
+🎟️ Session Link: https://d365ppug-national-10092025.sessionize.com/session/991575
+Session Overview In this hands-on, demo-heavy session, Ian Tweedie (TechTweedie), Power Platform Technical Consultant at Capgemini, will showcase how to integrate automated UI testing into your low-code CI/CD workflows. Using the FREE Open Source Playwright for Power Platform DevOps Extension, you’ll learn how to:]]></description>
+</item>
+<item>
     <title>Power Platform Clinic Episode 7: Automatically Tag DevOps Tickets by Email</title>
-    <link>http://localhost:53760/posts/250720-power-platform-clinic-episode-seven/</link>
-    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250720-power-platform-clinic-episode-seven/</guid>
+    <link>http://localhost:1313/posts/250720-power-platform-clinic-episode-seven/</link>
+    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250720-power-platform-clinic-episode-seven/</guid>
     <description><![CDATA[Auto-Tag DevOps Tickets via Email using Power Automate In this episode of the Power Platform Clinic, we explore how to keep Azure DevOps tickets updated when discussions happen over email.
 Why It’s Handy You often need to chase suppliers or clients via email. This approach helps thread those email updates directly into DevOps using plus addressing and Power Automate.
 What You’ll Need A shared mailbox that supports plus addressing Power Automate Azure DevOps API 🗺️ Flow Overview 🔧 Key Expressions Extract Recipient Email (Uppercase &amp; Split) @toUpper(triggerOutputs()?]]></description>
 </item>
 <item>
     <title>At the National Power Platform User Day: Build Your First DevOps Pipeline for the Power Platform</title>
-    <link>http://localhost:53760/posts/250627-d365ppugnational/</link>
-    <pubDate>Sun, 22 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250627-d365ppugnational/</guid>
+    <link>http://localhost:1313/posts/250627-d365ppugnational/</link>
+    <pubDate>Sun, 22 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250627-d365ppugnational/</guid>
     <description><![CDATA[Build Your First DevOps Pipeline for the Power Platform 📅 Date: Friday, June 27, 2025
 🕒 Time: 2:15 PM – 3:00 PM BST
 📍 Location: National Usergroup, Room G8
@@ -24,15 +34,15 @@ In this hands-on, beginner-friendly session, Ian Tweedie (TechTweedie), Power Pl
 </item>
 <item>
     <title>At Learner to Leader: Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment</title>
-    <link>http://localhost:53760/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/</link>
-    <pubDate>Sat, 14 Dec 2024 06:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/</guid>
+    <link>http://localhost:1313/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/</link>
+    <pubDate>Sat, 14 Dec 2024 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/</guid>
     <description><![CDATA[What Would Happen If You Lost Your Dev Environment? Ever wondered what would happen if someone accidentally deleted your development site or overwrote a key flow? Rebuilding from memory isn&rsquo;t just frustrating — it’s costly.
 This post walks through the process I demonstrated during my session with the Power Platform Learner to Leader community, showing how to automatically back up your environment using Azure DevOps, without requiring advanced YAML knowledge.]]></description>
 </item>
 <item>
     <title>At the Virtual Power Platform User Group Presenting - Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment</title>
-    <link>http://localhost:53760/posts/241003-vd365ppug/</link>
-    <pubDate>Thu, 03 Oct 2024 18:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/241003-vd365ppug/</guid>
+    <link>http://localhost:1313/posts/241003-vd365ppug/</link>
+    <pubDate>Thu, 03 Oct 2024 18:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/241003-vd365ppug/</guid>
     <description><![CDATA[What Would Happen If You Lost Your Dev Environment? Ever wondered what would happen if someone accidentally deleted your development site or overwrote a key flow? Rebuilding from memory isn&rsquo;t just frustrating — it’s costly.
 This post walks through the process I demonstrated during my session with the Power Platform Learner to Leader community, showing how to automatically back up your environment using Azure DevOps, without requiring advanced YAML knowledge.]]></description>
 </item>

@@ -1,12 +1,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Custom Page - Tag - Tech Tweedie</title>
-        <link>http://localhost:53760/tags/custom-page/</link>
+        <link>http://localhost:1313/tags/custom-page/</link>
         <description>Custom Page - Tag - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 23 Jun 2024 19:32:41 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/custom-page/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 23 Jun 2024 19:32:41 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/custom-page/" rel="self" type="application/rss+xml" /><item>
     <title>Command Bar to Call Custom Page in Model Driven App</title>
-    <link>http://localhost:53760/posts/command-bar-to-call-custom-page/</link>
-    <pubDate>Sun, 23 Jun 2024 19:32:41 &#43;0100</pubDate><guid>http://localhost:53760/posts/command-bar-to-call-custom-page/</guid>
+    <link>http://localhost:1313/posts/command-bar-to-call-custom-page/</link>
+    <pubDate>Sun, 23 Jun 2024 19:32:41 &#43;0100</pubDate><guid>http://localhost:1313/posts/command-bar-to-call-custom-page/</guid>
     <description><![CDATA[Introduction Recently, I was asked if it was possible to place a message at the top of every form and view across an entire Model-Driven App. This message would then open a Custom Page that would display more detail. In this Blog post, I explain how this can be achieved and what steps need to be taken.
 For the purposes of this demo, we will call a custom help page from a command button.]]></description>
 </item>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=53760&amp;path=livereload" data-no-instant defer></script>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Power Platform Developer Tools Install Script - Tech Tweedie</title><meta name="description" content="Beyond the low code, Tech Tweedie offers comprehensive guides and tutorials on Power Platform, Microsoft technologies, and Hugo. Learn how to build PCF controls, install Hugo on Windows 11, and more. Stay updated with our latest posts and in-depth content."><meta property="og:url" content="http://localhost:53760/posts/power-platform-developer-tools-install-script/">
+        <title>Power Platform Developer Tools Install Script - Tech Tweedie</title><meta name="description" content="Beyond the low code, Tech Tweedie offers comprehensive guides and tutorials on Power Platform, Microsoft technologies, and Hugo. Learn how to build PCF controls, install Hugo on Windows 11, and more. Stay updated with our latest posts and in-depth content."><meta property="og:url" content="http://localhost:1313/posts/power-platform-developer-tools-install-script/">
   <meta property="og:site_name" content="Tech Tweedie">
   <meta property="og:title" content="Power Platform Developer Tools Install Script">
   <meta property="og:description" content="Frequently moving between desktop builds, want to be able to get up and running quickly,  I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&#39;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.">
@@ -17,15 +17,15 @@
     <meta property="article:tag" content="Install Script">
     <meta property="article:tag" content="Automation">
     <meta property="article:tag" content="PowerShell">
-    <meta property="og:image" content="http://localhost:53760/posts/power-platform-developer-tools-install-script/featureImage.jpg">
+    <meta property="og:image" content="http://localhost:1313/posts/power-platform-developer-tools-install-script/featureImage.jpg">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:53760/posts/power-platform-developer-tools-install-script/featureImage.jpg">
+  <meta name="twitter:image" content="http://localhost:1313/posts/power-platform-developer-tools-install-script/featureImage.jpg">
   <meta name="twitter:title" content="Power Platform Developer Tools Install Script">
   <meta name="twitter:description" content="Frequently moving between desktop builds, want to be able to get up and running quickly,  I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It&#39;s essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.">
       <meta name="twitter:site" content="@itweedie">
 <meta name="application-name" content="Tech Tweedie">
-<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:53760/posts/power-platform-developer-tools-install-script/" /><link rel="prev" href="http://localhost:53760/posts/variables-in-powerfx-command-buttons/" /><link rel="next" href="http://localhost:53760/posts/how-to-install-hugo-on-windows-11/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="Tech Tweedie"><meta name="theme-color" content="#dddddd"><meta name="msapplication-TileColor" content="#dddddd"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dddddd"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/power-platform-developer-tools-install-script/" /><link rel="prev" href="http://localhost:1313/posts/variables-in-powerfx-command-buttons/" /><link rel="next" href="http://localhost:1313/posts/how-to-install-hugo-on-windows-11/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><meta name="google-site-verification" content="SJUxP7HXovdJ6V7D8UPJm1ntx_D-yiuiC5XM70mnHCI" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -33,14 +33,14 @@
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/localhost:53760\/posts\/power-platform-developer-tools-install-script\/"
+            "@id": "http:\/\/localhost:1313\/posts\/power-platform-developer-tools-install-script\/"
         },"image": [{
                             "@type": "ImageObject",
-                            "url": "http:\/\/localhost:53760\/posts\/power-platform-developer-tools-install-script\/featureImage.jpg",
+                            "url": "http:\/\/localhost:1313\/posts\/power-platform-developer-tools-install-script\/featureImage.jpg",
                             "width":  1792 ,
                             "height":  1024 
                         }],"genre": "posts","keywords": "Developer Tools, Install Script, Automation, PowerShell","wordcount":  623 ,
-        "url": "http:\/\/localhost:53760\/posts\/power-platform-developer-tools-install-script\/","datePublished": "2024-06-04T17:32:41+01:00","dateModified": "2020-01-01T16:45:40+08:00","publisher": {
+        "url": "http:\/\/localhost:1313\/posts\/power-platform-developer-tools-install-script\/","datePublished": "2024-06-04T17:32:41+01:00","dateModified": "2020-01-01T16:45:40+08:00","publisher": {
             "@type": "Organization",
             "name": "itweedie"},"author": {
                 "@type": "Person",
@@ -259,4 +259,4 @@ The script will guide you through the installation process, ensuring all necessa
 
         <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
                 <i class="fa-solid fa-chevron-up fa-fw"></i>
-            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"Tech Tweedie","id-2":"Tech Tweedie"},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/lunr/lunr.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"id-1":"Tech Tweedie","id-2":"Tech Tweedie"},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>

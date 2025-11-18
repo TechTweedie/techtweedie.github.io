@@ -1,12 +1,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>REST API - Tag - Tech Tweedie</title>
-        <link>http://localhost:53760/tags/rest-api/</link>
+        <link>http://localhost:1313/tags/rest-api/</link>
         <description>REST API - Tag - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 26 May 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:53760/tags/rest-api/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 26 May 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/rest-api/" rel="self" type="application/rss+xml" /><item>
     <title>Power Platform Clinic – Episode 3: Calling a Dad Joke API and Custom Visuals in Power BI Clinic</title>
-    <link>http://localhost:53760/posts/250526-power-platform-clinic-episode-three/</link>
-    <pubDate>Mon, 26 May 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:53760/posts/250526-power-platform-clinic-episode-three/</guid>
+    <link>http://localhost:1313/posts/250526-power-platform-clinic-episode-three/</link>
+    <pubDate>Mon, 26 May 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250526-power-platform-clinic-episode-three/</guid>
     <description><![CDATA[Welcome back to the Power Platform Clinic, your weekly check-in for diagnosing everyday Power Platform challenges — and fixing them without the consulting invoice.
 Whether you&rsquo;re a maker, a consultant, or someone who just typed &ldquo;Power Automate funny API&rdquo; into Google — you’re in the right place.
 In this week’s episode (Episode 3!), co-hosted by myself (Tech Tweedie) and Duncan (Power BI Kinda Guy), we tackled two questions you’ve either already asked — or definitely will soon.]]></description>
