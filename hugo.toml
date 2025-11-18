@@ -44,6 +44,21 @@ theme = "FeelIt"
   # mobile header mode ("fixed", "normal", "auto")
   mobileMode = "auto"
 
+# Header title config
+[params.header.title]
+  # URL of the LOGO
+  logo = "/logo-01_150x150.png"
+  # title name
+  name = "Tech Tweedie"
+  # you can add extra information before the name (HTML format is supported), such as icons
+  pre = " "
+  # you can add extra information after the name (HTML format is supported), such as icons
+  post = ""
+  # whether to use typeit animation for title name
+  typeit = true
+  # whether to show RSS icon
+  rss = true
+
 # Search config
 [params.search]
   enable = true
@@ -72,42 +87,6 @@ theme = "FeelIt"
     ignoreLocation = false
     useExtendedSearch = false
     ignoreFieldNorm = false
-
- # Header title config
-[params.header.title]
-  # URL of the LOGO
-  logo = "/logo-01_150x150.png"
-  # title name
-  name = "Tech Tweedie"
-  # you can add extra information before the name (HTML format is supported), such as icons
-  pre = " "
-  # you can add extra information after the name (HTML format is supported), such as icons
-  post = ""
-  # whether to use typeit animation for title name
-  typeit = true
-  # whether to show RSS icon
-  rss = true
-
-[params.search]
-  enable = true
-  # type of search engine ("lunr", "algolia")
-  type = "lunr"
-  # max index length of the chunkcontent
-  contentLength = 4000
-  # placeholder of the search bar
-  placeholder = ""
-  # max number of results length
-  maxResultLength = 10
-  # snippet length of the result
-  snippetLength = 50
-  # HTML tag to highlight search results
-  highlightTag = "em"
-  # whether to use the absolute URL based on the baseURL in search index
-  absoluteURL = false
-  [params.search.algolia]
-    index = ""
-    appID = ""
-    searchKey = ""
 
   # Footer config
 [params.footer]
