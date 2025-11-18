@@ -7,125 +7,60 @@
     <title>Power Platform Clinic Episode 7: Automatically Tag DevOps Tickets by Email</title>
     <link>http://localhost:1313/posts/250720-power-platform-clinic-episode-seven/</link>
     <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250720-power-platform-clinic-episode-seven/</guid>
-    <description><![CDATA[<h1 id="auto-tag-devops-tickets-via-email-using-power-automate">Auto-Tag DevOps Tickets via Email using Power Automate</h1>
-<p>In this episode of the Power Platform Clinic, we explore how to keep Azure DevOps tickets updated when discussions happen over email.</p>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/FgAxJkx6Zyk?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<hr>
-<h2 id="why-its-handy">Why It’s Handy</h2>
-<p>You often need to chase suppliers or clients via email. This approach helps thread those email updates directly into DevOps using <strong>plus addressing</strong> and <strong>Power Automate</strong>.</p>]]></description>
+    <description><![CDATA[Auto-Tag DevOps Tickets via Email using Power Automate In this episode of the Power Platform Clinic, we explore how to keep Azure DevOps tickets updated when discussions happen over email.
+Why It’s Handy You often need to chase suppliers or clients via email. This approach helps thread those email updates directly into DevOps using plus addressing and Power Automate.
+What You’ll Need A shared mailbox that supports plus addressing Power Automate Azure DevOps API 🗺️ Flow Overview 🔧 Key Expressions Extract Recipient Email (Uppercase &amp; Split) @toUpper(triggerOutputs()?]]></description>
 </item>
 <item>
     <title>Power Platform Clinic - Episode 6: Certs, Consultancy, and Career Conversations</title>
     <link>http://localhost:1313/posts/250713-power-platform-clinic-episode-six/</link>
     <pubDate>Sun, 13 Jul 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250713-power-platform-clinic-episode-six/</guid>
-    <description><![CDATA[<h2 id="power-platform-clinic-episode-6--certs-consultancy-and-career-conversations">Power Platform Clinic Episode 6 – Certs, Consultancy, and Career Conversations</h2>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0fnbmPvHN5E?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<p>In this episode of the Power Platform Clinic, Duncan and I get stuck into some big-picture questions from the community—about Microsoft certifications, life as a consultant, and how to grow your career across the Power Platform and beyond.</p>]]></description>
+    <description><![CDATA[Power Platform Clinic Episode 6 – Certs, Consultancy, and Career Conversations In this episode of the Power Platform Clinic, Duncan and I get stuck into some big-picture questions from the community—about Microsoft certifications, life as a consultant, and how to grow your career across the Power Platform and beyond.
+🎓 Are Microsoft Certifications Worth It? Spoiler: Yes, but with caveats.
+I share how I started collecting Microsoft certs back when they were being offered free (shoutout to the days of the 900 series!]]></description>
 </item>
 <item>
     <title>Power Platform Clinic – Episode 5: Converting Forms with Images to PDF</title>
     <link>http://localhost:1313/posts/250625-power-platform-clinic-episode-five/</link>
     <pubDate>Wed, 25 Jun 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250625-power-platform-clinic-episode-five/</guid>
-    <description><![CDATA[<h1 id="power-platform-clinic--episode-5-converting-forms-with-images-to-pdf">Power Platform Clinic – Episode 5: Converting Forms with Images to PDF</h1>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/22SL8thkPmo?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<h2 id="introduction">Introduction</h2>
-<p>In this episode of the <strong>Power Platform Clinic</strong>, Ian (that’s me!) tackles a real-world community question:</p>
-<blockquote>
-<p><em>Is it possible to convert a Microsoft Form that contains both text and images into a PDF using Power Automate?</em></p>]]></description>
+    <description><![CDATA[Power Platform Clinic – Episode 5: Converting Forms with Images to PDF Introduction In this episode of the Power Platform Clinic, Ian (that’s me!) tackles a real-world community question:
+Is it possible to convert a Microsoft Form that contains both text and images into a PDF using Power Automate?
+As usual, we go deep on the technical side—pulling data, parsing responses, handling images, encoding files as base64, generating dynamic HTML, and finally converting it all to a PDF and emailing it out.]]></description>
 </item>
 <item>
     <title>Power Platform Clinic – Episode 4: Power Pages Authentication Options and Developer Accounts</title>
     <link>http://localhost:1313/posts/250603-power-platform-clinic-episode-four/</link>
     <pubDate>Tue, 03 Jun 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250603-power-platform-clinic-episode-four/</guid>
-    <description><![CDATA[<p><strong>Welcome to Episode 2 of the Power Platform Clinic with Duncan Boyne and Ian Tweedy.</strong></p>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/a8Ypoliuseo?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<p>In this episode, Duncan and Ian dive deep into:</p>
-<h2 id="-power-pages-authentication-options">🔐 Power Pages Authentication Options</h2>
-<p>Ian breaks down:</p>
-<ul>
-<li>The difference between <strong>public and private modes</strong> in Power Pages.</li>
-<li>How <strong>Entra ID, External Entra ID, and Azure B2C</strong> work for authenticating users.</li>
-<li>Why using <strong>Azure B2C or External Entra ID</strong> is often preferred, including centralised identity management, SIEM logging, and reducing password management headaches.</li>
-<li>How these options relate to <strong>OAuth and OIDC</strong> protocols for enabling social logins like LinkedIn or Google.</li>
-</ul>
-<p>Key takeaway: Understanding authentication options is crucial for designing secure Power Pages implementations that fit your organisation&rsquo;s user landscape, whether purely internal, external, or hybrid.</p>]]></description>
+    <description><![CDATA[Welcome to Episode 2 of the Power Platform Clinic with Duncan Boyne and Ian Tweedy.
+In this episode, Duncan and Ian dive deep into:
+🔐 Power Pages Authentication Options Ian breaks down:
+The difference between public and private modes in Power Pages. How Entra ID, External Entra ID, and Azure B2C work for authenticating users. Why using Azure B2C or External Entra ID is often preferred, including centralised identity management, SIEM logging, and reducing password management headaches.]]></description>
 </item>
 <item>
     <title>Power Platform Clinic – Episode 3: Calling a Dad Joke API and Custom Visuals in Power BI Clinic</title>
     <link>http://localhost:1313/posts/250526-power-platform-clinic-episode-three/</link>
     <pubDate>Mon, 26 May 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250526-power-platform-clinic-episode-three/</guid>
-    <description><![CDATA[<p>Welcome back to the <strong>Power Platform Clinic</strong>, your weekly check-in for diagnosing everyday Power Platform challenges — and fixing them without the consulting invoice.</p>
-<p>Whether you&rsquo;re a maker, a consultant, or someone who just typed &ldquo;Power Automate funny API&rdquo; into Google — you’re in the right place.</p>
-<p>In this week’s episode (Episode 3!), co-hosted by myself (<em>Tech Tweedie</em>) and Duncan (<em>Power BI Kinda Guy</em>), we tackled two questions you’ve either already asked — or definitely will soon.</p>]]></description>
+    <description><![CDATA[Welcome back to the Power Platform Clinic, your weekly check-in for diagnosing everyday Power Platform challenges — and fixing them without the consulting invoice.
+Whether you&rsquo;re a maker, a consultant, or someone who just typed &ldquo;Power Automate funny API&rdquo; into Google — you’re in the right place.
+In this week’s episode (Episode 3!), co-hosted by myself (Tech Tweedie) and Duncan (Power BI Kinda Guy), we tackled two questions you’ve either already asked — or definitely will soon.]]></description>
 </item>
 <item>
     <title>Power Platform Clinic – Episode 2</title>
     <link>http://localhost:1313/posts/250520-power-platform-clinic-episode-two/</link>
     <pubDate>Tue, 20 May 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250520-power-platform-clinic-episode-two/</guid>
-    <description><![CDATA[<p>Welcome to Episode 2 of the Power Platform Clinic with Duncan and Ian!</p>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/N8XHipg1HPk?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<p>In this episode:</p>
-<h3 id="-validating-email-domains-with-power-automate">✅ Validating Email Domains with Power Automate</h3>
-<p>Ian shares a powerful, free way to validate email domains using Power Automate, showing:</p>
-<ul>
-<li>Why validating the entire email address is tricky without sending a link</li>
-<li>How to split out the domain using the split function</li>
-<li>Using the <strong>CheckDomain</strong> connector to confirm whether a domain exists and can receive emails</li>
-<li>How this approach avoids the costs of third-party services and can be used with data from anywhere: Dataverse, Excel, or SharePoint</li>
-</ul>
-<p>Ian walks through building the flow step by step, demonstrating how it splits the email, checks the domain, and writes the result back to a field in Dataverse to clean up data input.</p>]]></description>
+    <description><![CDATA[Welcome to Episode 2 of the Power Platform Clinic with Duncan and Ian!
+In this episode:
+✅ Validating Email Domains with Power Automate Ian shares a powerful, free way to validate email domains using Power Automate, showing:
+Why validating the entire email address is tricky without sending a link How to split out the domain using the split function Using the CheckDomain connector to confirm whether a domain exists and can receive emails How this approach avoids the costs of third-party services and can be used with data from anywhere: Dataverse, Excel, or SharePoint Ian walks through building the flow step by step, demonstrating how it splits the email, checks the domain, and writes the result back to a field in Dataverse to clean up data input.]]></description>
 </item>
 <item>
     <title>Power Platform Clinic Episode 1</title>
     <link>http://localhost:1313/posts/250412-power-platform-clinic-episode-one/</link>
     <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250412-power-platform-clinic-episode-one/</guid>
-    <description><![CDATA[<p>Welcome to the very first episode of <strong>Power Platform Clinic</strong> with Duncan and Ian.</p>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xWqKIG3GvN8?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<p>In this episode:</p>
-<h3 id="-topic-1--showhide-tabs-dynamically-in-model-driven-apps">✅ Topic 1 – Show/Hide Tabs Dynamically in Model Driven Apps</h3>
-<p>Ian walks through how to show or hide a whole tab in a model-driven app based on the value of a field, such as <strong>Status Reason</strong>. The demo covers:</p>]]></description>
+    <description><![CDATA[Welcome to the very first episode of Power Platform Clinic with Duncan and Ian.
+In this episode:
+✅ Topic 1 – Show/Hide Tabs Dynamically in Model Driven Apps Ian walks through how to show or hide a whole tab in a model-driven app based on the value of a field, such as Status Reason. The demo covers:
+Why you might want to hide/show tabs A full explanation of the JavaScript snippet used How to upload and register the script in your form libraries Gotchas to watch out for (like needing to register the event handler onload and onchange) Testing the functionality and reviewing console logs to understand what&rsquo;s happening under the hood 👉 This approach is especially useful when you only want tabs visible at specific record statuses instead of toggling individual fields.]]></description>
 </item>
 </channel>
 </rss>

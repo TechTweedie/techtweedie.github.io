@@ -3,77 +3,107 @@
         <title>Community Event - Tag - Tech Tweedie</title>
         <link>http://localhost:1313/tags/community-event/</link>
         <description>Community Event - Tag - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 22 Jun 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/community-event/" rel="self" type="application/rss+xml" /><item>
-    <title>Build Your First DevOps Pipeline for the Power Platform</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/community-event/" rel="self" type="application/rss+xml" /><item>
+    <title>D365 &amp; Power Platform UG North East – September 2025 Meetup</title>
+    <link>http://localhost:1313/posts/250930-d365ppugne/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250930-d365ppugne/</guid>
+    <description><![CDATA[D365 &amp; Power Platform UG North East – September 2025 Meetup 📅 Date: Tuesday, September 30, 2025
+🕕 Time: 6:00 PM – 8:10 PM BST
+📍 Location: Haylofts, 5 Saint Thomas&rsquo; Street, Newcastle upon Tyne
+🎟️ Register Now: https://go.iantweedie.biz/meetup-d365ppugne-2509
+Co-Hosted By This event is proudly co-hosted by:
+Agata Guziur Justin Wilkinson Ian Tweedie Together, we’re bringing the North East community a fantastic evening of learning, sharing, and connection.
+Connect. Learn. Share.]]></description>
+</item>
+<item>
+    <title>At the National Power Platform User Day: Build Your First DevOps Pipeline for the Power Platform</title>
     <link>http://localhost:1313/posts/250627-d365ppugnational/</link>
     <pubDate>Sun, 22 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250627-d365ppugnational/</guid>
-    <description><![CDATA[<h1 id="build-your-first-devops-pipeline-for-the-power-platform">Build Your First DevOps Pipeline for the Power Platform</h1>
-<p><strong>📅 Date:</strong> Friday, June 27, 2025<br>
-<strong>🕒 Time:</strong> 2:15 PM – 3:00 PM BST<br>
-<strong>📍 Location:</strong> National Usergroup, Room G8<br>
-<strong>🎟️ Session Link:</strong> <a href="https://d365ppug-national-27-06-2025.sessionize.com/session/905816" target="_blank" rel="noopener noreffer">https://d365ppug-national-27-06-2025.sessionize.com/session/905816</a></p>
-<h2 id="session-overview">Session Overview</h2>
-<p>
-You’ve exported a solution. Maybe even unpacked it. But what’s next?</p>
-<p>In this hands-on, beginner-friendly session, <strong>Ian Tweedie (TechTweedie)</strong>, Power Platform Technical Consultant at Capgemini, will walk you through building your very first DevOps pipeline for the Power Platform — using Azure DevOps and real-world tools that anyone can adopt.</p>]]></description>
+    <description><![CDATA[Build Your First DevOps Pipeline for the Power Platform 📅 Date: Friday, June 27, 2025
+🕒 Time: 2:15 PM – 3:00 PM BST
+📍 Location: National Usergroup, Room G8
+🎟️ Session Link: https://d365ppug-national-27-06-2025.sessionize.com/session/905816
+Session Overview You’ve exported a solution. Maybe even unpacked it. But what’s next?
+In this hands-on, beginner-friendly session, Ian Tweedie (TechTweedie), Power Platform Technical Consultant at Capgemini, will walk you through building your very first DevOps pipeline for the Power Platform — using Azure DevOps and real-world tools that anyone can adopt.]]></description>
 </item>
 <item>
     <title>D365 &amp; Power Platform UG North East – June 2025 Meetup</title>
     <link>http://localhost:1313/posts/250626-d365ppugne/</link>
     <pubDate>Sun, 01 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250626-d365ppugne/</guid>
-    <description><![CDATA[<h1 id="d365--power-platform-ug-north-east--june-2025-meetup">D365 &amp; Power Platform UG North East – June 2025 Meetup</h1>
-<p><strong>📅 Date:</strong> Thursday, June 26, 2025<br>
-<strong>🕕 Time:</strong> 6:00 PM – 8:10 PM BST<br>
-<strong>📍 Location:</strong> Haylofts, 5 Saint Thomas&rsquo; Street, Newcastle upon Tyne<br>
-<strong>🎟️ Register Now:</strong> <a href="https://mars.mightora.io/yourls/d365ppugne2506" target="_blank" rel="noopener noreffer">https://mars.mightora.io/yourls/d365ppugne2506</a></p>
-<hr>
-<h2 id="co-hosted-by">Co-Hosted By</h2>
-<p>This event is proudly co-hosted by:</p>
-<ul>
-<li><a href="https://www.linkedin.com/in/agata-guziur-90b707192" target="_blank" rel="noopener noreffer">Agata Guziur</a></li>
-<li><a href="https://www.linkedin.com/in/justinwilkinson1000" target="_blank" rel="noopener noreffer">Justin Wilkinson</a></li>
-<li><a href="https://iantweedie.biz" target="_blank" rel="noopener noreffer">Ian Tweedie</a></li>
-</ul>
-<p>Together, we’re bringing the North East community a fantastic evening of learning, sharing, and connection.</p>]]></description>
+    <description><![CDATA[D365 &amp; Power Platform UG North East – June 2025 Meetup 📅 Date: Thursday, June 26, 2025
+🕕 Time: 6:00 PM – 8:10 PM BST
+📍 Location: Haylofts, 5 Saint Thomas&rsquo; Street, Newcastle upon Tyne
+🎟️ Register Now: https://mars.mightora.io/yourls/d365ppugne2506
+Co-Hosted By This event is proudly co-hosted by:
+Agata Guziur Justin Wilkinson Ian Tweedie Together, we’re bringing the North East community a fantastic evening of learning, sharing, and connection.
+Connect. Learn. Share.]]></description>
 </item>
 <item>
-    <title>Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</title>
+    <title>At the Norfolk Power Platform User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</title>
     <link>http://localhost:1313/posts/250522-nppug/</link>
-    <pubDate>Mon, 12 May 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250522-nppug/</guid>
-    <description><![CDATA[<h1 id="enabling-low-code-developers-to-create-custom-client-reports-with-a-helping-hand-from-azure--norfolk-power-platform-user-group">Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</h1>
-<p>📅 <strong>Date:</strong> 22nd May 2025<br>
-📍 <strong>Location:</strong> Norwich Digital Hub<br>
-🍕 <strong>Pizza included!</strong></p>
-<h2 id="session-overview">Session Overview</h2>
-<p>At the Norfolk Power Platform User Group, I delivered a session titled:</p>
-<p>✨ <strong>“Enabling low-code developers to create custom client reports with a helping hand from Azure”</strong></p>
-<p>In this session, I explored:</p>
-<ul>
-<li>Using Power Automate to generate custom reports securely.</li>
-<li>How to leverage an <strong>Azure Function as a reverse proxy</strong> to enhance security and scalability.</li>
-<li>An architectural pattern that integrates <strong>Dataverse, Power Automate, SharePoint, and Azure Functions</strong> to deliver dynamic, client-ready PDFs via secure links.</li>
-</ul>
-<h2 id="presentation-slides">Presentation Slides</h2>
-<p>You can view my full presentation here:</p>]]></description>
+    <pubDate>Thu, 22 May 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250522-nppug/</guid>
+    <description><![CDATA[📅 Date: 22nd May 2025
+📍 Location: Norwich Digital Hub
+🍕 Pizza included!
+Session Overview At the Norfolk Power Platform User Group, I delivered a session titled:
+✨ “Enabling low-code developers to create custom client reports with a helping hand from Azure”
+In this session, I explored:
+Using Power Automate to generate custom reports securely. How to leverage an Azure Function as a reverse proxy to enhance security and scalability. An architectural pattern that integrates Dataverse, Power Automate, SharePoint, and Azure Functions to deliver dynamic, client-ready PDFs via secure links.]]></description>
 </item>
 <item>
     <title>D365 &amp; Power Platform UG North East – March 2025 Meetup</title>
     <link>http://localhost:1313/posts/250327-d365ppugne/</link>
     <pubDate>Thu, 27 Mar 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250327-d365ppugne/</guid>
-    <description><![CDATA[<p>D365 &amp; Power Platform UG North East – July 2025 Meetup</p>
-<p><strong>📅 Date:</strong> Thursday, 27th March 2025<br>
-<strong>🕕 Time:</strong> 6:30 PM – 8:30 PM BST<br>
-<strong>📍 Location:</strong> BJSS, 12th Floor, Bank House, Newcastle upon Tyne NE1 6SQ
-<strong>🎟️ Event Link:</strong> <a href="https://www.meetup.com/d365ppug/events/305955184/?utm_medium=referral&amp;utm_campaign=share-btn_savedevents_share_modal&amp;utm_source=link&amp;utm_version=v2" target="_blank" rel="noopener noreffer">Meetup</a></p>
-<hr>
-<h2 id="co-hosted-by">Co-Hosted By</h2>
-<p>This event is proudly co-hosted by:</p>
-<ul>
-<li><a href="https://www.linkedin.com/in/agata-guziur-90b707192" target="_blank" rel="noopener noreffer">Agata Guziur</a></li>
-<li><a href="https://www.linkedin.com/in/justinwilkinson1000" target="_blank" rel="noopener noreffer">Justin Wilkinson</a></li>
-<li><a href="https://iantweedie.biz" target="_blank" rel="noopener noreffer">Ian Tweedie</a></li>
-</ul>
-<p>Together, we’re bringing the North East community a fantastic evening of learning, sharing, and connection.</p>]]></description>
+    <description><![CDATA[D365 &amp; Power Platform UG North East – July 2025 Meetup
+📅 Date: Thursday, 27th March 2025
+🕕 Time: 6:30 PM – 8:30 PM BST
+📍 Location: BJSS, 12th Floor, Bank House, Newcastle upon Tyne NE1 6SQ 🎟️ Event Link: Meetup
+Co-Hosted By This event is proudly co-hosted by:
+Agata Guziur Justin Wilkinson Ian Tweedie Together, we’re bringing the North East community a fantastic evening of learning, sharing, and connection.]]></description>
+</item>
+<item>
+    <title>At the Scottish Power Platform User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Scottish Power Platform User Group</title>
+    <link>http://localhost:1313/posts/250325-sppug/</link>
+    <pubDate>Tue, 25 Mar 2025 18:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/250325-sppug/</guid>
+    <description><![CDATA[📅 Date: 25th March 2025
+📍 Location: SWG3 Glasgow (100 Eastvale Pl, Stobcross Rd, Glasgow City)
+🕕 Time: 6:00 PM to 9:00 PM GMT
+Session Overview At the Scottish Power Platform User Group, I delivered a session titled:
+✨ “Enabling low-code developers to create custom client reports with a helping hand from Azure”
+In this session, I explored:
+Using Power Automate to generate custom reports securely. How to leverage an Azure Function as a reverse proxy to enhance security and scalability.]]></description>
+</item>
+<item>
+    <title>At Birmingham Power Platform User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</title>
+    <link>http://localhost:1313/posts/250130-bppug/</link>
+    <pubDate>Thu, 30 Jan 2025 18:30:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/250130-bppug/</guid>
+    <description><![CDATA[📅 Date: 30th January 2025
+📍 Location: Wesleyan, Colmore Circus Queensway, Birmingham
+🕕 Time: 6:30 PM to 9:00 PM GMT
+Session Overview At the Norfolk Power Platform User Group, I delivered a session titled:
+✨ “Enabling low-code developers to create custom client reports with a helping hand from Azure”
+In this session, I explored:
+Using Power Automate to generate custom reports securely. How to leverage an Azure Function as a reverse proxy to enhance security and scalability.]]></description>
+</item>
+<item>
+    <title>Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Low Code No Code Conference</title>
+    <link>http://localhost:1313/posts/241109-lcnc/</link>
+    <pubDate>Sat, 09 Nov 2024 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/241109-lcnc/</guid>
+    <description><![CDATA[📅 Date: 9th November 2024
+📍 Location: Online
+Session Overview At the Low Code No Code Microsoft Power Platform Conference 2024, I delivered a session titled:
+✨ &ldquo;Enabling low-code developers to create custom client reports with a helping hand from Azure&rdquo;
+Many of us have found a way to deliver custom reports from Dataverse, or other outputs to our clients via low-code tools such as Power Automate. Maybe we have used the Word connector, Dataverse, a bit of SharePoint, and a sprinkle of Outlook to deliver it.]]></description>
+</item>
+<item>
+    <title>At the M365 North User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure</title>
+    <link>http://localhost:1313/posts/240917-m365north/</link>
+    <pubDate>Tue, 17 Sep 2024 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/240917-m365north/</guid>
+    <description><![CDATA[📅 Date: 17th September 2024
+📍 Location: M365 North User Group
+Session Overview At the M365 North User Group, I delivered a session titled:
+✨ &ldquo;Enabling low-code developers to create custom client reports with a helping hand from Azure&rdquo;
+Many of us have found a way to deliver custom reports from Dataverse, or other outputs to our clients via low-code tools such as Power Automate. Maybe we have used the Word connector, Dataverse, a bit of SharePoint, and a sprinkle of Outlook to deliver it.]]></description>
 </item>
 </channel>
 </rss>

@@ -3,22 +3,22 @@
         <title>Categories - Category - Tech Tweedie</title>
         <link>http://localhost:1313/categories/</link>
         <description>Categories - Category - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>Power Platform Clinic</title>
-    <link>http://localhost:1313/categories/power-platform-clinic/</link>
-    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/power-platform-clinic/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
     <title>How To</title>
     <link>http://localhost:1313/categories/how-to/</link>
-    <pubDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/how-to/</guid>
+    <pubDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/how-to/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Community</title>
     <link>http://localhost:1313/categories/community/</link>
-    <pubDate>Sun, 22 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/community/</guid>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/community/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Power Platform Clinic</title>
+    <link>http://localhost:1313/categories/power-platform-clinic/</link>
+    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/categories/power-platform-clinic/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>

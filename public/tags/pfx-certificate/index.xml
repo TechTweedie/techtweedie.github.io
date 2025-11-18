@@ -7,10 +7,8 @@
     <title>PFX certificate for FREE for Power Pages</title>
     <link>http://localhost:1313/posts/pfx-certificate-for-free-for-power-pages/</link>
     <pubDate>Mon, 25 Jul 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/pfx-certificate-for-free-for-power-pages/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Do you want to deploy Power Pages on a custom domain securely without the need to buy a custom certificate? In this blog post, I’m going to show you how to do this quickly and easily acquire a PFX certificate that you can then use to deploy to Power Pages.</p>
-<h2 id="pre-requisite">Pre-requisite</h2>
-<p>This is a brilliant tool for generating SSL, and it is simple to use and quick to deploy.</p>]]></description>
+    <description><![CDATA[Introduction Do you want to deploy Power Pages on a custom domain securely without the need to buy a custom certificate? In this blog post, I’m going to show you how to do this quickly and easily acquire a PFX certificate that you can then use to deploy to Power Pages.
+Pre-requisite This is a brilliant tool for generating SSL, and it is simple to use and quick to deploy.]]></description>
 </item>
 </channel>
 </rss>

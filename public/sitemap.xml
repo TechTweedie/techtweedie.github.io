@@ -2,20 +2,33 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://localhost:1313/tags/azure-devops/</loc><lastmod>2025-07-20T00:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/</loc><lastmod>2025-07-20T00:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/</loc><lastmod>2025-11-18T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/devops/</loc><lastmod>2025-11-18T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/251118-your-first-azure-devops-pipeline-for-power-platform/</loc><lastmod>2025-11-18T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/how-to/</loc><lastmod>2025-11-18T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/</loc><lastmod>2025-11-18T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/power-platform/</loc><lastmod>2025-11-18T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/</loc><lastmod>2025-11-18T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/</loc><lastmod>2025-11-18T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/ai/</loc><lastmod>2025-09-04T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/canvas-apps/</loc><lastmod>2025-09-04T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/community/</loc><lastmod>2025-09-08T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/community-event/</loc><lastmod>2025-09-04T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/250930-d365ppugne/</loc><lastmod>2025-09-04T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/microsoft-365/</loc><lastmod>2025-09-04T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/power-apps/</loc><lastmod>2025-09-04T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/power-automate/</loc><lastmod>2025-09-04T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/automated-testing/</loc><lastmod>2025-09-08T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/azure-devops/</loc><lastmod>2025-09-08T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/playwright/</loc><lastmod>2025-09-08T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/250910-d365ppugnational/</loc><lastmod>2025-09-08T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/azure-devops-extension/</loc><lastmod>2025-09-04T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/documentation/</loc><lastmod>2025-09-04T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/250904-power-platform-documentation-extension/</loc><lastmod>2025-09-04T06:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/plus-addressing/</loc><lastmod>2025-07-20T00:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/</loc><lastmod>2025-07-20T00:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/power-automate/</loc><lastmod>2025-07-20T00:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/power-platform/</loc><lastmod>2025-07-20T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/power-platform-clinic/</loc><lastmod>2025-07-20T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/250720-power-platform-clinic-episode-seven/</loc><lastmod>2025-07-20T00:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/</loc><lastmod>2025-07-20T00:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/</loc><lastmod>2025-07-20T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/work-item-automation/</loc><lastmod>2025-07-20T00:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/devops/</loc><lastmod>2025-07-15T00:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/how-to/</loc><lastmod>2025-07-15T00:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/playwright/</loc><lastmod>2025-07-15T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/250715-running-advanced-playwright-tests-in-azure-devops-for-power-platform/</loc><lastmod>2025-07-15T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/testing/</loc><lastmod>2025-07-15T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/career-development/</loc><lastmod>2025-07-13T09:00:00&#43;01:00</lastmod></url><url>
@@ -35,26 +48,20 @@
             <loc>http://localhost:1313/tags/power-pages/</loc><lastmod>2025-06-24T06:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/250624-power-pages-customise-entra-external-id/</loc><lastmod>2025-06-24T06:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/250627-d365ppugnational/</loc><lastmod>2025-06-22T06:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/categories/community/</loc><lastmod>2025-06-22T06:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/community-event/</loc><lastmod>2025-06-22T06:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/solution-lifecycle/</loc><lastmod>2025-06-22T06:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/developer-account/</loc><lastmod>2025-06-03T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/250603-power-platform-clinic-episode-four/</loc><lastmod>2025-06-03T00:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/ai/</loc><lastmod>2025-06-01T06:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/canvas-apps/</loc><lastmod>2025-06-01T06:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/250626-d365ppugne/</loc><lastmod>2025-06-01T06:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/microsoft-365/</loc><lastmod>2025-06-01T06:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/power-apps/</loc><lastmod>2025-06-01T06:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/custom-connector/</loc><lastmod>2025-05-26T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/custom-vision/</loc><lastmod>2025-05-26T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/power-bi/</loc><lastmod>2025-05-26T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/250526-power-platform-clinic-episode-three/</loc><lastmod>2025-05-26T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/rest-api/</loc><lastmod>2025-05-26T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/250524-power-pages-with-entra-external-id/</loc><lastmod>2025-05-25T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/250522-nppug/</loc><lastmod>2025-05-22T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/azure-functions/</loc><lastmod>2025-05-22T06:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/email-validation/</loc><lastmod>2025-05-20T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/250520-power-platform-clinic-episode-two/</loc><lastmod>2025-05-20T00:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/tags/azure-functions/</loc><lastmod>2025-05-12T06:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/250522-nppug/</loc><lastmod>2025-05-12T06:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/javascript/</loc><lastmod>2025-04-12T00:00:00&#43;00:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/model-driven-app/</loc><lastmod>2025-04-12T00:00:00&#43;00:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/power-platform/</loc><lastmod>2025-04-12T00:00:00&#43;00:00</lastmod></url><url>
@@ -64,16 +71,21 @@
             <loc>http://localhost:1313/tags/model-driven-apps/</loc><lastmod>2025-04-12T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/250412-power-platform-clinic-episode-one/</loc><lastmod>2025-04-12T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/250327-d365ppugne/</loc><lastmod>2025-03-27T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/250325-sppug/</loc><lastmod>2025-03-25T18:00:00&#43;00:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</loc><lastmod>2025-02-17T06:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/azure/</loc><lastmod>2025-04-01T13:30:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/power-automate/</loc><lastmod>2025-04-01T13:30:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/send-emails-from-flow-without-a-service-account/</loc><lastmod>2025-04-01T13:30:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/250210-send-emails-from-flow-without-a-service-account/</loc><lastmod>2025-04-01T13:30:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/250130-bppug/</loc><lastmod>2025-01-30T18:30:00&#43;00:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/</loc><lastmod>2024-12-14T06:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/backup/</loc><lastmod>2024-12-14T06:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/241109-lcnc/</loc><lastmod>2024-11-09T00:00:00&#43;00:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/effortlessly-move-dataverse-for-teams-solutions/</loc><lastmod>2024-10-22T07:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/pipeline/</loc><lastmod>2024-10-22T07:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/powershell/</loc><lastmod>2024-10-22T07:00:00&#43;01:00</lastmod></url><url>
-            <loc>http://localhost:1313/posts/calculate-working-day/</loc><lastmod>2024-09-24T09:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/241003-vd365ppug/</loc><lastmod>2024-10-03T18:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/240924-calculate-working-day/</loc><lastmod>2024-09-24T09:00:00&#43;01:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/240917-m365north/</loc><lastmod>2024-09-17T00:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/backup-dataverse-development-environment/</loc><lastmod>2024-09-03T07:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/power-platform-devops/</loc><lastmod>2024-09-03T07:00:00&#43;01:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/power-platform-security/</loc><lastmod>2024-08-06T06:00:00&#43;01:00</lastmod></url><url>
@@ -127,4 +139,5 @@
             <loc>http://localhost:1313/posts/pfx-certificate-for-free-for-power-pages/</loc><lastmod>2024-07-08T19:45:40&#43;08:00</lastmod></url><url>
             <loc>http://localhost:1313/tags/http-trigger/</loc><lastmod>2024-07-05T19:45:40&#43;08:00</lastmod></url><url>
             <loc>http://localhost:1313/posts/query-parameters-on-http-trigger/</loc><lastmod>2024-07-05T19:45:40&#43;08:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/250131-bppug/</loc></url><url>
             <loc>http://localhost:1313/offline/</loc></url></urlset>

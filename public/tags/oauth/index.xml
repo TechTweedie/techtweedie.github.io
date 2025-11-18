@@ -7,15 +7,9 @@
     <title>Azure B2C oAuth on Postman</title>
     <link>http://localhost:1313/posts/azureb2c-oauth-in-postman/</link>
     <pubDate>Mon, 14 Nov 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/azureb2c-oauth-in-postman/</guid>
-    <description><![CDATA[<p>I had a problem where I needed to get my JWT token from Azure B2C OAuth 2.0 in order to troubleshoot an issue I was having in getting OAuth 2.0 working.</p>
-<h4 id="situation">Situation</h4>
-<p>I needed to get the JWT token using Postman, decrypt it, and then provide it for troubleshooting the issue.</p>
-<h4 id="how-did-i-do-that">How did I do that</h4>
-<ul>
-<li>Get postman</li>
-<li>Create a new request, as far as I am aware it makes no difference what type of request you use so in this example, I will use a <strong>GET</strong> request.</li>
-</ul>
-<p></p>]]></description>
+    <description><![CDATA[I had a problem where I needed to get my JWT token from Azure B2C OAuth 2.0 in order to troubleshoot an issue I was having in getting OAuth 2.0 working.
+Situation I needed to get the JWT token using Postman, decrypt it, and then provide it for troubleshooting the issue.
+How did I do that Get postman Create a new request, as far as I am aware it makes no difference what type of request you use so in this example, I will use a GET request.]]></description>
 </item>
 </channel>
 </rss>

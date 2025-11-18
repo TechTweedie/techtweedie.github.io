@@ -3,180 +3,102 @@
         <title>Power Automate - Tag - Tech Tweedie</title>
         <link>http://localhost:1313/tags/power-automate/</link>
         <description>Power Automate - Tag - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/power-automate/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/power-automate/" rel="self" type="application/rss+xml" /><item>
+    <title>D365 &amp; Power Platform UG North East – September 2025 Meetup</title>
+    <link>http://localhost:1313/posts/250930-d365ppugne/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250930-d365ppugne/</guid>
+    <description><![CDATA[D365 &amp; Power Platform UG North East – September 2025 Meetup 📅 Date: Tuesday, September 30, 2025
+🕕 Time: 6:00 PM – 8:10 PM BST
+📍 Location: Haylofts, 5 Saint Thomas&rsquo; Street, Newcastle upon Tyne
+🎟️ Register Now: https://go.iantweedie.biz/meetup-d365ppugne-2509
+Co-Hosted By This event is proudly co-hosted by:
+Agata Guziur Justin Wilkinson Ian Tweedie Together, we’re bringing the North East community a fantastic evening of learning, sharing, and connection.
+Connect. Learn. Share.]]></description>
+</item>
+<item>
     <title>Power Platform Clinic Episode 7: Automatically Tag DevOps Tickets by Email</title>
     <link>http://localhost:1313/posts/250720-power-platform-clinic-episode-seven/</link>
     <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250720-power-platform-clinic-episode-seven/</guid>
-    <description><![CDATA[<h1 id="auto-tag-devops-tickets-via-email-using-power-automate">Auto-Tag DevOps Tickets via Email using Power Automate</h1>
-<p>In this episode of the Power Platform Clinic, we explore how to keep Azure DevOps tickets updated when discussions happen over email.</p>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/FgAxJkx6Zyk?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<hr>
-<h2 id="why-its-handy">Why It’s Handy</h2>
-<p>You often need to chase suppliers or clients via email. This approach helps thread those email updates directly into DevOps using <strong>plus addressing</strong> and <strong>Power Automate</strong>.</p>]]></description>
+    <description><![CDATA[Auto-Tag DevOps Tickets via Email using Power Automate In this episode of the Power Platform Clinic, we explore how to keep Azure DevOps tickets updated when discussions happen over email.
+Why It’s Handy You often need to chase suppliers or clients via email. This approach helps thread those email updates directly into DevOps using plus addressing and Power Automate.
+What You’ll Need A shared mailbox that supports plus addressing Power Automate Azure DevOps API 🗺️ Flow Overview 🔧 Key Expressions Extract Recipient Email (Uppercase &amp; Split) @toUpper(triggerOutputs()?]]></description>
 </item>
 <item>
     <title>Power Platform Clinic – Episode 5: Converting Forms with Images to PDF</title>
     <link>http://localhost:1313/posts/250625-power-platform-clinic-episode-five/</link>
     <pubDate>Wed, 25 Jun 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250625-power-platform-clinic-episode-five/</guid>
-    <description><![CDATA[<h1 id="power-platform-clinic--episode-5-converting-forms-with-images-to-pdf">Power Platform Clinic – Episode 5: Converting Forms with Images to PDF</h1>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/22SL8thkPmo?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<h2 id="introduction">Introduction</h2>
-<p>In this episode of the <strong>Power Platform Clinic</strong>, Ian (that’s me!) tackles a real-world community question:</p>
-<blockquote>
-<p><em>Is it possible to convert a Microsoft Form that contains both text and images into a PDF using Power Automate?</em></p>]]></description>
+    <description><![CDATA[Power Platform Clinic – Episode 5: Converting Forms with Images to PDF Introduction In this episode of the Power Platform Clinic, Ian (that’s me!) tackles a real-world community question:
+Is it possible to convert a Microsoft Form that contains both text and images into a PDF using Power Automate?
+As usual, we go deep on the technical side—pulling data, parsing responses, handling images, encoding files as base64, generating dynamic HTML, and finally converting it all to a PDF and emailing it out.]]></description>
 </item>
 <item>
     <title>D365 &amp; Power Platform UG North East – June 2025 Meetup</title>
     <link>http://localhost:1313/posts/250626-d365ppugne/</link>
     <pubDate>Sun, 01 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250626-d365ppugne/</guid>
-    <description><![CDATA[<h1 id="d365--power-platform-ug-north-east--june-2025-meetup">D365 &amp; Power Platform UG North East – June 2025 Meetup</h1>
-<p><strong>📅 Date:</strong> Thursday, June 26, 2025<br>
-<strong>🕕 Time:</strong> 6:00 PM – 8:10 PM BST<br>
-<strong>📍 Location:</strong> Haylofts, 5 Saint Thomas&rsquo; Street, Newcastle upon Tyne<br>
-<strong>🎟️ Register Now:</strong> <a href="https://mars.mightora.io/yourls/d365ppugne2506" target="_blank" rel="noopener noreffer">https://mars.mightora.io/yourls/d365ppugne2506</a></p>
-<hr>
-<h2 id="co-hosted-by">Co-Hosted By</h2>
-<p>This event is proudly co-hosted by:</p>
-<ul>
-<li><a href="https://www.linkedin.com/in/agata-guziur-90b707192" target="_blank" rel="noopener noreffer">Agata Guziur</a></li>
-<li><a href="https://www.linkedin.com/in/justinwilkinson1000" target="_blank" rel="noopener noreffer">Justin Wilkinson</a></li>
-<li><a href="https://iantweedie.biz" target="_blank" rel="noopener noreffer">Ian Tweedie</a></li>
-</ul>
-<p>Together, we’re bringing the North East community a fantastic evening of learning, sharing, and connection.</p>]]></description>
+    <description><![CDATA[D365 &amp; Power Platform UG North East – June 2025 Meetup 📅 Date: Thursday, June 26, 2025
+🕕 Time: 6:00 PM – 8:10 PM BST
+📍 Location: Haylofts, 5 Saint Thomas&rsquo; Street, Newcastle upon Tyne
+🎟️ Register Now: https://mars.mightora.io/yourls/d365ppugne2506
+Co-Hosted By This event is proudly co-hosted by:
+Agata Guziur Justin Wilkinson Ian Tweedie Together, we’re bringing the North East community a fantastic evening of learning, sharing, and connection.
+Connect. Learn. Share.]]></description>
 </item>
 <item>
     <title>Power Platform Clinic – Episode 3: Calling a Dad Joke API and Custom Visuals in Power BI Clinic</title>
     <link>http://localhost:1313/posts/250526-power-platform-clinic-episode-three/</link>
     <pubDate>Mon, 26 May 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250526-power-platform-clinic-episode-three/</guid>
-    <description><![CDATA[<p>Welcome back to the <strong>Power Platform Clinic</strong>, your weekly check-in for diagnosing everyday Power Platform challenges — and fixing them without the consulting invoice.</p>
-<p>Whether you&rsquo;re a maker, a consultant, or someone who just typed &ldquo;Power Automate funny API&rdquo; into Google — you’re in the right place.</p>
-<p>In this week’s episode (Episode 3!), co-hosted by myself (<em>Tech Tweedie</em>) and Duncan (<em>Power BI Kinda Guy</em>), we tackled two questions you’ve either already asked — or definitely will soon.</p>]]></description>
+    <description><![CDATA[Welcome back to the Power Platform Clinic, your weekly check-in for diagnosing everyday Power Platform challenges — and fixing them without the consulting invoice.
+Whether you&rsquo;re a maker, a consultant, or someone who just typed &ldquo;Power Automate funny API&rdquo; into Google — you’re in the right place.
+In this week’s episode (Episode 3!), co-hosted by myself (Tech Tweedie) and Duncan (Power BI Kinda Guy), we tackled two questions you’ve either already asked — or definitely will soon.]]></description>
 </item>
 <item>
     <title>Walk through Power Pages with Entra External ID</title>
     <link>http://localhost:1313/posts/250524-power-pages-with-entra-external-id/</link>
     <pubDate>Sun, 25 May 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250524-power-pages-with-entra-external-id/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Need to enable Entra External ID sign-in for your Power Pages site? Whether you&rsquo;re looking to support customer access or enable collaboration with external users, the combination of Power Pages and Entra ID is a powerful way to ensure secure, identity-driven access to your platform.</p>
-<p>In this walkthrough video, I demonstrate how to integrate Entra External ID with a Power Pages site, covering:</p>
-<ul>
-<li>Setting up Entra External ID</li>
-<li>Configuring identity providers</li>
-<li>Connecting the authentication flow with your Power Pages site</li>
-<li>Testing the login experience from an external user’s perspective</li>
-</ul>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/elb5kPG3FnU?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<h2 id="why-use-entra-external-id-with-power-pages">Why Use Entra External ID with Power Pages?</h2>
-<p>Power Pages is ideal for creating public- or partner-facing web portals, but managing access securely is always a challenge. Entra External ID lets you:</p>]]></description>
+    <description><![CDATA[Introduction Need to enable Entra External ID sign-in for your Power Pages site? Whether you&rsquo;re looking to support customer access or enable collaboration with external users, the combination of Power Pages and Entra ID is a powerful way to ensure secure, identity-driven access to your platform.
+In this walkthrough video, I demonstrate how to integrate Entra External ID with a Power Pages site, covering:
+Setting up Entra External ID Configuring identity providers Connecting the authentication flow with your Power Pages site Testing the login experience from an external user’s perspective Why Use Entra External ID with Power Pages?]]></description>
+</item>
+<item>
+    <title>At the Norfolk Power Platform User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</title>
+    <link>http://localhost:1313/posts/250522-nppug/</link>
+    <pubDate>Thu, 22 May 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250522-nppug/</guid>
+    <description><![CDATA[📅 Date: 22nd May 2025
+📍 Location: Norwich Digital Hub
+🍕 Pizza included!
+Session Overview At the Norfolk Power Platform User Group, I delivered a session titled:
+✨ “Enabling low-code developers to create custom client reports with a helping hand from Azure”
+In this session, I explored:
+Using Power Automate to generate custom reports securely. How to leverage an Azure Function as a reverse proxy to enhance security and scalability. An architectural pattern that integrates Dataverse, Power Automate, SharePoint, and Azure Functions to deliver dynamic, client-ready PDFs via secure links.]]></description>
 </item>
 <item>
     <title>Power Platform Clinic – Episode 2</title>
     <link>http://localhost:1313/posts/250520-power-platform-clinic-episode-two/</link>
     <pubDate>Tue, 20 May 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250520-power-platform-clinic-episode-two/</guid>
-    <description><![CDATA[<p>Welcome to Episode 2 of the Power Platform Clinic with Duncan and Ian!</p>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/N8XHipg1HPk?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<p>In this episode:</p>
-<h3 id="-validating-email-domains-with-power-automate">✅ Validating Email Domains with Power Automate</h3>
-<p>Ian shares a powerful, free way to validate email domains using Power Automate, showing:</p>
-<ul>
-<li>Why validating the entire email address is tricky without sending a link</li>
-<li>How to split out the domain using the split function</li>
-<li>Using the <strong>CheckDomain</strong> connector to confirm whether a domain exists and can receive emails</li>
-<li>How this approach avoids the costs of third-party services and can be used with data from anywhere: Dataverse, Excel, or SharePoint</li>
-</ul>
-<p>Ian walks through building the flow step by step, demonstrating how it splits the email, checks the domain, and writes the result back to a field in Dataverse to clean up data input.</p>]]></description>
-</item>
-<item>
-    <title>Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</title>
-    <link>http://localhost:1313/posts/250522-nppug/</link>
-    <pubDate>Mon, 12 May 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250522-nppug/</guid>
-    <description><![CDATA[<h1 id="enabling-low-code-developers-to-create-custom-client-reports-with-a-helping-hand-from-azure--norfolk-power-platform-user-group">Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</h1>
-<p>📅 <strong>Date:</strong> 22nd May 2025<br>
-📍 <strong>Location:</strong> Norwich Digital Hub<br>
-🍕 <strong>Pizza included!</strong></p>
-<h2 id="session-overview">Session Overview</h2>
-<p>At the Norfolk Power Platform User Group, I delivered a session titled:</p>
-<p>✨ <strong>“Enabling low-code developers to create custom client reports with a helping hand from Azure”</strong></p>
-<p>In this session, I explored:</p>
-<ul>
-<li>Using Power Automate to generate custom reports securely.</li>
-<li>How to leverage an <strong>Azure Function as a reverse proxy</strong> to enhance security and scalability.</li>
-<li>An architectural pattern that integrates <strong>Dataverse, Power Automate, SharePoint, and Azure Functions</strong> to deliver dynamic, client-ready PDFs via secure links.</li>
-</ul>
-<h2 id="presentation-slides">Presentation Slides</h2>
-<p>You can view my full presentation here:</p>]]></description>
+    <description><![CDATA[Welcome to Episode 2 of the Power Platform Clinic with Duncan and Ian!
+In this episode:
+✅ Validating Email Domains with Power Automate Ian shares a powerful, free way to validate email domains using Power Automate, showing:
+Why validating the entire email address is tricky without sending a link How to split out the domain using the split function Using the CheckDomain connector to confirm whether a domain exists and can receive emails How this approach avoids the costs of third-party services and can be used with data from anywhere: Dataverse, Excel, or SharePoint Ian walks through building the flow step by step, demonstrating how it splits the email, checks the domain, and writes the result back to a field in Dataverse to clean up data input.]]></description>
 </item>
 <item>
     <title>Power Platform Clinic Episode 1</title>
     <link>http://localhost:1313/posts/250412-power-platform-clinic-episode-one/</link>
     <pubDate>Sat, 12 Apr 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250412-power-platform-clinic-episode-one/</guid>
-    <description><![CDATA[<p>Welcome to the very first episode of <strong>Power Platform Clinic</strong> with Duncan and Ian.</p>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xWqKIG3GvN8?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<p>In this episode:</p>
-<h3 id="-topic-1--showhide-tabs-dynamically-in-model-driven-apps">✅ Topic 1 – Show/Hide Tabs Dynamically in Model Driven Apps</h3>
-<p>Ian walks through how to show or hide a whole tab in a model-driven app based on the value of a field, such as <strong>Status Reason</strong>. The demo covers:</p>]]></description>
+    <description><![CDATA[Welcome to the very first episode of Power Platform Clinic with Duncan and Ian.
+In this episode:
+✅ Topic 1 – Show/Hide Tabs Dynamically in Model Driven Apps Ian walks through how to show or hide a whole tab in a model-driven app based on the value of a field, such as Status Reason. The demo covers:
+Why you might want to hide/show tabs A full explanation of the JavaScript snippet used How to upload and register the script in your form libraries Gotchas to watch out for (like needing to register the event handler onload and onchange) Testing the functionality and reviewing console logs to understand what&rsquo;s happening under the hood 👉 This approach is especially useful when you only want tabs visible at specific record statuses instead of toggling individual fields.]]></description>
 </item>
 <item>
     <title>D365 &amp; Power Platform UG North East – March 2025 Meetup</title>
     <link>http://localhost:1313/posts/250327-d365ppugne/</link>
     <pubDate>Thu, 27 Mar 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250327-d365ppugne/</guid>
-    <description><![CDATA[<p>D365 &amp; Power Platform UG North East – July 2025 Meetup</p>
-<p><strong>📅 Date:</strong> Thursday, 27th March 2025<br>
-<strong>🕕 Time:</strong> 6:30 PM – 8:30 PM BST<br>
-<strong>📍 Location:</strong> BJSS, 12th Floor, Bank House, Newcastle upon Tyne NE1 6SQ
-<strong>🎟️ Event Link:</strong> <a href="https://www.meetup.com/d365ppug/events/305955184/?utm_medium=referral&amp;utm_campaign=share-btn_savedevents_share_modal&amp;utm_source=link&amp;utm_version=v2" target="_blank" rel="noopener noreffer">Meetup</a></p>
-<hr>
-<h2 id="co-hosted-by">Co-Hosted By</h2>
-<p>This event is proudly co-hosted by:</p>
-<ul>
-<li><a href="https://www.linkedin.com/in/agata-guziur-90b707192" target="_blank" rel="noopener noreffer">Agata Guziur</a></li>
-<li><a href="https://www.linkedin.com/in/justinwilkinson1000" target="_blank" rel="noopener noreffer">Justin Wilkinson</a></li>
-<li><a href="https://iantweedie.biz" target="_blank" rel="noopener noreffer">Ian Tweedie</a></li>
-</ul>
-<p>Together, we’re bringing the North East community a fantastic evening of learning, sharing, and connection.</p>]]></description>
-</item>
-<item>
-    <title>Set folder permissions in SharePoint with Power Automate Flow</title>
-    <link>http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</link>
-    <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</guid>
-    <description><![CDATA[<p>Want to grand and remove item or folder permissions in SharePoint using <strong>Power Automate</strong> with a Service Principle but can&rsquo;t do it? Not able to do it with the out of the box SharePoint Connector?</p>
-<p>Tired of dealing with Conditional Access Policies, password expirations, and frequent logins?</p>
-<p>Good news! In this guide, I&rsquo;ll show you how to set these using an App Registration. No service accounts, no password headaches. I&rsquo;ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:</p>]]></description>
+    <description><![CDATA[D365 &amp; Power Platform UG North East – July 2025 Meetup
+📅 Date: Thursday, 27th March 2025
+🕕 Time: 6:30 PM – 8:30 PM BST
+📍 Location: BJSS, 12th Floor, Bank House, Newcastle upon Tyne NE1 6SQ 🎟️ Event Link: Meetup
+Co-Hosted By This event is proudly co-hosted by:
+Agata Guziur Justin Wilkinson Ian Tweedie Together, we’re bringing the North East community a fantastic evening of learning, sharing, and connection.]]></description>
 </item>
 </channel>
 </rss>

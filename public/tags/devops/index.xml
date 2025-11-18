@@ -3,100 +3,84 @@
         <title>DevOps - Tag - Tech Tweedie</title>
         <link>http://localhost:1313/tags/devops/</link>
         <description>DevOps - Tag - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/devops/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/devops/" rel="self" type="application/rss+xml" /><item>
+    <title>Generate Power Platform Solution Documentation with Azure DevOps</title>
+    <link>http://localhost:1313/posts/251118-your-first-azure-devops-pipeline-for-power-platform/</link>
+    <pubDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/251118-your-first-azure-devops-pipeline-for-power-platform/</guid>
+    <description><![CDATA[Your First Azure DevOps Pipeline for Power Platform – A Complete Beginner’s Guide Have you ever wondered how to set up Azure DevOps pipelines for the Power Platform?
+Ever wished you could export your solutions safely, run tests, add security checks, generate documentation, or deploy across tenants with confidence?
+All of this becomes simple once you introduce Azure DevOps into your Power Platform ALM story — and in this guide (based on my YouTube walkthrough), I’ll show you exactly how to build your first Azure DevOps pipeline.]]></description>
+</item>
+<item>
+    <title>Playwright for Makers – Bringing One-Click UI Tests to Model-Driven Apps &amp; Power Pages</title>
+    <link>http://localhost:1313/posts/250910-d365ppugnational/</link>
+    <pubDate>Wed, 10 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250910-d365ppugnational/</guid>
+    <description><![CDATA[📅 Date: Wednesday, September 10, 2025
+🕒 Time: 10:45 AM – 11:30 AM BST
+📍 Location: UK D365 and Power Platform User Group, Microsoft UA92 Manchester, Room 102/103
+🎟️ Session Link: https://d365ppug-national-10092025.sessionize.com/session/991575
+Session Overview In this hands-on, demo-heavy session, Ian Tweedie (TechTweedie), Power Platform Technical Consultant at Capgemini, will showcase how to integrate automated UI testing into your low-code CI/CD workflows. Using the FREE Open Source Playwright for Power Platform DevOps Extension, you’ll learn how to:]]></description>
+</item>
+<item>
+    <title>Generate Power Platform Solution Documentation with Azure DevOps</title>
+    <link>http://localhost:1313/posts/250904-power-platform-documentation-extension/</link>
+    <pubDate>Thu, 04 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250904-power-platform-documentation-extension/</guid>
+    <description><![CDATA[Instantly Document Your Power Platform Solutions with Azure DevOps Are you tired of manually documenting your Power Platform solutions? Struggling to keep your tables, relationships, option sets, and workflows up to date for your team or clients? The Power Platform Documentation Extension for Azure DevOps is designed to solve these problems—automatically. This tool helps you generate clear, accurate, and SEO-friendly Markdown documentation for your wikis and repositories, saving you hours and improving collaboration.]]></description>
+</item>
+<item>
     <title>Running ADVANCED Playwright Tests in Azure DevOps for Power Platform Apps</title>
     <link>http://localhost:1313/posts/250715-running-advanced-playwright-tests-in-azure-devops-for-power-platform/</link>
     <pubDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250715-running-advanced-playwright-tests-in-azure-devops-for-power-platform/</guid>
-    <description><![CDATA[<h1 id="-playwright--power-platform--devops-pipelines-yes-please">🧪 Playwright + Power Platform + DevOps Pipelines? Yes please!</h1>
-<p>Just dropped a new video where I walk through the latest update to my <strong>Playwright for Power Platform DevOps Extension</strong>. This time, we’re not just running tests — we’re dynamically assigning roles, business units, and teams to a test user before your Playwright test runs, and then removing them right after. Clean, controlled, reusable testing every time ✅</p>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/lFHQ8HUsnMI?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<h2 id="-whats-new-in-this-release">🎯 What&rsquo;s new in this release?</h2>
-<ul>
-<li>Assign security roles dynamically in a DevOps pipeline</li>
-<li>Switch business units and teams for your test user</li>
-<li>Clean up roles after the test completes</li>
-<li>Fully open-source DevOps task ready to install</li>
-<li>Compatible with any Playwright tests against Power Platform</li>
-</ul>
-<p>This means fewer test users, more test coverage, and pipelines you can actually trust.</p>]]></description>
+    <description><![CDATA[🧪 Playwright + Power Platform + DevOps Pipelines? Yes please! Just dropped a new video where I walk through the latest update to my Playwright for Power Platform DevOps Extension. This time, we’re not just running tests — we’re dynamically assigning roles, business units, and teams to a test user before your Playwright test runs, and then removing them right after. Clean, controlled, reusable testing every time ✅
+🎯 What&rsquo;s new in this release?]]></description>
 </item>
 <item>
     <title>Power Platform Clinic - Episode 6: Certs, Consultancy, and Career Conversations</title>
     <link>http://localhost:1313/posts/250713-power-platform-clinic-episode-six/</link>
     <pubDate>Sun, 13 Jul 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250713-power-platform-clinic-episode-six/</guid>
-    <description><![CDATA[<h2 id="power-platform-clinic-episode-6--certs-consultancy-and-career-conversations">Power Platform Clinic Episode 6 – Certs, Consultancy, and Career Conversations</h2>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0fnbmPvHN5E?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<p>In this episode of the Power Platform Clinic, Duncan and I get stuck into some big-picture questions from the community—about Microsoft certifications, life as a consultant, and how to grow your career across the Power Platform and beyond.</p>]]></description>
+    <description><![CDATA[Power Platform Clinic Episode 6 – Certs, Consultancy, and Career Conversations In this episode of the Power Platform Clinic, Duncan and I get stuck into some big-picture questions from the community—about Microsoft certifications, life as a consultant, and how to grow your career across the Power Platform and beyond.
+🎓 Are Microsoft Certifications Worth It? Spoiler: Yes, but with caveats.
+I share how I started collecting Microsoft certs back when they were being offered free (shoutout to the days of the 900 series!]]></description>
 </item>
 <item>
     <title>Running Playwright Tests in Azure DevOps for Power Platform Apps</title>
     <link>http://localhost:1313/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/</link>
     <pubDate>Wed, 02 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250702-running-playwright-tests-in-azure-devops-for-power-platform/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Are you looking to easily run Playwright tests for your Power Platform apps within an Azure DevOps pipeline? In this tutorial, I show you how to use my <strong><a href="https://marketplace.visualstudio.com/items?itemName=mightoraio.mightora-playwright-for-power-platform" target="_blank" rel="noopener noreffer">Playwright for Power Platform DevOps extension</a></strong> to run tests against your model-driven app, capture reports, and publish results.</p>
-<p>Below is the embedded video:</p>
-<!-- raw HTML omitted -->
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/IKgxUOEDFog?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<h2 id="what-you-will-learn">What you will learn</h2>
-<ul>
-<li>How to install the Playwright for Power Platform DevOps extension</li>
-<li>How to write a Playwright test that creates a Contact record using fake data</li>
-<li>How to set up your Azure DevOps pipeline to run these tests, archive reports, and publish results</li>
-</ul>
-<hr>
-<h2 id="code-snippet--playwright-test">Code Snippet – Playwright Test</h2>
-<p>Here is the test script used in the video to add a contact with fake data:</p>]]></description>
+    <description><![CDATA[Introduction Are you looking to easily run Playwright tests for your Power Platform apps within an Azure DevOps pipeline? In this tutorial, I show you how to use my Playwright for Power Platform DevOps extension to run tests against your model-driven app, capture reports, and publish results.
+Below is the embedded video:
+What you will learn How to install the Playwright for Power Platform DevOps extension How to write a Playwright test that creates a Contact record using fake data How to set up your Azure DevOps pipeline to run these tests, archive reports, and publish results Code Snippet – Playwright Test Here is the test script used in the video to add a contact with fake data:]]></description>
 </item>
 <item>
-    <title>Build Your First DevOps Pipeline for the Power Platform</title>
+    <title>At the National Power Platform User Day: Build Your First DevOps Pipeline for the Power Platform</title>
     <link>http://localhost:1313/posts/250627-d365ppugnational/</link>
     <pubDate>Sun, 22 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250627-d365ppugnational/</guid>
-    <description><![CDATA[<h1 id="build-your-first-devops-pipeline-for-the-power-platform">Build Your First DevOps Pipeline for the Power Platform</h1>
-<p><strong>📅 Date:</strong> Friday, June 27, 2025<br>
-<strong>🕒 Time:</strong> 2:15 PM – 3:00 PM BST<br>
-<strong>📍 Location:</strong> National Usergroup, Room G8<br>
-<strong>🎟️ Session Link:</strong> <a href="https://d365ppug-national-27-06-2025.sessionize.com/session/905816" target="_blank" rel="noopener noreffer">https://d365ppug-national-27-06-2025.sessionize.com/session/905816</a></p>
-<h2 id="session-overview">Session Overview</h2>
-<p>
-You’ve exported a solution. Maybe even unpacked it. But what’s next?</p>
-<p>In this hands-on, beginner-friendly session, <strong>Ian Tweedie (TechTweedie)</strong>, Power Platform Technical Consultant at Capgemini, will walk you through building your very first DevOps pipeline for the Power Platform — using Azure DevOps and real-world tools that anyone can adopt.</p>]]></description>
+    <description><![CDATA[Build Your First DevOps Pipeline for the Power Platform 📅 Date: Friday, June 27, 2025
+🕒 Time: 2:15 PM – 3:00 PM BST
+📍 Location: National Usergroup, Room G8
+🎟️ Session Link: https://d365ppug-national-27-06-2025.sessionize.com/session/905816
+Session Overview You’ve exported a solution. Maybe even unpacked it. But what’s next?
+In this hands-on, beginner-friendly session, Ian Tweedie (TechTweedie), Power Platform Technical Consultant at Capgemini, will walk you through building your very first DevOps pipeline for the Power Platform — using Azure DevOps and real-world tools that anyone can adopt.]]></description>
 </item>
 <item>
-    <title>Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment</title>
+    <title>At Learner to Leader: Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment</title>
     <link>http://localhost:1313/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/</link>
     <pubDate>Sat, 14 Dec 2024 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/241214-backing-up-your-development-environment-avoiding-costly-mistakes-in-low-code-development/</guid>
-    <description><![CDATA[<h2 id="what-would-happen-if-you-lost-your-dev-environment">What Would Happen If You Lost Your Dev Environment?</h2>
-<p>Ever wondered what would happen if someone accidentally deleted your development site or overwrote a key flow? Rebuilding from memory isn&rsquo;t just frustrating — it’s costly.</p>
-<p>This post walks through the process I demonstrated during my session with the <strong>Power Platform Learner to Leader</strong> community, showing how to <strong>automatically back up</strong> your environment using <strong>Azure DevOps</strong>, without requiring advanced YAML knowledge.</p>]]></description>
+    <description><![CDATA[What Would Happen If You Lost Your Dev Environment? Ever wondered what would happen if someone accidentally deleted your development site or overwrote a key flow? Rebuilding from memory isn&rsquo;t just frustrating — it’s costly.
+This post walks through the process I demonstrated during my session with the Power Platform Learner to Leader community, showing how to automatically back up your environment using Azure DevOps, without requiring advanced YAML knowledge.]]></description>
+</item>
+<item>
+    <title>At the Virtual Power Platform User Group Presenting - Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment</title>
+    <link>http://localhost:1313/posts/241003-vd365ppug/</link>
+    <pubDate>Thu, 03 Oct 2024 18:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/241003-vd365ppug/</guid>
+    <description><![CDATA[What Would Happen If You Lost Your Dev Environment? Ever wondered what would happen if someone accidentally deleted your development site or overwrote a key flow? Rebuilding from memory isn&rsquo;t just frustrating — it’s costly.
+This post walks through the process I demonstrated during my session with the Power Platform Learner to Leader community, showing how to automatically back up your environment using Azure DevOps, without requiring advanced YAML knowledge.]]></description>
 </item>
 <item>
     <title>Backup Dataverse Development Environment</title>
     <link>http://localhost:1313/posts/backup-dataverse-development-environment/</link>
     <pubDate>Tue, 03 Sep 2024 07:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/backup-dataverse-development-environment/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Ever wondered what would happen if you lost your development environment? How do you feel about having to do all of that work again? What about if you spot a problem days later? Can you remember the value you changed three days ago in that flow? Have you ever seen someone delete the website record by mistake.</p>
-<p>These are all situations I have been in over the last few years, and having a Pipeline in place to ensure backup of your hard work is extremely important. That historical record can save you many hours.</p>]]></description>
+    <description><![CDATA[Introduction Ever wondered what would happen if you lost your development environment? How do you feel about having to do all of that work again? What about if you spot a problem days later? Can you remember the value you changed three days ago in that flow? Have you ever seen someone delete the website record by mistake.
+These are all situations I have been in over the last few years, and having a Pipeline in place to ensure backup of your hard work is extremely important.]]></description>
 </item>
 </channel>
 </rss>

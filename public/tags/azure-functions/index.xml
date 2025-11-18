@@ -3,25 +3,61 @@
         <title>Azure Functions - Tag - Tech Tweedie</title>
         <link>http://localhost:1313/tags/azure-functions/</link>
         <description>Azure Functions - Tag - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 12 May 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azure-functions/" rel="self" type="application/rss+xml" /><item>
-    <title>Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 22 May 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/azure-functions/" rel="self" type="application/rss+xml" /><item>
+    <title>At the Norfolk Power Platform User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</title>
     <link>http://localhost:1313/posts/250522-nppug/</link>
-    <pubDate>Mon, 12 May 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250522-nppug/</guid>
-    <description><![CDATA[<h1 id="enabling-low-code-developers-to-create-custom-client-reports-with-a-helping-hand-from-azure--norfolk-power-platform-user-group">Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</h1>
-<p>📅 <strong>Date:</strong> 22nd May 2025<br>
-📍 <strong>Location:</strong> Norwich Digital Hub<br>
-🍕 <strong>Pizza included!</strong></p>
-<h2 id="session-overview">Session Overview</h2>
-<p>At the Norfolk Power Platform User Group, I delivered a session titled:</p>
-<p>✨ <strong>“Enabling low-code developers to create custom client reports with a helping hand from Azure”</strong></p>
-<p>In this session, I explored:</p>
-<ul>
-<li>Using Power Automate to generate custom reports securely.</li>
-<li>How to leverage an <strong>Azure Function as a reverse proxy</strong> to enhance security and scalability.</li>
-<li>An architectural pattern that integrates <strong>Dataverse, Power Automate, SharePoint, and Azure Functions</strong> to deliver dynamic, client-ready PDFs via secure links.</li>
-</ul>
-<h2 id="presentation-slides">Presentation Slides</h2>
-<p>You can view my full presentation here:</p>]]></description>
+    <pubDate>Thu, 22 May 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250522-nppug/</guid>
+    <description><![CDATA[📅 Date: 22nd May 2025
+📍 Location: Norwich Digital Hub
+🍕 Pizza included!
+Session Overview At the Norfolk Power Platform User Group, I delivered a session titled:
+✨ “Enabling low-code developers to create custom client reports with a helping hand from Azure”
+In this session, I explored:
+Using Power Automate to generate custom reports securely. How to leverage an Azure Function as a reverse proxy to enhance security and scalability. An architectural pattern that integrates Dataverse, Power Automate, SharePoint, and Azure Functions to deliver dynamic, client-ready PDFs via secure links.]]></description>
+</item>
+<item>
+    <title>At the Scottish Power Platform User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Scottish Power Platform User Group</title>
+    <link>http://localhost:1313/posts/250325-sppug/</link>
+    <pubDate>Tue, 25 Mar 2025 18:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/250325-sppug/</guid>
+    <description><![CDATA[📅 Date: 25th March 2025
+📍 Location: SWG3 Glasgow (100 Eastvale Pl, Stobcross Rd, Glasgow City)
+🕕 Time: 6:00 PM to 9:00 PM GMT
+Session Overview At the Scottish Power Platform User Group, I delivered a session titled:
+✨ “Enabling low-code developers to create custom client reports with a helping hand from Azure”
+In this session, I explored:
+Using Power Automate to generate custom reports securely. How to leverage an Azure Function as a reverse proxy to enhance security and scalability.]]></description>
+</item>
+<item>
+    <title>At Birmingham Power Platform User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Norfolk Power Platform User Group</title>
+    <link>http://localhost:1313/posts/250130-bppug/</link>
+    <pubDate>Thu, 30 Jan 2025 18:30:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/250130-bppug/</guid>
+    <description><![CDATA[📅 Date: 30th January 2025
+📍 Location: Wesleyan, Colmore Circus Queensway, Birmingham
+🕕 Time: 6:30 PM to 9:00 PM GMT
+Session Overview At the Norfolk Power Platform User Group, I delivered a session titled:
+✨ “Enabling low-code developers to create custom client reports with a helping hand from Azure”
+In this session, I explored:
+Using Power Automate to generate custom reports securely. How to leverage an Azure Function as a reverse proxy to enhance security and scalability.]]></description>
+</item>
+<item>
+    <title>Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure – Low Code No Code Conference</title>
+    <link>http://localhost:1313/posts/241109-lcnc/</link>
+    <pubDate>Sat, 09 Nov 2024 00:00:00 &#43;0000</pubDate><guid>http://localhost:1313/posts/241109-lcnc/</guid>
+    <description><![CDATA[📅 Date: 9th November 2024
+📍 Location: Online
+Session Overview At the Low Code No Code Microsoft Power Platform Conference 2024, I delivered a session titled:
+✨ &ldquo;Enabling low-code developers to create custom client reports with a helping hand from Azure&rdquo;
+Many of us have found a way to deliver custom reports from Dataverse, or other outputs to our clients via low-code tools such as Power Automate. Maybe we have used the Word connector, Dataverse, a bit of SharePoint, and a sprinkle of Outlook to deliver it.]]></description>
+</item>
+<item>
+    <title>At the M365 North User Group: Enabling Low-Code Developers to Create Custom Client Reports with a Helping Hand from Azure</title>
+    <link>http://localhost:1313/posts/240917-m365north/</link>
+    <pubDate>Tue, 17 Sep 2024 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/240917-m365north/</guid>
+    <description><![CDATA[📅 Date: 17th September 2024
+📍 Location: M365 North User Group
+Session Overview At the M365 North User Group, I delivered a session titled:
+✨ &ldquo;Enabling low-code developers to create custom client reports with a helping hand from Azure&rdquo;
+Many of us have found a way to deliver custom reports from Dataverse, or other outputs to our clients via low-code tools such as Power Automate. Maybe we have used the Word connector, Dataverse, a bit of SharePoint, and a sprinkle of Outlook to deliver it.]]></description>
 </item>
 </channel>
 </rss>

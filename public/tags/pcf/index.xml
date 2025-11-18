@@ -7,19 +7,9 @@
     <title>Build a Basic PCF Field Control</title>
     <link>http://localhost:1313/posts/build-a-basic-pcf-field-control/</link>
     <pubDate>Sun, 16 Jun 2024 19:32:41 &#43;0100</pubDate><guid>http://localhost:1313/posts/build-a-basic-pcf-field-control/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Want to get started using the Power Apps Component Framework (PCF), would you like to start building controls. In this blog post we are going to step through the process to building your first component.</p>
-<p><strong>You can watch the accompanying YouTube video here</strong>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/80CNV9sRzL4?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-</p>
-<h3 id="what-languages">What languages</h3>
-<p>To build out our component, we will be using both <strong>TypeScript</strong> and <strong>HTML</strong>. Don&rsquo;t worry if you haven&rsquo;t worked with these before.</p>]]></description>
+    <description><![CDATA[Introduction Want to get started using the Power Apps Component Framework (PCF), would you like to start building controls. In this blog post we are going to step through the process to building your first component.
+You can watch the accompanying YouTube video here What languages To build out our component, we will be using both TypeScript and HTML. Don&rsquo;t worry if you haven&rsquo;t worked with these before.
+Tools The tools we will be using today will be;]]></description>
 </item>
 </channel>
 </rss>

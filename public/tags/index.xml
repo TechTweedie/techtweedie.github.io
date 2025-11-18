@@ -3,64 +3,64 @@
         <title>Tags - Tag - Tech Tweedie</title>
         <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - Tech Tweedie</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>Azure DevOps</title>
-    <link>http://localhost:1313/tags/azure-devops/</link>
-    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/azure-devops/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Plus Addressing</title>
-    <link>http://localhost:1313/tags/plus-addressing/</link>
-    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/plus-addressing/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Power Automate</title>
-    <link>http://localhost:1313/tags/power-automate/</link>
-    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-automate/</guid>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>DevOps</title>
+    <link>http://localhost:1313/tags/devops/</link>
+    <pubDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/devops/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Power Platform</title>
     <link>http://localhost:1313/tags/power-platform/</link>
-    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-platform/</guid>
+    <pubDate>Tue, 18 Nov 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-platform/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Work Item Automation</title>
-    <link>http://localhost:1313/tags/work-item-automation/</link>
-    <pubDate>Sun, 20 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/work-item-automation/</guid>
+    <title>AI</title>
+    <link>http://localhost:1313/tags/ai/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/ai/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>DevOps</title>
-    <link>http://localhost:1313/tags/devops/</link>
-    <pubDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/devops/</guid>
+    <title>Canvas Apps</title>
+    <link>http://localhost:1313/tags/canvas-apps/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/canvas-apps/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Playwright</title>
-    <link>http://localhost:1313/tags/playwright/</link>
-    <pubDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/playwright/</guid>
+    <title>Community Event</title>
+    <link>http://localhost:1313/tags/community-event/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/community-event/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Testing</title>
-    <link>http://localhost:1313/tags/testing/</link>
-    <pubDate>Tue, 15 Jul 2025 00:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/testing/</guid>
+    <title>Microsoft 365</title>
+    <link>http://localhost:1313/tags/microsoft-365/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/microsoft-365/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Career Development</title>
-    <link>http://localhost:1313/tags/career-development/</link>
-    <pubDate>Sun, 13 Jul 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/career-development/</guid>
+    <title>Power Apps</title>
+    <link>http://localhost:1313/tags/power-apps/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-apps/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Certifications</title>
-    <link>http://localhost:1313/tags/certifications/</link>
-    <pubDate>Sun, 13 Jul 2025 09:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/certifications/</guid>
+    <title>Power Automate</title>
+    <link>http://localhost:1313/tags/power-automate/</link>
+    <pubDate>Tue, 30 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/power-automate/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Automated Testing</title>
+    <link>http://localhost:1313/tags/automated-testing/</link>
+    <pubDate>Wed, 10 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/automated-testing/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Azure DevOps</title>
+    <link>http://localhost:1313/tags/azure-devops/</link>
+    <pubDate>Wed, 10 Sep 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/tags/azure-devops/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

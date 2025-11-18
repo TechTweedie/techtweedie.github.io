@@ -7,49 +7,25 @@
     <title>Walkthrough Customising Entra External ID for Power Pages</title>
     <link>http://localhost:1313/posts/250624-power-pages-customise-entra-external-id/</link>
     <pubDate>Tue, 24 Jun 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250624-power-pages-customise-entra-external-id/</guid>
-    <description><![CDATA[<h1 id="walkthrough-customising-entra-external-id-for-power-pages">Walkthrough Customising Entra External ID for Power Pages</h1>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/s99cqsJ-kDE?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<h2 id="introduction">Introduction</h2>
-<p>Are you using <strong>Entra External ID</strong> with <strong>Power Pages</strong> and want to customise the login experience? This guide walks through exactly that — applying your own branding, images, colours, and layout to the Entra login screen for external users.</p>]]></description>
+    <description><![CDATA[Walkthrough Customising Entra External ID for Power Pages Introduction Are you using Entra External ID with Power Pages and want to customise the login experience? This guide walks through exactly that — applying your own branding, images, colours, and layout to the Entra login screen for external users.
+This is especially useful for creating a polished, consistent experience when your users are accessing Power Pages from outside your organisation.
+If you’re new to setting up Entra External ID for Power Pages, I’ve also got a full video walkthrough on how to configure that — I’ll link it below.]]></description>
 </item>
 <item>
     <title>Walk through Power Pages with Entra External ID</title>
     <link>http://localhost:1313/posts/250524-power-pages-with-entra-external-id/</link>
     <pubDate>Sun, 25 May 2025 06:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250524-power-pages-with-entra-external-id/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Need to enable Entra External ID sign-in for your Power Pages site? Whether you&rsquo;re looking to support customer access or enable collaboration with external users, the combination of Power Pages and Entra ID is a powerful way to ensure secure, identity-driven access to your platform.</p>
-<p>In this walkthrough video, I demonstrate how to integrate Entra External ID with a Power Pages site, covering:</p>
-<ul>
-<li>Setting up Entra External ID</li>
-<li>Configuring identity providers</li>
-<li>Connecting the authentication flow with your Power Pages site</li>
-<li>Testing the login experience from an external user’s perspective</li>
-</ul>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/elb5kPG3FnU?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<h2 id="why-use-entra-external-id-with-power-pages">Why Use Entra External ID with Power Pages?</h2>
-<p>Power Pages is ideal for creating public- or partner-facing web portals, but managing access securely is always a challenge. Entra External ID lets you:</p>]]></description>
+    <description><![CDATA[Introduction Need to enable Entra External ID sign-in for your Power Pages site? Whether you&rsquo;re looking to support customer access or enable collaboration with external users, the combination of Power Pages and Entra ID is a powerful way to ensure secure, identity-driven access to your platform.
+In this walkthrough video, I demonstrate how to integrate Entra External ID with a Power Pages site, covering:
+Setting up Entra External ID Configuring identity providers Connecting the authentication flow with your Power Pages site Testing the login experience from an external user’s perspective Why Use Entra External ID with Power Pages?]]></description>
 </item>
 <item>
     <title>Set folder permissions in SharePoint with Power Automate Flow</title>
     <link>http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</link>
     <pubDate>Mon, 17 Feb 2025 11:06:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/250217-set-folder-permissions-in-sharepoint-with-power-automate-flow/</guid>
-    <description><![CDATA[<p>Want to grand and remove item or folder permissions in SharePoint using <strong>Power Automate</strong> with a Service Principle but can&rsquo;t do it? Not able to do it with the out of the box SharePoint Connector?</p>
-<p>Tired of dealing with Conditional Access Policies, password expirations, and frequent logins?</p>
-<p>Good news! In this guide, I&rsquo;ll show you how to set these using an App Registration. No service accounts, no password headaches. I&rsquo;ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:</p>]]></description>
+    <description><![CDATA[Want to grand and remove item or folder permissions in SharePoint using Power Automate with a Service Principle but can&rsquo;t do it? Not able to do it with the out of the box SharePoint Connector?
+Tired of dealing with Conditional Access Policies, password expirations, and frequent logins?
+Good news! In this guide, I&rsquo;ll show you how to set these using an App Registration. No service accounts, no password headaches. I&rsquo;ll also share a Custom Connector to make it even easier, plus step-by-step instructions to:]]></description>
 </item>
 </channel>
 </rss>

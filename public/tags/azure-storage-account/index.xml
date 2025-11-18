@@ -7,25 +7,10 @@
     <title>Postman to Azure Table Storage</title>
     <link>http://localhost:1313/posts/postman-to-azure-table-storage/</link>
     <pubDate>Tue, 15 Nov 2022 19:00:00 &#43;0100</pubDate><guid>http://localhost:1313/posts/postman-to-azure-table-storage/</guid>
-    <description><![CDATA[<p>This post is an example of how I posted data to Azure Table storage from Postman.</p>
-<h2 id="prerequisite">Prerequisite</h2>
-<ul>
-<li>You have access to Postman</li>
-<li>You have an Azure Storage account</li>
-</ul>
-<h2 id="steps">Steps</h2>
-<ol>
-<li>Go to your Storage Account</li>
-</ol>
-<p></p>
-<ol start="2">
-<li>Click on <strong>Tables</strong>, and then click on <strong>Add table</strong></li>
-</ol>
-<p></p>
-<ol start="3">
-<li>
-<p>Add table to Azure Storage Account</p>
-<p>You should now have a table, in my example these are called <code>test</code> and <code>test2</code>.</p>]]></description>
+    <description><![CDATA[This post is an example of how I posted data to Azure Table storage from Postman.
+Prerequisite You have access to Postman You have an Azure Storage account Steps Go to your Storage Account Click on Tables, and then click on Add table Add table to Azure Storage Account
+You should now have a table, in my example these are called test and test2.
+Next, generate a shared access signature (SAS), which is a URI that grants restricted access.]]></description>
 </item>
 </channel>
 </rss>
