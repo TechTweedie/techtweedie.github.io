@@ -6,7 +6,7 @@ languageCode = "en"
 title = "Tech Tweedie"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "FeelIt"
+theme = "FeelItCopy"
 
 [params]
   # FeelIt theme version
@@ -59,6 +59,27 @@ theme = "FeelIt"
   # whether to show RSS icon
   rss = true
 
+[params.search]
+  enable = true
+  # type of search engine ("lunr", "algolia")
+  type = "lunr"
+  # max index length of the chunkcontent
+  contentLength = 4000
+  # placeholder of the search bar
+  placeholder = ""
+  # max number of results length
+  maxResultLength = 10
+  # snippet length of the result
+  snippetLength = 50
+  # HTML tag to highlight search results
+  highlightTag = "em"
+  # whether to use the absolute URL based on the baseURL in search index
+  absoluteURL = false
+  [params.search.algolia]
+    index = ""
+    appID = ""
+    searchKey = ""
+
   # Footer config
 [params.footer]
   enable = true
@@ -75,6 +96,8 @@ theme = "FeelIt"
   # license info (HTML format is supported)
   license = ''
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [menu]
   [[menu.main]]
