@@ -1,6 +1,6 @@
 ---
-title: "Generate Power Platform Solution Documentation with Azure DevOps"
-description: "Learn how to automatically generate clear, accurate documentation for your Power Platform solutions using the Power Platform Documentation Extension for Azure DevOps."
+title: "🚀 Build Your First Azure DevOps Pipeline for Power Platform (Complete Beginner Tutorial!)"
+description: "Have you ever wished you could automatically export your Dataverse solutions, back up your Power Platform work, or finally start using DevOps like the pros? In this step-by-step tutorial, I’ll show you EXACTLY how to build your first Azure DevOps pipeline — even if you’ve never touched DevOps before."
 tags:
   - Power Platform
   - DevOps
