@@ -17,16 +17,12 @@ author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
   - name: "featured-image"
-    src: "thumbnail-1.png"
+    src: "thumbnail-sm.png"
   - name: "featured-image-preview"
     src: "thumbnail-1.png"
 lightgallery: true
 draft: false
 ---
-
-# Walkthrough Customising Entra External ID for Power Pages
-
-{{< youtube s99cqsJ-kDE >}}
 
 ## Introduction
 
@@ -35,6 +31,8 @@ Are you using **Entra External ID** with **Power Pages** and want to customise t
 This is especially useful for creating a polished, consistent experience when your users are accessing Power Pages from outside your organisation.
 
 > If you’re new to setting up Entra External ID for Power Pages, I’ve also got a full video walkthrough on how to configure that — I’ll link it below.
+
+{{< youtube s99cqsJ-kDE >}}
 
 ## What You'll Learn
 
