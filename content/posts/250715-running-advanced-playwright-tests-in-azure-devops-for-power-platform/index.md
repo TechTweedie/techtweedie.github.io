@@ -23,7 +23,7 @@ draft: false
 --- 
 
 
-# 🧪 Playwright + Power Platform + DevOps Pipelines? Yes please!
+## 🧪 Playwright + Power Platform + DevOps Pipelines? Yes please!
 
 Just dropped a new video where I walk through the latest update to my **Playwright for Power Platform DevOps Extension**. This time, we’re not just running tests — we’re dynamically assigning roles, business units, and teams to a test user before your Playwright test runs, and then removing them right after. Clean, controlled, reusable testing every time ✅
 
