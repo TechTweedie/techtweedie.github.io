@@ -15,12 +15,15 @@ author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
 - name: "featured-image"
-  src: "thumbnail.png"
+  src: "thumbnail1.png"
 - name: "featured-image-preview"
-  src: "thumbnail.png"
+  src: "thumbnail1.png"
 lightgallery: true
 draft: false
 --- 
+
+
+<!--more-->
 
 ## Introduction
 

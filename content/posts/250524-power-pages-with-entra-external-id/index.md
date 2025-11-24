@@ -21,6 +21,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
 ## Introduction
 
 Need to enable Entra External ID sign-in for your Power Pages site? Whether you're looking to support customer access or enable collaboration with external users, the combination of Power Pages and Entra ID is a powerful way to ensure secure, identity-driven access to your platform.

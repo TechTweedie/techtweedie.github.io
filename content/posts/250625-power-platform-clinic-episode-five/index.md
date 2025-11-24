@@ -23,9 +23,7 @@ lightgallery: true
 draft: false
 ---
 
-# Power Platform Clinic – Episode 5: Converting Forms with Images to PDF
-
-{{< youtube 22SL8thkPmo >}}
+<!--more-->
 
 ## Introduction
 
@@ -36,6 +34,10 @@ In this episode of the **Power Platform Clinic**, Ian (that’s me!) tackles a r
 As usual, we go deep on the technical side—pulling data, parsing responses, handling images, encoding files as base64, generating dynamic HTML, and finally converting it all to a PDF and emailing it out.
 
 This is a proof-of-concept walkthrough using standard Power Automate connectors—no premium, no external APIs, and no code hosting needed.
+
+
+{{< youtube 22SL8thkPmo >}}
+
 
 ## What We Covered
 

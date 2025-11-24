@@ -22,6 +22,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
 📅 **Date:** 22nd May 2025  
 📍 **Location:** Norwich Digital Hub  
 🍕 **Pizza included!**

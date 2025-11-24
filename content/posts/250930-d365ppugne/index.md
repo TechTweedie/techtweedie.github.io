@@ -25,7 +25,9 @@ lightgallery: true
 draft: false
 ---
 
-# D365 & Power Platform UG North East – September 2025 Meetup
+<!--more-->
+
+## D365 & Power Platform UG North East – September 2025 Meetup
 
 **📅 Date:** Tuesday, September 30, 2025  
 **🕕 Time:** 6:00 PM – 8:10 PM BST  

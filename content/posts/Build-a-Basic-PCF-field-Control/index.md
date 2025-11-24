@@ -16,6 +16,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
 ## Introduction
 Want to get started using the Power Apps Component Framework (PCF), would you like to start building controls. In this blog post we are going to step through the process to building your first component. 
 

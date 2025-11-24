@@ -21,6 +21,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
 ## Introduction
 Recently, I was asked if it was possible to place a message at the top of every form and view across an entire Model-Driven App. This message would then open a Custom Page that would display more detail. In this Blog post, I explain how this can be achieved and what steps need to be taken.
 

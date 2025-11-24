@@ -19,8 +19,11 @@ resources:
 - name: "featured-image-preview"
   src: "image.png"
 lightgallery: true
-draft: false
+draft: true
 ---
+
+<!--more-->
+
 
 📅 **Date:** 17th September 2024  
 📍 **Location:** M365 North User Group  

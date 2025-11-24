@@ -22,7 +22,11 @@ lightgallery: true
 draft: false
 ---
 
-**Welcome to Episode 2 of the Power Platform Clinic with Duncan Boyne and Ian Tweedy.**
+<!--more-->
+
+## Introduction
+
+Episode 2 of the Power Platform Clinic with Duncan Boyne and Ian Tweedie.
 
 {{< youtube a8Ypoliuseo >}}
 

@@ -24,6 +24,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
 ## Introduction
 
 Are you using **Entra External ID** with **Power Pages** and want to customise the login experience? This guide walks through exactly that — applying your own branding, images, colours, and layout to the Entra login screen for external users.

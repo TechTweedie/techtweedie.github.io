@@ -19,6 +19,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
 Do you need to move a Solution in **Dataverse for Teams** form one environment to another, are you unable to use a Pipeline to move a solution around? Want easy reputable steps? Need to be able to drill into what changes have taken place between solution builds. 
 
 Today I will show you a tool that I have made to make this process easier by using a PowerShell Script to move Dataverse for Teams solutions between environments. 

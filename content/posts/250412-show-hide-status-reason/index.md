@@ -20,6 +20,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
 ## Introduction
 
 Ever wanted to show or hide a tab in a **Model-Driven App** based on the **Status Reason** of a record? Maybe you’ve got a section of a form that’s only relevant when a record hits a specific state — like “Approved” or “Rejected”?

@@ -22,6 +22,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
 ## What Would Happen If You Lost Your Dev Environment?
 
 Ever wondered what would happen if someone accidentally deleted your development site or overwrote a key flow? Rebuilding from memory isn't just frustrating — it’s costly.

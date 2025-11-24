@@ -22,6 +22,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
 📅 **Date:** 9th November 2024  
 📍 **Location:** Online  
 

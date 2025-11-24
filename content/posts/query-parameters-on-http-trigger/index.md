@@ -19,6 +19,10 @@ resources:
 lightgallery: true
 draft: false
 ---
+
+<!--more-->
+
+
 ## Introduction
 
 Working with Power Automate, especially with HTTP triggers, can unlock a lot of potential in automating tasks and workflows. A common requirement is to use query parameters from the trigger URL within your flow. I’ve found a straightforward method to do this and thought it might be helpful to share.

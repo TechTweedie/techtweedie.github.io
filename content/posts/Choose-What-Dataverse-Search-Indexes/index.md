@@ -19,6 +19,9 @@ lightgallery: true
 draft: false
 original: "https://helpmewithmy.technology/how-to-choose-what-dataverse-search-indexes-a-guide/"
 ---
+
+<!--more-->
+
 ## Introduction
 
 Want to deploy your Power Apps Solution files quickly via Pipelines? Not sure how to set your environment variable or connection references.  This blog post will explain how we solved this problem using a Solution Configuration File. 

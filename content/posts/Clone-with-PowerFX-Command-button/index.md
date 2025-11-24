@@ -21,6 +21,10 @@ lightgallery: true
 draft: false
 original: "https://helpmewithmy.technology/clone-multiple-records-with-custom-powerfx-button-in-model-driven-app/"
 ---
+
+
+<!--more-->
+
 ## Introduction
 
 Cloning multiple records within a data view in a Model-Driven App is a common request from end users. It helps them quickly fill out data fields in situations where only a few values differ between records.

@@ -22,6 +22,8 @@ draft: false
 original: "https://helpmewithmy.technology/power-pages-developer-tools-install-script/"
 ---
 
+<!--more-->
+
 ## Introduction
 
 Frequently moving between desktop builds, want to be able to get up and running quickly,  I’ve found it incredibly useful to have my own build script that covers 80% of the tools I am likely to need. It's essential tools ready to go saves a lot of time and hassle, that’s why I created a PowerShell script to automate the installation of the developer tools I often use when working on the Power Platform.

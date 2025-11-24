@@ -19,6 +19,9 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
+
 ## Introduction
 
 Power Automate is a wonderful tool, but there is a world of difference between building something for personal productivity and utilising this amazing low-code tool for production, where an important business application will rely on it.

@@ -20,6 +20,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
 ## Introduction
 
 I recently set up a new WordPress website for a friend. It was late one evening, and I was in a bit of a rush; as with many people online, I chose to use Cloudflare to protect the website.

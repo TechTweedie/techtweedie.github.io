@@ -22,6 +22,8 @@ draft: false
 origional: "https://helpmewithmy.technology/using-environment-variables-in-powerfx-command-buttons-in-model-driven-app/"
 ---
 
+<!--more-->
+
 ## Introduction
 
 Have you ever wondered if you can use Environment Variables in a PowerFX button, how to create a custom email link button in the command bar of your Power Apps model-driven application using environment variables and Power FX? Luckily, Power Apps has made it possible to achieve this. With the help of Power FX, which is the same language used in canvas app development, anyone can efficiently customise their app’s command bar without needing prior knowledge of JavaScript or the Ribbon Workbench.

@@ -22,6 +22,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
 ## Instantly Document Your Power Platform Solutions with Azure DevOps
 
 Are you tired of manually documenting your Power Platform solutions? Struggling to keep your tables, relationships, option sets, and workflows up to date for your team or clients? The **Power Platform Documentation Extension for Azure DevOps** is designed to solve these problems—automatically. This tool helps you generate clear, accurate, and SEO-friendly Markdown documentation for your wikis and repositories, saving you hours and improving collaboration.

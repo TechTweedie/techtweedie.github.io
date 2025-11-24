@@ -22,6 +22,10 @@ aliases:
   - /send-emails-from-flow-without-a-service-account/
 ---
 
+<!--more-->
+
+## Introduction
+
 Want to send emails from **Power Automate** but can't or don't want to use a service account? Tired of dealing with Conditional Access Policies, password expirations, and frequent logins? Do you want a simple, secure, and scalable way to send emails without constantly re-confirming security information?
 
 Good news! In this guide, I'll show you how to send emails directly from Microsoft Exchange using only an App Registration. No service accounts, no password headaches. I'll also share a Custom Connector to make it even easier, plus step-by-step instructions to:

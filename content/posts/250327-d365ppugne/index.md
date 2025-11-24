@@ -25,6 +25,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
  D365 & Power Platform UG North East – July 2025 Meetup
 
 **📅 Date:** Thursday, 27th March 2025  

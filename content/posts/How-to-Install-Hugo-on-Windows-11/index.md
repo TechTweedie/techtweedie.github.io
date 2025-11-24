@@ -18,6 +18,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
 ## Introduction
 
 Hugo is a open-source static site generator, designed for speed and flexibility, making it an excellent choice when creating modern websites, blogs, and documentation. In this guide, we'll walk you through the steps to install Hugo on your Windows 11 machine.

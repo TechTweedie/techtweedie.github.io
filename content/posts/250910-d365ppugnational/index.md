@@ -5,7 +5,6 @@ tags:
   - Power Platform
   - Playwright
   - DevOps
-  - Azure DevOps
   - Automated Testing
 categories:
   - Community
@@ -22,6 +21,9 @@ resources:
 lightgallery: true
 draft: false
 ---
+
+
+<!--more-->
 
 **📅 Date:** Wednesday, September 10, 2025  
 **🕒 Time:** 10:45 AM – 11:30 AM BST  

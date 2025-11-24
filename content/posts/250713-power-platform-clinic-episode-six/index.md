@@ -7,8 +7,6 @@ tags:
   - Certifications
   - Power Platform
   - Consultancy
-  - Career Development
-  - DevOps
 date: 2025-07-13T09:00:00+01:00
 publishDate: 2025-07-13T09:00:00+01:00
 lastmod: 2025-07-13T09:00:00+01:00
@@ -22,6 +20,8 @@ resources:
 lightgallery: true
 draft: false
 ---
+
+<!--more-->
 
 ## Power Platform Clinic Episode 6 – Certs, Consultancy, and Career Conversations
 

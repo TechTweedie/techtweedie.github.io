@@ -19,6 +19,9 @@ resources:
 lightgallery: true
 draft: false
 ---
+
+<!--more-->
+
 Azure functions are a very handy way of getting something small done very quickly. Often these have to be secured and sometimes with an identity provider that is not stright out of the box.
 
 Today I am going to take you through the steps I took to secure an azure function using Azure B2C.

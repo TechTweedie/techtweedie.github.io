@@ -20,6 +20,11 @@ resources:
 lightgallery: true
 draft: false
 ---
+
+<!--more-->
+
+## Introduction
+
 Want to grand and remove item or folder permissions in SharePoint using **Power Automate** with a Service Principle but can't do it? Not able to do it with the out of the box SharePoint Connector?
 
 Tired of dealing with Conditional Access Policies, password expirations, and frequent logins?

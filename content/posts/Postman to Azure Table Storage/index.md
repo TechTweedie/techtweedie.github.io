@@ -19,6 +19,9 @@ resources:
 lightgallery: true
 draft: false
 ---
+
+<!--more-->
+
 This post is an example of how I posted data to Azure Table storage from Postman.
 
 ## Prerequisite

@@ -3,10 +3,8 @@ title: "Power Platform Clinic Episode 7: Automatically Tag DevOps Tickets by Ema
 description: "In this session of the Power Platform Clinic, we walk through a brilliant way to automatically post email content to Azure DevOps work items using Power Automate and plus addressing. If you're working with teams outside your scrum or chasing up suppliers, this trick can keep your board updated with zero manual effort."
 tags:
   - Power Platform
-  - Azure DevOps
+  - DevOps
   - Power Automate
-  - Plus Addressing
-  - Work Item Automation
 categories:
   - Power Platform Clinic
 date: 2025-07-20T00:00:00+01:00
@@ -23,7 +21,9 @@ lightgallery: true
 draft: false
 ---
 
-# Auto-Tag DevOps Tickets via Email using Power Automate
+<!--more-->
+
+## Auto-Tag DevOps Tickets via Email using Power Automate
 
 In this episode of the Power Platform Clinic, we explore how to keep Azure DevOps tickets updated when discussions happen over email.
 

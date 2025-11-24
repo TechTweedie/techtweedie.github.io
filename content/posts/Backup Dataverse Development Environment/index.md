@@ -20,6 +20,7 @@ resources:
 lightgallery: true
 ---
 
+<!--more-->
 
 ## Introduction
 Ever wondered what would happen if you lost your development environment? How do you feel about having to do all of that work again? What about if you spot a problem days later? Can you remember the value you changed three days ago in that flow? Have you ever seen someone delete the website record by mistake.

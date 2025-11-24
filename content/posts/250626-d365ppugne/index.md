@@ -5,10 +5,7 @@ tags:
   - Power Platform
   - Power Apps
   - Power Automate
-  - Community Event
-  - Canvas Apps
   - AI
-  - Microsoft 365
 categories:
   - Community
 date: 2025-06-01T06:00:00+01:00
@@ -25,7 +22,9 @@ lightgallery: true
 draft: false
 ---
 
-# D365 & Power Platform UG North East – June 2025 Meetup
+<!--more-->
+
+## D365 & Power Platform UG North East – June 2025 Meetup
 
 **📅 Date:** Thursday, June 26, 2025  
 **🕕 Time:** 6:00 PM – 8:10 PM BST  

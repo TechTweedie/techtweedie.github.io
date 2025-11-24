@@ -20,10 +20,12 @@ resources:
 - name: "featured-image-preview"
   src: "large.png"
 lightgallery: true
-draft: false
+draft: true
 ---
 
-# Build Your First DevOps Pipeline for the Power Platform
+<!--more-->
+
+## Build Your First DevOps Pipeline for the Power Platform
 
 **📅 Date:** Friday, June 27, 2025  
 **🕒 Time:** 2:15 PM – 3:00 PM BST  

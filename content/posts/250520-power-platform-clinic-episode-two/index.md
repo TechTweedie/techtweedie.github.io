@@ -22,6 +22,10 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
+## Introduction
+
 Welcome to Episode 2 of the Power Platform Clinic with Duncan and Ian!
 
 {{< youtube N8XHipg1HPk >}}

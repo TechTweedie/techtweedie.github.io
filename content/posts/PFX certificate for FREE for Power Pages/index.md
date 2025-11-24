@@ -20,6 +20,9 @@ lightgallery: true
 draft: false
 original: "https://helpmewithmy.technology/how-to-choose-what-dataverse-search-indexes-a-guide/"
 ---
+
+<!--more-->
+
 ## Introduction
 
 Do you want to deploy Power Pages on a custom domain securely without the need to buy a custom certificate? In this blog post, I’m going to show you how to do this quickly and easily acquire a PFX certificate that you can then use to deploy to Power Pages. 

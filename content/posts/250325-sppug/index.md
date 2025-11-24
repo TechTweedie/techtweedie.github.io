@@ -22,6 +22,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
 📅 **Date:** 25th March 2025  
 📍 **Location:** SWG3 Glasgow (100 Eastvale Pl, Stobcross Rd, Glasgow City)  
 🕕 **Time:** 6:00 PM to 9:00 PM GMT

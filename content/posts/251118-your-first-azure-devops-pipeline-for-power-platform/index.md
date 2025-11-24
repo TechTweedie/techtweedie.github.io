@@ -20,6 +20,8 @@ lightgallery: true
 draft: false 
 ---
 
+<!--more-->
+
 ## Your First Azure DevOps Pipeline for Power Platform – A Complete Beginner’s Guide
 
 Have you ever wondered how to set up Azure DevOps pipelines for the Power Platform?  

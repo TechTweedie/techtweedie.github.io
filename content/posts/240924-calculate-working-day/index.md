@@ -19,6 +19,11 @@ draft: false
 aliases:
   - /calculate-working-day/
 ---
+
+<!--more-->
+
+## Introduction
+
 Want to Calculate Working Day in Power Automate, having trubble with the number of variations. That’s why I’ve put together a nifty little tool to help out the community and make this process a whole lot easier. In this post, I'll guide you step-by-step through setting up and using this tool. Whether you’re trying to figure out the next working day, handle complex scheduling, or just want a smoother way to automate your date calculations, this is for you. Let’s dive in. 
 
 **You can watch the accompanying YouTube video here**

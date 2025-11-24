@@ -22,6 +22,8 @@ lightgallery: true
 draft: false
 ---
 
+<!--more-->
+
 📅 **Date:** 30th January 2025  
 📍 **Location:** Wesleyan, Colmore Circus Queensway, Birmingham  
 🕕 **Time:** 6:30 PM to 9:00 PM GMT
