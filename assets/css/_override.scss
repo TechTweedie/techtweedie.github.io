@@ -1,2 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 $global-font-family: "Bebas Neue", sans-serif;
+
+// Custom styles for post descriptions in category/term pages
+.item-description {
+    color: #666;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; // Limit to 2 lines
+    text-overflow: ellipsis;
+    
+    // Dark mode styling
+    [data-theme="dark"] & {
+        color: #aaa;
+    }
+    
+    // Remove margins from markdown elements inside description
+    p {
+        margin: 0;
+        display: inline;
+    }
+    
+    // Style any inline elements
+    strong, em {
+        font-weight: inherit;
+        font-style: inherit;
+    }
+}
