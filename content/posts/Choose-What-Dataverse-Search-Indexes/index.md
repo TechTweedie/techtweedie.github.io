@@ -7,7 +7,7 @@ tags:
 categories:
   - Power Platform
 date: 2024-02-07T19:00:00+01:00
-lastmod: 2024-07-071T19:45:40+08:00
+lastmod: 2024-07-07T19:45:40+08:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
