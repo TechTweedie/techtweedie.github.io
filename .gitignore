@@ -2,3 +2,6 @@ resources/*
 node_modules/*
 public/*
 .vscode/
+
+# Ignore the embedded git repository
+toha-example-site/
