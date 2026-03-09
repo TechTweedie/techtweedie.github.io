@@ -2,7 +2,7 @@
 name: Deploy Hugo site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting the v2 branch
   push:
     branches: ["v2"]
 
@@ -103,9 +103,6 @@ jobs:
 
   # Deployment job
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
