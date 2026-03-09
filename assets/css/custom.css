@@ -1,0 +1,42 @@
+/* Import Bebas Neue font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Apply Bebas Neue to all standard text across the site */
+body, html {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* Apply to all text elements */
+p, span, div, a, li, td, th {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* Apply to headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* Apply to navigation */
+nav, .navbar, .nav-link {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* Apply to buttons */
+button, .btn {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* Apply to form elements */
+input, textarea, select {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* Apply to footer */
+footer, .footer {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* Keep code blocks with monospace font for readability */
+code, pre, .code {
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace !important;
+}

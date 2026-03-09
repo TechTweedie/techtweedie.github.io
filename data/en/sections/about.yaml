@@ -1,0 +1,115 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Technical Leadership Coach & Microsoft Business Applications Architect
+# your company information
+#company:
+#  name: Tech Tweedie
+#  url: "https://techtweedie.github.io"
+
+# your resume. this file path should be relative to you "static" directory
+# Dreprecated. Use resourceLinks instead.
+# resume: "files/resume.pdf"
+
+# a summary about you
+summary: 'Beyond the low code... I am a passionate Power Platform developer and Microsoft technologies expert with extensive experience in building comprehensive solutions. I create content around Power Platform, Hugo, PCF controls, and various Microsoft technologies to help the community learn and grow. My focus is on bridging the gap between low-code solutions and custom development.'
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://www.github.com/itweedie"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/iantweedie"
+
+#- name: Twitter
+#  icon: "fab fa-twitter"
+#  url: "https://twitter.com/itweedie"
+
+- name: YouTube
+  icon: "fab fa-youtube"
+  url: "https://www.youtube.com/@TechTweedie"
+
+- name: Medium
+  icon: "fab fa-medium"
+  url: "https://medium.com/@ian.tweedie"
+
+- name: TikTok
+  icon: "fab fa-tiktok"
+  url: "https://www.tiktok.com/@techtweedie"
+
+- name: Bluesky
+  icon: "fab fa-bluesky"
+  url: "https://itweedie.bsky.social"
+
+# You can put custom buttons to link your relevant resources.
+# For example, you can put link for your resume.
+#resourceLinks:
+#- title: "My Resume"
+#  url: "files/resume.pdf"
+
+# Show your badges
+# You can show your verifiable certificates from https://www.credly.com.
+# You can also show a circular bar indicating the level of expertise on a certain skill
+badges:
+#- type: certification
+#  name: Certified Kubernetes Security Specialist
+#  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
+#  badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
+
+#- type: certification
+#  name: Istio and IBM Cloud Kubernetes Service
+#  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
+#  badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
+
+#- type: certification
+#  name: Artificial Intelligence and Machine Learning
+#  url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
+#  badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
+
+- type: soft-skill-indicator
+  name: Technical Leadership
+  percentage: 85
+  color: yellow
+
+- type: soft-skill-indicator
+  name: Coaching
+  percentage: 85
+  color: purple
+
+- type: soft-skill-indicator
+  name: Power Platform
+  percentage: 85
+  color: green
+
+- type: soft-skill-indicator
+  name: Architecture
+  percentage: 85
+  color: "#FF7F00"
+
+- type: soft-skill-indicator
+  name: Azure
+  percentage: 85
+  color: blue
+
+- type: soft-skill-indicator
+  name: DevOps
+  percentage: 85
+  color: "#ff0000"
+
+# you can also provide color code instead of the color name
+# - type: soft-skill-indicator
+#   name: Example 1
+#   percentage: 75
+#   color: "#00adb5"

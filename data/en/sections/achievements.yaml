@@ -1,0 +1,15 @@
+# section information
+section:
+  name: Achievements
+  id: achievements
+  enable: false
+  weight: 10
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your achievements achievements
+achievements:
+- title: Peoples Choice Award
+  image: /images/sections/achievements/ian-tweedie-dynamites-award.jpeg
+  summary: Dynamites Peoples Choice Award 2025.

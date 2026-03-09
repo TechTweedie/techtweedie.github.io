@@ -1,0 +1,83 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: false
+  weight: 2
+  showOnNavbar: true
+  filter: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Power Platform
+  filter: "powerplatform"
+- name: Microsoft Tech
+  filter: "microsoft"
+- name: Development
+  filter: "development"
+- name: Static Sites
+  filter: "staticsites"
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Power Apps
+  #logo: /images/sections/skills/powerapps.png
+  summary: "Expert in building both Canvas and Model-driven applications. Experienced with complex business logic, custom connectors, and advanced controls."
+  categories: ["powerplatform"]
+
+- name: Power Automate
+  #logo: /images/sections/skills/powerautomate.png
+  summary: "Proficient in creating complex workflows, API integrations, and business process automation solutions."
+  categories: ["powerplatform"]
+
+- name: Power BI
+  #logo: /images/sections/skills/powerbi.png
+  summary: "Experienced in creating comprehensive dashboards, custom visuals, and data analytics solutions."
+  categories: ["powerplatform", "microsoft"]
+
+- name: Dataverse
+  #logo: /images/sections/skills/dataverse.png
+  summary: "Deep understanding of data modeling, relationships, business rules, and security configurations."
+  categories: ["powerplatform", "microsoft"]
+
+- name: PCF Controls
+  #logo: /images/sections/skills/pcf.png
+  summary: "Specialist in building custom Power Apps Component Framework controls using TypeScript and modern web frameworks."
+  categories: ["powerplatform", "development"]
+
+- name: TypeScript
+  #logo: /images/sections/skills/typescript.png
+  summary: "Proficient in TypeScript for building scalable applications, PCF controls, and modern web solutions."
+  categories: ["development"]
+
+- name: Azure
+  #logo: /images/sections/skills/azure.png
+  summary: "Experienced with Azure services integration with Power Platform, including Azure Functions, Logic Apps, and DevOps."
+  categories: ["microsoft"]
+
+- name: Prometheus
+  #logo: /images/sections/skills/prometheus.png
+  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
+  categories: ["basic"]
+  url: "https://prometheus.io/"
+
+- name: Linux
+  #logo: /images/sections/skills/linux.png
+  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
+  categories: ["others"]
+
+- name: Git
+  #logo: /images/sections/skills/git.png
+  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
+  categories: ["basic"]
+  url: "https://git-scm.com/"
+
+- name: C++
+  #logo: /images/sections/skills/c++.png
+  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
+  categories: ["basic", "language"]
