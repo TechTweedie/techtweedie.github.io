@@ -7,7 +7,10 @@ tags:
   - Azure Functions
   - Community Event
 categories:
-  - Community
+  - Power Platform
+  - Power Automate
+  - Azure Functions
+  - Community Event
 date: 2024-11-09T00:00:00+00:00
 publishDate: 2024-11-09T00:00:00+00:00
 lastmod: 2024-11-09T00:00:00+00:00

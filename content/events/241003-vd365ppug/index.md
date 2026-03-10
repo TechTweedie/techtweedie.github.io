@@ -7,7 +7,10 @@ tags:
   - Backup
   - Azure DevOps
 categories:
-  - Community
+  - Power Platform
+  - DevOps
+  - Backup
+  - Azure DevOps
 date: 2024-10-03T18:00:00+01:00
 publishDate: 2024-10-03T18:00:00+01:00
 lastmod: 2024-10-03T18:00:00+01:00

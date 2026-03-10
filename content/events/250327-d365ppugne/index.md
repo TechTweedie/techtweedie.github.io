@@ -10,7 +10,13 @@ tags:
   - Power Pages
   - Microsoft 365
 categories:
-  - Community
+  - Power Platform
+  - Power Apps
+  - Power Automate
+  - Community Event
+  - Model Driven Apps
+  - Power Pages
+  - Microsoft 365
 date: 2025-03-27T06:00:00+01:00
 publishDate: 2025-03-27T06:00:00+01:00
 lastmod: 2025-03-27T06:00:00+01:00
