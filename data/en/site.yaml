@@ -15,7 +15,7 @@ customMenus:
   hideFromNavbar: false
   showOnFooter: true
 - name: Patterns
-  url: /patterns/
+  url: /pattern/
   hideFromNavbar: false
   showOnFooter: true
 - name: Podcasts
