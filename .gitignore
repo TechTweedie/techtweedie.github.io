@@ -1,7 +1,12 @@
 resources/*
 node_modules/*
 public/*
+public/
 .vscode/
 
 # Ignore the embedded git repository
 toha-example-site/
+node_modules
+
+# Ignore Hugo build test directories
+.hugo-*/
