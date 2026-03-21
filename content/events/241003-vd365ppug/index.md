@@ -11,6 +11,14 @@ categories:
   - DevOps
   - Backup
   - Azure DevOps
+menu:
+  events:
+    name: Virtual Oct 2024
+    identifier: event-241003-vd365ppug
+    weight: 100
+location: Virtual Power Platform User Group
+locationLat: 53.4808
+locationLon: -2.2426
 date: 2024-10-03T18:00:00+01:00
 publishDate: 2024-10-03T18:00:00+01:00
 lastmod: 2024-10-03T18:00:00+01:00
@@ -21,6 +29,7 @@ resources:
   src: "image-1.png"
 - name: "featured-image-preview"
   src: "image-1.png"
+hero: image-1.png
 lightgallery: true
 draft: false
 ---

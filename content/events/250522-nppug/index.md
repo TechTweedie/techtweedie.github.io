@@ -6,6 +6,14 @@ tags:
   - Power Automate
   - Azure Functions
   - Community Event
+menu:
+  events:
+    name: Norfolk May 2025
+    identifier: event-250522-nppug
+    weight: 50
+location: Norwich Digital Hub
+locationLat: 52.6309
+locationLon: 1.2974
 date: 2025-05-22T06:00:00+01:00
 publishDate: 2025-05-22T06:00:00+01:00
 lastmod: 2025-05-22T06:00:00+01:00
@@ -16,6 +24,7 @@ resources:
   src: "image.png"
 - name: "featured-image-preview"
   src: "image.png"
+hero: image.png
 lightgallery: true
 draft: false
 ---

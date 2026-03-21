@@ -11,6 +11,14 @@ categories:
   - Power Automate
   - Azure Functions
   - Community Event
+menu:
+  events:
+    name: Scotland Mar 2025
+    identifier: event-250325-sppug
+    weight: 70
+location: SWG3, 100 Eastvale Place, Glasgow
+locationLat: 55.8672
+locationLon: -4.2945
 date: 2025-03-25T18:00:00+00:00
 publishDate: 2025-03-25T18:00:00+00:00
 lastmod: 2025-03-25T18:00:00+00:00
@@ -20,7 +28,8 @@ resources:
 - name: "featured-image"
   src: "image-1.png"
 - name: "featured-image-preview"
-  src: "mage-2.png"
+  src: "image-2.png"
+hero: image-2.png
 lightgallery: true
 draft: false
 ---

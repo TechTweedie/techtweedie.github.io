@@ -17,6 +17,14 @@ categories:
   - Model Driven Apps
   - Power Pages
   - Microsoft 365
+menu:
+  events:
+    name: NE Mar 2025
+    identifier: event-250327-d365ppugne
+    weight: 60
+location: BJSS, 12th Floor, Bank House, Newcastle upon Tyne NE1 6SQ
+locationLat: 54.9724
+locationLon: -1.6079
 date: 2025-03-27T06:00:00+01:00
 publishDate: 2025-03-27T06:00:00+01:00
 lastmod: 2025-03-27T06:00:00+01:00
@@ -27,6 +35,7 @@ resources:
   src: "thin.png"
 - name: "featured-image-preview"
   src: "large.png"
+hero: large.png
 lightgallery: true
 draft: false
 ---

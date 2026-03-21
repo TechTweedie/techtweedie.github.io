@@ -11,6 +11,14 @@ categories:
   - Power Automate
   - Azure Functions
   - Community Event
+menu:
+  events:
+    name: M365 North Sep 2024
+    identifier: event-240917-m365north
+    weight: 110
+location: M365 North User Group
+locationLat: 53.4808
+locationLon: -2.2426
 date: 2024-09-17T00:00:00+01:00
 publishDate: 2024-09-17T00:00:00+01:00
 lastmod: 2024-09-17T00:00:00+01:00
@@ -21,6 +29,7 @@ resources:
   src: "image.png"
 - name: "featured-image-preview"
   src: "image.png"
+hero: image.png
 lightgallery: true
 draft: true
 ---

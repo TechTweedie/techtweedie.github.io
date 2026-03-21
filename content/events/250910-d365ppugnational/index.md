@@ -8,6 +8,14 @@ tags:
   - Automated Testing
 categories:
   - Community
+menu:
+  events:
+    name: National Sep 2025
+    identifier: event-250910-d365ppugnational
+    weight: 20
+location: Microsoft UA92, Manchester
+locationLat: 53.4639
+locationLon: -2.2913
 date: 2025-09-10T06:00:00+01:00
 publishDate: 2025-09-08T06:00:00+01:00
 lastmod: 2025-09-08T06:00:00+01:00

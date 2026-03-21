@@ -11,6 +11,14 @@ categories:
   - Power Automate
   - Azure Functions
   - Community Event
+menu:
+  events:
+    name: Birmingham Jan 2025
+    identifier: event-250130-bppug
+    weight: 80
+location: Wesleyan, Colmore Circus Queensway, Birmingham
+locationLat: 52.4848
+locationLon: -1.8944
 date: 2025-01-30T18:30:00+00:00
 publishDate: 2025-01-30T18:30:00+00:00
 lastmod: 2025-01-30T18:30:00+00:00
@@ -21,6 +29,7 @@ resources:
   src: "image.png"
 - name: "featured-image-preview"
   src: "image.png"
+hero: image.png
 lightgallery: true
 draft: false
 ---

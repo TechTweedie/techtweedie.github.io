@@ -7,6 +7,14 @@ tags:
   - Azure DevOps
   - Community Event
   - Solution Lifecycle
+menu:
+  events:
+    name: National Jun 2025
+    identifier: event-250627-d365ppugnational
+    weight: 30
+location: National Usergroup, Room G8
+locationLat: 53.4808
+locationLon: -2.2426
 date: 2025-06-22T06:00:00+01:00
 publishDate: 2025-06-22T06:00:00+01:00
 lastmod: 2025-06-22T06:00:00+01:00
@@ -17,6 +25,7 @@ resources:
   src: "thin.png"
 - name: "featured-image-preview"
   src: "large.png"
+hero: large.png
 lightgallery: true
 draft: true
 ---

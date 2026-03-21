@@ -40,3 +40,91 @@ footer, .footer {
 code, pre, .code {
     font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace !important;
 }
+
+/* Events specific styling */
+.event-list-page .event-card {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.event-list-page .event-card-image {
+  height: 220px;
+  object-fit: cover;
+}
+
+.event-list-page .event-card .card-title {
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.event-list-page .event-card .post-summary {
+  font-size: 0.92rem;
+  color: rgba(108, 117, 125, 1);
+}
+
+.event-single-page .event-meta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+}
+
+.event-single-page .event-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background: rgba(13, 202, 240, 0.15);
+  color: #0dcaf0;
+}
+
+.event-single-page .event-meta-date,
+.event-single-page .event-meta-location {
+  font-size: 0.9rem;
+  color: rgba(108, 117, 125, 1);
+}
+
+.event-single-page .event-description {
+  margin-top: 0.6rem;
+  margin-bottom: 1.25rem;
+  color: rgba(108, 117, 125, 1);
+}
+
+.event-single-page .event-map-wrapper {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.event-single-page .event-map,
+.event-single-page .event-map-frame {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 150px;
+  border-radius: 0px;
+  overflow: hidden;
+  border: none;
+  display: block;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.event-single-page .read-area .hero-area {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.event-single-page .read-area .page-content {
+  position: relative;
+  z-index: 2;
+  margin-top: 2rem;
+  padding-top: 0;
+}

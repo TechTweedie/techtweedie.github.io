@@ -11,6 +11,14 @@ tags:
   - Microsoft 365
 categories:
   - Community
+menu:
+  events:
+    name: NE Sep 2025
+    identifier: event-250930-d365ppugne
+    weight: 10
+location: Haylofts, 5 Saint Thomas' Street, Newcastle upon Tyne
+locationLat: 54.9724
+locationLon: -1.6079
 date: 2025-09-30T06:00:00+01:00
 publishDate: 2025-09-04T06:00:00+01:00
 lastmod: 2025-09-04T06:00:00+01:00
@@ -21,6 +29,7 @@ resources:
   src: "thin.png"
 - name: "featured-image-preview"
   src: "large.png"
+hero: large.png
 lightgallery: true
 draft: false
 ---

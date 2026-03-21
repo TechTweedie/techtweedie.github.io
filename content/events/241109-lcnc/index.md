@@ -11,6 +11,12 @@ categories:
   - Power Automate
   - Azure Functions
   - Community Event
+menu:
+  events:
+    name: LCNC Nov 2024
+    identifier: event-241109-lcnc
+    weight: 90
+location: Online
 date: 2024-11-09T00:00:00+00:00
 publishDate: 2024-11-09T00:00:00+00:00
 lastmod: 2024-11-09T00:00:00+00:00
@@ -21,6 +27,7 @@ resources:
   src: "image.png"
 - name: "featured-image-preview"
   src: "image.png"
+hero: image.png
 lightgallery: true
 draft: false
 ---
