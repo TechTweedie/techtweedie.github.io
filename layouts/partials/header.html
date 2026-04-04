@@ -24,6 +24,54 @@
     </script>
     <!--END Consent Manager (Silktide) - Load before Google Tag Manager-->
     <link rel="stylesheet" id="silktide-consent-manager-css" href="{{ "cookie-banner/silktide-consent-manager.css" | relURL }}">
+    <script src="{{ "cookie-banner/silktide-consent-manager.js" | relURL }}"></script>
+    <script>
+    // Wire Silktide cookie choices to Google Consent Mode.
+    silktideCookieBannerManager.updateCookieBannerConfig({
+        cookieTypes: [
+            {
+                id: 'necessary',
+                name: 'Necessary',
+                description: '<p>Required cookies help core site functions and cannot be turned off.</p>',
+                required: true
+            },
+            {
+                id: 'analytics',
+                name: 'Analytics',
+                description: '<p>Analytics cookies help us understand usage and improve the site.</p>',
+                required: false,
+                onAccept: function() {
+                    gtag('consent', 'update', { analytics_storage: 'granted' });
+                    dataLayer.push({ event: 'consent_accepted_analytics' });
+                },
+                onReject: function() {
+                    gtag('consent', 'update', { analytics_storage: 'denied' });
+                }
+            },
+            {
+                id: 'marketing',
+                name: 'Marketing',
+                description: '<p>Marketing cookies enable advertising, measurement, and personalization.</p>',
+                required: false,
+                onAccept: function() {
+                    gtag('consent', 'update', {
+                        ad_storage: 'granted',
+                        ad_user_data: 'granted',
+                        ad_personalization: 'granted'
+                    });
+                    dataLayer.push({ event: 'consent_accepted_marketing' });
+                },
+                onReject: function() {
+                    gtag('consent', 'update', {
+                        ad_storage: 'denied',
+                        ad_user_data: 'denied',
+                        ad_personalization: 'denied'
+                    });
+                }
+            }
+        ]
+    });
+    </script>
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
