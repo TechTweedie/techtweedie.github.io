@@ -33,6 +33,10 @@ customMenus:
   url: https://mightora.io/
   hideFromNavbar: false
   showOnFooter: true
+- name: Privacy Policy
+  url: /privacy-policy/
+  hideFromNavbar: true
+  showOnFooter: true
 
 # Specify OpenGraph Headers
 openGraph:
