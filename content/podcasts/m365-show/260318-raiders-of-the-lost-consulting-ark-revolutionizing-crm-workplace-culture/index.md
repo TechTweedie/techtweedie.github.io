@@ -54,17 +54,17 @@ Consulting is not about the gold at the end of the tunnel; it is about making su
 
 **Title:** Raiders of the Lost Consulting Ark: Revolutionizing CRM Workplace Culture  
 **Event by:** M365 Show  
-**When:** Wed, Mar 18, 2026, 4:00 PM (your local time)  
+**When:** Wed, Mar 18, 2026, 4:00 PM GMT  
 **Event Link:** [https://www.linkedin.com/events/raidersofthelostconsultingark-r7435352966477500417/theater/](https://www.linkedin.com/events/raidersofthelostconsultingark-r7435352966477500417/theater/)
 
 ## Watch the Episode
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe
-    src="https://www.linkedin.com/video/embed/live/urn:li:ugcPost:7435352967530057728"
-    title="Embedded post"
-    frameborder="0"
-    allowfullscreen
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-  ></iframe>
-</div>
+{{< youtube 9eg-pYXREdI >}}
+
+## Those Involved
+
+- [Mirko Peters](https://www.linkedin.com/in/m365showpodcast/)
+- [Francesco Di Donato](https://www.linkedin.com/in/fdidonato/)
+- [Angeliki Patsiavou](https://www.linkedin.com/in/angeliki-patsiavou/)
+- [Daniel Barber](https://www.linkedin.com/in/danielbarber/)
+- [Ian Tweedie](https://www.linkedin.com/in/iantweedie/)
