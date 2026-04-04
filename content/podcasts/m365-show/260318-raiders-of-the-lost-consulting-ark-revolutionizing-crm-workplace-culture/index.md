@@ -34,6 +34,11 @@ draft: false
 
 <!--more-->
 
+
+## Watch the Episode
+
+{{< youtube 9eg-pYXREdI >}}
+
 ## About
 
 In this new episode of the D365 Show, we will channel just a touch of our Indiana Jones selves to explore a treasured topic: reclaiming the human side of CRM consulting.
@@ -57,9 +62,6 @@ Consulting is not about the gold at the end of the tunnel; it is about making su
 **When:** Wed, Mar 18, 2026, 4:00 PM GMT  
 **Event Link:** [https://www.linkedin.com/events/raidersofthelostconsultingark-r7435352966477500417/theater/](https://www.linkedin.com/events/raidersofthelostconsultingark-r7435352966477500417/theater/)
 
-## Watch the Episode
-
-{{< youtube 9eg-pYXREdI >}}
 
 ## Those Involved
 
