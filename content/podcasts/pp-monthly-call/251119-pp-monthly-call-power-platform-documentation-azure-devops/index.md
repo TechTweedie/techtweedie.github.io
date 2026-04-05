@@ -24,10 +24,10 @@ author: "itweedie"
 authorLink: "https://iantweedie.biz"
 resources:
 - name: "featured-image"
-  src: "image.png"
+  src: "image.jpg"
 - name: "featured-image-preview"
-  src: "image.png"
-hero: image.png
+  src: "image.jpg"
+hero: image.jpg
 lightgallery: true
 draft: false
 ---

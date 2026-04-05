@@ -1,15 +1,14 @@
 ---
 title: "Privacy Policy"
-description: "Privacy policy for Tech Tweedie, covering how we collect, use, and protect your data, including our use of cookies."
-date: 2026-04-04T00:00:00+00:00
-lastmod: 2026-04-04T00:00:00+00:00
+description: "Privacy policy for Tech Tweedie, detailing how we collect, use, and protect your data in compliance with UK GDPR. Learn about our use of Google AdSense and your data rights."
+date: 2026-04-05T00:00:00+00:00
+lastmod: 2026-04-05T00:00:00+00:00
 draft: false
-lightgallery: false
 ---
 
 ## Privacy Policy
 
-**Last updated: 4 April 2026**
+**Last updated: 5 April 2026**
 
 This website, **Tech Tweedie** (accessible at [https://techtweedie.github.io](https://techtweedie.github.io)), is operated by:
 
@@ -17,111 +16,97 @@ This website, **Tech Tweedie** (accessible at [https://techtweedie.github.io](ht
 Company Number: **07820713**  
 Corporate website: [https://tweed.technology/](https://tweed.technology/)
 
-Tweed Technology Ltd is the data controller for the purposes of the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
+Tweed Technology Ltd is the data controller responsible for your personal data under the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
+
+We are committed to protecting your privacy. This policy explains what personal data we collect, how we use it, and your rights concerning that data.
 
 ---
 
-## 1. What Information We Collect
+### 1. What Information We Collect
 
-We may collect the following types of information when you visit this site:
+We collect information to provide and improve our service. The types of data we collect depend on your interaction with our site.
 
-- **Usage data** — pages visited, time spent on pages, referring URLs, browser type, and device information, collected via analytics cookies (where you have consented).
-- **Comments** — if you submit a comment via our Giscus comment system, your GitHub account name and comment content are processed by GitHub.
-- **Cookie preferences** — your consent choices are stored locally in your browser.
-
-We do not collect your name, email address, or any other personally identifiable information through this website unless you voluntarily contact us directly.
-
----
-
-## 2. Cookies
-
-We use a cookie consent banner to give you control over non-essential cookies. The categories of cookies used on this site are:
-
-### Necessary Cookies
-
-These cookies are required for the website to function correctly. They cannot be switched off. They do not store any personally identifiable information. Examples include cookies that remember your privacy preferences.
-
-### Analytics Cookies
-
-These cookies help us understand how visitors interact with the site by collecting and reporting information anonymously. We use **Google Analytics** for this purpose (where consent is granted). Analytics data is used solely to improve site content and user experience.
-
-If you decline analytics cookies, no analytics data will be collected about your visit.
-
-### Advertising Cookies
-
-These cookies may be set to measure the effectiveness of advertising or to personalise content and ads. They are only activated with your consent.
-
-### Managing Your Cookie Preferences
-
-You can change your cookie preferences at any time using the cookie settings icon displayed on the site. You can also control cookies through your browser settings; however, disabling cookies may affect site functionality.
-
-For more information about cookies, visit [https://www.aboutcookies.org](https://www.aboutcookies.org).
+- **Technical Data:** When you visit, we may automatically collect your IP address, browser type, operating system, and referring URLs. This is standard practice for most websites and is used for security and troubleshooting.
+- **Usage Data:** We collect information about how you use our website, such as pages visited, time spent on pages, and links clicked. We use this to understand what content is popular and to improve the site.
+- **Cookie Data:** We use cookies for analytics and advertising. Please see our [Cookie Policy](/cookie-policy) for detailed information.
+- **Contact Data:** If you contact us directly via email, we will have your email address and any information you provide in your message.
 
 ---
 
-## 3. Third-Party Services
+### 2. How We Use Your Information
 
-This site uses the following third-party services which may process data independently under their own privacy policies:
+We use your data for the following purposes:
 
-| Service | Purpose | Privacy Policy |
-|---|---|---|
-| **GitHub Pages** | Website hosting | [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) |
-| **Giscus** | Comments (via GitHub Discussions) | [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) |
-| **Google Analytics** | Site analytics (with consent) | [Google Privacy Policy](https://policies.google.com/privacy) |
-| **Ko-fi** | Voluntary support / tips | [Ko-fi Privacy Policy](https://ko-fi.com/privacy) |
-
-We do not sell, trade, or otherwise transfer your personal data to third parties beyond those listed above.
+- **To operate and maintain our website:** Ensuring the site is secure and performs correctly.
+- **To improve our website:** Analysing usage data helps us refine our content and user experience.
+- **To comply with legal obligations:** We may need to process your data to comply with legal or regulatory requirements.
+- **To serve advertisements:** We use Google AdSense to display ads, which helps fund the site.
 
 ---
 
-## 4. Legal Basis for Processing
+### 3. Google AdSense & Advertising
 
-Where we process personal data, we rely on the following legal bases under UK GDPR:
+This site uses Google AdSense, an advertising service provided by Google.
 
-- **Consent** — for analytics and advertising cookies, and for comments submitted via Giscus.
-- **Legitimate interests** — for basic site security and performance monitoring necessary to operate the website.
+- **Third-party vendors, including Google, use cookies** to serve ads based on a user's prior visits to this website or other websites.
+- **Google's use of advertising cookies** (such as the DoubleClick cookie) enables it and its partners to serve ads to you based on your visit to this site and/or other sites on the Internet.
+- These ads may be **personalised** based on your interests, demographics, and other information Google has collected. In some regions, you may only be shown **non-personalised ads**.
 
----
+**How to Control Advertising Cookies:**
 
-## 5. Data Retention
-
-Cookie-based analytics data is retained in accordance with the relevant third-party service's data retention policies. Comment data submitted via Giscus is retained by GitHub and subject to their policies. Cookie preference data is stored locally in your browser and removed when you clear your browser data.
-
----
-
-## 6. Your Rights
-
-Under UK GDPR, you have the following rights regarding your personal data:
-
-- **Right to access** — request a copy of any personal data we hold about you.
-- **Right to rectification** — request correction of inaccurate data.
-- **Right to erasure** — request deletion of your data where we have no lawful reason to retain it.
-- **Right to restrict processing** — request that we limit how we use your data.
-- **Right to object** — object to processing based on legitimate interests.
-- **Right to withdraw consent** — withdraw consent at any time for cookie-based data collection, without affecting the lawfulness of prior processing.
-
-To exercise any of these rights, please contact us using the details below.
-
-You also have the right to lodge a complaint with the **Information Commissioner's Office (ICO)** at [https://ico.org.uk](https://ico.org.uk).
+You can opt out of personalised advertising by visiting [Google's Ad Settings](https://www.google.com/settings/ads). Alternatively, you can opt out of a third-party vendor's use of cookies for personalised advertising by visiting [www.aboutads.info](http://www.aboutads.info/choices/).
 
 ---
 
-## 7. External Links
+### 4. Lawful Basis for Processing
 
-This website contains links to external sites. We are not responsible for the privacy practices or content of those sites. We encourage you to review the privacy policies of any external sites you visit.
+Under UK GDPR, we process your personal data on the following lawful bases:
 
----
-
-## 8. Changes to This Policy
-
-We may update this privacy policy from time to time. The "Last updated" date at the top of this page will reflect any changes. Continued use of the site after changes are posted constitutes acceptance of the updated policy.
+- **Consent:** For non-essential cookies (analytics and advertising) and when you contact us. You can withdraw your consent at any time.
+- **Legitimate Interests:** For essential website operation, security, and analysing aggregated, anonymised usage data to improve our services. We ensure our legitimate interests do not override your rights and freedoms.
 
 ---
 
-## 9. Contact Us
+### 5. Data Retention
 
-If you have any questions or concerns about this privacy policy or your personal data, please contact us through:
+We retain personal data only for as long as necessary to fulfil the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.
 
-- The corporate website: [https://tweed.technology/](https://tweed.technology/)
+- **Contact Data:** Retained for as long as necessary to resolve your query and for a reasonable period thereafter for record-keeping.
+- **Analytics Data:** Retained in an aggregated, anonymised form indefinitely.
 
-**Tweed Technology Ltd** is registered in England and Wales, company number **07820713**.
+---
+
+### 6. Your Data Protection Rights
+
+Under UK GDPR, you have the following rights:
+
+- **The right to be informed:** To be told how your personal information will be used.
+- **The right of access:** To request a copy of the personal data we hold about you.
+- **The right to rectification:** To request that we correct any inaccurate personal data.
+- **The right to erasure:** To request that we delete your personal data, where there is no compelling reason for us to keep it.
+- **The right to restrict processing:** To request that we suspend the processing of your personal data.
+- **The right to data portability:** To request a copy of your data in a machine-readable format.
+- **The right to object:** To object to us processing your data (for example, for direct marketing).
+- **Rights in relation to automated decision making and profiling.**
+
+To exercise any of these rights, please contact us.
+
+---
+
+### 7. Data Security
+
+We have implemented appropriate security measures to prevent your personal data from being accidentally lost, used, or accessed in an unauthorised way.
+
+---
+
+### 8. Contact Us
+
+For any questions about this privacy policy or our data protection practices, please contact us at:
+
+**[NOTE FOR SITE OWNER: Please insert a valid email address here, e.g., privacy@yourdomain.com]**
+
+---
+
+### 9. Complaints
+
+You have the right to make a complaint at any time to the Information Commissioner's Office (ICO), the UK supervisory authority for data protection issues ([www.ico.org.uk](https://www.ico.org.uk)). We would, however, appreciate the chance to deal with your concerns before you approach the ICO, so please contact us in the first instance.

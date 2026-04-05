@@ -50,6 +50,9 @@ outputs:
 # Enable global emoji support
 enableEmoji: true
 
+# Generate robots.txt with sitemap reference
+enableRobotsTXT: true
+
 # Site parameters
 params:
   # Background image of the landing page

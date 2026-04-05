@@ -37,6 +37,22 @@ customMenus:
   url: /privacy-policy/
   hideFromNavbar: true
   showOnFooter: true
+- name: About
+  url: /about/
+  hideFromNavbar: true
+  showOnFooter: true
+- name: Terms
+  url: /terms/
+  hideFromNavbar: true
+  showOnFooter: true
+- name: Contact
+  url: /contact/
+  hideFromNavbar: true
+  showOnFooter: true
+- name: Cookie Policy
+  url: /cookie-policy/
+  hideFromNavbar: true
+  showOnFooter: true
 
 # Specify OpenGraph Headers
 openGraph:
