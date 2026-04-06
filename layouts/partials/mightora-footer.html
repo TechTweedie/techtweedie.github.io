@@ -1,4 +1,37 @@
+{{- $footer := site.Data.mightoraFooter -}}
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-main">
+      {{- range $footer.columns }}
+      <div class="footer-col">
+        <div class="footer-col-sections">
+          {{- range . }}
+          <div>
+            <div class="footer-section-title">{{ .title }}</div>
+            <ul class="footer-links">
+              {{- range .links }}
+              <li><a href="{{ .url }}">{{ .name }}</a></li>
+              {{- end }}
+            </ul>
+          </div>
+          {{- end }}
+        </div>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+  {{- if $footer.brands }}
+  <div class="container">
+    <div class="footer-brands">
+      {{- range $footer.brands }}
+      <a href="{{ .url }}" target="_blank" rel="noopener" class="footer-brand">
+        <img src="{{ .logo }}" alt="{{ .name }}" loading="lazy">
+        <span class="footer-brand-desc">{{ .description }}</span>
+      </a>
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+</footer>
 <mightora-author config-url="/data/config.json"></mightora-author>
-<mightora-footer></mightora-footer>
-<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/mightora/shared-ui@main/components.js"></script>
