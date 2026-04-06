@@ -58,6 +58,65 @@ jobs:
         run: hugo mod tidy
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Refresh mightora footer data
+        run: |
+          python3 - <<'EOF'
+          import json, urllib.request, re
+
+          url = "https://cdn.jsdelivr.net/gh/mightora/shared-ui@main/footer.yaml"
+          try:
+              with urllib.request.urlopen(url, timeout=10) as r:
+                  raw = r.read().decode()
+
+              # Parse brands
+              brands = []
+              for m in re.finditer(
+                  r'brands:.*?(?=\nsections:)', raw, re.DOTALL):
+                  for bm in re.finditer(
+                      r'- name:\s*"([^"]+)".*?url:\s*"([^"]+)".*?logo:\s*"([^"]+)".*?description:\s*"([^"]+)"',
+                      m.group(), re.DOTALL):
+                      brands.append({"name": bm.group(1), "url": bm.group(2),
+                                     "logo": bm.group(3), "description": bm.group(4)})
+
+              # Parse sections — tolerant of indentation bugs in the source YAML
+              sections_text = re.search(r'^sections:(.*)', raw, re.DOTALL | re.MULTILINE)
+              cols = {1: [], 2: [], 3: []}
+              if sections_text:
+                  block = sections_text.group(1)
+                  entries = re.split(r'\n\s{0,4}-\s+title:', block)
+                  for entry in entries[1:]:
+                      title = entry.split('\n')[0].strip().strip('"')
+                      c = re.search(r'column:\s*(\d)', entry)
+                      p = re.search(r'position:\s*(\d)', entry)
+                      links_block = re.search(r'links:(.*?)(?=\n\s{0,4}-\s+title:|\Z)', entry, re.DOTALL)
+                      if not (title and c and links_block):
+                          continue
+                      links = []
+                      for lm in re.finditer(r'-\s+name:\s*"([^"]+)"[^\n]*\n\s+url:\s*"([^"]+)"', links_block.group(1)):
+                          links.append({"name": lm.group(1), "url": lm.group(2)})
+                      col = int(c.group(1))
+                      pos = int(p.group(1)) if p else 99
+                      if col in cols:
+                          cols[col].append({"title": title, "position": pos, "links": links})
+
+              columns = [
+                  sorted(cols[1], key=lambda x: x["position"]),
+                  sorted(cols[2], key=lambda x: x["position"]),
+                  sorted(cols[3], key=lambda x: x["position"]),
+              ]
+              for col in columns:
+                  for s in col:
+                      s.pop("position", None)
+
+              footer = {"brands": brands, "columns": columns}
+
+              with open("data/mightoraFooter.json", "w") as f:
+                  json.dump(footer, f, indent=2, ensure_ascii=False)
+              print("mightoraFooter.json updated successfully")
+
+          except Exception as e:
+              print(f"Warning: could not refresh footer data ({e}), using committed version")
+          EOF
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
