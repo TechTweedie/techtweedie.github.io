@@ -2,7 +2,7 @@
 section:
   name: Projects
   id: projects
-  enable: false
+  enable: true
   weight: 5
   showOnNavbar: true
   # Can optionally hide the title in sections
@@ -12,54 +12,63 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: Professional
-  filter: "professional"
-- name: Academic
-  filter: "academic"
-- name: Hobby
-  filter: "hobby"
+- name: Azure DevOps Pipelines
+  filter: "ado"
+- name: Power Platform
+  filter: "powerplatform"
 
 # your projects
 projects:
-- name: Kubernetes
-  logo: /images/sections/projects/kubernetes.png
-  role: Contributor
-  timeline: "March 2018 - Present"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Production-Grade Container Scheduling and Management.
-  tags: ["professional", "kubernetes", "cloud"]
+- name: Upload Markdown to Wiki
+  logo: /images/sections/projects/ado-pipelines.png
+  role: Creator and Lead Developer
+  timeline: "Jan 2025 - Present"
+  #repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  url: https://mightora.io/tools/cicd/upload-md-to-wiki/  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: This DevOps extension allows you to move markdown (.md) files held in an Azure DevOps repository and publish them to an Azure DevOps Wiki. This can be useful for automating the documentation process and ensuring that your wiki is always up-to-date with the latest markdown files from your repository.
+  tags: ["ado"]
 
-- name: Tensorflow
-  logo: /images/sections/projects/tensorflow.png
-  role: Developer
-  timeline: "Jun 2018 - Present"
-  repo: https://github.com/tensorflow/tensorflow
-  #url: ""
-  summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning"]
+- name: Playwright for Power Platform DevOps Extension
+  logo: /images/sections/projects/ado-pipelines.png
+  role: Creator and Lead Developer
+  timeline: "July 2025 - Present"
+  #repo: https://github.com/tensorflow/tensorflow
+  url: https://mightora.io/tools/cicd/playwright-for-power-platform/
+  summary: Automate end-to-end testing for Power Platform apps using Playwright in Azure DevOps pipelines. This extension provides a seamless setup, robust test execution, and advanced reporting for Power Platform solutions.
+  tags: ["ado","powerplatform"]
 
-- name: A sample academic paper
-  role: Team Lead
-  timeline: "Jan 2017 - Nov 2017"
-  url: "https://www.example.com"
-  summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
-  tags: ["academic","iot"]
+- name: Power Platform Documentation Extension
+  logo: /images/sections/projects/ado-pipelines.png
+  role: Creator and Lead Developer
+  timeline: "June 2024 - Present"
+  #repo: https://github.com/tensorflow/tensorflow
+  url: https://mightora.io/tools/cicd/power-platform-documentation-extension/
+  summary: The Mightora Power Platform DevOps Extension is a comprehensive set of tools designed to generate Power Platform Solution Documentation from within an Azure DevOps Pipeline. We have also included some other useful tools within the solution such as the XML Node Updater and XML Node Attribute Updater allowing advanced users to edit a solution within a release pipeline. Alongside this we have included tools which allow you to connect to Dataverse for Teams from Azure DevOps allowing ALM and a handy extension allowing for easy commit to repo from a Pipeline.
+  tags: ["ado","powerplatform"]
 
-- name: Nocode
-  logo: /images/sections/projects/no-code.png
-  role: Nothing
-  timeline: "Oct 2019 - Dec 2019"
-  repo: https://github.com/kelseyhightower/nocode
-  #url: ""
-  summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
-  tags: ["hobby", "fun"]
+- name: Power Platform Solution Modifier
+  logo: /images/sections/projects/ado-pipelines.png
+  role: Creator and Lead Developer
+  timeline: "June 2024 - Present"
+  #repo: https://github.com/tensorflow/tensorflow
+  url: https://mightora.io/tools/cicd/power-platform-solution-modifier/
+  summary: The Mightora Power Platform Solution Modifier is a specialized Azure DevOps extension designed to programmatically modify Power Platform solution XML files during CI/CD pipelines. This extension provides two powerful tasks - XML Node Updater and XML Node Attribute Updater - that allow advanced users to dynamically edit solution configurations within release and build pipelines without manual intervention.
+  tags: ["ado","powerplatform"]
 
-- name: Toha
-  logo: /images/sections/projects/toha.png
-  image: /images/sections/projects/toha_website.png
-  role: Owner
-  timeline: "Jun 2019 - Present"
-  repo: https://github.com/hossainemruz/toha
-  summary: A Hugo theme for personal portfolio.
-  tags: ["hobby","hugo","theme","professional"]
+- name: Commit to Repo
+  logo: /images/sections/projects/ado-pipelines.png
+  role: Creator and Lead Developer
+  timeline: "September 2024 - Present"
+  #repo: https://github.com/tensorflow/tensorflow
+  url: https://mightora.io/tools/cicd/commit-to-repo/
+  summary: The Commit to Repo Extension is a streamlined tool designed to automate the process of committing changes made during a pipeline run to your Git repository.
+  tags: ["ado"]
+
+#- name: Toha
+#  logo: /images/sections/projects/toha.png
+#  image: /images/sections/projects/toha_website.png
+#  role: Owner
+#  timeline: "Jun 2019 - Present"
+#  repo: https://github.com/hossainemruz/toha
+#  summary: A Hugo theme for personal portfolio.
+#  tags: ["hobby","hugo","theme","professional"]
