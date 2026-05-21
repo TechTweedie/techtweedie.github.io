@@ -19,7 +19,7 @@ menu:
 location: "CodeNode, 10 South Place, London, EC2M 7EB"
 locationLat: 51.5189
 locationLon: -0.0858
-date: 2026-06-11T09:00:00+01:00
+date: 2026-06-12T09:00:00+01:00
 endDate: 2026-06-12T17:00:00+01:00
 publishDate: 2026-05-12T12:00:00+01:00
 lastmod: 2026-05-12T12:00:00+01:00
