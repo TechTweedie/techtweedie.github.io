@@ -39,7 +39,7 @@ AI is driving a significant shift in the consulting landscape, encouraging a hei
 **📅 Date:** Tuesday, June 30, 2026  
 **🕕 Time:** 3:15 PM – 4:15 PM CET  
 **📍 Location:** Auditorium 12, Bella Center, Copenhagen, Denmark  
-**🎟️ Registration:** [ESPC 2026](https://espc.tech/conference/eppc-2026/)
+**🎟️ Registration:** [EPPC 2026](https://espc.tech/conference/eppc-2026/)
 
 ## Session Overview
 
@@ -73,15 +73,15 @@ Together, they'll challenge conventional thinking and offer practical, hard-won 
 
 
 
-## About ESPC 2026
+## About EPPC 2026
 
-The European SharePoint, Office and Azure Conference (ESPC) runs **June 29 – July 2, 2026** at **Bella Center, Copenhagen, Denmark**.
+EPPC runs **June 29 – July 2, 2026** at **Bella Center, Copenhagen, Denmark**.
 
-For more information and to register for other sessions, visit [ESPC 2026](https://espc.tech/conference/eppc-2026/).
+For more information and to register for other sessions, visit [EPPC 2026](https://espc.tech/conference/eppc-2026/).
 
 
 ## 👉 Register Now
 
-**[Attend T34 at ESPC 2026](https://espc.tech/conference/eppc-2026/)**
+**[EPPC 2026](https://espc.tech/conference/eppc-2026/)**
 
 Come ready to challenge your assumptions, ask hard questions, and take home insights that will reshape how you approach consulting and delivery.
