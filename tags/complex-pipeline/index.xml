@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Complex Pipeline on Tech Tweedie</title><link>https://techtweedie.github.io/tags/complex-pipeline/</link><description>Recent content in Complex Pipeline on Tech Tweedie</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 30 Apr 2026 12:00:00 +0100</lastBuildDate><atom:link href="https://techtweedie.github.io/tags/complex-pipeline/index.xml" rel="self" type="application/rss+xml"/><item><title>Power Platform EXPORT to DevOps - Complex Pipeline</title><link>https://techtweedie.github.io/pattern/ppcicd/power-platform-export-to-devops-complex-pipeline/</link><pubDate>Thu, 30 Apr 2026 12:00:00 +0100</pubDate><guid>https://techtweedie.github.io/pattern/ppcicd/power-platform-export-to-devops-complex-pipeline/</guid><description>&lt;div class="alert info"&gt;
+&lt;span&gt;&lt;i data-feather="info"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;&lt;strong&gt;📋 REUSABLE PATTERN&lt;/strong&gt;&lt;br&gt;
+This document provides a proven, reusable pattern for implementing advanced Power Platform DevOps pipelines. Use this template to standardize and automate complex solution export, documentation, and version control processes.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;h2 id="pattern-summary"&gt;Pattern Summary&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Pattern Name&lt;/strong&gt;: Power Platform Complex Solution Export Pipeline&lt;br&gt;
+&lt;strong&gt;Category&lt;/strong&gt;: DevOps &amp;amp; CI/CD&lt;br&gt;
+&lt;strong&gt;Platform&lt;/strong&gt;: Azure DevOps + Power Platform&lt;br&gt;
+&lt;strong&gt;Difficulty&lt;/strong&gt;: Intermediate to Advanced&lt;br&gt;
+&lt;strong&gt;Time to Implement&lt;/strong&gt;: 2-4 hours&lt;/p&gt;
+&lt;h3 id="what-this-pattern-solves"&gt;What This Pattern Solves&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Managing multiple interdependent solutions in a single pipeline.&lt;/li&gt;
+&lt;li&gt;Automating the export of Power Platform Portals and reference data.&lt;/li&gt;
+&lt;li&gt;Generating solution documentation automatically.&lt;/li&gt;
+&lt;li&gt;Cleaning up the repository before processing new solution versions.&lt;/li&gt;
+&lt;li&gt;Committing all unpacked solution components, portal data, and documentation to a new branch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="pattern-outcomes"&gt;Pattern Outcomes&lt;/h3&gt;
+&lt;p&gt;After implementing this pattern, you will have:&lt;/p&gt;</description></item></channel></rss>

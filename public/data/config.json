@@ -1,0 +1,16 @@
+{
+  "author": {
+    "name": "Ian Tweedie",
+    "bio": "Beyond the low code... A passionate Power Platform developer and Microsoft technologies expert sharing knowledge around Power Platform, Azure, PCF controls, and DevOps.",
+    "branding": {
+      "label": "TechTweedie"
+    },
+    "links": [
+      { "url": "https://github.com/itweedie", "icon": "fab fa-github", "label": "GitHub" },
+      { "url": "https://www.linkedin.com/in/iantweedie", "icon": "fab fa-linkedin", "label": "LinkedIn" },
+      { "url": "https://www.youtube.com/@TechTweedie", "icon": "fab fa-youtube", "label": "YouTube" },
+      { "url": "https://medium.com/@ian.tweedie", "icon": "fab fa-medium", "label": "Medium" },
+      { "url": "https://itweedie.bsky.social", "icon": "fab fa-bluesky", "label": "Bluesky" }
+    ]
+  }
+}

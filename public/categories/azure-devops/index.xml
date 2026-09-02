@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Azure DevOps on Tech Tweedie</title><link>https://techtweedie.github.io/categories/azure-devops/</link><description>Recent content in Azure DevOps on Tech Tweedie</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 01 May 2026 12:00:00 +0100</lastBuildDate><atom:link href="https://techtweedie.github.io/categories/azure-devops/index.xml" rel="self" type="application/rss+xml"/><item><title>Power Platform Build Backup Pipeline</title><link>https://techtweedie.github.io/pattern/ppcicd/build-backup/</link><pubDate>Fri, 01 May 2026 12:00:00 +0100</pubDate><guid>https://techtweedie.github.io/pattern/ppcicd/build-backup/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;name&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;$(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;variables&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;name&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;varPowerPlatformSPN&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;value&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;Dataverse - Build - AzureDevOps&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;name&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;varPowerPlatformSPN2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;value&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;Dataverse - TracsIntegration-Build - AzureDevOps&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;name&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;varSolutionName&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;value&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;TRACSCustomConnectors&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;name&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;varSolutionName2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;value&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;Entities&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;name&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;varSolutionName3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;value&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;Environment_Configuration&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;name&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;varSolutionName4&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;value&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;Core&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;name&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;varSolutionName5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;value&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;Dataflows&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;name&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;varSolutionName6&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;value&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;TRACS_Integration_Solution&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;name&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;varSolutionName7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;value&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;Document_Migration&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;name&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;varWebsiteId&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;value&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;ca958ff8-3c4b-ee11-be6f-0022481ab062&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;## revert schedule to 0 once old build backup is retired&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;schedules&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#f92672"&gt;cron&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;30&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;13&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;18&lt;/span&gt; * * &lt;span style="color:#ae81ff"&gt;1-5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;displayName&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;Weekday Backup&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;branches&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;include&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#ae81ff"&gt;main&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;always&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;trigger&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;none&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;pool&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;vmImage&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;windows-latest&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;steps&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;checkout&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;self&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;persistCredentials&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;clean&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformToolInstaller@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;DefaultVersion&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AddToolsToPath&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;## SOLUTION 1 - CUSTOM CONNECTORS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformSetSolutionVersion@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionVersionNumber&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;2.4.0.$(Build.BuildID)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionOutputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName)_managed.zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Managed&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AsyncOperation&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;MaxAsyncWaitTime&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;60&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionOutputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName).zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Managed&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AsyncOperation&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;MaxAsyncWaitTime&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;60&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformUnpackSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionInputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName).zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionTargetFolder&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.SourcesDirectory)\src\solutions\$(varSolutionName)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;Both&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;## SOLUTION 2 - ENTITIES&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformSetSolutionVersion@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName2)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionVersionNumber&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;2.4.0.$(Build.BuildID)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName2)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionOutputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName2)_managed.zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Managed&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AsyncOperation&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;MaxAsyncWaitTime&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;60&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName2)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionOutputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName2).zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Managed&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AsyncOperation&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;MaxAsyncWaitTime&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;60&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformUnpackSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionInputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName2).zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionTargetFolder&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.SourcesDirectory)\src\solutions\$(varSolutionName2)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;Both&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;## SOLUTION 3 - ENVIRONMENT CONFIGURATION&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformSetSolutionVersion@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName3)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionVersionNumber&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;2.4.0.$(Build.BuildID)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName3)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionOutputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName3)_managed.zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Managed&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AsyncOperation&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;MaxAsyncWaitTime&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;60&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName3)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionOutputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName3).zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Managed&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AsyncOperation&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;MaxAsyncWaitTime&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;60&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformUnpackSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionInputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName3).zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionTargetFolder&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.SourcesDirectory)\src\solutions\$(varSolutionName3)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;Both&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;## SOLUTION 4 - CORE&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformSetSolutionVersion@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName4)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionVersionNumber&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;2.4.0.$(Build.BuildID)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName4)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionOutputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName4)_managed.zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Managed&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AsyncOperation&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;MaxAsyncWaitTime&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;60&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName4)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionOutputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName4).zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Managed&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AsyncOperation&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;MaxAsyncWaitTime&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;60&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformUnpackSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionInputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName4).zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionTargetFolder&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.SourcesDirectory)\src\solutions\$(varSolutionName4)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;Both&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;## SOLUTION 5 - DATAFLOWS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformSetSolutionVersion@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName5)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionVersionNumber&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;2.4.0.$(Build.BuildID)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName5)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionOutputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName5)_managed.zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Managed&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AsyncOperation&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;MaxAsyncWaitTime&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;60&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName5)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionOutputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName5).zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Managed&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AsyncOperation&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;MaxAsyncWaitTime&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;60&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformUnpackSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionInputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName5).zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionTargetFolder&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.SourcesDirectory)\src\solutions\$(varSolutionName5)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;Both&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;## SOLUTION 6 - TRACS INTEGRATION&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformSetSolutionVersion@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN2)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName6)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionVersionNumber&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;2.4.0.$(Build.BuildID)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN2)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName6)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionOutputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName6)_managed.zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Managed&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AsyncOperation&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;MaxAsyncWaitTime&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;60&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN2)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName6)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionOutputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName6).zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Managed&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AsyncOperation&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;MaxAsyncWaitTime&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;60&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformUnpackSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionInputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName6).zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionTargetFolder&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.SourcesDirectory)\src\tracsIntegrationSolutions\$(varSolutionName6)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;Both&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# SOLUTION 7 - DOCUMENT MIGRATION&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformSetSolutionVersion@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName7)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionVersionNumber&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;2.4.0.$(Build.BuildID)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName7)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionOutputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName7)_managed.zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Managed&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AsyncOperation&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;MaxAsyncWaitTime&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;60&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionName&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varSolutionName7)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionOutputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName7).zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Managed&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;AsyncOperation&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;MaxAsyncWaitTime&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;60&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformUnpackSolution@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionInputFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$(varSolutionName7).zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionTargetFolder&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.SourcesDirectory)\src\solutions\$(varSolutionName7)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SolutionType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;Both&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;## PORTAL&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformDownloadPaportal@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;DownloadPath&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.SourcesDirectory)\src\ppages&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;WebsiteId&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varWebsiteId)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Overwrite&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;ModelVersion&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;## REFERENCE DATA&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;PowerPlatformExportData@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;authenticationType&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;PowerPlatformSPN&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;PowerPlatformSPN&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(varPowerPlatformSPN)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Environment&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(BuildTools.EnvironmentUrl)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;SchemaFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.SourcesDirectory)\referenceData\data_schema.xml&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;DataFile&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$rferenceData.zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;Overwrite&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;ExtractFiles@1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;archiveFilePatterns&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.ArtifactStagingDirectory)\$rferenceData.zip&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;destinationFolder&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#39;$(Build.SourcesDirectory)\referenceData&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;cleanDestinationFolder&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;overwriteExistingFiles&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;task&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;CmdLine@2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;inputs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;script&lt;/span&gt;: |&lt;span style="color:#e6db74"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; echo commit all changes
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; git config user.email &amp;#34;$(Build.RequestedForEmail)&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; git config user.name &amp;#34;$(Build.RequestedFor)&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; git checkout -b main
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; git add --all
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; git commit -m &amp;#34;Latest solution changes.&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; echo push code to new repo
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; git -c http.extraheader=&amp;#34;AUTHORIZATION: bearer $(System.AccessToken)&amp;#34; push origin main&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Power Platform EXPORT to DevOps - Complex Pipeline</title><link>https://techtweedie.github.io/pattern/ppcicd/power-platform-export-to-devops-complex-pipeline/</link><pubDate>Thu, 30 Apr 2026 12:00:00 +0100</pubDate><guid>https://techtweedie.github.io/pattern/ppcicd/power-platform-export-to-devops-complex-pipeline/</guid><description>&lt;div class="alert info"&gt;
+&lt;span&gt;&lt;i data-feather="info"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;&lt;strong&gt;📋 REUSABLE PATTERN&lt;/strong&gt;&lt;br&gt;
+This document provides a proven, reusable pattern for implementing advanced Power Platform DevOps pipelines. Use this template to standardize and automate complex solution export, documentation, and version control processes.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;h2 id="pattern-summary"&gt;Pattern Summary&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Pattern Name&lt;/strong&gt;: Power Platform Complex Solution Export Pipeline&lt;br&gt;
+&lt;strong&gt;Category&lt;/strong&gt;: DevOps &amp;amp; CI/CD&lt;br&gt;
+&lt;strong&gt;Platform&lt;/strong&gt;: Azure DevOps + Power Platform&lt;br&gt;
+&lt;strong&gt;Difficulty&lt;/strong&gt;: Intermediate to Advanced&lt;br&gt;
+&lt;strong&gt;Time to Implement&lt;/strong&gt;: 2-4 hours&lt;/p&gt;
+&lt;h3 id="what-this-pattern-solves"&gt;What This Pattern Solves&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Managing multiple interdependent solutions in a single pipeline.&lt;/li&gt;
+&lt;li&gt;Automating the export of Power Platform Portals and reference data.&lt;/li&gt;
+&lt;li&gt;Generating solution documentation automatically.&lt;/li&gt;
+&lt;li&gt;Cleaning up the repository before processing new solution versions.&lt;/li&gt;
+&lt;li&gt;Committing all unpacked solution components, portal data, and documentation to a new branch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="pattern-outcomes"&gt;Pattern Outcomes&lt;/h3&gt;
+&lt;p&gt;After implementing this pattern, you will have:&lt;/p&gt;</description></item><item><title>Power Platform EXPORT to DevOps - Simple Pipeline</title><link>https://techtweedie.github.io/pattern/ppcicd/power-platform-export-to-devops-simple-pipeline/</link><pubDate>Tue, 10 Mar 2026 00:00:00 +0100</pubDate><guid>https://techtweedie.github.io/pattern/ppcicd/power-platform-export-to-devops-simple-pipeline/</guid><description>&lt;div class="alert info"&gt;
+&lt;span&gt;&lt;i data-feather="info"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;&lt;strong&gt;📋 REUSABLE PATTERN&lt;/strong&gt;&lt;br&gt;
+This document provides a proven, reusable pattern for implementing Power Platform DevOps pipelines. Use this template to standardize your solution export and version control processes across your organization.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;h2 id="pattern-summary"&gt;Pattern Summary&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Pattern Name&lt;/strong&gt;: Power Platform Solution Export Pipeline&lt;br&gt;
+&lt;strong&gt;Category&lt;/strong&gt;: DevOps &amp;amp; CI/CD&lt;br&gt;
+&lt;strong&gt;Platform&lt;/strong&gt;: Azure DevOps + Power Platform&lt;br&gt;
+&lt;strong&gt;Difficulty&lt;/strong&gt;: Beginner to Intermediate&lt;br&gt;
+&lt;strong&gt;Time to Implement&lt;/strong&gt;: 1-2 hours&lt;/p&gt;
+&lt;h3 id="what-this-pattern-solves"&gt;What This Pattern Solves&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Manual solution exports prone to human error&lt;/li&gt;
+&lt;li&gt;Lack of version control for Power Platform solutions&lt;/li&gt;
+&lt;li&gt;Inconsistent deployment processes across environments&lt;/li&gt;
+&lt;li&gt;No audit trail for solution changes&lt;/li&gt;
+&lt;li&gt;Difficulty collaborating on Power Platform development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="pattern-outcomes"&gt;Pattern Outcomes&lt;/h3&gt;
+&lt;p&gt;After implementing this pattern, you will have:&lt;/p&gt;</description></item><item><title>Power Platform IMPORT from DevOps - Simple Pipeline</title><link>https://techtweedie.github.io/pattern/ppcicd/power-platform-import-from-devops-simple-pipeline/</link><pubDate>Tue, 10 Mar 2026 00:00:00 +0100</pubDate><guid>https://techtweedie.github.io/pattern/ppcicd/power-platform-import-from-devops-simple-pipeline/</guid><description>&lt;div class="alert info"&gt;
+&lt;span&gt;&lt;i data-feather="info"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span&gt;&lt;strong&gt;&lt;strong&gt;📋 REUSABLE PATTERN&lt;/strong&gt;&lt;br&gt;
+This document provides a proven, reusable pattern for implementing Power Platform solution deployment pipelines. Use this template to standardize your solution import and deployment processes across your organization.&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;h2 id="pattern-summary"&gt;Pattern Summary&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Pattern Name&lt;/strong&gt;: Power Platform Solution Import Pipeline&lt;br&gt;
+&lt;strong&gt;Category&lt;/strong&gt;: DevOps &amp;amp; CI/CD&lt;br&gt;
+&lt;strong&gt;Platform&lt;/strong&gt;: Azure DevOps + Power Platform&lt;br&gt;
+&lt;strong&gt;Difficulty&lt;/strong&gt;: Beginner to Intermediate&lt;br&gt;
+&lt;strong&gt;Time to Implement&lt;/strong&gt;: 1-2 hours&lt;/p&gt;
+&lt;h3 id="what-this-pattern-solves"&gt;What This Pattern Solves&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Manual solution deployments prone to human error&lt;/li&gt;
+&lt;li&gt;Inconsistent deployment processes across environments&lt;/li&gt;
+&lt;li&gt;Lack of automated testing after deployment&lt;/li&gt;
+&lt;li&gt;No standardized approach for environment-specific configurations&lt;/li&gt;
+&lt;li&gt;Difficulty maintaining deployment consistency across teams&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="pattern-outcomes"&gt;Pattern Outcomes&lt;/h3&gt;
+&lt;p&gt;After implementing this pattern, you will have:&lt;/p&gt;</description></item><item><title>At the Virtual Power Platform User Group Presenting - Avoid Costly Mistakes: Backing Up Your Power Platform Development Environment</title><link>https://techtweedie.github.io/events/241003-vd365ppug/</link><pubDate>Thu, 03 Oct 2024 18:00:00 +0100</pubDate><guid>https://techtweedie.github.io/events/241003-vd365ppug/</guid><description/></item></channel></rss>
