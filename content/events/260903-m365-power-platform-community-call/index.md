@@ -37,7 +37,7 @@ draft: false
 **Join the call:** [Join on Microsoft Teams](https://aka.ms/community/m365-powerplat-call-join)<br>
 **Add it to your calendar:** [Calendar invitation](https://aka.ms/community/m365-powerplat-call-invite)
 
-The Copilot, Microsoft 365 & Power Platform community call is back with a practical agenda for people building, governing, and extending Microsoft's business technology stack.
+I am presenting on tomorrow's Copilot, Microsoft 365 & Power Platform community call, alongside Katrina Frolkina and Elio Struyf. It is a practical agenda for people building, governing, and extending Microsoft's business technology stack.
 
 We will cover the latest news and updates, then move into three sessions grounded in real delivery work: simplifying Power Automate with a small amount of code, document generation with a custom SharePoint Copilot agent, and supporting WebMCP from an SPFx extension.
 
