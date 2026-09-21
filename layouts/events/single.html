@@ -66,7 +66,8 @@
         {{ $loc := .Params.location | default "" }}
         {{ $lat := .Params.locationLat }}
         {{ $lon := .Params.locationLon }}
-        {{ $showMap := and $loc (not (in (lower $loc) "online")) (not (in (lower $loc) "virtual")) }}
+        {{ $isPhysicalLocation := and $loc (not (in (lower $loc) "online")) (not (in (lower $loc) "virtual")) }}
+        {{ $showMap := and $isPhysicalLocation $lat $lon }}
         {{ if $showMap }}
           {{ $delta := 0.01 }}
           {{ $left := sub $lon $delta }}

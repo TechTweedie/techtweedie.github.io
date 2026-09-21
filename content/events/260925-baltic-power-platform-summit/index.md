@@ -25,6 +25,7 @@ publishDate: 2026-09-21T09:00:00+03:00
 lastmod: 2026-09-21T09:00:00+03:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
+eventType: "speaking"
 lightgallery: false
 draft: false
 resources:

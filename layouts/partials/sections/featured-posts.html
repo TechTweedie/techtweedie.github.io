@@ -1,0 +1,42 @@
+{{ $sectionID := replace (lower .section.name) " " "-" }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+<div class="container-fluid anchor pb-5 recent-posts-section upcoming-events-section">
+  {{ if not (.section.hideTitle) }}
+    <h1 class="text-center"><span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ else }}
+    <h1 class="text-center" style="display: none"><span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ end }}
+  <div class="container">
+    <div class="row" id="recent-post-cards">
+      {{ $events := where site.RegularPages "Section" "events" }}
+      {{ $events = where $events "Params.hidden" "!=" true }}
+      {{ $events = where $events "Date" "ge" now }}
+      {{ range first 3 $events.ByDate }}
+        {{ $hero := partial "helpers/get-hero.html" . }}
+        <div class="post-card event-card">
+          <div class="card">
+            <div class="card-head event-card-media">
+              {{ partial "events/role-banner.html" . }}
+              <a href="{{ .RelPermalink | relLangURL }}" class="post-card-link">
+                <img class="card-img-top event-card-image" src="{{ $hero }}" alt="{{ .Title }}">
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="{{ .RelPermalink | relLangURL }}" class="post-card-link">
+                <h5 class="card-title">{{ .Title }}</h5>
+                <p class="card-text post-summary">{{ .Summary | plainify }}</p>
+              </a>
+            </div>
+            <div class="card-footer">
+              <span class="float-start">{{ .Date | time.Format ":date_full" }}</span>
+              <a href="{{ .RelPermalink | relLangURL }}" class="float-end btn btn-outline-info btn-sm">View Event</a>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
