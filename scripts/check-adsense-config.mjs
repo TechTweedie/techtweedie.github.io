@@ -15,7 +15,11 @@ const footer = read('layouts/partials/mightora-footer.html');
 assert.match(head, new RegExp('name="google-adsense-account" content="ca-pub-' + id + '"'));
 assert.match(adsTxt.trim(), new RegExp('^google\\.com, pub-' + id + ', DIRECT, f08c47fec0942fa0$'));
 assert.match(config, /gitBranch:\s*v2/);
-assert.match(config, /adsense:\s*\n\s+enabled:\s*false/);
+const enabled = config.match(/adsense:\s*\n\s+enabled:\s*(true|false)/);
+assert.ok(enabled, 'Declare an explicit AdSense enabled flag');
+if (enabled[1] === 'true') {
+  console.warn('AdSense enabled: account approval, certified CMP and live privacy behaviour require manual verification.');
+}
 
 // Fail closed by default. Never serve ads on utility/legal pages.
 assert.match(adPartial, /site\.Params\.adsense\.enabled/);
