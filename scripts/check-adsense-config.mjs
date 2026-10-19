@@ -43,7 +43,10 @@ for (const path of [
   assert.equal(existsSync(location(path)), false, path + ' should be removed');
 }
 
-assert.doesNotMatch(cookies, /silktide|google tag manager/i);
+// The policy should explain which services have been retired, not pretend
+// their names never existed (historical disclosures are appropriate).
+assert.match(cookies, /not loaded/);
+assert.doesNotMatch(cookies, /Silktide banner asks solely|consent-gated Google Tag Manager integration/i);
 assert.match(cookies, /Privacy & messaging/);
 assert.match(privacy, /privacy@tweed\.technology/);
 assert.match(cookies, /privacy@tweed\.technology/);
