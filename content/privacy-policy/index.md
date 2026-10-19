@@ -2,13 +2,13 @@
 title: "Privacy Policy"
 description: "Privacy policy for Tech Tweedie, detailing how we collect, use, and protect your data in compliance with UK GDPR. Learn about our use of Google AdSense and your data rights."
 date: 2026-04-05T00:00:00+00:00
-lastmod: 2026-04-05T00:00:00+00:00
+lastmod: 2026-10-19T00:00:00+01:00
 draft: false
 ---
 
 ## Privacy Policy
 
-**Last updated: 5 April 2026**
+**Last updated: 19 October 2026**
 
 This website, **Tech Tweedie** (accessible at [https://techtweedie.github.io](https://techtweedie.github.io)), is operated by:
 
@@ -27,8 +27,8 @@ We are committed to protecting your privacy. This policy explains what personal 
 We collect information to provide and improve our service. The types of data we collect depend on your interaction with our site.
 
 - **Technical Data:** When you visit, we may automatically collect your IP address, browser type, operating system, and referring URLs. This is standard practice for most websites and is used for security and troubleshooting.
-- **Usage Data:** We collect information about how you use our website, such as pages visited, time spent on pages, and links clicked. We use this to understand what content is popular and to improve the site.
-- **Cookie Data:** We use cookies for analytics and advertising. Please see our [Cookie Policy](/cookie-policy) for detailed information.
+- **Usage Data:** If you agree to optional analytics, Google Tag Manager may be used to help us understand how visitors use the site. You can reject optional analytics. We do not intentionally load Tag Manager until analytics consent is granted, and disable that integration when AdSense is enabled.
+- **Cookie Data:** Optional analytics and, once activated, advertising may involve cookies or similar technologies. See our [Cookie Policy](/cookie-policy) for how these choices work.
 - **Contact Data:** If you contact us directly via email, we will have your email address and any information you provide in your message.
 
 ---
@@ -40,13 +40,13 @@ We use your data for the following purposes:
 - **To operate and maintain our website:** Ensuring the site is secure and performs correctly.
 - **To improve our website:** Analysing usage data helps us refine our content and user experience.
 - **To comply with legal obligations:** We may need to process your data to comply with legal or regulatory requirements.
-- **To serve advertisements:** We use Google AdSense to display ads, which helps fund the site.
+- **To serve advertisements:** We plan to use Google AdSense to fund the site. Advertising is enabled only after site approval and an appropriate certified consent solution are in place.
 
 ---
 
 ### 3. Google AdSense & Advertising
 
-This site uses Google AdSense, an advertising service provided by Google.
+This site is preparing to use Google AdSense, an advertising service provided by Google. When activated, the Google-certified consent platform configured in AdSense will ask eligible visitors for their advertising privacy choices. We do not use our separate analytics preferences banner to obtain advertising consent.
 
 - **Third-party vendors, including Google, use cookies** to serve ads based on a user's prior visits to this website or other websites.
 - **Google's use of advertising cookies** (such as the DoubleClick cookie) enables it and its partners to serve ads to you based on your visit to this site and/or other sites on the Internet.
@@ -54,7 +54,7 @@ This site uses Google AdSense, an advertising service provided by Google.
 
 **How to Control Advertising Cookies:**
 
-You can opt out of personalised advertising by visiting [Google's Ad Settings](https://www.google.com/settings/ads). Alternatively, you can opt out of a third-party vendor's use of cookies for personalised advertising by visiting [www.aboutads.info](http://www.aboutads.info/choices/).
+When AdSense is active, you can adjust consent choices using Google's certified consent message and [Google's Ad Settings](https://www.google.com/settings/ads). Alternatively, you can opt out of a third-party vendor's use of cookies for personalised advertising by visiting [www.aboutads.info](http://www.aboutads.info/choices/).
 
 ---
 
@@ -63,7 +63,7 @@ You can opt out of personalised advertising by visiting [Google's Ad Settings](h
 Under UK GDPR, we process your personal data on the following lawful bases:
 
 - **Consent:** For non-essential cookies (analytics and advertising) and when you contact us. You can withdraw your consent at any time.
-- **Legitimate Interests:** For essential website operation, security, and analysing aggregated, anonymised usage data to improve our services. We ensure our legitimate interests do not override your rights and freedoms.
+- **Legitimate Interests:** For essential website operation and security. We ensure our legitimate interests do not override your rights and freedoms.
 
 ---
 
@@ -93,6 +93,15 @@ To exercise any of these rights, please contact us.
 
 ---
 
+
+### Other Services and External Content
+
+The site is hosted on GitHub Pages, which may process technical connection information such as IP addresses as part of delivering the website. Pages may include third-party resources, such as fonts, shared UI assets, embedded media, and GitHub Discussions comments via Giscus. Visiting third-party content can result in data being shared with its provider; their own policies may apply. Do not submit personal information in public comments that you do not wish to disclose.
+
+To request access, erasure or another data-protection right, email [privacy@tweed.technology](mailto:privacy@tweed.technology). You can read our [Cookie Policy](/cookie-policy/) for further information on consent choices.
+
+---
+
 ### 7. Data Security
 
 We have implemented appropriate security measures to prevent your personal data from being accidentally lost, used, or accessed in an unauthorised way.
@@ -103,7 +112,7 @@ We have implemented appropriate security measures to prevent your personal data 
 
 For any questions about this privacy policy or our data protection practices, please contact us at:
 
-**[NOTE FOR SITE OWNER: Please insert a valid email address here, e.g., privacy@yourdomain.com]**
+**[privacy@tweed.technology](mailto:privacy@tweed.technology)**
 
 ---
 

@@ -2,13 +2,13 @@
 title: "Cookie Policy"
 description: "Learn about the cookies used on Tech Tweedie, including essential, analytics, and advertising cookies from Google AdSense. Manage your consent and preferences."
 date: 2026-04-05T00:00:00+00:00
-lastmod: 2026-04-05T00:00:00+00:00
+lastmod: 2026-10-19T00:00:00+01:00
 draft: false
 ---
 
 ## Cookie Policy
 
-**Last updated: 5 April 2026**
+**Last updated: 19 October 2026**
 
 This Cookie Policy explains how Tech Tweedie ("we", "us", and "our") uses cookies and similar technologies to recognise you when you visit our website at [https://techtweedie.github.io](https://techtweedie.github.io). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
 
@@ -34,19 +34,19 @@ These cookies are strictly necessary to provide you with services available thro
 
 #### b. Analytics and Performance Cookies
 
-These cookies are used to collect information about traffic to our website and how users use the website. The information gathered does not identify any individual visitor. We use this information to help us understand how our website is being used and how we can improve your experience. We use Google Analytics for this purpose.
+These cookies are used to collect information about traffic to our website and how users use the website. The information gathered does not identify any individual visitor. We use this information to help us understand how our website is being used and how we can improve your experience. We use a consent-gated Google Tag Manager integration for optional site analytics while AdSense is disabled. The actual analytics tags in Google Tag Manager must be reviewed separately by the site owner.
 
 #### c. Advertising Cookies
 
-This website uses Google AdSense to display advertisements. These cookies are used to make advertising messages more relevant to you. They perform functions like preventing the same ad from continuously reappearing, ensuring that ads are properly displayed for advertisers, and in some cases selecting advertisements that are based on your interests.
+This website is preparing to use Google AdSense. Ad serving is disabled in the source configuration until the site is approved and a Google-certified IAB TCF consent management platform is active. These cookies are used to make advertising messages more relevant to you. They perform functions like preventing the same ad from continuously reappearing, ensuring that ads are properly displayed for advertisers, and in some cases selecting advertisements that are based on your interests.
 
-Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website. Google's use of the DoubleClick cookie enables it and its partners to serve ads to our users based on their visit to our sites and/or other sites on the Internet.
+When AdSense is activated, Google and its partners may use cookies and similar technologies to serve, measure and, where consented, personalise advertisements. Google's use of the DoubleClick cookie enables it and its partners to serve ads to our users based on their visit to our sites and/or other sites on the Internet.
 
 ---
 
 ### 4. Your Consent
 
-When you first visit our site, we will show you a cookie banner requesting your consent to set non-essential cookies (Analytics and Advertising). By clicking "Accept all", you agree to the placement of these cookies. If you click "Reject non-essential", we will only use essential cookies.
+While AdSense is disabled, our Silktide banner asks solely for optional analytics consent: you can accept, reject or change the choice using the cookie preferences icon. We do not load Google Tag Manager before analytics consent. This banner is not certified for advertising consent. When Google AdSense is activated, Google's certified Privacy & messaging consent platform replaces the Silktide banner and governs Google advertising choices. Google may offer personalised, non-personalised or limited ads depending on region, consent and its account configuration.
 
 ---
 
@@ -54,7 +54,7 @@ When you first visit our site, we will show you a cookie banner requesting your 
 
 You have the right to decide whether to accept or reject cookies.
 
-- **Cookie Banner:** You can exercise your cookie preferences via the cookie consent banner that appears on your first visit.
+- **Cookie banner:** While optional analytics is enabled, use its on-page preferences icon to review or withdraw analytics consent. Once AdSense is activated, use the Google-certified consent message or its privacy-options entry point to review advertising choices.
 - **Browser Controls:** You can set or amend your web browser controls to accept or refuse cookies. If you choose to reject cookies, you may still use our website though your access to some functionality and areas of our website may be restricted. As the means by which you can refuse cookies through your web browser controls vary from browser-to-browser, you should visit your browser's help menu for more information.
 
 ---
@@ -64,3 +64,7 @@ You have the right to decide whether to accept or reject cookies.
 For more information about our privacy practices, please review our [Privacy Policy](/privacy-policy).
 
 If you have any questions about our use of cookies, please contact us.
+
+### 7. Contact for Privacy Requests
+
+Contact [privacy@tweed.technology](mailto:privacy@tweed.technology) for cookie or data-protection questions. For broader details, see our [Privacy Policy](/privacy-policy/).

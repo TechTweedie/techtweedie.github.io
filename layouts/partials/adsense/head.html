@@ -1,0 +1,9 @@
+{{/* Fail-closed AdSense configuration.
+     NEVER set enabled=true before the AdSense site is approved and a
+     Google-certified IAB TCF CMP is live in the AdSense account.
+     Display only on original blog articles, not legal or navigation pages.
+     The Google CMP handles advertising consent; Silktide is not a valid
+     replacement for the certified advertising CMP. */}}
+{{- if and site.Params.adsense.enabled (eq .Section "posts") (eq .Kind "page") }}
+<script async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.Params.adsense.publisherID }}"></script>
+{{- end }}
