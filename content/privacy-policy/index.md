@@ -27,8 +27,8 @@ We are committed to protecting your privacy. This policy explains what personal 
 We collect information to provide and improve our service. The types of data we collect depend on your interaction with our site.
 
 - **Technical Data:** When you visit, we may automatically collect your IP address, browser type, operating system, and referring URLs. This is standard practice for most websites and is used for security and troubleshooting.
-- **Usage Data:** If you agree to optional analytics, Google Tag Manager may be used to help us understand how visitors use the site. You can reject optional analytics. We do not intentionally load Tag Manager until analytics consent is granted, and disable that integration when AdSense is enabled.
-- **Cookie Data:** Optional analytics and, once activated, advertising may involve cookies or similar technologies. See our [Cookie Policy](/cookie-policy) for how these choices work.
+- **Usage Data:** Google Tag Manager and the previous Silktide analytics consent banner are not loaded by this site. The Google AdSense tag is present on the homepage and blog articles to support site review and Google's consent management message; other external content may independently process usage data.
+- **Cookie Data:** Google's AdSense service may use cookies and similar technologies once active, subject to the available consent choices and applicable law. Our former optional analytics banner has been removed. See our [Cookie Policy](/cookie-policy/) for details.
 - **Contact Data:** If you contact us directly via email, we will have your email address and any information you provide in your message.
 
 ---
@@ -40,13 +40,13 @@ We use your data for the following purposes:
 - **To operate and maintain our website:** Ensuring the site is secure and performs correctly.
 - **To improve our website:** Analysing usage data helps us refine our content and user experience.
 - **To comply with legal obligations:** We may need to process your data to comply with legal or regulatory requirements.
-- **To serve advertisements:** We plan to use Google AdSense to fund the site. Advertising is enabled only after site approval and an appropriate certified consent solution are in place.
+- **To serve advertisements:** We plan to use Google AdSense to fund the site. We have requested no approval yet through this site: AdSense can only serve paid ads after Google approves the site. We intend to use Google's certified consent system for regions where it is required.
 
 ---
 
 ### 3. Google AdSense & Advertising
 
-This site is preparing to use Google AdSense, an advertising service provided by Google. When activated, the Google-certified consent platform configured in AdSense will ask eligible visitors for their advertising privacy choices. We do not use our separate analytics preferences banner to obtain advertising consent.
+This site is preparing to use Google AdSense, an advertising service provided by Google. The standard Google AdSense script is present on eligible pages. Google's certified Privacy & messaging platform will manage advertising privacy choices for eligible visitors **once the owner has published a European regulations message in AdSense**. Site approval and consent-message publication are controlled from the Google account, not by this website's code. There is no separate Silktide banner or Google Tag Manager integration.
 
 - **Third-party vendors, including Google, use cookies** to serve ads based on a user's prior visits to this website or other websites.
 - **Google's use of advertising cookies** (such as the DoubleClick cookie) enables it and its partners to serve ads to you based on your visit to this site and/or other sites on the Internet.
@@ -62,7 +62,7 @@ When AdSense is active, you can adjust consent choices using Google's certified 
 
 Under UK GDPR, we process your personal data on the following lawful bases:
 
-- **Consent:** For non-essential cookies (analytics and advertising) and when you contact us. You can withdraw your consent at any time.
+- **Consent:** For non-essential advertising cookies and personalisation where consent is legally required. You can withdraw your consent at any time.
 - **Legitimate Interests:** For essential website operation and security. We ensure our legitimate interests do not override your rights and freedoms.
 
 ---
@@ -72,7 +72,7 @@ Under UK GDPR, we process your personal data on the following lawful bases:
 We retain personal data only for as long as necessary to fulfil the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.
 
 - **Contact Data:** Retained for as long as necessary to resolve your query and for a reasonable period thereafter for record-keeping.
-- **Analytics Data:** Retained in an aggregated, anonymised form indefinitely.
+- **Analytics Data:** We do not currently enable a standalone Google Tag Manager analytics integration. Third-party providers have their own documented retention practices; contact us to ask about relevant data.
 
 ---
 

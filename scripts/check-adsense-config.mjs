@@ -1,8 +1,9 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 
-const read = (path) => readFileSync(new URL('../' + path, import.meta.url), 'utf8');
-const id = '6680433426341726';
+const location = (path) => new URL('../' + path, import.meta.url);
+const read = (path) => readFileSync(location(path), 'utf8');
+const publisher = '6680433426341726';
 const config = read('hugo.yaml');
 const head = read('layouts/partials/header.html');
 const adPartial = read('layouts/partials/adsense/head.html');
@@ -10,35 +11,41 @@ const adsTxt = read('static/ads.txt');
 const privacy = read('content/privacy-policy/index.md');
 const cookies = read('content/cookie-policy/index.md');
 const footer = read('layouts/partials/mightora-footer.html');
+const homepage = read('layouts/index.html');
+const base = read('layouts/_default/baseof.html');
 
-// Ownership is verifiable without loading ads or cookies.
-assert.match(head, new RegExp('name="google-adsense-account" content="ca-pub-' + id + '"'));
-assert.match(adsTxt.trim(), new RegExp('^google\\.com, pub-' + id + ', DIRECT, f08c47fec0942fa0$'));
+assert.match(head, new RegExp('name="google-adsense-account" content="ca-pub-' + publisher + '"'));
+assert.equal(adsTxt.trim(), 'google.com, pub-' + publisher + ', DIRECT, f08c47fec0942fa0');
 assert.match(config, /gitBranch:\s*v2/);
-const enabled = config.match(/adsense:\s*\n\s+enabled:\s*(true|false)/);
-assert.ok(enabled, 'Declare an explicit AdSense enabled flag');
-if (enabled[1] === 'true') {
-  console.warn('AdSense enabled: account approval, certified CMP and live privacy behaviour require manual verification.');
-}
+assert.match(config, /adsense:\s*\n\s+loadTag:\s*true/);
+assert.match(config, /enabled:\s*false/);
 
-// Fail closed by default. Never serve ads on utility/legal pages.
-assert.match(adPartial, /site\.Params\.adsense\.enabled/);
+// Official tag on the homepage + articles; not on legal pages and not duplicated.
+assert.match(adPartial, /site\.Params\.adsense\.loadTag/);
+assert.match(adPartial, /eq \.Kind "home"/);
 assert.match(adPartial, /eq \.Section "posts"/);
-assert.match(adPartial, /eq \.Kind "page"/);
-assert.match(adPartial, new RegExp('adsbygoogle\\.js\\?client='));
+assert.match(adPartial, /adsbygoogle\.js\?client=/);
+assert.match(head, /partial "adsense\/head.html"/);
+assert.match(homepage, /partial "header.html"/);
+assert.match(base, /partial "header.html"/);
+assert.doesNotMatch(head, /silktide|googletagmanager|gtag\(/i);
+assert.doesNotMatch(head, /pagead2\.googlesyndication\.com/);
 
-// GTM can only be loaded after an explicit analytics consent callback.
-assert.match(head, /if not site\.Params\.adsense\.enabled/);
-assert.match(head, /onAccept:\s*function\s*\(\)\s*\{ window\.techTweedieEnableAnalytics\(\)/);
-assert.match(head, /tag\.src = 'https:\/\/www\.googletagmanager\.com\/gtm\.js/);
-assert.doesNotMatch(head, /<script[^>]*src="https:\/\/www\.googletagmanager\.com\/gtm\.js/);
-
-// Policies and contact information must be real and linked.
-for (const text of [privacy, cookies]) {
-  assert.match(text, /privacy@tweed\.technology/);
-  assert.doesNotMatch(text, /NOTE FOR SITE OWNER|yourdomain\.com/);
+// No untrusted or uncertified old banner assets remain.
+for (const path of [
+  'static/cookie-banner/silktide-consent-manager.js',
+  'static/cookie-banner/silktide-consent-manager.css',
+  'static/path-to-css/silktide-consent-manager.js',
+  'static/path-to-css/silktide-consent-manager.css',
+]) {
+  assert.equal(existsSync(location(path)), false, path + ' should be removed');
 }
+
+assert.doesNotMatch(cookies, /silktide|google tag manager/i);
+assert.match(cookies, /Privacy & messaging/);
+assert.match(privacy, /privacy@tweed\.technology/);
+assert.match(cookies, /privacy@tweed\.technology/);
 assert.match(footer, /privacy-policy\//);
 assert.match(footer, /cookie-policy\//);
-assert.match(footer, /contact\//);
-console.log('AdSense static readiness checks passed. External CMP/account approval still required.');
+
+console.log('Google AdSense integration checks passed. CMP publication and site approval require AdSense account verification.');

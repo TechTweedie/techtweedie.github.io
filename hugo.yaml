@@ -65,10 +65,13 @@ params:
   # Site keywords
   keywords: ["Power Platform", "Microsoft", "PCF controls", "Windows 11", "Tech tutorials", "Static site generator", "TypeScript", "HTML", "Web development", "Power Apps", "Power Automate", "Power BI", "Dataverse", "Canvas Apps", "Model-driven Apps", "Power Platform Administration", "Power Platform Integration", "Power Platform Security"]
 
-  # AdSense: only turn on after the site is marked Ready in AdSense AND
-  # a Google-certified IAB TCF CMP (e.g. Google's Privacy & messaging) is published.
-  # The ad script is included on blog articles only; this does not activate ads yet.
+  # The official Google tag is installed for site review and Google CMP delivery.
+  # Load it only on the homepage and blog articles via adsense/head.html.
+  # The tag could enable Google Auto ads once the account approves this site:
+  # TURN AUTO ADS OFF in AdSense until the certified CMP has been published and tested.
+  # enabled remains a reservation for FUTURE manual ad placements; no manual ads yet.
   adsense:
+    loadTag: true
     enabled: false
     publisherID: "ca-pub-6680433426341726"
 

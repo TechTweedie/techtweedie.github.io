@@ -1,9 +1,11 @@
-{{/* Fail-closed AdSense configuration.
-     NEVER set enabled=true before the AdSense site is approved and a
-     Google-certified IAB TCF CMP is live in the AdSense account.
-     Display only on original blog articles, not legal or navigation pages.
-     The Google CMP handles advertising consent; Silktide is not a valid
-     replacement for the certified advertising CMP. */}}
-{{- if and site.Params.adsense.enabled (eq .Section "posts") (eq .Kind "page") }}
-<script async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.Params.adsense.publisherID }}"></script>
+{{/* Google AdSense's official asynchronous tag is required for the Google
+     Privacy & messaging CMP to render on ad-eligible pages.
+     The tag is installed now for site review and CMP delivery. Site approval
+     and publishing the Google-certified European regulations message are
+     ACCOUNT-SIDE steps; the template cannot guarantee either.
+     Limit to homepage and original articles; never put ads on legal pages.
+     No manual ad slots are inserted here. Disable Auto ads in AdSense until
+     the certified CMP message is published and tested. */}}
+{{- if and site.Params.adsense.loadTag (or (eq .Kind "home") (and (eq .Section "posts") (eq .Kind "page"))) }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.Params.adsense.publisherID }}" crossorigin="anonymous"></script>
 {{- end }}

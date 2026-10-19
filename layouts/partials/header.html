@@ -1,80 +1,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<!-- AdSense site ownership verification only: this meta tag does not load advertising. -->
+<!-- AdSense ownership: does not itself request ads. -->
 <meta name="google-adsense-account" content="ca-pub-6680433426341726">
 
-{{/* The legacy Silktide banner is not a Google-certified IAB TCF CMP.
-     Use it ONLY for optional analytics while AdSense is disabled.
-     Once Google AdSense and Google's certified CMP are enabled, avoid
-     two conflicting consent prompts and turn off this analytics integration. */}}
-{{- if not site.Params.adsense.enabled }}
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { window.dataLayer.push(arguments); }
-  gtag('consent', 'default', {
-    analytics_storage: 'denied',
-    ad_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied'
-  });
-
-  (function () {
-    var tagManagerLoaded = false;
-    window.techTweedieEnableAnalytics = function () {
-      if (tagManagerLoaded) return;
-      tagManagerLoaded = true;
-      gtag('consent', 'update', { analytics_storage: 'granted' });
-      window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-      var tag = document.createElement('script');
-      tag.async = true;
-      tag.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MP29JHZT';
-      document.head.appendChild(tag);
-    };
-    window.techTweedieDisableAnalytics = function () {
-      gtag('consent', 'update', { analytics_storage: 'denied' });
-      // GTM cannot be reliably unloaded after initialisation.
-      // Reload so previously allowed scripts do not remain running.
-      if (tagManagerLoaded) window.location.reload();
-    };
-  })();
-</script>
-<link rel="stylesheet" id="silktide-consent-manager-css" href="{{ "cookie-banner/silktide-consent-manager.css" | relURL }}">
-<script src="{{ "cookie-banner/silktide-consent-manager.js" | relURL }}"></script>
-<script>
-  silktideCookieBannerManager.updateCookieBannerConfig({
-    cookieTypes: [
-      {
-        id: 'necessary',
-        name: 'Necessary',
-        description: '<p>Required for basic site preferences and operation.</p>',
-        required: true
-      },
-      {
-        id: 'analytics',
-        name: 'Optional analytics',
-        description: '<p>Allow optional site-usage analytics. Advertising consent is not handled by this banner.</p>',
-        required: false,
-        onAccept: function () { window.techTweedieEnableAnalytics(); },
-        onReject: function () { window.techTweedieDisableAnalytics(); }
-      }
-    ],
-    text: {
-      banner: {
-        description: '<p>We use optional analytics to understand how this site is used. You may reject them and continue reading. <a href="/cookie-policy/">Cookie policy</a>.</p>',
-        acceptAllButtonText: 'Accept optional analytics',
-        rejectNonEssentialButtonText: 'Reject optional analytics',
-        preferencesButtonText: 'Preferences'
-      },
-      preferences: {
-        title: 'Cookie preferences',
-        description: '<p>Necessary preferences are always on. Optional analytics are off unless you agree. See our <a href="/privacy-policy/">privacy policy</a>.</p>'
-      }
-    }
-  });
-</script>
-{{- end }}
-
+{{/* A Google-certified IAB TCF CMP is configured through AdSense Privacy & messaging.
+     Its message is delivered through the official AdSense tag on eligible pages.
+     No Silktide, custom consent banner or Google Tag Manager runs here. */}}
 {{ partial "adsense/head.html" . }}
 
 <!--================= canonical URL =========================-->
