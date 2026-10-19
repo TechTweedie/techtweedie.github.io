@@ -28,7 +28,9 @@ assert.match(adPartial, /adsbygoogle\.js\?client=/);
 assert.match(head, /partial "adsense\/head.html"/);
 assert.match(homepage, /partial "header.html"/);
 assert.match(base, /partial "header.html"/);
-assert.doesNotMatch(head, /silktide|googletagmanager|gtag\(/i);
+// Comments may legitimately describe the removed integration; inspect executable markup.
+const executableHead = head.replace(/{{\/\*[\s\S]*?\*\/}}/g, '').replace(/<!--[\s\S]*?-->/g, '');
+assert.doesNotMatch(executableHead, /silktide|googletagmanager|gtag\(/i);
 assert.doesNotMatch(head, /pagead2\.googlesyndication\.com/);
 
 // No untrusted or uncertified old banner assets remain.
