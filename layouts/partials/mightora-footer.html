@@ -39,7 +39,34 @@
     <a href="{{ "contact/" | relURL }}">Contact</a>
     <a href="{{ "privacy-policy/" | relURL }}">Privacy policy</a>
     <a href="{{ "cookie-policy/" | relURL }}">Cookie policy</a>
+    <a href="{{ "cookie-policy/" | relURL }}" id="google-privacy-settings">Privacy &amp; cookie settings</a>
     <a href="{{ "terms/" | relURL }}">Terms</a>
   </nav>
 </footer>
 
+<script>
+(function () {
+  var link = document.getElementById('google-privacy-settings');
+  if (!link) return;
+
+  window.googlefc = window.googlefc || {};
+  window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];
+
+  window.googlefc.callbackQueue.push({
+    'CONSENT_API_READY': function () {
+      link.setAttribute('data-google-cmp-ready', 'true');
+    }
+  });
+
+  link.addEventListener('click', function (event) {
+    if (
+      link.getAttribute('data-google-cmp-ready') === 'true' &&
+      window.googlefc &&
+      typeof window.googlefc.showRevocationMessage === 'function'
+    ) {
+      event.preventDefault();
+      window.googlefc.showRevocationMessage();
+    }
+  });
+})();
+</script>

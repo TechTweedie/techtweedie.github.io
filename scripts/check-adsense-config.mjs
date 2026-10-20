@@ -20,15 +20,18 @@ assert.match(config, /gitBranch:\s*v2/);
 assert.match(config, /adsense:\s*\n\s+loadTag:\s*true/);
 assert.match(config, /enabled:\s*false/);
 
-// Official tag on the homepage + articles; not on legal pages and not duplicated.
-assert.match(adPartial, /site\.Params\.adsense\.loadTag/);
-assert.match(adPartial, /eq \.Kind "home"/);
-assert.match(adPartial, /eq \.Section "posts"/);
+// The official AdSense tag bootstraps Google's Privacy & messaging CMP.
+// Keep it site-wide so visitors arriving on any page can receive the CMP.
+assert.match(adPartial, /if site\.Params\.adsense\.loadTag/);
 assert.match(adPartial, /adsbygoogle\.js\?client=/);
+assert.match(adPartial, /window\.googlefc/);
+assert.match(adPartial, /callbackQueue/);
+assert.doesNotMatch(adPartial, /eq \.Kind|eq \.Section/);
 assert.match(head, /partial "adsense\/head.html"/);
 assert.match(homepage, /partial "header.html"/);
 assert.match(base, /partial "header.html"/);
-// Comments may legitimately describe the removed integration; inspect executable markup.
+
+// Comments may legitimately describe removed integrations; inspect executable markup.
 const executableHead = head.replace(/{{\/\*[\s\S]*?\*\/}}/g, '').replace(/<!--[\s\S]*?-->/g, '');
 assert.doesNotMatch(executableHead, /silktide|googletagmanager|gtag\(/i);
 assert.doesNotMatch(head, /pagead2\.googlesyndication\.com/);
@@ -52,5 +55,8 @@ assert.match(privacy, /privacy@tweed\.technology/);
 assert.match(cookies, /privacy@tweed\.technology/);
 assert.match(footer, /privacy-policy\//);
 assert.match(footer, /cookie-policy\//);
+assert.match(footer, /google-privacy-settings/);
+assert.match(footer, /showRevocationMessage/);
+assert.match(footer, /CONSENT_API_READY/);
 
-console.log('Google AdSense integration checks passed. CMP publication and site approval require AdSense account verification.');
+console.log('Google AdSense integration checks passed. CMP publication and site approval still require AdSense account verification.');

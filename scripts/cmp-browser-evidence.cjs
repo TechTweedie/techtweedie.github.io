@@ -11,6 +11,7 @@ const cases = [
   { id: '01-desktop-normal', url: 'https://techtweedie.github.io/', mobile: false },
   { id: '02-desktop-gdpr-forced', url: 'https://techtweedie.github.io/?fc=alwaysshow&fctype=gdpr', mobile: false },
   { id: '03-mobile-gdpr-forced', url: 'https://techtweedie.github.io/?fc=alwaysshow&fctype=gdpr', mobile: true },
+  { id: '04-privacy-page-gdpr-forced', url: 'https://techtweedie.github.io/privacy-policy/?fc=alwaysshow&fctype=gdpr', mobile: false },
 ];
 const isGoogle = (url) => /google(syndication|adservices|fc|usercontent)?\.com|doubleclick\.net|fundingchoices|googleapis\.com/i.test(url);
 function safeUrl(s) {
@@ -76,6 +77,8 @@ async function runOne(browser, test) {
         title: document.title,
         finalUrl: location.href,
         googleTag,
+        privacySettingsLink: !!document.getElementById('google-privacy-settings'),
+        privacySettingsCmpReady: document.getElementById('google-privacy-settings')?.getAttribute('data-google-cmp-ready') || null,
         scriptsWithLegacyBanner: [...document.querySelectorAll('script[src*="silktide"],link[href*="silktide"]')].length,
         frames: consentFrames,
         modals: modal,
@@ -118,6 +121,8 @@ async function runOne(browser, test) {
       case: result.case,
       navigationError: result.navigationError,
       googleTagCount: result.googleTag?.length || 0,
+      privacySettingsLink: result.privacySettingsLink || false,
+      privacySettingsCmpReady: result.privacySettingsCmpReady || null,
       googlefcPresent: result.googlefcPresent,
       tcfapiPresent: result.tcfapiPresent,
       tcfPing: result.tcfPing,
@@ -138,9 +143,9 @@ async function runOne(browser, test) {
     '',
     '**Scope:** public website only, unauthenticated Playwright Chromium desktop/mobile. No publisher login, no actual consent clicks. Region simulated by locale, NOT network IP. Google debug mode bypasses geo checks.',
     '',
-    '| Case | Page loaded | AdSense tag | Google FC API | TCF API | Visible dialog elements | Consent iframe content found |',
-    '|---|---|---|---|---|---|---|',
-    ...results.map(r => '| ' + r.case + ' | ' + (r.navigationError ? 'No' : 'Yes') + ' | ' + (r.googleTag?.length || 0) + ' | ' + (r.googlefcPresent ? 'Yes' : 'No') + ' | ' + (r.tcfapiPresent ? 'Yes' : 'No') + ' | ' + (r.modals?.length || 0) + ' | ' + (r.frameTexts?.some(x => x.matchedConsentTerms) ? 'Yes' : 'Not observed') + ' |'),
+    '| Case | Page loaded | AdSense tag | Settings link | Google FC API | TCF API | Visible dialog elements | Consent iframe content found |',
+    '|---|---|---|---|---|---|---|---|',
+    ...results.map(r => '| ' + r.case + ' | ' + (r.navigationError ? 'No' : 'Yes') + ' | ' + (r.googleTag?.length || 0) + ' | ' + (r.privacySettingsLink ? 'Yes' : 'No') + ' | ' + (r.googlefcPresent ? 'Yes' : 'No') + ' | ' + (r.tcfapiPresent ? 'Yes' : 'No') + ' | ' + (r.modals?.length || 0) + ' | ' + (r.frameTexts?.some(x => x.matchedConsentTerms) ? 'Yes' : 'Not observed') + ' |'),
     '',
     '## Interpretation and limitations',
     '- A Google script being present in HTML is not proof the publisher account has activated a European regulations message.',

@@ -5,6 +5,9 @@ on:
   push:
     branches: [v2]
     paths:
+      - layouts/partials/adsense/head.html
+      - layouts/partials/mightora-footer.html
+      - scripts/check-adsense-config.mjs
       - scripts/cmp-browser-evidence.cjs
       - .github/workflows/cmp-browser-audit.yml
 
@@ -13,10 +16,12 @@ permissions:
 
 jobs:
   audit:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+      - name: Run static AdSense/CMP checks
+        run: node scripts/check-adsense-config.mjs
       - name: Install Playwright Chromium
         run: |
           mkdir -p /tmp/cmp-audit

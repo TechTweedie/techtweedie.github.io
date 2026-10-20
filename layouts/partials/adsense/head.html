@@ -1,11 +1,14 @@
-{{/* Google AdSense's official asynchronous tag is required for the Google
-     Privacy & messaging CMP to render on ad-eligible pages.
-     The tag is installed now for site review and CMP delivery. Site approval
-     and publishing the Google-certified European regulations message are
-     ACCOUNT-SIDE steps; the template cannot guarantee either.
-     Limit to homepage and original articles; never put ads on legal pages.
-     No manual ad slots are inserted here. Disable Auto ads in AdSense until
-     the certified CMP message is published and tested. */}}
-{{- if and site.Params.adsense.loadTag (or (eq .Kind "home") (and (eq .Section "posts") (eq .Kind "page"))) }}
+{{/* Google AdSense's official asynchronous tag also bootstraps Google's
+     Privacy & messaging CMP. Keep it site-wide so the published Google CMP
+     can render consistently regardless of the visitor's entry page.
+
+     No manual ad slots are inserted here. Whether Auto ads render is controlled
+     in AdSense; use AdSense page exclusions for pages where ads should never
+     appear. */}}
+{{- if site.Params.adsense.loadTag }}
+<script>
+  window.googlefc = window.googlefc || {};
+  window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.Params.adsense.publisherID }}" crossorigin="anonymous"></script>
 {{- end }}
