@@ -1,5 +1,0 @@
-{{- $role := lower (.Params.eventType | default "") -}}
-{{- $labels := dict "speaking" "Speaking" "hosting" "Hosting" "supporting" "Supporting" -}}
-{{- with index $labels $role -}}
-  <span class="event-role-banner event-role-{{ $role }}">{{ . }}</span>
-{{- end -}}
