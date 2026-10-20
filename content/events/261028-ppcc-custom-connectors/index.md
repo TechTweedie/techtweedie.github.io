@@ -61,7 +61,7 @@ If you've ever opened a flow and wondered how something so simple ended up needi
 **Audience:** Makers and developers  
 **Speaker:** Ian Tweedie (community speaker)
 
-You can find the latest agenda and registration information on the [official PPCC 2026 sessions page](https://www.powerplatformconf.com/sessions).
+You can [view my session on the official PPCC 2026 website](https://www.powerplatformconf.com/sessions/Untapped-Power-of-Custom-Connectors%3A-Helping-Makers-Take-Their-First-Steps-Beyond-Low-Code) or explore the full conference programme.
 
 ## When Your Flow Has Outgrown Its Comfort Zone
 
@@ -93,6 +93,6 @@ The focus is on the *approach*, rather than deep coding: knowing when a flow has
 
 If you're attending PPCC 2026, come along to **Community Room 3 at 2:00 pm on Wednesday 28 October**. Whether you're a maker curious about custom connectors or an experienced Power Automate developer looking for ways to simplify your solutions, I'd love to see you there.
 
-[Explore the PPCC 2026 programme](https://www.powerplatformconf.com/sessions) and come and say hello after the session.
+[View the full session details and registration options](https://www.powerplatformconf.com/sessions/Untapped-Power-of-Custom-Connectors%3A-Helping-Makers-Take-Their-First-Steps-Beyond-Low-Code) and come and say hello after the session.
 
 **#PPCC26 #PowerAutomate #PowerPlatform #CustomConnectors #LowCode #ProCode**
