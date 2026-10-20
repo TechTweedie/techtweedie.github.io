@@ -49,24 +49,31 @@ code, pre, .code {
 
 .event-card-media {
   position: relative;
-  width: 100%;
-  height: 200px;
-  max-height: 200px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   background: #f4f5f7;
 }
 
 .event-card-image-link {
-  display: flex;
+  display: block;
   width: 100%;
   height: 100%;
-  align-items: center;
-  justify-content: center;
 }
 
 .event-card-image {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+}
+
+/* Keep event listing artwork compact and fully visible without changing featured cards elsewhere. */
+.event-list-page .event-card-media {
+  aspect-ratio: auto;
+  height: 200px;
+  max-height: 200px;
+}
+
+.event-list-page .event-card-image {
   max-height: 200px;
   object-fit: contain;
   object-position: center;
