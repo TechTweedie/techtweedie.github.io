@@ -1,5 +1,7 @@
 name: Capture CMP browser evidence
 
+# Browser audit intentionally targets the already-deployed public site.
+
 on:
   workflow_dispatch:
   push:
