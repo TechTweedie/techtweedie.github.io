@@ -25,6 +25,12 @@ lastmod: 2026-11-23T19:00:00+00:00
 author: "itweedie"
 authorLink: "https://iantweedie.biz"
 draft: false
+resources:
+  - name: "featured-image"
+    src: "featured-image.png"
+  - name: "featured-image-preview"
+    src: "featured-image.png"
+hero: featured-image.png
 ---
 
 <!--more-->
